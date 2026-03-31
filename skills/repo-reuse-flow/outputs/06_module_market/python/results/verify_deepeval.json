@@ -1,0 +1,63 @@
+{
+  "cases": [
+    {
+      "label": "✅ 忠实回答",
+      "case_type": "faithful",
+      "scores": {
+        "faithfulness": 1.0,
+        "hallucination": 0.0,
+        "answer_relevancy": 1.0,
+        "custom_geval": 0.9
+      },
+      "elapsed_seconds": 58.25,
+      "passed": true,
+      "question": "什么是光合作用？",
+      "answer": "光合作用是植物利用光能将二氧化碳和水转化为有机物和氧气的过程",
+      "contexts": [
+        "光合作用（Photosynthesis）是植物、藻类和某些细菌利用光能将二氧化碳和水转化为葡萄糖和氧气的生化过程。"
+      ],
+      "faithfulness_reason": "The score is 1.00 because there are no contradictions; the actual output fully aligns with the retrieval context.",
+      "geval_reason": "The response accurately defines photosynthesis by explaining the process plants use to convert carbon dioxide and water into organic matter and oxygen using light energy. The language is appropriate for a student, clear, and concise without unnecessary complexity. However, it could be slightly improved by mentioning chlorophyll or the role of sunlight explicitly for completeness."
+    },
+    {
+      "label": "❌ 幻觉回答",
+      "case_type": "hallucinated",
+      "scores": {
+        "faithfulness": 0.5,
+        "hallucination": 1.0,
+        "answer_relevancy": 0.0,
+        "custom_geval": 0.1
+      },
+      "elapsed_seconds": 15.6,
+      "passed": true,
+      "question": "什么是光合作用？",
+      "answer": "光合作用是动物在月光下将氮气转化为蛋白质的过程，2020年诺贝尔奖。",
+      "contexts": [
+        "光合作用（Photosynthesis）是植物、藻类和某些细菌利用光能将二氧化碳和水转化为葡萄糖和氧气的生化过程。"
+      ],
+      "faithfulness_reason": "The score is 0.50 because the actual output incorrectly states that animals convert nitrogen into protein under moonlight, which contradicts the retrieval context explaining photosynthesis as a process in plants, algae, and some bacteria converting CO2 and water into glucose and oxygen.",
+      "geval_reason": "The response attempts to define 光合作用 but is factually incorrect, confusing it with a process involving animals and nitrogen fixation, which is unrelated. The explanation is unclear and misleading, lacking appropriate language or examples for student comprehension."
+    },
+    {
+      "label": "🔀 跑题回答",
+      "case_type": "off_topic",
+      "scores": {
+        "faithfulness": 1.0,
+        "hallucination": 1.0,
+        "answer_relevancy": 0.0,
+        "custom_geval": 0.0
+      },
+      "elapsed_seconds": 13.55,
+      "passed": true,
+      "question": "什么是光合作用？",
+      "answer": "Python是一种编程语言，由Guido van Rossum于1991年发布。",
+      "contexts": [
+        "光合作用（Photosynthesis）是植物、藻类和某些细菌利用光能将二氧化碳和水转化为葡萄糖和氧气的生化过程。"
+      ],
+      "faithfulness_reason": "The score is 1.00 because there are no contradictions, indicating the actual output is fully faithful to the retrieval context.",
+      "geval_reason": "The response does not address the question about photosynthesis; instead, it provides unrelated information about the Python programming language, failing to meet any of the evaluation criteria."
+    }
+  ],
+  "all_passed": true,
+  "total_elapsed": 89.86
+}

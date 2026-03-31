@@ -1,0 +1,33 @@
+{
+  "module": "ragas-evaluation",
+  "slug": "ragas-evaluation",
+  "backend": "azure/gpt-4o-mini",
+  "evaluated_at": "2026-03-30T20:30:00-04:00",
+  "cases": [
+    {
+      "label": "✅ 忠实回答",
+      "case_type": "faithful",
+      "scores": { "faithfulness": 0.85, "answer_relevancy": 0.92, "context_precision": 0.90 },
+      "elapsed_seconds": 3.2,
+      "passed": true
+    },
+    {
+      "label": "❌ 幻觉回答",
+      "case_type": "hallucinated",
+      "scores": { "faithfulness": 0.10, "answer_relevancy": 0.15, "context_precision": 0.20 },
+      "elapsed_seconds": 2.8,
+      "passed": true
+    },
+    {
+      "label": "🔀 跑题回答",
+      "case_type": "off_topic",
+      "scores": { "faithfulness": 0.05, "answer_relevancy": 0.02, "context_precision": 0.10 },
+      "elapsed_seconds": 2.5,
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "total_elapsed": 8.5,
+  "verdict": "可用",
+  "notes": "Azure gpt-4o-mini Quick 模式区分度优秀。三个指标对忠实/幻觉/跑题均有清晰区分。推荐作为 RAG 评估的首选方案。"
+}

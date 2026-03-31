@@ -1,0 +1,19 @@
+[project]
+name = "repo-reuse-flow"
+version = "0.1.0"
+description = "开源项目筛选→分析→模块提取→落地复用 全流程工作流"
+requires-python = ">=3.12"
+dependencies = [
+    "tree-sitter-analyzer>=1.10",
+    "inspect4py>=0.0.8",
+    "gitingest>=0.3.1",
+    "radon>=6.0",
+    "requests>=2.28",
+    "beautifulsoup4>=4.12",
+]
+
+[tool.uv]
+virtual-packages = []
+
+[tool.uv.pip]
+# tree-sitter 语言包

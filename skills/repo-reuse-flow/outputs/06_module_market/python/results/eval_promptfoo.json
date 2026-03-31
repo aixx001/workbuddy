@@ -1,0 +1,32 @@
+{
+  "module": "promptfoo",
+  "backend": "local (no LLM)",
+  "evaluated_at": "2026-03-31T03:37:00-04:00",
+  "cases": [
+    {
+      "label": "✅ 完整配置 — 多模型 + 多用例 + 断言",
+      "case_type": "complete",
+      "scores": { "yaml_valid": 1.0, "tests_correct": 1.0, "providers_correct": 1.0 },
+      "elapsed_seconds": 0.01,
+      "passed": true
+    },
+    {
+      "label": "✅ 最小配置 — 空用例自动补默认",
+      "case_type": "minimal",
+      "scores": { "yaml_valid": 1.0, "auto_fill": 1.0, "providers_correct": 1.0 },
+      "elapsed_seconds": 0.01,
+      "passed": true
+    },
+    {
+      "label": "✅ 中文场景 — 关键词断言正确生成",
+      "case_type": "chinese",
+      "scores": { "yaml_valid": 1.0, "cjk_asserts": 1.0, "providers_correct": 1.0 },
+      "elapsed_seconds": 0.01,
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "total_elapsed": 0.03,
+  "verdict": "可用",
+  "notes": "纯结构验证，无 LLM 调用。YAML 配置生成正确：多模型 A/B 对比、断言自动生成、空用例自动补默认、中文关键词支持良好。"
+}

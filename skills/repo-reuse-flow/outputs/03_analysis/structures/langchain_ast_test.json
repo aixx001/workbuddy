@@ -1,0 +1,6033 @@
+{
+  "repo": "C:\\Users\\40270\\.workbuddy\\skills\\repo-reuse-flow\\outputs\\03_analysis\\cloned\\langchain\\libs\\core",
+  "repo_name": "core",
+  "analyzed_at": "2026-03-28 21:05:04",
+  "analyzer": "python-ast-v2",
+  "dir_summary": {
+    "total_files": 376,
+    "by_extension": {
+      ".py": 337,
+      ".json": 15,
+      ".txt": 6,
+      ".yaml": 5,
+      ".ambr": 5,
+      ".csv": 2,
+      "(none)": 1,
+      ".toml": 1,
+      ".md": 1,
+      ".lock": 1,
+      ".typed": 1,
+      ".sh": 1
+    },
+    "largest_dirs": [
+      [
+        "tests",
+        192
+      ],
+      [
+        "langchain_core",
+        176
+      ],
+      [
+        "scripts",
+        3
+      ]
+    ],
+    "root_files": [
+      "extended_testing_deps.txt",
+      "Makefile",
+      "pyproject.toml",
+      "README.md",
+      "uv.lock"
+    ]
+  },
+  "analysis": {
+    "files_analyzed": 20,
+    "summary": {
+      "total_classes": 39,
+      "total_functions": 108,
+      "total_imports": 122
+    },
+    "classes": [
+      {
+        "file": "langchain_core\\agents.py",
+        "name": "AgentAction",
+        "start_line": 44,
+        "end_line": 102,
+        "bases": [
+          "Serializable"
+        ],
+        "decorators": [],
+        "docstring": "Represents a request to execute an action by an agent.\n\nThe action consists of the name of the tool to execute and the input to pass\nto the tool. The log is used to pass along extra information about the action.",
+        "class_vars": [
+          {
+            "name": "tool",
+            "type": "str"
+          },
+          {
+            "name": "tool_input",
+            "type": "str | dict"
+          },
+          {
+            "name": "log",
+            "type": "str"
+          },
+          {
+            "name": "type",
+            "type": "Literal['AgentAction']",
+            "value": "'AgentAction'"
+          }
+        ],
+        "method_count": 4,
+        "methods": [
+          {
+            "name": "__init__",
+            "start_line": 71,
+            "end_line": 79,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "tool",
+                "type": "str"
+              },
+              {
+                "name": "tool_input",
+                "type": "str | dict"
+              },
+              {
+                "name": "log",
+                "type": "str"
+              },
+              {
+                "name": "**kwargs",
+                "type": "Any"
+              }
+            ],
+            "returns": null,
+            "decorators": [],
+            "docstring": "Create an `AgentAction`.\n\nArgs:\n    tool: The name of the tool to execute.\n    tool_input: The input to pass in to the `Tool`.\n    log: Additional information to log about the action."
+          },
+          {
+            "name": "is_lc_serializable",
+            "start_line": 82,
+            "end_line": 88,
+            "async": false,
+            "parameters": [
+              {
+                "name": "cls"
+              }
+            ],
+            "returns": "bool",
+            "decorators": [
+              "classmethod"
+            ],
+            "docstring": "`AgentAction` is serializable.\n\nReturns:\n    `True`"
+          },
+          {
+            "name": "get_lc_namespace",
+            "start_line": 91,
+            "end_line": 97,
+            "async": false,
+            "parameters": [
+              {
+                "name": "cls"
+              }
+            ],
+            "returns": "list[str]",
+            "decorators": [
+              "classmethod"
+            ],
+            "docstring": "Get the namespace of the LangChain object.\n\nReturns:\n    `[\"langchain\", \"schema\", \"agent\"]`"
+          },
+          {
+            "name": "messages",
+            "start_line": 100,
+            "end_line": 102,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "Sequence[BaseMessage]",
+            "decorators": [
+              "property"
+            ],
+            "docstring": "Return the messages that correspond to this action."
+          }
+        ],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\agents.py",
+        "name": "AgentActionMessageLog",
+        "start_line": 105,
+        "end_line": 128,
+        "bases": [
+          "AgentAction"
+        ],
+        "decorators": [],
+        "docstring": "Representation of an action to be executed by an agent.\n\nThis is similar to `AgentAction`, but includes a message log consisting of\nchat messages.\n\nThis is useful when working with `ChatModels`, and is used to reconstruct\nconversation history from the agent's perspective.",
+        "class_vars": [
+          {
+            "name": "message_log",
+            "type": "Sequence[BaseMessage]"
+          },
+          {
+            "name": "type",
+            "type": "Literal['AgentActionMessageLog']",
+            "value": "'AgentActionMessageLog'"
+          }
+        ],
+        "method_count": 0,
+        "methods": [],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\agents.py",
+        "name": "AgentStep",
+        "start_line": 131,
+        "end_line": 143,
+        "bases": [
+          "Serializable"
+        ],
+        "decorators": [],
+        "docstring": "Result of running an `AgentAction`.",
+        "class_vars": [
+          {
+            "name": "action",
+            "type": "AgentAction"
+          },
+          {
+            "name": "observation",
+            "type": "Any"
+          }
+        ],
+        "method_count": 1,
+        "methods": [
+          {
+            "name": "messages",
+            "start_line": 141,
+            "end_line": 143,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "Sequence[BaseMessage]",
+            "decorators": [
+              "property"
+            ],
+            "docstring": "Messages that correspond to this observation."
+          }
+        ],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\agents.py",
+        "name": "AgentFinish",
+        "start_line": 146,
+        "end_line": 188,
+        "bases": [
+          "Serializable"
+        ],
+        "decorators": [],
+        "docstring": "Final return value of an `ActionAgent`.\n\nAgents return an `AgentFinish` when they have reached a stopping condition.",
+        "class_vars": [
+          {
+            "name": "return_values",
+            "type": "dict"
+          },
+          {
+            "name": "log",
+            "type": "str"
+          },
+          {
+            "name": "type",
+            "type": "Literal['AgentFinish']",
+            "value": "'AgentFinish'"
+          }
+        ],
+        "method_count": 4,
+        "methods": [
+          {
+            "name": "__init__",
+            "start_line": 167,
+            "end_line": 169,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "return_values",
+                "type": "dict"
+              },
+              {
+                "name": "log",
+                "type": "str"
+              },
+              {
+                "name": "**kwargs",
+                "type": "Any"
+              }
+            ],
+            "returns": null,
+            "decorators": [],
+            "docstring": "Override init to support instantiation by position for backward compat."
+          },
+          {
+            "name": "is_lc_serializable",
+            "start_line": 172,
+            "end_line": 174,
+            "async": false,
+            "parameters": [
+              {
+                "name": "cls"
+              }
+            ],
+            "returns": "bool",
+            "decorators": [
+              "classmethod"
+            ],
+            "docstring": "Return `True` as this class is serializable."
+          },
+          {
+            "name": "get_lc_namespace",
+            "start_line": 177,
+            "end_line": 183,
+            "async": false,
+            "parameters": [
+              {
+                "name": "cls"
+              }
+            ],
+            "returns": "list[str]",
+            "decorators": [
+              "classmethod"
+            ],
+            "docstring": "Get the namespace of the LangChain object.\n\nReturns:\n    `[\"langchain\", \"schema\", \"agent\"]`"
+          },
+          {
+            "name": "messages",
+            "start_line": 186,
+            "end_line": 188,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "Sequence[BaseMessage]",
+            "decorators": [
+              "property"
+            ],
+            "docstring": "Messages that correspond to this observation."
+          }
+        ],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\caches.py",
+        "name": "BaseCache",
+        "start_line": 32,
+        "end_line": 152,
+        "bases": [
+          "ABC"
+        ],
+        "decorators": [],
+        "docstring": "Interface for a caching layer for LLMs and Chat models.\n\nThe cache interface consists of the following methods:\n\n- lookup: Look up a value based on a prompt and `llm_string`.\n- update: Update the cache based on a prompt and `llm_string`.\n- clear: Clear the cache.\n\nIn addition, the cache interface pr...",
+        "class_vars": [],
+        "method_count": 6,
+        "methods": [
+          {
+            "name": "lookup",
+            "start_line": 49,
+            "end_line": 70,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "prompt",
+                "type": "str"
+              },
+              {
+                "name": "llm_string",
+                "type": "str"
+              }
+            ],
+            "returns": "RETURN_VAL_TYPE | None",
+            "decorators": [
+              "abstractmethod"
+            ],
+            "docstring": "Look up based on `prompt` and `llm_string`.\n\nA cache implementation is expected to generate a key from the 2-tuple\nof `prompt` and `llm_string` (e.g., by concatenating them with a delimiter).\n\nArgs:\n    prompt: A string representation of the prompt.\n\n        In the case of a chat model, the prompt i..."
+          },
+          {
+            "name": "update",
+            "start_line": 73,
+            "end_line": 94,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "prompt",
+                "type": "str"
+              },
+              {
+                "name": "llm_string",
+                "type": "str"
+              },
+              {
+                "name": "return_val",
+                "type": "RETURN_VAL_TYPE"
+              }
+            ],
+            "returns": "None",
+            "decorators": [
+              "abstractmethod"
+            ],
+            "docstring": "Update cache based on `prompt` and `llm_string`.\n\nThe `prompt` and `llm_string` are used to generate a key for the cache. The key\nshould match that of the lookup method.\n\nArgs:\n    prompt: A string representation of the prompt.\n\n        In the case of a chat model, the prompt is a non-trivial\n      ..."
+          },
+          {
+            "name": "clear",
+            "start_line": 97,
+            "end_line": 98,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "**kwargs",
+                "type": "Any"
+              }
+            ],
+            "returns": "None",
+            "decorators": [
+              "abstractmethod"
+            ],
+            "docstring": "Clear cache that can take additional keyword arguments."
+          },
+          {
+            "name": "alookup",
+            "start_line": 100,
+            "end_line": 123,
+            "async": true,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "prompt",
+                "type": "str"
+              },
+              {
+                "name": "llm_string",
+                "type": "str"
+              }
+            ],
+            "returns": "RETURN_VAL_TYPE | None",
+            "decorators": [],
+            "docstring": "Async look up based on `prompt` and `llm_string`.\n\nA cache implementation is expected to generate a key from the 2-tuple\nof `prompt` and `llm_string` (e.g., by concatenating them with a delimiter).\n\nArgs:\n    prompt: A string representation of the prompt.\n\n        In the case of a chat model, the pr..."
+          },
+          {
+            "name": "aupdate",
+            "start_line": 125,
+            "end_line": 148,
+            "async": true,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "prompt",
+                "type": "str"
+              },
+              {
+                "name": "llm_string",
+                "type": "str"
+              },
+              {
+                "name": "return_val",
+                "type": "RETURN_VAL_TYPE"
+              }
+            ],
+            "returns": "None",
+            "decorators": [],
+            "docstring": "Async update cache based on `prompt` and `llm_string`.\n\nThe prompt and llm_string are used to generate a key for the cache.\nThe key should match that of the look up method.\n\nArgs:\n    prompt: A string representation of the prompt.\n\n        In the case of a chat model, the prompt is a non-trivial\n   ..."
+          },
+          {
+            "name": "aclear",
+            "start_line": 150,
+            "end_line": 152,
+            "async": true,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "**kwargs",
+                "type": "Any"
+              }
+            ],
+            "returns": "None",
+            "decorators": [],
+            "docstring": "Async clear cache that can take additional keyword arguments."
+          }
+        ],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\caches.py",
+        "name": "InMemoryCache",
+        "start_line": 155,
+        "end_line": 272,
+        "bases": [
+          "BaseCache"
+        ],
+        "decorators": [],
+        "docstring": "Cache that stores things in memory.\n\nExample:\n    ```python\n    from langchain_core.caches import InMemoryCache\n    from langchain_core.outputs import Generation\n\n    # Initialize cache\n    cache = InMemoryCache()\n\n    # Update cache\n    cache.update(\n        prompt=\"What is the capital of France?\",...",
+        "class_vars": [],
+        "method_count": 7,
+        "methods": [
+          {
+            "name": "__init__",
+            "start_line": 182,
+            "end_line": 199,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "None",
+            "decorators": [],
+            "docstring": "Initialize with empty cache.\n\nArgs:\n    maxsize: The maximum number of items to store in the cache.\n\n        If `None`, the cache has no maximum size.\n\n        If the cache exceeds the maximum size, the oldest items are removed.\n\nRaises:\n    ValueError: If `maxsize` is less than or equal to `0`."
+          },
+          {
+            "name": "lookup",
+            "start_line": 201,
+            "end_line": 214,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "prompt",
+                "type": "str"
+              },
+              {
+                "name": "llm_string",
+                "type": "str"
+              }
+            ],
+            "returns": "RETURN_VAL_TYPE | None",
+            "decorators": [],
+            "docstring": "Look up based on `prompt` and `llm_string`.\n\nArgs:\n    prompt: A string representation of the prompt.\n\n        In the case of a chat model, the prompt is a non-trivial\n        serialization of the prompt into the language model.\n    llm_string: A string representation of the LLM configuration.\n\nRetu..."
+          },
+          {
+            "name": "update",
+            "start_line": 216,
+            "end_line": 231,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "prompt",
+                "type": "str"
+              },
+              {
+                "name": "llm_string",
+                "type": "str"
+              },
+              {
+                "name": "return_val",
+                "type": "RETURN_VAL_TYPE"
+              }
+            ],
+            "returns": "None",
+            "decorators": [],
+            "docstring": "Update cache based on `prompt` and `llm_string`.\n\nArgs:\n    prompt: A string representation of the prompt.\n\n        In the case of a chat model, the prompt is a non-trivial\n        serialization of the prompt into the language model.\n    llm_string: A string representation of the LLM configuration.\n..."
+          },
+          {
+            "name": "clear",
+            "start_line": 234,
+            "end_line": 236,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "**kwargs",
+                "type": "Any"
+              }
+            ],
+            "returns": "None",
+            "decorators": [
+              "override"
+            ],
+            "docstring": "Clear cache."
+          },
+          {
+            "name": "alookup",
+            "start_line": 238,
+            "end_line": 251,
+            "async": true,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "prompt",
+                "type": "str"
+              },
+              {
+                "name": "llm_string",
+                "type": "str"
+              }
+            ],
+            "returns": "RETURN_VAL_TYPE | None",
+            "decorators": [],
+            "docstring": "Async look up based on `prompt` and `llm_string`.\n\nArgs:\n    prompt: A string representation of the prompt.\n\n        In the case of a chat model, the prompt is a non-trivial\n        serialization of the prompt into the language model.\n    llm_string: A string representation of the LLM configuration...."
+          },
+          {
+            "name": "aupdate",
+            "start_line": 253,
+            "end_line": 267,
+            "async": true,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "prompt",
+                "type": "str"
+              },
+              {
+                "name": "llm_string",
+                "type": "str"
+              },
+              {
+                "name": "return_val",
+                "type": "RETURN_VAL_TYPE"
+              }
+            ],
+            "returns": "None",
+            "decorators": [],
+            "docstring": "Async update cache based on `prompt` and `llm_string`.\n\nArgs:\n    prompt: A string representation of the prompt.\n\n        In the case of a chat model, the prompt is a non-trivial\n        serialization of the prompt into the language model.\n    llm_string: A string representation of the LLM configura..."
+          },
+          {
+            "name": "aclear",
+            "start_line": 270,
+            "end_line": 272,
+            "async": true,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "**kwargs",
+                "type": "Any"
+              }
+            ],
+            "returns": "None",
+            "decorators": [
+              "override"
+            ],
+            "docstring": "Async clear cache."
+          }
+        ],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\chat_loaders.py",
+        "name": "BaseChatLoader",
+        "start_line": 9,
+        "end_line": 26,
+        "bases": [
+          "ABC"
+        ],
+        "decorators": [],
+        "docstring": "Base class for chat loaders.",
+        "class_vars": [],
+        "method_count": 2,
+        "methods": [
+          {
+            "name": "lazy_load",
+            "start_line": 13,
+            "end_line": 18,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "Iterator[ChatSession]",
+            "decorators": [
+              "abstractmethod"
+            ],
+            "docstring": "Lazy load the chat sessions.\n\nReturns:\n    An iterator of chat sessions."
+          },
+          {
+            "name": "load",
+            "start_line": 20,
+            "end_line": 26,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "list[ChatSession]",
+            "decorators": [],
+            "docstring": "Eagerly load the chat sessions into memory.\n\nReturns:\n    A list of chat sessions."
+          }
+        ],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\chat_history.py",
+        "name": "BaseChatMessageHistory",
+        "start_line": 22,
+        "end_line": 199,
+        "bases": [
+          "ABC"
+        ],
+        "decorators": [],
+        "docstring": "Abstract base class for storing chat message history.\n\nImplementations guidelines:\n\nImplementations are expected to over-ride all or some of the following methods:\n\n* `add_messages`: sync variant for bulk addition of messages\n* `aadd_messages`: async variant for bulk addition of messages\n* `messages...",
+        "class_vars": [
+          {
+            "name": "messages",
+            "type": "list[BaseMessage]"
+          }
+        ],
+        "method_count": 9,
+        "methods": [
+          {
+            "name": "aget_messages",
+            "start_line": 99,
+            "end_line": 110,
+            "async": true,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "list[BaseMessage]",
+            "decorators": [],
+            "docstring": "Async version of getting messages.\n\nCan over-ride this method to provide an efficient async implementation.\n\nIn general, fetching messages may involve IO to the underlying persistence\nlayer.\n\nReturns:\n    The messages."
+          },
+          {
+            "name": "add_user_message",
+            "start_line": 112,
+            "end_line": 128,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "message",
+                "type": "HumanMessage | str"
+              }
+            ],
+            "returns": "None",
+            "decorators": [],
+            "docstring": "Convenience method for adding a human message string to the store.\n\n!!! note\n\n    This is a convenience method. Code should favor the bulk `add_messages`\n    interface instead to save on round-trips to the persistence layer.\n\nThis method may be deprecated in a future release.\n\nArgs:\n    message: The..."
+          },
+          {
+            "name": "add_ai_message",
+            "start_line": 130,
+            "end_line": 146,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "message",
+                "type": "AIMessage | str"
+              }
+            ],
+            "returns": "None",
+            "decorators": [],
+            "docstring": "Convenience method for adding an `AIMessage` string to the store.\n\n!!! note\n\n    This is a convenience method. Code should favor the bulk `add_messages`\n    interface instead to save on round-trips to the persistence layer.\n\nThis method may be deprecated in a future release.\n\nArgs:\n    message: The ..."
+          },
+          {
+            "name": "add_message",
+            "start_line": 148,
+            "end_line": 167,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "message",
+                "type": "BaseMessage"
+              }
+            ],
+            "returns": "None",
+            "decorators": [],
+            "docstring": "Add a Message object to the store.\n\nArgs:\n    message: A `BaseMessage` object to store.\n\nRaises:\n    NotImplementedError: If the sub-class has not implemented an efficient\n        `add_messages` method."
+          },
+          {
+            "name": "add_messages",
+            "start_line": 169,
+            "end_line": 179,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "messages",
+                "type": "Sequence[BaseMessage]"
+              }
+            ],
+            "returns": "None",
+            "decorators": [],
+            "docstring": "Add a list of messages.\n\nImplementations should over-ride this method to handle bulk addition of messages\nin an efficient manner to avoid unnecessary round-trips to the underlying store.\n\nArgs:\n    messages: A sequence of `BaseMessage` objects to store."
+          },
+          {
+            "name": "aadd_messages",
+            "start_line": 181,
+            "end_line": 187,
+            "async": true,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "messages",
+                "type": "Sequence[BaseMessage]"
+              }
+            ],
+            "returns": "None",
+            "decorators": [],
+            "docstring": "Async add a list of messages.\n\nArgs:\n    messages: A sequence of `BaseMessage` objects to store."
+          },
+          {
+            "name": "clear",
+            "start_line": 190,
+            "end_line": 191,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "None",
+            "decorators": [
+              "abstractmethod"
+            ],
+            "docstring": "Remove all messages from the store."
+          },
+          {
+            "name": "aclear",
+            "start_line": 193,
+            "end_line": 195,
+            "async": true,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "None",
+            "decorators": [],
+            "docstring": "Async remove all messages from the store."
+          },
+          {
+            "name": "__str__",
+            "start_line": 197,
+            "end_line": 199,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "str",
+            "decorators": [],
+            "docstring": "Return a string representation of the chat history."
+          }
+        ],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\chat_history.py",
+        "name": "InMemoryChatMessageHistory",
+        "start_line": 202,
+        "end_line": 246,
+        "bases": [
+          "BaseChatMessageHistory",
+          "BaseModel"
+        ],
+        "decorators": [],
+        "docstring": "In memory implementation of chat message history.\n\nStores messages in a memory list.",
+        "class_vars": [
+          {
+            "name": "messages",
+            "type": "list[BaseMessage]",
+            "value": "Field(default_factory=list)"
+          }
+        ],
+        "method_count": 5,
+        "methods": [
+          {
+            "name": "aget_messages",
+            "start_line": 211,
+            "end_line": 222,
+            "async": true,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "list[BaseMessage]",
+            "decorators": [],
+            "docstring": "Async version of getting messages.\n\nCan over-ride this method to provide an efficient async implementation.\n\nIn general, fetching messages may involve IO to the underlying persistence\nlayer.\n\nReturns:\n    List of messages."
+          },
+          {
+            "name": "add_message",
+            "start_line": 224,
+            "end_line": 230,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "message",
+                "type": "BaseMessage"
+              }
+            ],
+            "returns": "None",
+            "decorators": [],
+            "docstring": "Add a self-created message to the store.\n\nArgs:\n    message: The message to add."
+          },
+          {
+            "name": "aadd_messages",
+            "start_line": 232,
+            "end_line": 238,
+            "async": true,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "messages",
+                "type": "Sequence[BaseMessage]"
+              }
+            ],
+            "returns": "None",
+            "decorators": [],
+            "docstring": "Async add messages to the store.\n\nArgs:\n    messages: The messages to add."
+          },
+          {
+            "name": "clear",
+            "start_line": 240,
+            "end_line": 242,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "None",
+            "decorators": [],
+            "docstring": "Clear all messages from the store."
+          },
+          {
+            "name": "aclear",
+            "start_line": 244,
+            "end_line": 246,
+            "async": true,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "None",
+            "decorators": [],
+            "docstring": "Async clear all messages from the store."
+          }
+        ],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\chat_sessions.py",
+        "name": "ChatSession",
+        "start_line": 9,
+        "end_line": 19,
+        "bases": [
+          "TypedDict"
+        ],
+        "decorators": [],
+        "docstring": "Chat Session.\n\nChat Session represents a single conversation, channel, or other group of messages.",
+        "class_vars": [
+          {
+            "name": "messages",
+            "type": "Sequence[BaseMessage]"
+          },
+          {
+            "name": "functions",
+            "type": "Sequence[dict]"
+          }
+        ],
+        "method_count": 0,
+        "methods": [],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\cross_encoders.py",
+        "name": "BaseCrossEncoder",
+        "start_line": 6,
+        "end_line": 18,
+        "bases": [
+          "ABC"
+        ],
+        "decorators": [],
+        "docstring": "Interface for cross encoder models.",
+        "class_vars": [],
+        "method_count": 1,
+        "methods": [
+          {
+            "name": "score",
+            "start_line": 10,
+            "end_line": 18,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "text_pairs",
+                "type": "list[tuple[str, str]]"
+              }
+            ],
+            "returns": "list[float]",
+            "decorators": [
+              "abstractmethod"
+            ],
+            "docstring": "Score pairs' similarity.\n\nArgs:\n    text_pairs: List of pairs of texts.\n\nReturns:\n    List of scores."
+          }
+        ],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\exceptions.py",
+        "name": "LangChainException",
+        "start_line": 7,
+        "end_line": 8,
+        "bases": [
+          "Exception"
+        ],
+        "decorators": [],
+        "docstring": "General LangChain exception.",
+        "class_vars": [],
+        "method_count": 0,
+        "methods": [],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\exceptions.py",
+        "name": "TracerException",
+        "start_line": 11,
+        "end_line": 12,
+        "bases": [
+          "LangChainException"
+        ],
+        "decorators": [],
+        "docstring": "Base class for exceptions in tracers module.",
+        "class_vars": [],
+        "method_count": 0,
+        "methods": [],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\exceptions.py",
+        "name": "OutputParserException",
+        "start_line": 15,
+        "end_line": 65,
+        "bases": [
+          "ValueError",
+          "LangChainException"
+        ],
+        "decorators": [],
+        "docstring": "Exception that output parsers should raise to signify a parsing error.\n\nThis exists to differentiate parsing errors from other code or execution errors\nthat also may arise inside the output parser.\n\n`OutputParserException` will be available to catch and handle in ways to fix the\nparsing error, while...",
+        "class_vars": [],
+        "method_count": 1,
+        "methods": [
+          {
+            "name": "__init__",
+            "start_line": 25,
+            "end_line": 65,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "error",
+                "type": "Any"
+              },
+              {
+                "name": "observation",
+                "type": "str | None",
+                "default": "None"
+              },
+              {
+                "name": "llm_output",
+                "type": "str | None",
+                "default": "None"
+              },
+              {
+                "name": "send_to_llm",
+                "type": "bool",
+                "default": "False"
+              }
+            ],
+            "returns": null,
+            "decorators": [],
+            "docstring": "Create an `OutputParserException`.\n\nArgs:\n    error: The error that's being re-raised or an error message.\n    observation: String explanation of error which can be passed to a model to\n        try and remediate the issue.\n    llm_output: String model output which is error-ing.\n\n    send_to_llm: Whe..."
+          }
+        ],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\exceptions.py",
+        "name": "ContextOverflowError",
+        "start_line": 68,
+        "end_line": 73,
+        "bases": [
+          "LangChainException"
+        ],
+        "decorators": [],
+        "docstring": "Exception raised when input exceeds the model's context limit.\n\nThis exception is raised by chat models when the input tokens exceed\nthe maximum context window supported by the model.",
+        "class_vars": [],
+        "method_count": 0,
+        "methods": [],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\exceptions.py",
+        "name": "ErrorCode",
+        "start_line": 76,
+        "end_line": 85,
+        "bases": [
+          "Enum"
+        ],
+        "decorators": [],
+        "docstring": "Error codes.",
+        "class_vars": [
+          {
+            "name": "INVALID_PROMPT_INPUT",
+            "value": "'INVALID_PROMPT_INPUT'"
+          },
+          {
+            "name": "INVALID_TOOL_RESULTS",
+            "value": "'INVALID_TOOL_RESULTS'"
+          },
+          {
+            "name": "MESSAGE_COERCION_FAILURE",
+            "value": "'MESSAGE_COERCION_FAILURE'"
+          },
+          {
+            "name": "MODEL_AUTHENTICATION",
+            "value": "'MODEL_AUTHENTICATION'"
+          },
+          {
+            "name": "MODEL_NOT_FOUND",
+            "value": "'MODEL_NOT_FOUND'"
+          },
+          {
+            "name": "MODEL_RATE_LIMIT",
+            "value": "'MODEL_RATE_LIMIT'"
+          },
+          {
+            "name": "OUTPUT_PARSING_FAILURE",
+            "value": "'OUTPUT_PARSING_FAILURE'"
+          }
+        ],
+        "method_count": 0,
+        "methods": [],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\prompt_values.py",
+        "name": "PromptValue",
+        "start_line": 24,
+        "end_line": 51,
+        "bases": [
+          "Serializable",
+          "ABC"
+        ],
+        "decorators": [],
+        "docstring": "Base abstract class for inputs to any language model.\n\n`PromptValues` can be converted to both LLM (pure text-generation) inputs and\nchat model inputs.",
+        "class_vars": [],
+        "method_count": 4,
+        "methods": [
+          {
+            "name": "is_lc_serializable",
+            "start_line": 32,
+            "end_line": 34,
+            "async": false,
+            "parameters": [
+              {
+                "name": "cls"
+              }
+            ],
+            "returns": "bool",
+            "decorators": [
+              "classmethod"
+            ],
+            "docstring": "Return `True` as this class is serializable."
+          },
+          {
+            "name": "get_lc_namespace",
+            "start_line": 37,
+            "end_line": 43,
+            "async": false,
+            "parameters": [
+              {
+                "name": "cls"
+              }
+            ],
+            "returns": "list[str]",
+            "decorators": [
+              "classmethod"
+            ],
+            "docstring": "Get the namespace of the LangChain object.\n\nReturns:\n    `[\"langchain\", \"schema\", \"prompt\"]`"
+          },
+          {
+            "name": "to_string",
+            "start_line": 46,
+            "end_line": 47,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "str",
+            "decorators": [
+              "abstractmethod"
+            ],
+            "docstring": "Return prompt value as string."
+          },
+          {
+            "name": "to_messages",
+            "start_line": 50,
+            "end_line": 51,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "list[BaseMessage]",
+            "decorators": [
+              "abstractmethod"
+            ],
+            "docstring": "Return prompt as a list of messages."
+          }
+        ],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\prompt_values.py",
+        "name": "StringPromptValue",
+        "start_line": 54,
+        "end_line": 77,
+        "bases": [
+          "PromptValue"
+        ],
+        "decorators": [],
+        "docstring": "String prompt value.",
+        "class_vars": [
+          {
+            "name": "text",
+            "type": "str"
+          },
+          {
+            "name": "type",
+            "type": "Literal['StringPromptValue']",
+            "value": "'StringPromptValue'"
+          }
+        ],
+        "method_count": 3,
+        "methods": [
+          {
+            "name": "get_lc_namespace",
+            "start_line": 63,
+            "end_line": 69,
+            "async": false,
+            "parameters": [
+              {
+                "name": "cls"
+              }
+            ],
+            "returns": "list[str]",
+            "decorators": [
+              "classmethod"
+            ],
+            "docstring": "Get the namespace of the LangChain object.\n\nReturns:\n    `[\"langchain\", \"prompts\", \"base\"]`"
+          },
+          {
+            "name": "to_string",
+            "start_line": 71,
+            "end_line": 73,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "str",
+            "decorators": [],
+            "docstring": "Return prompt as string."
+          },
+          {
+            "name": "to_messages",
+            "start_line": 75,
+            "end_line": 77,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "list[BaseMessage]",
+            "decorators": [],
+            "docstring": "Return prompt as messages."
+          }
+        ],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\prompt_values.py",
+        "name": "ChatPromptValue",
+        "start_line": 80,
+        "end_line": 104,
+        "bases": [
+          "PromptValue"
+        ],
+        "decorators": [],
+        "docstring": "Chat prompt value.\n\nA type of a prompt value that is built from messages.",
+        "class_vars": [
+          {
+            "name": "messages",
+            "type": "Sequence[BaseMessage]"
+          }
+        ],
+        "method_count": 3,
+        "methods": [
+          {
+            "name": "to_string",
+            "start_line": 89,
+            "end_line": 91,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "str",
+            "decorators": [],
+            "docstring": "Return prompt as string."
+          },
+          {
+            "name": "to_messages",
+            "start_line": 93,
+            "end_line": 95,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "list[BaseMessage]",
+            "decorators": [],
+            "docstring": "Return prompt as a list of messages."
+          },
+          {
+            "name": "get_lc_namespace",
+            "start_line": 98,
+            "end_line": 104,
+            "async": false,
+            "parameters": [
+              {
+                "name": "cls"
+              }
+            ],
+            "returns": "list[str]",
+            "decorators": [
+              "classmethod"
+            ],
+            "docstring": "Get the namespace of the LangChain object.\n\nReturns:\n    `[\"langchain\", \"prompts\", \"chat\"]`"
+          }
+        ],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\prompt_values.py",
+        "name": "ImageURL",
+        "start_line": 107,
+        "end_line": 132,
+        "bases": [
+          "TypedDict"
+        ],
+        "decorators": [],
+        "docstring": "Image URL for multimodal model inputs (OpenAI format).\n\nRepresents the inner `image_url` object in OpenAI's Chat Completion API format. This\nis used by `ImagePromptTemplate` and `ChatPromptTemplate`.\n\nSee Also:\n    `ImageContentBlock`: LangChain's provider-agnostic image format used in message\n    c...",
+        "class_vars": [
+          {
+            "name": "detail",
+            "type": "Literal['auto', 'low', 'high']"
+          },
+          {
+            "name": "url",
+            "type": "str"
+          }
+        ],
+        "method_count": 0,
+        "methods": [],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\prompt_values.py",
+        "name": "ImagePromptValue",
+        "start_line": 135,
+        "end_line": 149,
+        "bases": [
+          "PromptValue"
+        ],
+        "decorators": [],
+        "docstring": "Image prompt value.",
+        "class_vars": [
+          {
+            "name": "image_url",
+            "type": "ImageURL"
+          },
+          {
+            "name": "type",
+            "type": "Literal['ImagePromptValue']",
+            "value": "'ImagePromptValue'"
+          }
+        ],
+        "method_count": 2,
+        "methods": [
+          {
+            "name": "to_string",
+            "start_line": 143,
+            "end_line": 145,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "str",
+            "decorators": [],
+            "docstring": "Return prompt (image URL) as string."
+          },
+          {
+            "name": "to_messages",
+            "start_line": 147,
+            "end_line": 149,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "list[BaseMessage]",
+            "decorators": [],
+            "docstring": "Return prompt (image URL) as messages."
+          }
+        ],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\prompt_values.py",
+        "name": "ChatPromptValueConcrete",
+        "start_line": 152,
+        "end_line": 161,
+        "bases": [
+          "ChatPromptValue"
+        ],
+        "decorators": [],
+        "docstring": "Chat prompt value which explicitly lists out the message types it accepts.\n\nFor use in external schemas.",
+        "class_vars": [
+          {
+            "name": "messages",
+            "type": "Sequence[AnyMessage]"
+          },
+          {
+            "name": "type",
+            "type": "Literal['ChatPromptValueConcrete']",
+            "value": "'ChatPromptValueConcrete'"
+          }
+        ],
+        "method_count": 0,
+        "methods": [],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\retrievers.py",
+        "name": "LangSmithRetrieverParams",
+        "start_line": 39,
+        "end_line": 52,
+        "bases": [
+          "TypedDict"
+        ],
+        "decorators": [],
+        "docstring": "LangSmith parameters for tracing.",
+        "class_vars": [
+          {
+            "name": "ls_retriever_name",
+            "type": "str"
+          },
+          {
+            "name": "ls_vector_store_provider",
+            "type": "str | None"
+          },
+          {
+            "name": "ls_embedding_provider",
+            "type": "str | None"
+          },
+          {
+            "name": "ls_embedding_model",
+            "type": "str | None"
+          }
+        ],
+        "method_count": 0,
+        "methods": [],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\retrievers.py",
+        "name": "BaseRetriever",
+        "start_line": 55,
+        "end_line": 328,
+        "bases": [
+          "RunnableSerializable[RetrieverInput, RetrieverOutput]",
+          "ABC"
+        ],
+        "decorators": [],
+        "docstring": "Abstract base class for a document retrieval system.\n\nA retrieval system is defined as something that can take string queries and return\nthe most 'relevant' documents from some source.\n\nUsage:\n\nA retriever follows the standard `Runnable` interface, and should be used via the\nstandard `Runnable` meth...",
+        "class_vars": [
+          {
+            "name": "model_config",
+            "value": "ConfigDict(arbitrary_types_allowed=True)"
+          },
+          {
+            "name": "_new_arg_supported",
+            "type": "bool",
+            "value": "False"
+          },
+          {
+            "name": "_expects_other_args",
+            "type": "bool",
+            "value": "False"
+          },
+          {
+            "name": "tags",
+            "type": "list[str] | None",
+            "value": "None"
+          },
+          {
+            "name": "metadata",
+            "type": "dict[str, Any] | None",
+            "value": "None"
+          }
+        ],
+        "method_count": 6,
+        "methods": [
+          {
+            "name": "__init_subclass__",
+            "start_line": 146,
+            "end_line": 165,
+            "async": false,
+            "parameters": [
+              {
+                "name": "cls"
+              },
+              {
+                "name": "**kwargs",
+                "type": "Any"
+              }
+            ],
+            "returns": "None",
+            "decorators": [
+              "override"
+            ],
+            "docstring": null
+          },
+          {
+            "name": "_get_ls_params",
+            "start_line": 167,
+            "end_line": 176,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "**_kwargs",
+                "type": "Any"
+              }
+            ],
+            "returns": "LangSmithRetrieverParams",
+            "decorators": [],
+            "docstring": "Get standard params for tracing."
+          },
+          {
+            "name": "invoke",
+            "start_line": 179,
+            "end_line": 234,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "input",
+                "type": "str"
+              },
+              {
+                "name": "config",
+                "type": "RunnableConfig | None",
+                "default": "None"
+              },
+              {
+                "name": "**kwargs",
+                "type": "Any"
+              }
+            ],
+            "returns": "list[Document]",
+            "decorators": [
+              "override"
+            ],
+            "docstring": "Invoke the retriever to get relevant documents.\n\nMain entry point for synchronous retriever invocations.\n\nArgs:\n    input: The query string.\n    config: Configuration for the retriever.\n    **kwargs: Additional arguments to pass to the retriever.\n\nReturns:\n    List of relevant documents.\n\nExamples:\n..."
+          },
+          {
+            "name": "ainvoke",
+            "start_line": 237,
+            "end_line": 295,
+            "async": true,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "input",
+                "type": "str"
+              },
+              {
+                "name": "config",
+                "type": "RunnableConfig | None",
+                "default": "None"
+              },
+              {
+                "name": "**kwargs",
+                "type": "Any"
+              }
+            ],
+            "returns": "list[Document]",
+            "decorators": [
+              "override"
+            ],
+            "docstring": "Asynchronously invoke the retriever to get relevant documents.\n\nMain entry point for asynchronous retriever invocations.\n\nArgs:\n    input: The query string.\n    config: Configuration for the retriever.\n    **kwargs: Additional arguments to pass to the retriever.\n\nReturns:\n    List of relevant docume..."
+          },
+          {
+            "name": "_get_relevant_documents",
+            "start_line": 298,
+            "end_line": 309,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "query",
+                "type": "str"
+              }
+            ],
+            "returns": "list[Document]",
+            "decorators": [
+              "abstractmethod"
+            ],
+            "docstring": "Get documents relevant to a query.\n\nArgs:\n    query: String to find relevant documents for.\n    run_manager: The callback handler to use.\n\nReturns:\n    List of relevant documents."
+          },
+          {
+            "name": "_aget_relevant_documents",
+            "start_line": 311,
+            "end_line": 328,
+            "async": true,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "query",
+                "type": "str"
+              }
+            ],
+            "returns": "list[Document]",
+            "decorators": [],
+            "docstring": "Asynchronously get documents relevant to a query.\n\nArgs:\n    query: String to find relevant documents for\n    run_manager: The callback handler to use\n\nReturns:\n    List of relevant documents"
+          }
+        ],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\rate_limiters.py",
+        "name": "BaseRateLimiter",
+        "start_line": 11,
+        "end_line": 64,
+        "bases": [
+          "abc.ABC"
+        ],
+        "decorators": [],
+        "docstring": "Base class for rate limiters.\n\nUsage of the base limiter is through the acquire and aacquire methods depending\non whether running in a sync or async context.\n\nImplementations are free to add a timeout parameter to their initialize method\nto allow users to specify a timeout for acquiring the necessar...",
+        "class_vars": [],
+        "method_count": 2,
+        "methods": [
+          {
+            "name": "acquire",
+            "start_line": 29,
+            "end_line": 45,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "bool",
+            "decorators": [
+              "abstractmethod"
+            ],
+            "docstring": "Attempt to acquire the necessary tokens for the rate limiter.\n\nThis method blocks until the required tokens are available if `blocking`\nis set to `True`.\n\nIf `blocking` is set to `False`, the method will immediately return the result\nof the attempt to acquire the tokens.\n\nArgs:\n    blocking: If `Tru..."
+          },
+          {
+            "name": "aacquire",
+            "start_line": 48,
+            "end_line": 64,
+            "async": true,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "bool",
+            "decorators": [
+              "abstractmethod"
+            ],
+            "docstring": "Attempt to acquire the necessary tokens for the rate limiter.\n\nThis method blocks until the required tokens are available if `blocking`\nis set to `True`.\n\nIf `blocking` is set to `False`, the method will immediately return the result\nof the attempt to acquire the tokens.\n\nArgs:\n    blocking: If `Tru..."
+          }
+        ],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\rate_limiters.py",
+        "name": "InMemoryRateLimiter",
+        "start_line": 67,
+        "end_line": 250,
+        "bases": [
+          "BaseRateLimiter"
+        ],
+        "decorators": [],
+        "docstring": "An in memory rate limiter based on a token bucket algorithm.\n\nThis is an in memory rate limiter, so it cannot rate limit across\ndifferent processes.\n\nThe rate limiter only allows time-based rate limiting and does not\ntake into account any information about the input or the output, so it\ncannot be us...",
+        "class_vars": [],
+        "method_count": 4,
+        "methods": [
+          {
+            "name": "__init__",
+            "start_line": 120,
+            "end_line": 163,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "None",
+            "decorators": [],
+            "docstring": "A rate limiter based on a token bucket.\n\nThese tokens have nothing to do with LLM tokens. They are just\na way to keep track of how many requests can be made at a given time.\n\nThis rate limiter is designed to work in a threaded environment.\n\nIt works by filling up a bucket with tokens at a given rate..."
+          },
+          {
+            "name": "_consume",
+            "start_line": 165,
+            "end_line": 195,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "bool",
+            "decorators": [],
+            "docstring": "Try to consume a token.\n\nReturns:\n    True means that the tokens were consumed, and the caller can proceed to\n    make the request. A False means that the tokens were not consumed, and\n    the caller should try again later."
+          },
+          {
+            "name": "acquire",
+            "start_line": 197,
+            "end_line": 220,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "bool",
+            "decorators": [],
+            "docstring": "Attempt to acquire a token from the rate limiter.\n\nThis method blocks until the required tokens are available if `blocking`\nis set to `True`.\n\nIf `blocking` is set to `False`, the method will immediately return the result\nof the attempt to acquire the tokens.\n\nArgs:\n    blocking: If `True`, the meth..."
+          },
+          {
+            "name": "aacquire",
+            "start_line": 222,
+            "end_line": 250,
+            "async": true,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "bool",
+            "decorators": [],
+            "docstring": "Attempt to acquire a token from the rate limiter. Async version.\n\nThis method blocks until the required tokens are available if `blocking`\nis set to `True`.\n\nIf `blocking` is set to `False`, the method will immediately return the result\nof the attempt to acquire the tokens.\n\nArgs:\n    blocking: If `..."
+          }
+        ],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "BaseStore",
+        "start_line": 26,
+        "end_line": 170,
+        "bases": [
+          "ABC",
+          "Generic[K, V]"
+        ],
+        "decorators": [],
+        "docstring": "Abstract interface for a key-value store.\n\nThis is an interface that's meant to abstract away the details of different\nkey-value stores. It provides a simple interface for getting, setting, and deleting\nkey-value pairs.\n\nThe basic methods are `mget`, `mset`, and `mdelete` for getting, setting, and\nd...",
+        "class_vars": [],
+        "method_count": 8,
+        "methods": [
+          {
+            "name": "mget",
+            "start_line": 81,
+            "end_line": 90,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "keys",
+                "type": "Sequence[K]"
+              }
+            ],
+            "returns": "list[V | None]",
+            "decorators": [
+              "abstractmethod"
+            ],
+            "docstring": "Get the values associated with the given keys.\n\nArgs:\n    keys: A sequence of keys.\n\nReturns:\n    A sequence of optional values associated with the keys.\n        If a key is not found, the corresponding value will be `None`."
+          },
+          {
+            "name": "amget",
+            "start_line": 92,
+            "end_line": 102,
+            "async": true,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "keys",
+                "type": "Sequence[K]"
+              }
+            ],
+            "returns": "list[V | None]",
+            "decorators": [],
+            "docstring": "Async get the values associated with the given keys.\n\nArgs:\n    keys: A sequence of keys.\n\nReturns:\n    A sequence of optional values associated with the keys.\n        If a key is not found, the corresponding value will be `None`."
+          },
+          {
+            "name": "mset",
+            "start_line": 105,
+            "end_line": 110,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "key_value_pairs",
+                "type": "Sequence[tuple[K, V]]"
+              }
+            ],
+            "returns": "None",
+            "decorators": [
+              "abstractmethod"
+            ],
+            "docstring": "Set the values for the given keys.\n\nArgs:\n    key_value_pairs: A sequence of key-value pairs."
+          },
+          {
+            "name": "amset",
+            "start_line": 112,
+            "end_line": 118,
+            "async": true,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "key_value_pairs",
+                "type": "Sequence[tuple[K, V]]"
+              }
+            ],
+            "returns": "None",
+            "decorators": [],
+            "docstring": "Async set the values for the given keys.\n\nArgs:\n    key_value_pairs: A sequence of key-value pairs."
+          },
+          {
+            "name": "mdelete",
+            "start_line": 121,
+            "end_line": 126,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "keys",
+                "type": "Sequence[K]"
+              }
+            ],
+            "returns": "None",
+            "decorators": [
+              "abstractmethod"
+            ],
+            "docstring": "Delete the given keys and their associated values.\n\nArgs:\n    keys: A sequence of keys to delete."
+          },
+          {
+            "name": "amdelete",
+            "start_line": 128,
+            "end_line": 134,
+            "async": true,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "keys",
+                "type": "Sequence[K]"
+              }
+            ],
+            "returns": "None",
+            "decorators": [],
+            "docstring": "Async delete the given keys and their associated values.\n\nArgs:\n    keys: A sequence of keys to delete."
+          },
+          {
+            "name": "yield_keys",
+            "start_line": 137,
+            "end_line": 148,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "Iterator[K] | Iterator[str]",
+            "decorators": [
+              "abstractmethod"
+            ],
+            "docstring": "Get an iterator over keys that match the given prefix.\n\nArgs:\n    prefix: The prefix to match.\n\nYields:\n    An iterator over keys that match the given prefix.\n\n        This method is allowed to return an iterator over either K or str\n        depending on what makes more sense for the given store."
+          },
+          {
+            "name": "ayield_keys",
+            "start_line": 150,
+            "end_line": 170,
+            "async": true,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "AsyncIterator[K] | AsyncIterator[str]",
+            "decorators": [],
+            "docstring": "Async get an iterator over keys that match the given prefix.\n\nArgs:\n    prefix: The prefix to match.\n\nYields:\n    The keys that match the given prefix.\n\n        This method is allowed to return an iterator over either K or str\n        depending on what makes more sense for the given store."
+          }
+        ],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "InMemoryBaseStore",
+        "start_line": 176,
+        "end_line": 241,
+        "bases": [
+          "BaseStore[str, V]",
+          "Generic[V]"
+        ],
+        "decorators": [],
+        "docstring": "In-memory implementation of the `BaseStore` using a dictionary.",
+        "class_vars": [],
+        "method_count": 9,
+        "methods": [
+          {
+            "name": "__init__",
+            "start_line": 179,
+            "end_line": 181,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "None",
+            "decorators": [],
+            "docstring": "Initialize an empty store."
+          },
+          {
+            "name": "mget",
+            "start_line": 184,
+            "end_line": 185,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "keys",
+                "type": "Sequence[str]"
+              }
+            ],
+            "returns": "list[V | None]",
+            "decorators": [
+              "override"
+            ],
+            "docstring": null
+          },
+          {
+            "name": "amget",
+            "start_line": 188,
+            "end_line": 189,
+            "async": true,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "keys",
+                "type": "Sequence[str]"
+              }
+            ],
+            "returns": "list[V | None]",
+            "decorators": [
+              "override"
+            ],
+            "docstring": null
+          },
+          {
+            "name": "mset",
+            "start_line": 192,
+            "end_line": 194,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "key_value_pairs",
+                "type": "Sequence[tuple[str, V]]"
+              }
+            ],
+            "returns": "None",
+            "decorators": [
+              "override"
+            ],
+            "docstring": null
+          },
+          {
+            "name": "amset",
+            "start_line": 197,
+            "end_line": 198,
+            "async": true,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "key_value_pairs",
+                "type": "Sequence[tuple[str, V]]"
+              }
+            ],
+            "returns": "None",
+            "decorators": [
+              "override"
+            ],
+            "docstring": null
+          },
+          {
+            "name": "mdelete",
+            "start_line": 201,
+            "end_line": 204,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "keys",
+                "type": "Sequence[str]"
+              }
+            ],
+            "returns": "None",
+            "decorators": [
+              "override"
+            ],
+            "docstring": null
+          },
+          {
+            "name": "amdelete",
+            "start_line": 207,
+            "end_line": 208,
+            "async": true,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "keys",
+                "type": "Sequence[str]"
+              }
+            ],
+            "returns": "None",
+            "decorators": [
+              "override"
+            ],
+            "docstring": null
+          },
+          {
+            "name": "yield_keys",
+            "start_line": 210,
+            "end_line": 224,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "Iterator[str]",
+            "decorators": [],
+            "docstring": "Get an iterator over keys that match the given prefix.\n\nArgs:\n    prefix: The prefix to match.\n\nYields:\n    The keys that match the given prefix."
+          },
+          {
+            "name": "ayield_keys",
+            "start_line": 226,
+            "end_line": 241,
+            "async": true,
+            "parameters": [
+              {
+                "name": "self"
+              }
+            ],
+            "returns": "AsyncIterator[str]",
+            "decorators": [],
+            "docstring": "Async get an async iterator over keys that match the given prefix.\n\nArgs:\n    prefix: The prefix to match.\n\nYields:\n    The keys that match the given prefix."
+          }
+        ],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "InMemoryStore",
+        "start_line": 244,
+        "end_line": 264,
+        "bases": [
+          "InMemoryBaseStore[Any]"
+        ],
+        "decorators": [],
+        "docstring": "In-memory store for any type of data.\n\nAttributes:\n    store: The underlying dictionary that stores the key-value pairs.\n\nExamples:\n    ```python\n    from langchain.storage import InMemoryStore\n\n    store = InMemoryStore()\n    store.mset([(\"key1\", \"value1\"), (\"key2\", \"value2\")])\n    store.mget([\"key...",
+        "class_vars": [],
+        "method_count": 0,
+        "methods": [],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "InMemoryByteStore",
+        "start_line": 267,
+        "end_line": 287,
+        "bases": [
+          "InMemoryBaseStore[bytes]"
+        ],
+        "decorators": [],
+        "docstring": "In-memory store for bytes.\n\nAttributes:\n    store: The underlying dictionary that stores the key-value pairs.\n\nExamples:\n    ```python\n    from langchain.storage import InMemoryByteStore\n\n    store = InMemoryByteStore()\n    store.mset([(\"key1\", b\"value1\"), (\"key2\", b\"value2\")])\n    store.mget([\"key1...",
+        "class_vars": [],
+        "method_count": 0,
+        "methods": [],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "InvalidKeyException",
+        "start_line": 290,
+        "end_line": 291,
+        "bases": [
+          "LangChainException"
+        ],
+        "decorators": [],
+        "docstring": "Raised when a key is invalid; e.g., uses incorrect characters.",
+        "class_vars": [],
+        "method_count": 0,
+        "methods": [],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\structured_query.py",
+        "name": "Visitor",
+        "start_line": 15,
+        "end_line": 68,
+        "bases": [
+          "ABC"
+        ],
+        "decorators": [],
+        "docstring": "Defines interface for IR translation using a visitor pattern.",
+        "class_vars": [
+          {
+            "name": "allowed_comparators",
+            "type": "Sequence[Comparator] | None",
+            "value": "None"
+          },
+          {
+            "name": "allowed_operators",
+            "type": "Sequence[Operator] | None",
+            "value": "None"
+          }
+        ],
+        "method_count": 4,
+        "methods": [
+          {
+            "name": "_validate_func",
+            "start_line": 24,
+            "end_line": 44,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "func",
+                "type": "Operator | Comparator"
+              }
+            ],
+            "returns": "None",
+            "decorators": [],
+            "docstring": null
+          },
+          {
+            "name": "visit_operation",
+            "start_line": 47,
+            "end_line": 52,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "operation",
+                "type": "Operation"
+              }
+            ],
+            "returns": "Any",
+            "decorators": [
+              "abstractmethod"
+            ],
+            "docstring": "Translate an Operation.\n\nArgs:\n    operation: Operation to translate."
+          },
+          {
+            "name": "visit_comparison",
+            "start_line": 55,
+            "end_line": 60,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "comparison",
+                "type": "Comparison"
+              }
+            ],
+            "returns": "Any",
+            "decorators": [
+              "abstractmethod"
+            ],
+            "docstring": "Translate a Comparison.\n\nArgs:\n    comparison: Comparison to translate."
+          },
+          {
+            "name": "visit_structured_query",
+            "start_line": 63,
+            "end_line": 68,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "structured_query",
+                "type": "StructuredQuery"
+              }
+            ],
+            "returns": "Any",
+            "decorators": [
+              "abstractmethod"
+            ],
+            "docstring": "Translate a StructuredQuery.\n\nArgs:\n    structured_query: StructuredQuery to translate."
+          }
+        ],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\structured_query.py",
+        "name": "Expr",
+        "start_line": 82,
+        "end_line": 96,
+        "bases": [
+          "BaseModel"
+        ],
+        "decorators": [],
+        "docstring": "Base class for all expressions.",
+        "class_vars": [],
+        "method_count": 1,
+        "methods": [
+          {
+            "name": "accept",
+            "start_line": 85,
+            "end_line": 96,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "visitor",
+                "type": "Visitor"
+              }
+            ],
+            "returns": "Any",
+            "decorators": [],
+            "docstring": "Accept a visitor.\n\nArgs:\n    visitor: visitor to accept.\n\nReturns:\n    result of visiting."
+          }
+        ],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\structured_query.py",
+        "name": "Operator",
+        "start_line": 99,
+        "end_line": 104,
+        "bases": [
+          "str",
+          "Enum"
+        ],
+        "decorators": [],
+        "docstring": "Enumerator of the operations.",
+        "class_vars": [
+          {
+            "name": "AND",
+            "value": "'and'"
+          },
+          {
+            "name": "OR",
+            "value": "'or'"
+          },
+          {
+            "name": "NOT",
+            "value": "'not'"
+          }
+        ],
+        "method_count": 0,
+        "methods": [],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\structured_query.py",
+        "name": "Comparator",
+        "start_line": 107,
+        "end_line": 119,
+        "bases": [
+          "str",
+          "Enum"
+        ],
+        "decorators": [],
+        "docstring": "Enumerator of the comparison operators.",
+        "class_vars": [
+          {
+            "name": "EQ",
+            "value": "'eq'"
+          },
+          {
+            "name": "NE",
+            "value": "'ne'"
+          },
+          {
+            "name": "GT",
+            "value": "'gt'"
+          },
+          {
+            "name": "GTE",
+            "value": "'gte'"
+          },
+          {
+            "name": "LT",
+            "value": "'lt'"
+          },
+          {
+            "name": "LTE",
+            "value": "'lte'"
+          },
+          {
+            "name": "CONTAIN",
+            "value": "'contain'"
+          },
+          {
+            "name": "LIKE",
+            "value": "'like'"
+          },
+          {
+            "name": "IN",
+            "value": "'in'"
+          },
+          {
+            "name": "NIN",
+            "value": "'nin'"
+          }
+        ],
+        "method_count": 0,
+        "methods": [],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\structured_query.py",
+        "name": "FilterDirective",
+        "start_line": 122,
+        "end_line": 123,
+        "bases": [
+          "Expr",
+          "ABC"
+        ],
+        "decorators": [],
+        "docstring": "Filtering expression.",
+        "class_vars": [],
+        "method_count": 0,
+        "methods": [],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\structured_query.py",
+        "name": "Comparison",
+        "start_line": 126,
+        "end_line": 151,
+        "bases": [
+          "FilterDirective"
+        ],
+        "decorators": [],
+        "docstring": "Comparison to a value.",
+        "class_vars": [
+          {
+            "name": "comparator",
+            "type": "Comparator"
+          },
+          {
+            "name": "attribute",
+            "type": "str"
+          },
+          {
+            "name": "value",
+            "type": "Any"
+          }
+        ],
+        "method_count": 1,
+        "methods": [
+          {
+            "name": "__init__",
+            "start_line": 138,
+            "end_line": 151,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "comparator",
+                "type": "Comparator"
+              },
+              {
+                "name": "attribute",
+                "type": "str"
+              },
+              {
+                "name": "value",
+                "type": "Any"
+              },
+              {
+                "name": "**kwargs",
+                "type": "Any"
+              }
+            ],
+            "returns": "None",
+            "decorators": [],
+            "docstring": "Create a Comparison.\n\nArgs:\n    comparator: The comparator to use.\n    attribute: The attribute to compare.\n    value: The value to compare to."
+          }
+        ],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\structured_query.py",
+        "name": "Operation",
+        "start_line": 154,
+        "end_line": 173,
+        "bases": [
+          "FilterDirective"
+        ],
+        "decorators": [],
+        "docstring": "Logical operation over other directives.",
+        "class_vars": [
+          {
+            "name": "operator",
+            "type": "Operator"
+          },
+          {
+            "name": "arguments",
+            "type": "list[FilterDirective]"
+          }
+        ],
+        "method_count": 1,
+        "methods": [
+          {
+            "name": "__init__",
+            "start_line": 163,
+            "end_line": 173,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "operator",
+                "type": "Operator"
+              },
+              {
+                "name": "arguments",
+                "type": "list[FilterDirective]"
+              },
+              {
+                "name": "**kwargs",
+                "type": "Any"
+              }
+            ],
+            "returns": "None",
+            "decorators": [],
+            "docstring": "Create an Operation.\n\nArgs:\n    operator: The operator to use.\n    arguments: The arguments to the operator."
+          }
+        ],
+        "nested_classes": []
+      },
+      {
+        "file": "langchain_core\\structured_query.py",
+        "name": "StructuredQuery",
+        "start_line": 176,
+        "end_line": 203,
+        "bases": [
+          "Expr"
+        ],
+        "decorators": [],
+        "docstring": "Structured query.",
+        "class_vars": [
+          {
+            "name": "query",
+            "type": "str"
+          },
+          {
+            "name": "filter",
+            "type": "FilterDirective | None"
+          },
+          {
+            "name": "limit",
+            "type": "int | None"
+          }
+        ],
+        "method_count": 1,
+        "methods": [
+          {
+            "name": "__init__",
+            "start_line": 188,
+            "end_line": 203,
+            "async": false,
+            "parameters": [
+              {
+                "name": "self"
+              },
+              {
+                "name": "query",
+                "type": "str"
+              },
+              {
+                "name": "filter",
+                "type": "FilterDirective | None"
+              },
+              {
+                "name": "limit",
+                "type": "int | None",
+                "default": "None"
+              },
+              {
+                "name": "**kwargs",
+                "type": "Any"
+              }
+            ],
+            "returns": "None",
+            "decorators": [],
+            "docstring": "Create a StructuredQuery.\n\nArgs:\n    query: The query string.\n    filter: The filtering expression.\n    limit: The limit on the number of results."
+          }
+        ],
+        "nested_classes": []
+      }
+    ],
+    "functions": [
+      {
+        "file": "langchain_core\\agents.py",
+        "name": "_convert_agent_action_to_messages",
+        "start_line": 191,
+        "end_line": 206,
+        "async": false,
+        "parameters": [
+          {
+            "name": "agent_action",
+            "type": "AgentAction"
+          }
+        ],
+        "returns": "Sequence[BaseMessage]",
+        "decorators": [],
+        "docstring": "Convert an agent action to a message.\n\nThis code is used to reconstruct the original AI message from the agent action.\n\nArgs:\n    agent_action: Agent action to convert.\n\nReturns:\n    `AIMessage` that corresponds to the original tool invocation."
+      },
+      {
+        "file": "langchain_core\\agents.py",
+        "name": "_convert_agent_observation_to_messages",
+        "start_line": 209,
+        "end_line": 231,
+        "async": false,
+        "parameters": [
+          {
+            "name": "agent_action",
+            "type": "AgentAction"
+          },
+          {
+            "name": "observation",
+            "type": "Any"
+          }
+        ],
+        "returns": "Sequence[BaseMessage]",
+        "decorators": [],
+        "docstring": "Convert an agent action to a message.\n\nThis code is used to reconstruct the original AI message from the agent action.\n\nArgs:\n    agent_action: Agent action to convert.\n    observation: Observation to convert to a message.\n\nReturns:\n    `AIMessage` that corresponds to the original tool invocation."
+      },
+      {
+        "file": "langchain_core\\agents.py",
+        "name": "_create_function_message",
+        "start_line": 234,
+        "end_line": 256,
+        "async": false,
+        "parameters": [
+          {
+            "name": "agent_action",
+            "type": "AgentAction"
+          },
+          {
+            "name": "observation",
+            "type": "Any"
+          }
+        ],
+        "returns": "FunctionMessage",
+        "decorators": [],
+        "docstring": "Convert agent action and observation into a function message.\n\nArgs:\n    agent_action: the tool invocation request from the agent.\n    observation: the result of the tool invocation.\n\nReturns:\n    `FunctionMessage` that corresponds to the original tool invocation."
+      },
+      {
+        "file": "langchain_core\\agents.py",
+        "name": "__init__",
+        "start_line": 71,
+        "end_line": 79,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "tool",
+            "type": "str"
+          },
+          {
+            "name": "tool_input",
+            "type": "str | dict"
+          },
+          {
+            "name": "log",
+            "type": "str"
+          },
+          {
+            "name": "**kwargs",
+            "type": "Any"
+          }
+        ],
+        "returns": null,
+        "decorators": [],
+        "docstring": "Create an `AgentAction`.\n\nArgs:\n    tool: The name of the tool to execute.\n    tool_input: The input to pass in to the `Tool`.\n    log: Additional information to log about the action."
+      },
+      {
+        "file": "langchain_core\\agents.py",
+        "name": "is_lc_serializable",
+        "start_line": 82,
+        "end_line": 88,
+        "async": false,
+        "parameters": [
+          {
+            "name": "cls"
+          }
+        ],
+        "returns": "bool",
+        "decorators": [
+          "classmethod"
+        ],
+        "docstring": "`AgentAction` is serializable.\n\nReturns:\n    `True`"
+      },
+      {
+        "file": "langchain_core\\agents.py",
+        "name": "get_lc_namespace",
+        "start_line": 91,
+        "end_line": 97,
+        "async": false,
+        "parameters": [
+          {
+            "name": "cls"
+          }
+        ],
+        "returns": "list[str]",
+        "decorators": [
+          "classmethod"
+        ],
+        "docstring": "Get the namespace of the LangChain object.\n\nReturns:\n    `[\"langchain\", \"schema\", \"agent\"]`"
+      },
+      {
+        "file": "langchain_core\\agents.py",
+        "name": "messages",
+        "start_line": 100,
+        "end_line": 102,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "Sequence[BaseMessage]",
+        "decorators": [
+          "property"
+        ],
+        "docstring": "Return the messages that correspond to this action."
+      },
+      {
+        "file": "langchain_core\\agents.py",
+        "name": "messages",
+        "start_line": 141,
+        "end_line": 143,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "Sequence[BaseMessage]",
+        "decorators": [
+          "property"
+        ],
+        "docstring": "Messages that correspond to this observation."
+      },
+      {
+        "file": "langchain_core\\agents.py",
+        "name": "__init__",
+        "start_line": 167,
+        "end_line": 169,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "return_values",
+            "type": "dict"
+          },
+          {
+            "name": "log",
+            "type": "str"
+          },
+          {
+            "name": "**kwargs",
+            "type": "Any"
+          }
+        ],
+        "returns": null,
+        "decorators": [],
+        "docstring": "Override init to support instantiation by position for backward compat."
+      },
+      {
+        "file": "langchain_core\\agents.py",
+        "name": "is_lc_serializable",
+        "start_line": 172,
+        "end_line": 174,
+        "async": false,
+        "parameters": [
+          {
+            "name": "cls"
+          }
+        ],
+        "returns": "bool",
+        "decorators": [
+          "classmethod"
+        ],
+        "docstring": "Return `True` as this class is serializable."
+      },
+      {
+        "file": "langchain_core\\agents.py",
+        "name": "get_lc_namespace",
+        "start_line": 177,
+        "end_line": 183,
+        "async": false,
+        "parameters": [
+          {
+            "name": "cls"
+          }
+        ],
+        "returns": "list[str]",
+        "decorators": [
+          "classmethod"
+        ],
+        "docstring": "Get the namespace of the LangChain object.\n\nReturns:\n    `[\"langchain\", \"schema\", \"agent\"]`"
+      },
+      {
+        "file": "langchain_core\\agents.py",
+        "name": "messages",
+        "start_line": 186,
+        "end_line": 188,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "Sequence[BaseMessage]",
+        "decorators": [
+          "property"
+        ],
+        "docstring": "Messages that correspond to this observation."
+      },
+      {
+        "file": "langchain_core\\caches.py",
+        "name": "lookup",
+        "start_line": 49,
+        "end_line": 70,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "prompt",
+            "type": "str"
+          },
+          {
+            "name": "llm_string",
+            "type": "str"
+          }
+        ],
+        "returns": "RETURN_VAL_TYPE | None",
+        "decorators": [
+          "abstractmethod"
+        ],
+        "docstring": "Look up based on `prompt` and `llm_string`.\n\nA cache implementation is expected to generate a key from the 2-tuple\nof `prompt` and `llm_string` (e.g., by concatenating them with a delimiter).\n\nArgs:\n    prompt: A string representation of the prompt.\n\n        In the case of a chat model, the prompt i..."
+      },
+      {
+        "file": "langchain_core\\caches.py",
+        "name": "update",
+        "start_line": 73,
+        "end_line": 94,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "prompt",
+            "type": "str"
+          },
+          {
+            "name": "llm_string",
+            "type": "str"
+          },
+          {
+            "name": "return_val",
+            "type": "RETURN_VAL_TYPE"
+          }
+        ],
+        "returns": "None",
+        "decorators": [
+          "abstractmethod"
+        ],
+        "docstring": "Update cache based on `prompt` and `llm_string`.\n\nThe `prompt` and `llm_string` are used to generate a key for the cache. The key\nshould match that of the lookup method.\n\nArgs:\n    prompt: A string representation of the prompt.\n\n        In the case of a chat model, the prompt is a non-trivial\n      ..."
+      },
+      {
+        "file": "langchain_core\\caches.py",
+        "name": "clear",
+        "start_line": 97,
+        "end_line": 98,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "**kwargs",
+            "type": "Any"
+          }
+        ],
+        "returns": "None",
+        "decorators": [
+          "abstractmethod"
+        ],
+        "docstring": "Clear cache that can take additional keyword arguments."
+      },
+      {
+        "file": "langchain_core\\caches.py",
+        "name": "alookup",
+        "start_line": 100,
+        "end_line": 123,
+        "async": true,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "prompt",
+            "type": "str"
+          },
+          {
+            "name": "llm_string",
+            "type": "str"
+          }
+        ],
+        "returns": "RETURN_VAL_TYPE | None",
+        "decorators": [],
+        "docstring": "Async look up based on `prompt` and `llm_string`.\n\nA cache implementation is expected to generate a key from the 2-tuple\nof `prompt` and `llm_string` (e.g., by concatenating them with a delimiter).\n\nArgs:\n    prompt: A string representation of the prompt.\n\n        In the case of a chat model, the pr..."
+      },
+      {
+        "file": "langchain_core\\caches.py",
+        "name": "aupdate",
+        "start_line": 125,
+        "end_line": 148,
+        "async": true,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "prompt",
+            "type": "str"
+          },
+          {
+            "name": "llm_string",
+            "type": "str"
+          },
+          {
+            "name": "return_val",
+            "type": "RETURN_VAL_TYPE"
+          }
+        ],
+        "returns": "None",
+        "decorators": [],
+        "docstring": "Async update cache based on `prompt` and `llm_string`.\n\nThe prompt and llm_string are used to generate a key for the cache.\nThe key should match that of the look up method.\n\nArgs:\n    prompt: A string representation of the prompt.\n\n        In the case of a chat model, the prompt is a non-trivial\n   ..."
+      },
+      {
+        "file": "langchain_core\\caches.py",
+        "name": "aclear",
+        "start_line": 150,
+        "end_line": 152,
+        "async": true,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "**kwargs",
+            "type": "Any"
+          }
+        ],
+        "returns": "None",
+        "decorators": [],
+        "docstring": "Async clear cache that can take additional keyword arguments."
+      },
+      {
+        "file": "langchain_core\\caches.py",
+        "name": "__init__",
+        "start_line": 182,
+        "end_line": 199,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "None",
+        "decorators": [],
+        "docstring": "Initialize with empty cache.\n\nArgs:\n    maxsize: The maximum number of items to store in the cache.\n\n        If `None`, the cache has no maximum size.\n\n        If the cache exceeds the maximum size, the oldest items are removed.\n\nRaises:\n    ValueError: If `maxsize` is less than or equal to `0`."
+      },
+      {
+        "file": "langchain_core\\caches.py",
+        "name": "lookup",
+        "start_line": 201,
+        "end_line": 214,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "prompt",
+            "type": "str"
+          },
+          {
+            "name": "llm_string",
+            "type": "str"
+          }
+        ],
+        "returns": "RETURN_VAL_TYPE | None",
+        "decorators": [],
+        "docstring": "Look up based on `prompt` and `llm_string`.\n\nArgs:\n    prompt: A string representation of the prompt.\n\n        In the case of a chat model, the prompt is a non-trivial\n        serialization of the prompt into the language model.\n    llm_string: A string representation of the LLM configuration.\n\nRetu..."
+      },
+      {
+        "file": "langchain_core\\caches.py",
+        "name": "update",
+        "start_line": 216,
+        "end_line": 231,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "prompt",
+            "type": "str"
+          },
+          {
+            "name": "llm_string",
+            "type": "str"
+          },
+          {
+            "name": "return_val",
+            "type": "RETURN_VAL_TYPE"
+          }
+        ],
+        "returns": "None",
+        "decorators": [],
+        "docstring": "Update cache based on `prompt` and `llm_string`.\n\nArgs:\n    prompt: A string representation of the prompt.\n\n        In the case of a chat model, the prompt is a non-trivial\n        serialization of the prompt into the language model.\n    llm_string: A string representation of the LLM configuration.\n..."
+      },
+      {
+        "file": "langchain_core\\caches.py",
+        "name": "clear",
+        "start_line": 234,
+        "end_line": 236,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "**kwargs",
+            "type": "Any"
+          }
+        ],
+        "returns": "None",
+        "decorators": [
+          "override"
+        ],
+        "docstring": "Clear cache."
+      },
+      {
+        "file": "langchain_core\\caches.py",
+        "name": "alookup",
+        "start_line": 238,
+        "end_line": 251,
+        "async": true,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "prompt",
+            "type": "str"
+          },
+          {
+            "name": "llm_string",
+            "type": "str"
+          }
+        ],
+        "returns": "RETURN_VAL_TYPE | None",
+        "decorators": [],
+        "docstring": "Async look up based on `prompt` and `llm_string`.\n\nArgs:\n    prompt: A string representation of the prompt.\n\n        In the case of a chat model, the prompt is a non-trivial\n        serialization of the prompt into the language model.\n    llm_string: A string representation of the LLM configuration...."
+      },
+      {
+        "file": "langchain_core\\caches.py",
+        "name": "aupdate",
+        "start_line": 253,
+        "end_line": 267,
+        "async": true,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "prompt",
+            "type": "str"
+          },
+          {
+            "name": "llm_string",
+            "type": "str"
+          },
+          {
+            "name": "return_val",
+            "type": "RETURN_VAL_TYPE"
+          }
+        ],
+        "returns": "None",
+        "decorators": [],
+        "docstring": "Async update cache based on `prompt` and `llm_string`.\n\nArgs:\n    prompt: A string representation of the prompt.\n\n        In the case of a chat model, the prompt is a non-trivial\n        serialization of the prompt into the language model.\n    llm_string: A string representation of the LLM configura..."
+      },
+      {
+        "file": "langchain_core\\caches.py",
+        "name": "aclear",
+        "start_line": 270,
+        "end_line": 272,
+        "async": true,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "**kwargs",
+            "type": "Any"
+          }
+        ],
+        "returns": "None",
+        "decorators": [
+          "override"
+        ],
+        "docstring": "Async clear cache."
+      },
+      {
+        "file": "langchain_core\\chat_loaders.py",
+        "name": "lazy_load",
+        "start_line": 13,
+        "end_line": 18,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "Iterator[ChatSession]",
+        "decorators": [
+          "abstractmethod"
+        ],
+        "docstring": "Lazy load the chat sessions.\n\nReturns:\n    An iterator of chat sessions."
+      },
+      {
+        "file": "langchain_core\\chat_loaders.py",
+        "name": "load",
+        "start_line": 20,
+        "end_line": 26,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "list[ChatSession]",
+        "decorators": [],
+        "docstring": "Eagerly load the chat sessions into memory.\n\nReturns:\n    A list of chat sessions."
+      },
+      {
+        "file": "langchain_core\\chat_history.py",
+        "name": "aget_messages",
+        "start_line": 99,
+        "end_line": 110,
+        "async": true,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "list[BaseMessage]",
+        "decorators": [],
+        "docstring": "Async version of getting messages.\n\nCan over-ride this method to provide an efficient async implementation.\n\nIn general, fetching messages may involve IO to the underlying persistence\nlayer.\n\nReturns:\n    The messages."
+      },
+      {
+        "file": "langchain_core\\chat_history.py",
+        "name": "add_user_message",
+        "start_line": 112,
+        "end_line": 128,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "message",
+            "type": "HumanMessage | str"
+          }
+        ],
+        "returns": "None",
+        "decorators": [],
+        "docstring": "Convenience method for adding a human message string to the store.\n\n!!! note\n\n    This is a convenience method. Code should favor the bulk `add_messages`\n    interface instead to save on round-trips to the persistence layer.\n\nThis method may be deprecated in a future release.\n\nArgs:\n    message: The..."
+      },
+      {
+        "file": "langchain_core\\chat_history.py",
+        "name": "add_ai_message",
+        "start_line": 130,
+        "end_line": 146,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "message",
+            "type": "AIMessage | str"
+          }
+        ],
+        "returns": "None",
+        "decorators": [],
+        "docstring": "Convenience method for adding an `AIMessage` string to the store.\n\n!!! note\n\n    This is a convenience method. Code should favor the bulk `add_messages`\n    interface instead to save on round-trips to the persistence layer.\n\nThis method may be deprecated in a future release.\n\nArgs:\n    message: The ..."
+      },
+      {
+        "file": "langchain_core\\chat_history.py",
+        "name": "add_message",
+        "start_line": 148,
+        "end_line": 167,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "message",
+            "type": "BaseMessage"
+          }
+        ],
+        "returns": "None",
+        "decorators": [],
+        "docstring": "Add a Message object to the store.\n\nArgs:\n    message: A `BaseMessage` object to store.\n\nRaises:\n    NotImplementedError: If the sub-class has not implemented an efficient\n        `add_messages` method."
+      },
+      {
+        "file": "langchain_core\\chat_history.py",
+        "name": "add_messages",
+        "start_line": 169,
+        "end_line": 179,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "messages",
+            "type": "Sequence[BaseMessage]"
+          }
+        ],
+        "returns": "None",
+        "decorators": [],
+        "docstring": "Add a list of messages.\n\nImplementations should over-ride this method to handle bulk addition of messages\nin an efficient manner to avoid unnecessary round-trips to the underlying store.\n\nArgs:\n    messages: A sequence of `BaseMessage` objects to store."
+      },
+      {
+        "file": "langchain_core\\chat_history.py",
+        "name": "aadd_messages",
+        "start_line": 181,
+        "end_line": 187,
+        "async": true,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "messages",
+            "type": "Sequence[BaseMessage]"
+          }
+        ],
+        "returns": "None",
+        "decorators": [],
+        "docstring": "Async add a list of messages.\n\nArgs:\n    messages: A sequence of `BaseMessage` objects to store."
+      },
+      {
+        "file": "langchain_core\\chat_history.py",
+        "name": "clear",
+        "start_line": 190,
+        "end_line": 191,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "None",
+        "decorators": [
+          "abstractmethod"
+        ],
+        "docstring": "Remove all messages from the store."
+      },
+      {
+        "file": "langchain_core\\chat_history.py",
+        "name": "aclear",
+        "start_line": 193,
+        "end_line": 195,
+        "async": true,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "None",
+        "decorators": [],
+        "docstring": "Async remove all messages from the store."
+      },
+      {
+        "file": "langchain_core\\chat_history.py",
+        "name": "__str__",
+        "start_line": 197,
+        "end_line": 199,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "str",
+        "decorators": [],
+        "docstring": "Return a string representation of the chat history."
+      },
+      {
+        "file": "langchain_core\\chat_history.py",
+        "name": "aget_messages",
+        "start_line": 211,
+        "end_line": 222,
+        "async": true,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "list[BaseMessage]",
+        "decorators": [],
+        "docstring": "Async version of getting messages.\n\nCan over-ride this method to provide an efficient async implementation.\n\nIn general, fetching messages may involve IO to the underlying persistence\nlayer.\n\nReturns:\n    List of messages."
+      },
+      {
+        "file": "langchain_core\\chat_history.py",
+        "name": "add_message",
+        "start_line": 224,
+        "end_line": 230,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "message",
+            "type": "BaseMessage"
+          }
+        ],
+        "returns": "None",
+        "decorators": [],
+        "docstring": "Add a self-created message to the store.\n\nArgs:\n    message: The message to add."
+      },
+      {
+        "file": "langchain_core\\chat_history.py",
+        "name": "aadd_messages",
+        "start_line": 232,
+        "end_line": 238,
+        "async": true,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "messages",
+            "type": "Sequence[BaseMessage]"
+          }
+        ],
+        "returns": "None",
+        "decorators": [],
+        "docstring": "Async add messages to the store.\n\nArgs:\n    messages: The messages to add."
+      },
+      {
+        "file": "langchain_core\\chat_history.py",
+        "name": "clear",
+        "start_line": 240,
+        "end_line": 242,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "None",
+        "decorators": [],
+        "docstring": "Clear all messages from the store."
+      },
+      {
+        "file": "langchain_core\\chat_history.py",
+        "name": "aclear",
+        "start_line": 244,
+        "end_line": 246,
+        "async": true,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "None",
+        "decorators": [],
+        "docstring": "Async clear all messages from the store."
+      },
+      {
+        "file": "langchain_core\\cross_encoders.py",
+        "name": "score",
+        "start_line": 10,
+        "end_line": 18,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "text_pairs",
+            "type": "list[tuple[str, str]]"
+          }
+        ],
+        "returns": "list[float]",
+        "decorators": [
+          "abstractmethod"
+        ],
+        "docstring": "Score pairs' similarity.\n\nArgs:\n    text_pairs: List of pairs of texts.\n\nReturns:\n    List of scores."
+      },
+      {
+        "file": "langchain_core\\env.py",
+        "name": "get_runtime_environment",
+        "start_line": 10,
+        "end_line": 22,
+        "async": false,
+        "parameters": [],
+        "returns": "dict",
+        "decorators": [
+          "lru_cache(maxsize=1)"
+        ],
+        "docstring": "Get information about the LangChain runtime environment.\n\nReturns:\n    A dictionary with information about the runtime environment."
+      },
+      {
+        "file": "langchain_core\\exceptions.py",
+        "name": "create_message",
+        "start_line": 88,
+        "end_line": 111,
+        "async": false,
+        "parameters": [],
+        "returns": "str",
+        "decorators": [],
+        "docstring": "Create a message with a link to the LangChain troubleshooting guide.\n\nArgs:\n    message: The message to display.\n    error_code: The error code to display.\n\nReturns:\n    The full message with the troubleshooting link.\n\nExample:\n    ```python\n    create_message(\n        message=\"Failed to parse outpu..."
+      },
+      {
+        "file": "langchain_core\\exceptions.py",
+        "name": "__init__",
+        "start_line": 25,
+        "end_line": 65,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "error",
+            "type": "Any"
+          },
+          {
+            "name": "observation",
+            "type": "str | None",
+            "default": "None"
+          },
+          {
+            "name": "llm_output",
+            "type": "str | None",
+            "default": "None"
+          },
+          {
+            "name": "send_to_llm",
+            "type": "bool",
+            "default": "False"
+          }
+        ],
+        "returns": null,
+        "decorators": [],
+        "docstring": "Create an `OutputParserException`.\n\nArgs:\n    error: The error that's being re-raised or an error message.\n    observation: String explanation of error which can be passed to a model to\n        try and remediate the issue.\n    llm_output: String model output which is error-ing.\n\n    send_to_llm: Whe..."
+      },
+      {
+        "file": "langchain_core\\prompt_values.py",
+        "name": "is_lc_serializable",
+        "start_line": 32,
+        "end_line": 34,
+        "async": false,
+        "parameters": [
+          {
+            "name": "cls"
+          }
+        ],
+        "returns": "bool",
+        "decorators": [
+          "classmethod"
+        ],
+        "docstring": "Return `True` as this class is serializable."
+      },
+      {
+        "file": "langchain_core\\prompt_values.py",
+        "name": "get_lc_namespace",
+        "start_line": 37,
+        "end_line": 43,
+        "async": false,
+        "parameters": [
+          {
+            "name": "cls"
+          }
+        ],
+        "returns": "list[str]",
+        "decorators": [
+          "classmethod"
+        ],
+        "docstring": "Get the namespace of the LangChain object.\n\nReturns:\n    `[\"langchain\", \"schema\", \"prompt\"]`"
+      },
+      {
+        "file": "langchain_core\\prompt_values.py",
+        "name": "to_string",
+        "start_line": 46,
+        "end_line": 47,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "str",
+        "decorators": [
+          "abstractmethod"
+        ],
+        "docstring": "Return prompt value as string."
+      },
+      {
+        "file": "langchain_core\\prompt_values.py",
+        "name": "to_messages",
+        "start_line": 50,
+        "end_line": 51,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "list[BaseMessage]",
+        "decorators": [
+          "abstractmethod"
+        ],
+        "docstring": "Return prompt as a list of messages."
+      },
+      {
+        "file": "langchain_core\\prompt_values.py",
+        "name": "get_lc_namespace",
+        "start_line": 63,
+        "end_line": 69,
+        "async": false,
+        "parameters": [
+          {
+            "name": "cls"
+          }
+        ],
+        "returns": "list[str]",
+        "decorators": [
+          "classmethod"
+        ],
+        "docstring": "Get the namespace of the LangChain object.\n\nReturns:\n    `[\"langchain\", \"prompts\", \"base\"]`"
+      },
+      {
+        "file": "langchain_core\\prompt_values.py",
+        "name": "to_string",
+        "start_line": 71,
+        "end_line": 73,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "str",
+        "decorators": [],
+        "docstring": "Return prompt as string."
+      },
+      {
+        "file": "langchain_core\\prompt_values.py",
+        "name": "to_messages",
+        "start_line": 75,
+        "end_line": 77,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "list[BaseMessage]",
+        "decorators": [],
+        "docstring": "Return prompt as messages."
+      },
+      {
+        "file": "langchain_core\\prompt_values.py",
+        "name": "to_string",
+        "start_line": 89,
+        "end_line": 91,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "str",
+        "decorators": [],
+        "docstring": "Return prompt as string."
+      },
+      {
+        "file": "langchain_core\\prompt_values.py",
+        "name": "to_messages",
+        "start_line": 93,
+        "end_line": 95,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "list[BaseMessage]",
+        "decorators": [],
+        "docstring": "Return prompt as a list of messages."
+      },
+      {
+        "file": "langchain_core\\prompt_values.py",
+        "name": "get_lc_namespace",
+        "start_line": 98,
+        "end_line": 104,
+        "async": false,
+        "parameters": [
+          {
+            "name": "cls"
+          }
+        ],
+        "returns": "list[str]",
+        "decorators": [
+          "classmethod"
+        ],
+        "docstring": "Get the namespace of the LangChain object.\n\nReturns:\n    `[\"langchain\", \"prompts\", \"chat\"]`"
+      },
+      {
+        "file": "langchain_core\\prompt_values.py",
+        "name": "to_string",
+        "start_line": 143,
+        "end_line": 145,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "str",
+        "decorators": [],
+        "docstring": "Return prompt (image URL) as string."
+      },
+      {
+        "file": "langchain_core\\prompt_values.py",
+        "name": "to_messages",
+        "start_line": 147,
+        "end_line": 149,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "list[BaseMessage]",
+        "decorators": [],
+        "docstring": "Return prompt (image URL) as messages."
+      },
+      {
+        "file": "langchain_core\\retrievers.py",
+        "name": "__init_subclass__",
+        "start_line": 146,
+        "end_line": 165,
+        "async": false,
+        "parameters": [
+          {
+            "name": "cls"
+          },
+          {
+            "name": "**kwargs",
+            "type": "Any"
+          }
+        ],
+        "returns": "None",
+        "decorators": [
+          "override"
+        ],
+        "docstring": null
+      },
+      {
+        "file": "langchain_core\\retrievers.py",
+        "name": "_get_ls_params",
+        "start_line": 167,
+        "end_line": 176,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "**_kwargs",
+            "type": "Any"
+          }
+        ],
+        "returns": "LangSmithRetrieverParams",
+        "decorators": [],
+        "docstring": "Get standard params for tracing."
+      },
+      {
+        "file": "langchain_core\\retrievers.py",
+        "name": "invoke",
+        "start_line": 179,
+        "end_line": 234,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "input",
+            "type": "str"
+          },
+          {
+            "name": "config",
+            "type": "RunnableConfig | None",
+            "default": "None"
+          },
+          {
+            "name": "**kwargs",
+            "type": "Any"
+          }
+        ],
+        "returns": "list[Document]",
+        "decorators": [
+          "override"
+        ],
+        "docstring": "Invoke the retriever to get relevant documents.\n\nMain entry point for synchronous retriever invocations.\n\nArgs:\n    input: The query string.\n    config: Configuration for the retriever.\n    **kwargs: Additional arguments to pass to the retriever.\n\nReturns:\n    List of relevant documents.\n\nExamples:\n..."
+      },
+      {
+        "file": "langchain_core\\retrievers.py",
+        "name": "ainvoke",
+        "start_line": 237,
+        "end_line": 295,
+        "async": true,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "input",
+            "type": "str"
+          },
+          {
+            "name": "config",
+            "type": "RunnableConfig | None",
+            "default": "None"
+          },
+          {
+            "name": "**kwargs",
+            "type": "Any"
+          }
+        ],
+        "returns": "list[Document]",
+        "decorators": [
+          "override"
+        ],
+        "docstring": "Asynchronously invoke the retriever to get relevant documents.\n\nMain entry point for asynchronous retriever invocations.\n\nArgs:\n    input: The query string.\n    config: Configuration for the retriever.\n    **kwargs: Additional arguments to pass to the retriever.\n\nReturns:\n    List of relevant docume..."
+      },
+      {
+        "file": "langchain_core\\retrievers.py",
+        "name": "_get_relevant_documents",
+        "start_line": 298,
+        "end_line": 309,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "query",
+            "type": "str"
+          }
+        ],
+        "returns": "list[Document]",
+        "decorators": [
+          "abstractmethod"
+        ],
+        "docstring": "Get documents relevant to a query.\n\nArgs:\n    query: String to find relevant documents for.\n    run_manager: The callback handler to use.\n\nReturns:\n    List of relevant documents."
+      },
+      {
+        "file": "langchain_core\\retrievers.py",
+        "name": "_aget_relevant_documents",
+        "start_line": 311,
+        "end_line": 328,
+        "async": true,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "query",
+            "type": "str"
+          }
+        ],
+        "returns": "list[Document]",
+        "decorators": [],
+        "docstring": "Asynchronously get documents relevant to a query.\n\nArgs:\n    query: String to find relevant documents for\n    run_manager: The callback handler to use\n\nReturns:\n    List of relevant documents"
+      },
+      {
+        "file": "langchain_core\\retrievers.py",
+        "name": "_aget_relevant_documents",
+        "start_line": 155,
+        "end_line": 158,
+        "async": true,
+        "parameters": [
+          {
+            "name": "self",
+            "type": "Self"
+          },
+          {
+            "name": "query",
+            "type": "str"
+          }
+        ],
+        "returns": "list[Document]",
+        "decorators": [],
+        "docstring": null
+      },
+      {
+        "file": "langchain_core\\globals.py",
+        "name": "set_verbose",
+        "start_line": 18,
+        "end_line": 25,
+        "async": false,
+        "parameters": [
+          {
+            "name": "value",
+            "type": "bool"
+          }
+        ],
+        "returns": "None",
+        "decorators": [],
+        "docstring": "Set a new value for the `verbose` global setting.\n\nArgs:\n    value: The new value for the `verbose` global setting."
+      },
+      {
+        "file": "langchain_core\\globals.py",
+        "name": "get_verbose",
+        "start_line": 28,
+        "end_line": 34,
+        "async": false,
+        "parameters": [],
+        "returns": "bool",
+        "decorators": [],
+        "docstring": "Get the value of the `verbose` global setting.\n\nReturns:\n    The value of the `verbose` global setting."
+      },
+      {
+        "file": "langchain_core\\globals.py",
+        "name": "set_debug",
+        "start_line": 37,
+        "end_line": 44,
+        "async": false,
+        "parameters": [
+          {
+            "name": "value",
+            "type": "bool"
+          }
+        ],
+        "returns": "None",
+        "decorators": [],
+        "docstring": "Set a new value for the `debug` global setting.\n\nArgs:\n    value: The new value for the `debug` global setting."
+      },
+      {
+        "file": "langchain_core\\globals.py",
+        "name": "get_debug",
+        "start_line": 47,
+        "end_line": 53,
+        "async": false,
+        "parameters": [],
+        "returns": "bool",
+        "decorators": [],
+        "docstring": "Get the value of the `debug` global setting.\n\nReturns:\n    The value of the `debug` global setting."
+      },
+      {
+        "file": "langchain_core\\globals.py",
+        "name": "set_llm_cache",
+        "start_line": 56,
+        "end_line": 63,
+        "async": false,
+        "parameters": [
+          {
+            "name": "value",
+            "type": "Optional['BaseCache']"
+          }
+        ],
+        "returns": "None",
+        "decorators": [],
+        "docstring": "Set a new LLM cache, overwriting the previous value, if any.\n\nArgs:\n    value: The new LLM cache to use. If `None`, the LLM cache is disabled."
+      },
+      {
+        "file": "langchain_core\\globals.py",
+        "name": "get_llm_cache",
+        "start_line": 66,
+        "end_line": 72,
+        "async": false,
+        "parameters": [],
+        "returns": "Optional['BaseCache']",
+        "decorators": [],
+        "docstring": "Get the value of the `llm_cache` global setting.\n\nReturns:\n    The value of the `llm_cache` global setting."
+      },
+      {
+        "file": "langchain_core\\rate_limiters.py",
+        "name": "acquire",
+        "start_line": 29,
+        "end_line": 45,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "bool",
+        "decorators": [
+          "abstractmethod"
+        ],
+        "docstring": "Attempt to acquire the necessary tokens for the rate limiter.\n\nThis method blocks until the required tokens are available if `blocking`\nis set to `True`.\n\nIf `blocking` is set to `False`, the method will immediately return the result\nof the attempt to acquire the tokens.\n\nArgs:\n    blocking: If `Tru..."
+      },
+      {
+        "file": "langchain_core\\rate_limiters.py",
+        "name": "aacquire",
+        "start_line": 48,
+        "end_line": 64,
+        "async": true,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "bool",
+        "decorators": [
+          "abstractmethod"
+        ],
+        "docstring": "Attempt to acquire the necessary tokens for the rate limiter.\n\nThis method blocks until the required tokens are available if `blocking`\nis set to `True`.\n\nIf `blocking` is set to `False`, the method will immediately return the result\nof the attempt to acquire the tokens.\n\nArgs:\n    blocking: If `Tru..."
+      },
+      {
+        "file": "langchain_core\\rate_limiters.py",
+        "name": "__init__",
+        "start_line": 120,
+        "end_line": 163,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "None",
+        "decorators": [],
+        "docstring": "A rate limiter based on a token bucket.\n\nThese tokens have nothing to do with LLM tokens. They are just\na way to keep track of how many requests can be made at a given time.\n\nThis rate limiter is designed to work in a threaded environment.\n\nIt works by filling up a bucket with tokens at a given rate..."
+      },
+      {
+        "file": "langchain_core\\rate_limiters.py",
+        "name": "_consume",
+        "start_line": 165,
+        "end_line": 195,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "bool",
+        "decorators": [],
+        "docstring": "Try to consume a token.\n\nReturns:\n    True means that the tokens were consumed, and the caller can proceed to\n    make the request. A False means that the tokens were not consumed, and\n    the caller should try again later."
+      },
+      {
+        "file": "langchain_core\\rate_limiters.py",
+        "name": "acquire",
+        "start_line": 197,
+        "end_line": 220,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "bool",
+        "decorators": [],
+        "docstring": "Attempt to acquire a token from the rate limiter.\n\nThis method blocks until the required tokens are available if `blocking`\nis set to `True`.\n\nIf `blocking` is set to `False`, the method will immediately return the result\nof the attempt to acquire the tokens.\n\nArgs:\n    blocking: If `True`, the meth..."
+      },
+      {
+        "file": "langchain_core\\rate_limiters.py",
+        "name": "aacquire",
+        "start_line": 222,
+        "end_line": 250,
+        "async": true,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "bool",
+        "decorators": [],
+        "docstring": "Attempt to acquire a token from the rate limiter. Async version.\n\nThis method blocks until the required tokens are available if `blocking`\nis set to `True`.\n\nIf `blocking` is set to `False`, the method will immediately return the result\nof the attempt to acquire the tokens.\n\nArgs:\n    blocking: If `..."
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "mget",
+        "start_line": 81,
+        "end_line": 90,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "keys",
+            "type": "Sequence[K]"
+          }
+        ],
+        "returns": "list[V | None]",
+        "decorators": [
+          "abstractmethod"
+        ],
+        "docstring": "Get the values associated with the given keys.\n\nArgs:\n    keys: A sequence of keys.\n\nReturns:\n    A sequence of optional values associated with the keys.\n        If a key is not found, the corresponding value will be `None`."
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "amget",
+        "start_line": 92,
+        "end_line": 102,
+        "async": true,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "keys",
+            "type": "Sequence[K]"
+          }
+        ],
+        "returns": "list[V | None]",
+        "decorators": [],
+        "docstring": "Async get the values associated with the given keys.\n\nArgs:\n    keys: A sequence of keys.\n\nReturns:\n    A sequence of optional values associated with the keys.\n        If a key is not found, the corresponding value will be `None`."
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "mset",
+        "start_line": 105,
+        "end_line": 110,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "key_value_pairs",
+            "type": "Sequence[tuple[K, V]]"
+          }
+        ],
+        "returns": "None",
+        "decorators": [
+          "abstractmethod"
+        ],
+        "docstring": "Set the values for the given keys.\n\nArgs:\n    key_value_pairs: A sequence of key-value pairs."
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "amset",
+        "start_line": 112,
+        "end_line": 118,
+        "async": true,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "key_value_pairs",
+            "type": "Sequence[tuple[K, V]]"
+          }
+        ],
+        "returns": "None",
+        "decorators": [],
+        "docstring": "Async set the values for the given keys.\n\nArgs:\n    key_value_pairs: A sequence of key-value pairs."
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "mdelete",
+        "start_line": 121,
+        "end_line": 126,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "keys",
+            "type": "Sequence[K]"
+          }
+        ],
+        "returns": "None",
+        "decorators": [
+          "abstractmethod"
+        ],
+        "docstring": "Delete the given keys and their associated values.\n\nArgs:\n    keys: A sequence of keys to delete."
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "amdelete",
+        "start_line": 128,
+        "end_line": 134,
+        "async": true,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "keys",
+            "type": "Sequence[K]"
+          }
+        ],
+        "returns": "None",
+        "decorators": [],
+        "docstring": "Async delete the given keys and their associated values.\n\nArgs:\n    keys: A sequence of keys to delete."
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "yield_keys",
+        "start_line": 137,
+        "end_line": 148,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "Iterator[K] | Iterator[str]",
+        "decorators": [
+          "abstractmethod"
+        ],
+        "docstring": "Get an iterator over keys that match the given prefix.\n\nArgs:\n    prefix: The prefix to match.\n\nYields:\n    An iterator over keys that match the given prefix.\n\n        This method is allowed to return an iterator over either K or str\n        depending on what makes more sense for the given store."
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "ayield_keys",
+        "start_line": 150,
+        "end_line": 170,
+        "async": true,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "AsyncIterator[K] | AsyncIterator[str]",
+        "decorators": [],
+        "docstring": "Async get an iterator over keys that match the given prefix.\n\nArgs:\n    prefix: The prefix to match.\n\nYields:\n    The keys that match the given prefix.\n\n        This method is allowed to return an iterator over either K or str\n        depending on what makes more sense for the given store."
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "__init__",
+        "start_line": 179,
+        "end_line": 181,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "None",
+        "decorators": [],
+        "docstring": "Initialize an empty store."
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "mget",
+        "start_line": 184,
+        "end_line": 185,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "keys",
+            "type": "Sequence[str]"
+          }
+        ],
+        "returns": "list[V | None]",
+        "decorators": [
+          "override"
+        ],
+        "docstring": null
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "amget",
+        "start_line": 188,
+        "end_line": 189,
+        "async": true,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "keys",
+            "type": "Sequence[str]"
+          }
+        ],
+        "returns": "list[V | None]",
+        "decorators": [
+          "override"
+        ],
+        "docstring": null
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "mset",
+        "start_line": 192,
+        "end_line": 194,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "key_value_pairs",
+            "type": "Sequence[tuple[str, V]]"
+          }
+        ],
+        "returns": "None",
+        "decorators": [
+          "override"
+        ],
+        "docstring": null
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "amset",
+        "start_line": 197,
+        "end_line": 198,
+        "async": true,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "key_value_pairs",
+            "type": "Sequence[tuple[str, V]]"
+          }
+        ],
+        "returns": "None",
+        "decorators": [
+          "override"
+        ],
+        "docstring": null
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "mdelete",
+        "start_line": 201,
+        "end_line": 204,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "keys",
+            "type": "Sequence[str]"
+          }
+        ],
+        "returns": "None",
+        "decorators": [
+          "override"
+        ],
+        "docstring": null
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "amdelete",
+        "start_line": 207,
+        "end_line": 208,
+        "async": true,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "keys",
+            "type": "Sequence[str]"
+          }
+        ],
+        "returns": "None",
+        "decorators": [
+          "override"
+        ],
+        "docstring": null
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "yield_keys",
+        "start_line": 210,
+        "end_line": 224,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "Iterator[str]",
+        "decorators": [],
+        "docstring": "Get an iterator over keys that match the given prefix.\n\nArgs:\n    prefix: The prefix to match.\n\nYields:\n    The keys that match the given prefix."
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "ayield_keys",
+        "start_line": 226,
+        "end_line": 241,
+        "async": true,
+        "parameters": [
+          {
+            "name": "self"
+          }
+        ],
+        "returns": "AsyncIterator[str]",
+        "decorators": [],
+        "docstring": "Async get an async iterator over keys that match the given prefix.\n\nArgs:\n    prefix: The prefix to match.\n\nYields:\n    The keys that match the given prefix."
+      },
+      {
+        "file": "langchain_core\\_import_utils.py",
+        "name": "import_attr",
+        "start_line": 4,
+        "end_line": 41,
+        "async": false,
+        "parameters": [
+          {
+            "name": "attr_name",
+            "type": "str"
+          },
+          {
+            "name": "module_name",
+            "type": "str | None"
+          },
+          {
+            "name": "package",
+            "type": "str | None"
+          }
+        ],
+        "returns": "object",
+        "decorators": [],
+        "docstring": "Import an attribute from a module located in a package.\n\nThis utility function is used in custom `__getattr__` methods within `__init__.py`\nfiles to dynamically import attributes.\n\nArgs:\n    attr_name: The name of the attribute to import.\n    module_name: The name of the module to import from.\n\n    ..."
+      },
+      {
+        "file": "langchain_core\\sys_info.py",
+        "name": "_get_sub_deps",
+        "start_line": 11,
+        "end_line": 33,
+        "async": false,
+        "parameters": [
+          {
+            "name": "packages",
+            "type": "Sequence[str]"
+          }
+        ],
+        "returns": "list[str]",
+        "decorators": [],
+        "docstring": "Get any specified sub-dependencies."
+      },
+      {
+        "file": "langchain_core\\sys_info.py",
+        "name": "print_sys_info",
+        "start_line": 36,
+        "end_line": 133,
+        "async": false,
+        "parameters": [],
+        "returns": "None",
+        "decorators": [],
+        "docstring": "Print information about the environment for debugging purposes.\n\nArgs:\n    additional_pkgs: Additional packages to include in the output."
+      },
+      {
+        "file": "scripts\\check_version.py",
+        "name": "get_pyproject_version",
+        "start_line": 13,
+        "end_line": 17,
+        "async": false,
+        "parameters": [
+          {
+            "name": "pyproject_path",
+            "type": "Path"
+          }
+        ],
+        "returns": "str | None",
+        "decorators": [],
+        "docstring": "Extract version from `pyproject.toml`."
+      },
+      {
+        "file": "scripts\\check_version.py",
+        "name": "get_version_py_version",
+        "start_line": 20,
+        "end_line": 24,
+        "async": false,
+        "parameters": [
+          {
+            "name": "version_path",
+            "type": "Path"
+          }
+        ],
+        "returns": "str | None",
+        "decorators": [],
+        "docstring": "Extract `VERSION` from `version.py`."
+      },
+      {
+        "file": "scripts\\check_version.py",
+        "name": "main",
+        "start_line": 27,
+        "end_line": 61,
+        "async": false,
+        "parameters": [],
+        "returns": "int",
+        "decorators": [],
+        "docstring": "Validate version consistency."
+      },
+      {
+        "file": "langchain_core\\structured_query.py",
+        "name": "_to_snake_case",
+        "start_line": 71,
+        "end_line": 79,
+        "async": false,
+        "parameters": [
+          {
+            "name": "name",
+            "type": "str"
+          }
+        ],
+        "returns": "str",
+        "decorators": [],
+        "docstring": "Convert a name into snake_case."
+      },
+      {
+        "file": "langchain_core\\structured_query.py",
+        "name": "_validate_func",
+        "start_line": 24,
+        "end_line": 44,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "func",
+            "type": "Operator | Comparator"
+          }
+        ],
+        "returns": "None",
+        "decorators": [],
+        "docstring": null
+      },
+      {
+        "file": "langchain_core\\structured_query.py",
+        "name": "visit_operation",
+        "start_line": 47,
+        "end_line": 52,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "operation",
+            "type": "Operation"
+          }
+        ],
+        "returns": "Any",
+        "decorators": [
+          "abstractmethod"
+        ],
+        "docstring": "Translate an Operation.\n\nArgs:\n    operation: Operation to translate."
+      },
+      {
+        "file": "langchain_core\\structured_query.py",
+        "name": "visit_comparison",
+        "start_line": 55,
+        "end_line": 60,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "comparison",
+            "type": "Comparison"
+          }
+        ],
+        "returns": "Any",
+        "decorators": [
+          "abstractmethod"
+        ],
+        "docstring": "Translate a Comparison.\n\nArgs:\n    comparison: Comparison to translate."
+      },
+      {
+        "file": "langchain_core\\structured_query.py",
+        "name": "visit_structured_query",
+        "start_line": 63,
+        "end_line": 68,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "structured_query",
+            "type": "StructuredQuery"
+          }
+        ],
+        "returns": "Any",
+        "decorators": [
+          "abstractmethod"
+        ],
+        "docstring": "Translate a StructuredQuery.\n\nArgs:\n    structured_query: StructuredQuery to translate."
+      },
+      {
+        "file": "langchain_core\\structured_query.py",
+        "name": "accept",
+        "start_line": 85,
+        "end_line": 96,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "visitor",
+            "type": "Visitor"
+          }
+        ],
+        "returns": "Any",
+        "decorators": [],
+        "docstring": "Accept a visitor.\n\nArgs:\n    visitor: visitor to accept.\n\nReturns:\n    result of visiting."
+      },
+      {
+        "file": "langchain_core\\structured_query.py",
+        "name": "__init__",
+        "start_line": 138,
+        "end_line": 151,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "comparator",
+            "type": "Comparator"
+          },
+          {
+            "name": "attribute",
+            "type": "str"
+          },
+          {
+            "name": "value",
+            "type": "Any"
+          },
+          {
+            "name": "**kwargs",
+            "type": "Any"
+          }
+        ],
+        "returns": "None",
+        "decorators": [],
+        "docstring": "Create a Comparison.\n\nArgs:\n    comparator: The comparator to use.\n    attribute: The attribute to compare.\n    value: The value to compare to."
+      },
+      {
+        "file": "langchain_core\\structured_query.py",
+        "name": "__init__",
+        "start_line": 163,
+        "end_line": 173,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "operator",
+            "type": "Operator"
+          },
+          {
+            "name": "arguments",
+            "type": "list[FilterDirective]"
+          },
+          {
+            "name": "**kwargs",
+            "type": "Any"
+          }
+        ],
+        "returns": "None",
+        "decorators": [],
+        "docstring": "Create an Operation.\n\nArgs:\n    operator: The operator to use.\n    arguments: The arguments to the operator."
+      },
+      {
+        "file": "langchain_core\\structured_query.py",
+        "name": "__init__",
+        "start_line": 188,
+        "end_line": 203,
+        "async": false,
+        "parameters": [
+          {
+            "name": "self"
+          },
+          {
+            "name": "query",
+            "type": "str"
+          },
+          {
+            "name": "filter",
+            "type": "FilterDirective | None"
+          },
+          {
+            "name": "limit",
+            "type": "int | None",
+            "default": "None"
+          },
+          {
+            "name": "**kwargs",
+            "type": "Any"
+          }
+        ],
+        "returns": "None",
+        "decorators": [],
+        "docstring": "Create a StructuredQuery.\n\nArgs:\n    query: The query string.\n    filter: The filtering expression.\n    limit: The limit on the number of results."
+      }
+    ],
+    "imports": [
+      {
+        "file": "langchain_core\\agents.py",
+        "name": "__future__.annotations",
+        "alias": null,
+        "start_line": 29,
+        "type": "import_from",
+        "module": "__future__"
+      },
+      {
+        "file": "langchain_core\\agents.py",
+        "name": "json",
+        "alias": null,
+        "start_line": 31,
+        "type": "import"
+      },
+      {
+        "file": "langchain_core\\agents.py",
+        "name": "collections.abc.Sequence",
+        "alias": null,
+        "start_line": 32,
+        "type": "import_from",
+        "module": "collections.abc"
+      },
+      {
+        "file": "langchain_core\\agents.py",
+        "name": "typing.Any",
+        "alias": null,
+        "start_line": 33,
+        "type": "import_from",
+        "module": "typing"
+      },
+      {
+        "file": "langchain_core\\agents.py",
+        "name": "typing.Literal",
+        "alias": null,
+        "start_line": 33,
+        "type": "import_from",
+        "module": "typing"
+      },
+      {
+        "file": "langchain_core\\agents.py",
+        "name": "langchain_core.load.serializable.Serializable",
+        "alias": null,
+        "start_line": 35,
+        "type": "import_from",
+        "module": "langchain_core.load.serializable"
+      },
+      {
+        "file": "langchain_core\\agents.py",
+        "name": "langchain_core.messages.AIMessage",
+        "alias": null,
+        "start_line": 36,
+        "type": "import_from",
+        "module": "langchain_core.messages"
+      },
+      {
+        "file": "langchain_core\\agents.py",
+        "name": "langchain_core.messages.BaseMessage",
+        "alias": null,
+        "start_line": 36,
+        "type": "import_from",
+        "module": "langchain_core.messages"
+      },
+      {
+        "file": "langchain_core\\agents.py",
+        "name": "langchain_core.messages.FunctionMessage",
+        "alias": null,
+        "start_line": 36,
+        "type": "import_from",
+        "module": "langchain_core.messages"
+      },
+      {
+        "file": "langchain_core\\agents.py",
+        "name": "langchain_core.messages.HumanMessage",
+        "alias": null,
+        "start_line": 36,
+        "type": "import_from",
+        "module": "langchain_core.messages"
+      },
+      {
+        "file": "langchain_core\\caches.py",
+        "name": "__future__.annotations",
+        "alias": null,
+        "start_line": 18,
+        "type": "import_from",
+        "module": "__future__"
+      },
+      {
+        "file": "langchain_core\\caches.py",
+        "name": "abc.ABC",
+        "alias": null,
+        "start_line": 20,
+        "type": "import_from",
+        "module": "abc"
+      },
+      {
+        "file": "langchain_core\\caches.py",
+        "name": "abc.abstractmethod",
+        "alias": null,
+        "start_line": 20,
+        "type": "import_from",
+        "module": "abc"
+      },
+      {
+        "file": "langchain_core\\caches.py",
+        "name": "collections.abc.Sequence",
+        "alias": null,
+        "start_line": 21,
+        "type": "import_from",
+        "module": "collections.abc"
+      },
+      {
+        "file": "langchain_core\\caches.py",
+        "name": "typing.Any",
+        "alias": null,
+        "start_line": 22,
+        "type": "import_from",
+        "module": "typing"
+      },
+      {
+        "file": "langchain_core\\caches.py",
+        "name": "typing_extensions.override",
+        "alias": null,
+        "start_line": 24,
+        "type": "import_from",
+        "module": "typing_extensions"
+      },
+      {
+        "file": "langchain_core\\caches.py",
+        "name": "langchain_core.outputs.Generation",
+        "alias": null,
+        "start_line": 26,
+        "type": "import_from",
+        "module": "langchain_core.outputs"
+      },
+      {
+        "file": "langchain_core\\caches.py",
+        "name": "langchain_core.runnables.run_in_executor",
+        "alias": null,
+        "start_line": 27,
+        "type": "import_from",
+        "module": "langchain_core.runnables"
+      },
+      {
+        "file": "langchain_core\\chat_loaders.py",
+        "name": "abc.ABC",
+        "alias": null,
+        "start_line": 3,
+        "type": "import_from",
+        "module": "abc"
+      },
+      {
+        "file": "langchain_core\\chat_loaders.py",
+        "name": "abc.abstractmethod",
+        "alias": null,
+        "start_line": 3,
+        "type": "import_from",
+        "module": "abc"
+      },
+      {
+        "file": "langchain_core\\chat_loaders.py",
+        "name": "collections.abc.Iterator",
+        "alias": null,
+        "start_line": 4,
+        "type": "import_from",
+        "module": "collections.abc"
+      },
+      {
+        "file": "langchain_core\\chat_loaders.py",
+        "name": "langchain_core.chat_sessions.ChatSession",
+        "alias": null,
+        "start_line": 6,
+        "type": "import_from",
+        "module": "langchain_core.chat_sessions"
+      },
+      {
+        "file": "langchain_core\\chat_history.py",
+        "name": "__future__.annotations",
+        "alias": null,
+        "start_line": 3,
+        "type": "import_from",
+        "module": "__future__"
+      },
+      {
+        "file": "langchain_core\\chat_history.py",
+        "name": "abc.ABC",
+        "alias": null,
+        "start_line": 5,
+        "type": "import_from",
+        "module": "abc"
+      },
+      {
+        "file": "langchain_core\\chat_history.py",
+        "name": "abc.abstractmethod",
+        "alias": null,
+        "start_line": 5,
+        "type": "import_from",
+        "module": "abc"
+      },
+      {
+        "file": "langchain_core\\chat_history.py",
+        "name": "typing.TYPE_CHECKING",
+        "alias": null,
+        "start_line": 6,
+        "type": "import_from",
+        "module": "typing"
+      },
+      {
+        "file": "langchain_core\\chat_history.py",
+        "name": "pydantic.BaseModel",
+        "alias": null,
+        "start_line": 8,
+        "type": "import_from",
+        "module": "pydantic"
+      },
+      {
+        "file": "langchain_core\\chat_history.py",
+        "name": "pydantic.Field",
+        "alias": null,
+        "start_line": 8,
+        "type": "import_from",
+        "module": "pydantic"
+      },
+      {
+        "file": "langchain_core\\chat_history.py",
+        "name": "langchain_core.messages.AIMessage",
+        "alias": null,
+        "start_line": 10,
+        "type": "import_from",
+        "module": "langchain_core.messages"
+      },
+      {
+        "file": "langchain_core\\chat_history.py",
+        "name": "langchain_core.messages.BaseMessage",
+        "alias": null,
+        "start_line": 10,
+        "type": "import_from",
+        "module": "langchain_core.messages"
+      },
+      {
+        "file": "langchain_core\\chat_history.py",
+        "name": "langchain_core.messages.HumanMessage",
+        "alias": null,
+        "start_line": 10,
+        "type": "import_from",
+        "module": "langchain_core.messages"
+      },
+      {
+        "file": "langchain_core\\chat_history.py",
+        "name": "langchain_core.messages.get_buffer_string",
+        "alias": null,
+        "start_line": 10,
+        "type": "import_from",
+        "module": "langchain_core.messages"
+      },
+      {
+        "file": "langchain_core\\chat_history.py",
+        "name": "langchain_core.runnables.config.run_in_executor",
+        "alias": null,
+        "start_line": 16,
+        "type": "import_from",
+        "module": "langchain_core.runnables.config"
+      },
+      {
+        "file": "langchain_core\\chat_history.py",
+        "name": "collections.abc.Sequence",
+        "alias": null,
+        "start_line": 19,
+        "type": "import_from",
+        "module": "collections.abc"
+      },
+      {
+        "file": "langchain_core\\chat_sessions.py",
+        "name": "collections.abc.Sequence",
+        "alias": null,
+        "start_line": 3,
+        "type": "import_from",
+        "module": "collections.abc"
+      },
+      {
+        "file": "langchain_core\\chat_sessions.py",
+        "name": "typing.TypedDict",
+        "alias": null,
+        "start_line": 4,
+        "type": "import_from",
+        "module": "typing"
+      },
+      {
+        "file": "langchain_core\\chat_sessions.py",
+        "name": "langchain_core.messages.BaseMessage",
+        "alias": null,
+        "start_line": 6,
+        "type": "import_from",
+        "module": "langchain_core.messages"
+      },
+      {
+        "file": "langchain_core\\cross_encoders.py",
+        "name": "abc.ABC",
+        "alias": null,
+        "start_line": 3,
+        "type": "import_from",
+        "module": "abc"
+      },
+      {
+        "file": "langchain_core\\cross_encoders.py",
+        "name": "abc.abstractmethod",
+        "alias": null,
+        "start_line": 3,
+        "type": "import_from",
+        "module": "abc"
+      },
+      {
+        "file": "langchain_core\\env.py",
+        "name": "platform",
+        "alias": null,
+        "start_line": 3,
+        "type": "import"
+      },
+      {
+        "file": "langchain_core\\env.py",
+        "name": "functools.lru_cache",
+        "alias": null,
+        "start_line": 4,
+        "type": "import_from",
+        "module": "functools"
+      },
+      {
+        "file": "langchain_core\\env.py",
+        "name": "langchain_core.__version__",
+        "alias": null,
+        "start_line": 6,
+        "type": "import_from",
+        "module": "langchain_core"
+      },
+      {
+        "file": "langchain_core\\exceptions.py",
+        "name": "enum.Enum",
+        "alias": null,
+        "start_line": 3,
+        "type": "import_from",
+        "module": "enum"
+      },
+      {
+        "file": "langchain_core\\exceptions.py",
+        "name": "typing.Any",
+        "alias": null,
+        "start_line": 4,
+        "type": "import_from",
+        "module": "typing"
+      },
+      {
+        "file": "langchain_core\\prompt_values.py",
+        "name": "__future__.annotations",
+        "alias": null,
+        "start_line": 7,
+        "type": "import_from",
+        "module": "__future__"
+      },
+      {
+        "file": "langchain_core\\prompt_values.py",
+        "name": "abc.ABC",
+        "alias": null,
+        "start_line": 9,
+        "type": "import_from",
+        "module": "abc"
+      },
+      {
+        "file": "langchain_core\\prompt_values.py",
+        "name": "abc.abstractmethod",
+        "alias": null,
+        "start_line": 9,
+        "type": "import_from",
+        "module": "abc"
+      },
+      {
+        "file": "langchain_core\\prompt_values.py",
+        "name": "collections.abc.Sequence",
+        "alias": null,
+        "start_line": 10,
+        "type": "import_from",
+        "module": "collections.abc"
+      },
+      {
+        "file": "langchain_core\\prompt_values.py",
+        "name": "typing.Literal",
+        "alias": null,
+        "start_line": 11,
+        "type": "import_from",
+        "module": "typing"
+      },
+      {
+        "file": "langchain_core\\prompt_values.py",
+        "name": "typing.cast",
+        "alias": null,
+        "start_line": 11,
+        "type": "import_from",
+        "module": "typing"
+      },
+      {
+        "file": "langchain_core\\prompt_values.py",
+        "name": "typing_extensions.TypedDict",
+        "alias": null,
+        "start_line": 13,
+        "type": "import_from",
+        "module": "typing_extensions"
+      },
+      {
+        "file": "langchain_core\\prompt_values.py",
+        "name": "langchain_core.load.serializable.Serializable",
+        "alias": null,
+        "start_line": 15,
+        "type": "import_from",
+        "module": "langchain_core.load.serializable"
+      },
+      {
+        "file": "langchain_core\\prompt_values.py",
+        "name": "langchain_core.messages.AnyMessage",
+        "alias": null,
+        "start_line": 16,
+        "type": "import_from",
+        "module": "langchain_core.messages"
+      },
+      {
+        "file": "langchain_core\\prompt_values.py",
+        "name": "langchain_core.messages.BaseMessage",
+        "alias": null,
+        "start_line": 16,
+        "type": "import_from",
+        "module": "langchain_core.messages"
+      },
+      {
+        "file": "langchain_core\\prompt_values.py",
+        "name": "langchain_core.messages.HumanMessage",
+        "alias": null,
+        "start_line": 16,
+        "type": "import_from",
+        "module": "langchain_core.messages"
+      },
+      {
+        "file": "langchain_core\\prompt_values.py",
+        "name": "langchain_core.messages.get_buffer_string",
+        "alias": null,
+        "start_line": 16,
+        "type": "import_from",
+        "module": "langchain_core.messages"
+      },
+      {
+        "file": "langchain_core\\retrievers.py",
+        "name": "__future__.annotations",
+        "alias": null,
+        "start_line": 8,
+        "type": "import_from",
+        "module": "__future__"
+      },
+      {
+        "file": "langchain_core\\retrievers.py",
+        "name": "abc.ABC",
+        "alias": null,
+        "start_line": 10,
+        "type": "import_from",
+        "module": "abc"
+      },
+      {
+        "file": "langchain_core\\retrievers.py",
+        "name": "abc.abstractmethod",
+        "alias": null,
+        "start_line": 10,
+        "type": "import_from",
+        "module": "abc"
+      },
+      {
+        "file": "langchain_core\\retrievers.py",
+        "name": "inspect.signature",
+        "alias": null,
+        "start_line": 11,
+        "type": "import_from",
+        "module": "inspect"
+      },
+      {
+        "file": "langchain_core\\retrievers.py",
+        "name": "typing.TYPE_CHECKING",
+        "alias": null,
+        "start_line": 12,
+        "type": "import_from",
+        "module": "typing"
+      },
+      {
+        "file": "langchain_core\\retrievers.py",
+        "name": "typing.Any",
+        "alias": null,
+        "start_line": 12,
+        "type": "import_from",
+        "module": "typing"
+      },
+      {
+        "file": "langchain_core\\retrievers.py",
+        "name": "pydantic.ConfigDict",
+        "alias": null,
+        "start_line": 14,
+        "type": "import_from",
+        "module": "pydantic"
+      },
+      {
+        "file": "langchain_core\\retrievers.py",
+        "name": "typing_extensions.Self",
+        "alias": null,
+        "start_line": 15,
+        "type": "import_from",
+        "module": "typing_extensions"
+      },
+      {
+        "file": "langchain_core\\retrievers.py",
+        "name": "typing_extensions.TypedDict",
+        "alias": null,
+        "start_line": 15,
+        "type": "import_from",
+        "module": "typing_extensions"
+      },
+      {
+        "file": "langchain_core\\retrievers.py",
+        "name": "typing_extensions.override",
+        "alias": null,
+        "start_line": 15,
+        "type": "import_from",
+        "module": "typing_extensions"
+      },
+      {
+        "file": "langchain_core\\retrievers.py",
+        "name": "langchain_core.callbacks.manager.AsyncCallbackManager",
+        "alias": null,
+        "start_line": 17,
+        "type": "import_from",
+        "module": "langchain_core.callbacks.manager"
+      },
+      {
+        "file": "langchain_core\\retrievers.py",
+        "name": "langchain_core.callbacks.manager.CallbackManager",
+        "alias": null,
+        "start_line": 17,
+        "type": "import_from",
+        "module": "langchain_core.callbacks.manager"
+      },
+      {
+        "file": "langchain_core\\retrievers.py",
+        "name": "langchain_core.documents.Document",
+        "alias": null,
+        "start_line": 18,
+        "type": "import_from",
+        "module": "langchain_core.documents"
+      },
+      {
+        "file": "langchain_core\\retrievers.py",
+        "name": "langchain_core.runnables.Runnable",
+        "alias": null,
+        "start_line": 19,
+        "type": "import_from",
+        "module": "langchain_core.runnables"
+      },
+      {
+        "file": "langchain_core\\retrievers.py",
+        "name": "langchain_core.runnables.RunnableConfig",
+        "alias": null,
+        "start_line": 19,
+        "type": "import_from",
+        "module": "langchain_core.runnables"
+      },
+      {
+        "file": "langchain_core\\retrievers.py",
+        "name": "langchain_core.runnables.RunnableSerializable",
+        "alias": null,
+        "start_line": 19,
+        "type": "import_from",
+        "module": "langchain_core.runnables"
+      },
+      {
+        "file": "langchain_core\\retrievers.py",
+        "name": "langchain_core.runnables.ensure_config",
+        "alias": null,
+        "start_line": 19,
+        "type": "import_from",
+        "module": "langchain_core.runnables"
+      },
+      {
+        "file": "langchain_core\\retrievers.py",
+        "name": "langchain_core.runnables.config.run_in_executor",
+        "alias": null,
+        "start_line": 25,
+        "type": "import_from",
+        "module": "langchain_core.runnables.config"
+      },
+      {
+        "file": "langchain_core\\retrievers.py",
+        "name": "langchain_core.callbacks.manager.AsyncCallbackManagerForRetrieverRun",
+        "alias": null,
+        "start_line": 28,
+        "type": "import_from",
+        "module": "langchain_core.callbacks.manager"
+      },
+      {
+        "file": "langchain_core\\retrievers.py",
+        "name": "langchain_core.callbacks.manager.CallbackManagerForRetrieverRun",
+        "alias": null,
+        "start_line": 28,
+        "type": "import_from",
+        "module": "langchain_core.callbacks.manager"
+      },
+      {
+        "file": "langchain_core\\globals.py",
+        "name": "typing.TYPE_CHECKING",
+        "alias": null,
+        "start_line": 3,
+        "type": "import_from",
+        "module": "typing"
+      },
+      {
+        "file": "langchain_core\\globals.py",
+        "name": "typing.Optional",
+        "alias": null,
+        "start_line": 3,
+        "type": "import_from",
+        "module": "typing"
+      },
+      {
+        "file": "langchain_core\\globals.py",
+        "name": "langchain_core.caches.BaseCache",
+        "alias": null,
+        "start_line": 6,
+        "type": "import_from",
+        "module": "langchain_core.caches"
+      },
+      {
+        "file": "langchain_core\\rate_limiters.py",
+        "name": "__future__.annotations",
+        "alias": null,
+        "start_line": 3,
+        "type": "import_from",
+        "module": "__future__"
+      },
+      {
+        "file": "langchain_core\\rate_limiters.py",
+        "name": "abc",
+        "alias": null,
+        "start_line": 5,
+        "type": "import"
+      },
+      {
+        "file": "langchain_core\\rate_limiters.py",
+        "name": "asyncio",
+        "alias": null,
+        "start_line": 6,
+        "type": "import"
+      },
+      {
+        "file": "langchain_core\\rate_limiters.py",
+        "name": "threading",
+        "alias": null,
+        "start_line": 7,
+        "type": "import"
+      },
+      {
+        "file": "langchain_core\\rate_limiters.py",
+        "name": "time",
+        "alias": null,
+        "start_line": 8,
+        "type": "import"
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "abc.ABC",
+        "alias": null,
+        "start_line": 9,
+        "type": "import_from",
+        "module": "abc"
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "abc.abstractmethod",
+        "alias": null,
+        "start_line": 9,
+        "type": "import_from",
+        "module": "abc"
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "collections.abc.AsyncIterator",
+        "alias": null,
+        "start_line": 10,
+        "type": "import_from",
+        "module": "collections.abc"
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "collections.abc.Iterator",
+        "alias": null,
+        "start_line": 10,
+        "type": "import_from",
+        "module": "collections.abc"
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "collections.abc.Sequence",
+        "alias": null,
+        "start_line": 10,
+        "type": "import_from",
+        "module": "collections.abc"
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "typing.Any",
+        "alias": null,
+        "start_line": 11,
+        "type": "import_from",
+        "module": "typing"
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "typing.Generic",
+        "alias": null,
+        "start_line": 11,
+        "type": "import_from",
+        "module": "typing"
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "typing.TypeVar",
+        "alias": null,
+        "start_line": 11,
+        "type": "import_from",
+        "module": "typing"
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "typing_extensions.override",
+        "alias": null,
+        "start_line": 17,
+        "type": "import_from",
+        "module": "typing_extensions"
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "langchain_core.exceptions.LangChainException",
+        "alias": null,
+        "start_line": 19,
+        "type": "import_from",
+        "module": "langchain_core.exceptions"
+      },
+      {
+        "file": "langchain_core\\stores.py",
+        "name": "langchain_core.runnables.run_in_executor",
+        "alias": null,
+        "start_line": 20,
+        "type": "import_from",
+        "module": "langchain_core.runnables"
+      },
+      {
+        "file": "langchain_core\\__init__.py",
+        "name": "langchain_core._api.surface_langchain_beta_warnings",
+        "alias": null,
+        "start_line": 11,
+        "type": "import_from",
+        "module": "langchain_core._api"
+      },
+      {
+        "file": "langchain_core\\__init__.py",
+        "name": "langchain_core._api.surface_langchain_deprecation_warnings",
+        "alias": null,
+        "start_line": 11,
+        "type": "import_from",
+        "module": "langchain_core._api"
+      },
+      {
+        "file": "langchain_core\\__init__.py",
+        "name": "langchain_core.version.VERSION",
+        "alias": null,
+        "start_line": 15,
+        "type": "import_from",
+        "module": "langchain_core.version"
+      },
+      {
+        "file": "langchain_core\\_import_utils.py",
+        "name": "importlib.import_module",
+        "alias": null,
+        "start_line": 1,
+        "type": "import_from",
+        "module": "importlib"
+      },
+      {
+        "file": "langchain_core\\sys_info.py",
+        "name": "pkgutil",
+        "alias": null,
+        "start_line": 3,
+        "type": "import"
+      },
+      {
+        "file": "langchain_core\\sys_info.py",
+        "name": "platform",
+        "alias": null,
+        "start_line": 4,
+        "type": "import"
+      },
+      {
+        "file": "langchain_core\\sys_info.py",
+        "name": "re",
+        "alias": null,
+        "start_line": 5,
+        "type": "import"
+      },
+      {
+        "file": "langchain_core\\sys_info.py",
+        "name": "sys",
+        "alias": null,
+        "start_line": 6,
+        "type": "import"
+      },
+      {
+        "file": "langchain_core\\sys_info.py",
+        "name": "collections.abc.Sequence",
+        "alias": null,
+        "start_line": 7,
+        "type": "import_from",
+        "module": "collections.abc"
+      },
+      {
+        "file": "langchain_core\\sys_info.py",
+        "name": "importlib.metadata",
+        "alias": null,
+        "start_line": 8,
+        "type": "import_from",
+        "module": "importlib"
+      },
+      {
+        "file": "langchain_core\\sys_info.py",
+        "name": "importlib.util",
+        "alias": null,
+        "start_line": 8,
+        "type": "import_from",
+        "module": "importlib"
+      },
+      {
+        "file": "scripts\\check_imports.py",
+        "name": "random",
+        "alias": null,
+        "start_line": 3,
+        "type": "import"
+      },
+      {
+        "file": "scripts\\check_imports.py",
+        "name": "string",
+        "alias": null,
+        "start_line": 4,
+        "type": "import"
+      },
+      {
+        "file": "scripts\\check_imports.py",
+        "name": "sys",
+        "alias": null,
+        "start_line": 5,
+        "type": "import"
+      },
+      {
+        "file": "scripts\\check_imports.py",
+        "name": "traceback",
+        "alias": null,
+        "start_line": 6,
+        "type": "import"
+      },
+      {
+        "file": "scripts\\check_imports.py",
+        "name": "importlib.machinery.SourceFileLoader",
+        "alias": null,
+        "start_line": 7,
+        "type": "import_from",
+        "module": "importlib.machinery"
+      },
+      {
+        "file": "scripts\\check_version.py",
+        "name": "re",
+        "alias": null,
+        "start_line": 8,
+        "type": "import"
+      },
+      {
+        "file": "scripts\\check_version.py",
+        "name": "sys",
+        "alias": null,
+        "start_line": 9,
+        "type": "import"
+      },
+      {
+        "file": "scripts\\check_version.py",
+        "name": "pathlib.Path",
+        "alias": null,
+        "start_line": 10,
+        "type": "import_from",
+        "module": "pathlib"
+      },
+      {
+        "file": "langchain_core\\structured_query.py",
+        "name": "__future__.annotations",
+        "alias": null,
+        "start_line": 3,
+        "type": "import_from",
+        "module": "__future__"
+      },
+      {
+        "file": "langchain_core\\structured_query.py",
+        "name": "abc.ABC",
+        "alias": null,
+        "start_line": 5,
+        "type": "import_from",
+        "module": "abc"
+      },
+      {
+        "file": "langchain_core\\structured_query.py",
+        "name": "abc.abstractmethod",
+        "alias": null,
+        "start_line": 5,
+        "type": "import_from",
+        "module": "abc"
+      },
+      {
+        "file": "langchain_core\\structured_query.py",
+        "name": "enum.Enum",
+        "alias": null,
+        "start_line": 6,
+        "type": "import_from",
+        "module": "enum"
+      },
+      {
+        "file": "langchain_core\\structured_query.py",
+        "name": "typing.TYPE_CHECKING",
+        "alias": null,
+        "start_line": 7,
+        "type": "import_from",
+        "module": "typing"
+      },
+      {
+        "file": "langchain_core\\structured_query.py",
+        "name": "typing.Any",
+        "alias": null,
+        "start_line": 7,
+        "type": "import_from",
+        "module": "typing"
+      },
+      {
+        "file": "langchain_core\\structured_query.py",
+        "name": "pydantic.BaseModel",
+        "alias": null,
+        "start_line": 9,
+        "type": "import_from",
+        "module": "pydantic"
+      },
+      {
+        "file": "langchain_core\\structured_query.py",
+        "name": "collections.abc.Sequence",
+        "alias": null,
+        "start_line": 12,
+        "type": "import_from",
+        "module": "collections.abc"
+      }
+    ],
+    "by_file": {
+      "langchain_core\\agents.py": {
+        "classes": [
+          "AgentAction",
+          "AgentActionMessageLog",
+          "AgentStep",
+          "AgentFinish"
+        ],
+        "functions": [
+          "_convert_agent_action_to_messages",
+          "_convert_agent_observation_to_messages",
+          "_create_function_message",
+          "__init__",
+          "is_lc_serializable",
+          "get_lc_namespace",
+          "messages",
+          "messages",
+          "__init__",
+          "is_lc_serializable",
+          "get_lc_namespace",
+          "messages"
+        ],
+        "imports": [
+          "__future__.annotations",
+          "json",
+          "collections.abc.Sequence",
+          "typing.Any",
+          "typing.Literal",
+          "langchain_core.load.serializable.Serializable",
+          "langchain_core.messages.AIMessage",
+          "langchain_core.messages.BaseMessage",
+          "langchain_core.messages.FunctionMessage",
+          "langchain_core.messages.HumanMessage"
+        ]
+      },
+      "langchain_core\\caches.py": {
+        "classes": [
+          "BaseCache",
+          "InMemoryCache"
+        ],
+        "functions": [
+          "lookup",
+          "update",
+          "clear",
+          "alookup",
+          "aupdate",
+          "aclear",
+          "__init__",
+          "lookup",
+          "update",
+          "clear",
+          "alookup",
+          "aupdate",
+          "aclear"
+        ],
+        "imports": [
+          "__future__.annotations",
+          "abc.ABC",
+          "abc.abstractmethod",
+          "collections.abc.Sequence",
+          "typing.Any",
+          "typing_extensions.override",
+          "langchain_core.outputs.Generation",
+          "langchain_core.runnables.run_in_executor"
+        ]
+      },
+      "langchain_core\\chat_loaders.py": {
+        "classes": [
+          "BaseChatLoader"
+        ],
+        "functions": [
+          "lazy_load",
+          "load"
+        ],
+        "imports": [
+          "abc.ABC",
+          "abc.abstractmethod",
+          "collections.abc.Iterator",
+          "langchain_core.chat_sessions.ChatSession"
+        ]
+      },
+      "langchain_core\\chat_history.py": {
+        "classes": [
+          "BaseChatMessageHistory",
+          "InMemoryChatMessageHistory"
+        ],
+        "functions": [
+          "aget_messages",
+          "add_user_message",
+          "add_ai_message",
+          "add_message",
+          "add_messages",
+          "aadd_messages",
+          "clear",
+          "aclear",
+          "__str__",
+          "aget_messages",
+          "add_message",
+          "aadd_messages",
+          "clear",
+          "aclear"
+        ],
+        "imports": [
+          "__future__.annotations",
+          "abc.ABC",
+          "abc.abstractmethod",
+          "typing.TYPE_CHECKING",
+          "pydantic.BaseModel",
+          "pydantic.Field",
+          "langchain_core.messages.AIMessage",
+          "langchain_core.messages.BaseMessage",
+          "langchain_core.messages.HumanMessage",
+          "langchain_core.messages.get_buffer_string",
+          "langchain_core.runnables.config.run_in_executor",
+          "collections.abc.Sequence"
+        ]
+      },
+      "langchain_core\\chat_sessions.py": {
+        "classes": [
+          "ChatSession"
+        ],
+        "functions": [],
+        "imports": [
+          "collections.abc.Sequence",
+          "typing.TypedDict",
+          "langchain_core.messages.BaseMessage"
+        ]
+      },
+      "langchain_core\\cross_encoders.py": {
+        "classes": [
+          "BaseCrossEncoder"
+        ],
+        "functions": [
+          "score"
+        ],
+        "imports": [
+          "abc.ABC",
+          "abc.abstractmethod"
+        ]
+      },
+      "langchain_core\\env.py": {
+        "classes": [],
+        "functions": [
+          "get_runtime_environment"
+        ],
+        "imports": [
+          "platform",
+          "functools.lru_cache",
+          "langchain_core.__version__"
+        ]
+      },
+      "langchain_core\\exceptions.py": {
+        "classes": [
+          "LangChainException",
+          "TracerException",
+          "OutputParserException",
+          "ContextOverflowError",
+          "ErrorCode"
+        ],
+        "functions": [
+          "create_message",
+          "__init__"
+        ],
+        "imports": [
+          "enum.Enum",
+          "typing.Any"
+        ]
+      },
+      "langchain_core\\prompt_values.py": {
+        "classes": [
+          "PromptValue",
+          "StringPromptValue",
+          "ChatPromptValue",
+          "ImageURL",
+          "ImagePromptValue",
+          "ChatPromptValueConcrete"
+        ],
+        "functions": [
+          "is_lc_serializable",
+          "get_lc_namespace",
+          "to_string",
+          "to_messages",
+          "get_lc_namespace",
+          "to_string",
+          "to_messages",
+          "to_string",
+          "to_messages",
+          "get_lc_namespace",
+          "to_string",
+          "to_messages"
+        ],
+        "imports": [
+          "__future__.annotations",
+          "abc.ABC",
+          "abc.abstractmethod",
+          "collections.abc.Sequence",
+          "typing.Literal",
+          "typing.cast",
+          "typing_extensions.TypedDict",
+          "langchain_core.load.serializable.Serializable",
+          "langchain_core.messages.AnyMessage",
+          "langchain_core.messages.BaseMessage",
+          "langchain_core.messages.HumanMessage",
+          "langchain_core.messages.get_buffer_string"
+        ]
+      },
+      "langchain_core\\retrievers.py": {
+        "classes": [
+          "LangSmithRetrieverParams",
+          "BaseRetriever"
+        ],
+        "functions": [
+          "__init_subclass__",
+          "_get_ls_params",
+          "invoke",
+          "ainvoke",
+          "_get_relevant_documents",
+          "_aget_relevant_documents",
+          "_aget_relevant_documents"
+        ],
+        "imports": [
+          "__future__.annotations",
+          "abc.ABC",
+          "abc.abstractmethod",
+          "inspect.signature",
+          "typing.TYPE_CHECKING",
+          "typing.Any",
+          "pydantic.ConfigDict",
+          "typing_extensions.Self",
+          "typing_extensions.TypedDict",
+          "typing_extensions.override",
+          "langchain_core.callbacks.manager.AsyncCallbackManager",
+          "langchain_core.callbacks.manager.CallbackManager",
+          "langchain_core.documents.Document",
+          "langchain_core.runnables.Runnable",
+          "langchain_core.runnables.RunnableConfig",
+          "langchain_core.runnables.RunnableSerializable",
+          "langchain_core.runnables.ensure_config",
+          "langchain_core.runnables.config.run_in_executor",
+          "langchain_core.callbacks.manager.AsyncCallbackManagerForRetrieverRun",
+          "langchain_core.callbacks.manager.CallbackManagerForRetrieverRun"
+        ]
+      },
+      "langchain_core\\globals.py": {
+        "classes": [],
+        "functions": [
+          "set_verbose",
+          "get_verbose",
+          "set_debug",
+          "get_debug",
+          "set_llm_cache",
+          "get_llm_cache"
+        ],
+        "imports": [
+          "typing.TYPE_CHECKING",
+          "typing.Optional",
+          "langchain_core.caches.BaseCache"
+        ]
+      },
+      "langchain_core\\rate_limiters.py": {
+        "classes": [
+          "BaseRateLimiter",
+          "InMemoryRateLimiter"
+        ],
+        "functions": [
+          "acquire",
+          "aacquire",
+          "__init__",
+          "_consume",
+          "acquire",
+          "aacquire"
+        ],
+        "imports": [
+          "__future__.annotations",
+          "abc",
+          "asyncio",
+          "threading",
+          "time"
+        ]
+      },
+      "langchain_core\\stores.py": {
+        "classes": [
+          "BaseStore",
+          "InMemoryBaseStore",
+          "InMemoryStore",
+          "InMemoryByteStore",
+          "InvalidKeyException"
+        ],
+        "functions": [
+          "mget",
+          "amget",
+          "mset",
+          "amset",
+          "mdelete",
+          "amdelete",
+          "yield_keys",
+          "ayield_keys",
+          "__init__",
+          "mget",
+          "amget",
+          "mset",
+          "amset",
+          "mdelete",
+          "amdelete",
+          "yield_keys",
+          "ayield_keys"
+        ],
+        "imports": [
+          "abc.ABC",
+          "abc.abstractmethod",
+          "collections.abc.AsyncIterator",
+          "collections.abc.Iterator",
+          "collections.abc.Sequence",
+          "typing.Any",
+          "typing.Generic",
+          "typing.TypeVar",
+          "typing_extensions.override",
+          "langchain_core.exceptions.LangChainException",
+          "langchain_core.runnables.run_in_executor"
+        ]
+      },
+      "langchain_core\\version.py": {
+        "classes": [],
+        "functions": [],
+        "imports": []
+      },
+      "langchain_core\\__init__.py": {
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "langchain_core._api.surface_langchain_beta_warnings",
+          "langchain_core._api.surface_langchain_deprecation_warnings",
+          "langchain_core.version.VERSION"
+        ]
+      },
+      "langchain_core\\_import_utils.py": {
+        "classes": [],
+        "functions": [
+          "import_attr"
+        ],
+        "imports": [
+          "importlib.import_module"
+        ]
+      },
+      "langchain_core\\sys_info.py": {
+        "classes": [],
+        "functions": [
+          "_get_sub_deps",
+          "print_sys_info"
+        ],
+        "imports": [
+          "pkgutil",
+          "platform",
+          "re",
+          "sys",
+          "collections.abc.Sequence",
+          "importlib.metadata",
+          "importlib.util"
+        ]
+      },
+      "scripts\\check_imports.py": {
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "random",
+          "string",
+          "sys",
+          "traceback",
+          "importlib.machinery.SourceFileLoader"
+        ]
+      },
+      "scripts\\check_version.py": {
+        "classes": [],
+        "functions": [
+          "get_pyproject_version",
+          "get_version_py_version",
+          "main"
+        ],
+        "imports": [
+          "re",
+          "sys",
+          "pathlib.Path"
+        ]
+      },
+      "langchain_core\\structured_query.py": {
+        "classes": [
+          "Visitor",
+          "Expr",
+          "Operator",
+          "Comparator",
+          "FilterDirective",
+          "Comparison",
+          "Operation",
+          "StructuredQuery"
+        ],
+        "functions": [
+          "_to_snake_case",
+          "_validate_func",
+          "visit_operation",
+          "visit_comparison",
+          "visit_structured_query",
+          "accept",
+          "__init__",
+          "__init__",
+          "__init__"
+        ],
+        "imports": [
+          "__future__.annotations",
+          "abc.ABC",
+          "abc.abstractmethod",
+          "enum.Enum",
+          "typing.TYPE_CHECKING",
+          "typing.Any",
+          "pydantic.BaseModel",
+          "collections.abc.Sequence"
+        ]
+      }
+    }
+  },
+  "elapsed_seconds": 0.03
+}

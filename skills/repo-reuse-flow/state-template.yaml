@@ -1,0 +1,91 @@
+# Repo Reuse Flow State
+# 此文件由 /repo-reuse 命令自动管理
+# 模板来源: state-template.yaml
+
+project: ""
+started_at: ""
+current_phase: 1
+total_phases: 6
+target_repos: []         # 预设目标仓库（跳过搜索阶段）
+
+config:
+  skip_search: false
+  module_market_dir: "outputs/06_module_market"
+  python_api_port: 8100
+  frontend_port: 3000
+  docs_dir: outputs
+
+phases:
+  demand:
+    order: 1
+    name: "需求收集"
+    status: pending          # pending | in_progress | completed | skipped
+    started_at: ""
+    completed_at: ""
+    output: "outputs/01_demand/demand.json"
+    script: "scripts/01_demand_collect.py"
+    checks:
+      - file_exists: "outputs/01_demand/demand.json"
+
+  search:
+    order: 2
+    name: "仓库搜索"
+    status: pending
+    started_at: ""
+    completed_at: ""
+    output: "outputs/02_candidates/candidates.json"
+    script: "scripts/02_repo_search.py"
+    depends_on: ["demand"]
+    checks:
+      - file_exists: "outputs/02_candidates/candidates.json"
+
+  analyze:
+    order: 3
+    name: "仓库分析"
+    status: pending
+    started_at: ""
+    completed_at: ""
+    output: "outputs/03_analysis/structures/"
+    skill: "repo-analyzer"
+    script: "scripts/analyze_repo.py"
+    depends_on: ["search"]
+    checks:
+      - dir_has_files: "outputs/03_analysis/structures/*.json"
+
+  depgraph:
+    order: 4
+    name: "依赖图"
+    status: pending
+    started_at: ""
+    completed_at: ""
+    output: "outputs/04_depgraph/"
+    skill: "dep-graph"
+    script: "scripts/build_dep_graph.py"
+    depends_on: ["analyze"]
+    checks:
+      - dir_has_files: "outputs/04_depgraph/*.json"
+
+  extract:
+    order: 5
+    name: "模块提取"
+    status: pending
+    started_at: ""
+    completed_at: ""
+    output: "outputs/05_modules/ OR outputs/06_module_market/python/modules/"
+    skill: "module-extractor"
+    script: "scripts/extract_feature_module.py"
+    depends_on: ["depgraph"]
+    checks:
+      - has_modules: true
+
+  market:
+    order: 6
+    name: "模块上架"
+    status: pending
+    started_at: ""
+    completed_at: ""
+    output: "workflows/verify_*.py"
+    skill: "module-demo-builder"
+    depends_on: ["extract"]
+    checks:
+      - script_passes: "workflows/verify_*.py"

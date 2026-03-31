@@ -1,0 +1,22 @@
+{
+  "name": "evaluation",
+  "display_name": "RAG 评估",
+  "description": "RAG 质量评估：faithfulness、answer relevancy、context precision",
+  "source": {
+    "library": "ragas",
+    "repo": "https://github.com/explodinggradients/ragas",
+    "sub_module": "ragas.metrics + ragas.evaluation",
+    "version": ">=0.2.0",
+    "license": "Apache-2.0",
+    "install_cmd": "pip install ragas"
+  },
+  "api_used": [
+    "ragas.evaluate",
+    "ragas.metrics.faithfulness",
+    "ragas.metrics.answer_relevancy",
+    "ragas.metrics.context_precision",
+    "ragas.dataset_schema.SingleTurnSample"
+  ],
+  "category": "evaluation",
+  "tags": ["evaluation", "RAG", "metrics", "LLM-as-judge"]
+}

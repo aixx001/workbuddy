@@ -1,0 +1,14 @@
+# repo-reuse-flow 依赖包
+# 安装方式: uv pip install --python .venv -r requirements.txt
+
+# 核心分析工具（纯静态，不依赖目标包安装）
+radon>=6.0                  # 圈复杂度分析
+gitingest>=0.3.1            # 代码摘要给 LLM
+
+# 依赖图 + 模块检测
+networkx>=3.0               # 图算法 + Louvain 社区检测
+rope>=1.10                  # Python 重构（import 重写）
+
+# 基础依赖
+requests>=2.28              # GitHub API
+beautifulsoup4>=4.12        # HTML 解析

@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Module Market: debug full stack",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/skills/repo-reuse-flow/outputs/06_module_market/payload/node_modules/next/dist/bin/next",
+      "runtimeArgs": ["--inspect"],
+      "skipFiles": ["<node_internals>/**"],
+      "serverReadyAction": {
+        "action": "debugWithChrome",
+        "killOnServerStop": true,
+        "pattern": "- Local:.+(https?://.+)",
+        "uriFormat": "%s",
+        "webRoot": "${workspaceFolder}/skills/repo-reuse-flow/outputs/06_module_market/payload"
+      },
+      "cwd": "${workspaceFolder}/skills/repo-reuse-flow/outputs/06_module_market/payload"
+    }
+  ]
+}

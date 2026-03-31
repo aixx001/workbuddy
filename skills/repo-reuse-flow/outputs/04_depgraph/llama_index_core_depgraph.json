@@ -1,0 +1,4192 @@
+{
+  "repo_name": "llama-index-core",
+  "source_file": "outputs\\03_analysis\\structures\\llama_index_core_structure.json",
+  "graph_stats": {
+    "nodes": 300,
+    "edges": 1247,
+    "connected_components": 26
+  },
+  "nodes": {
+    "llama_index/core/readers/loading.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/response_synthesizers/compact_and_accumulate.py": {
+      "in_degree": 1,
+      "out_degree": 3,
+      "classes": [
+        "CompactAndAccumulate"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.221
+    },
+    "llama_index/core/llama_dataset/base.py": {
+      "in_degree": 7,
+      "out_degree": 5,
+      "classes": [
+        "CreatedByType",
+        "CreatedBy",
+        "BaseLlamaExamplePrediction",
+        "BaseLlamaDataExample",
+        "BaseLlamaPredictionDataset",
+        "BaseLlamaDataset"
+      ],
+      "functions": [],
+      "external_deps": [
+        "tqdm"
+      ],
+      "reuse_score": 0.689
+    },
+    "llama_index/core/llama_dataset/generator.py": {
+      "in_degree": 0,
+      "out_degree": 11,
+      "classes": [
+        "RagDatasetGenerator"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/readers/string_iterable.py": {
+      "in_degree": 2,
+      "out_degree": 2,
+      "classes": [
+        "StringIterableReader"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.487
+    },
+    "llama_index/core/workflow/resource.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "workflows"
+      ],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/evaluation/eval_utils.py": {
+      "in_degree": 3,
+      "out_degree": 4,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "numpy",
+        "pandas"
+      ],
+      "reuse_score": 0.451
+    },
+    "llama_index/core/graph_stores/utils.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/objects/fn_node_mapping.py": {
+      "in_degree": 1,
+      "out_degree": 2,
+      "classes": [
+        "FnNodeMapping"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.283
+    },
+    "llama_index/core/selectors/llm_selectors.py": {
+      "in_degree": 5,
+      "out_degree": 12,
+      "classes": [
+        "LLMSingleSelector",
+        "LLMMultiSelector"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.319
+    },
+    "llama_index/core/workflow/workflow.py": {
+      "in_degree": 2,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "llama_index/core/callbacks/global_handlers.py": {
+      "in_degree": 1,
+      "out_degree": 3,
+      "classes": [],
+      "functions": [
+        "set_global_handler",
+        "create_global_handler"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.221
+    },
+    "llama_index/core/llms/chatml_utils.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/llms/utils.py": {
+      "in_degree": 4,
+      "out_degree": 4,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "langchain",
+        "langchain_core"
+      ],
+      "reuse_score": 0.551
+    },
+    "llama_index/core/chat_engine/condense_question.py": {
+      "in_degree": 1,
+      "out_degree": 12,
+      "classes": [
+        "CondenseQuestionChatEngine"
+      ],
+      "functions": [
+        "__init__",
+        "from_defaults",
+        "_condense_question",
+        "_acondense_question",
+        "_get_tool_output_from_response",
+        "chat",
+        "stream_chat",
+        "achat",
+        "astream_chat",
+        "reset",
+        "chat_history"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.074
+    },
+    "llama_index/core/sparse_embeddings/mock_sparse_embedding.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [
+        "MockSparseEmbedding"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/response/pprint_utils.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/text_splitter/__init__.py": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "llama_index/core/evaluation/batch_runner.py": {
+      "in_degree": 1,
+      "out_degree": 3,
+      "classes": [
+        "BatchEvalRunner"
+      ],
+      "functions": [],
+      "external_deps": [
+        "tenacity"
+      ],
+      "reuse_score": 0.221
+    },
+    "llama_index/core/program/__init__.py": {
+      "in_degree": 1,
+      "out_degree": 4,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.181
+    },
+    "llama_index/core/chat_ui/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/query_engine/knowledge_graph_query_engine.py": {
+      "in_degree": 1,
+      "out_degree": 10,
+      "classes": [
+        "KnowledgeGraphQueryEngine"
+      ],
+      "functions": [],
+      "external_deps": [
+        "deprecated"
+      ],
+      "reuse_score": 0.087
+    },
+    "llama_index/core/service_context_elements/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/callbacks/pythonically_printing_base_handler.py": {
+      "in_degree": 4,
+      "out_degree": 2,
+      "classes": [
+        "PythonicallyPrintingBaseHandler"
+      ],
+      "functions": [
+        "__init__",
+        "_print"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.736
+    },
+    "llama_index/core/ingestion/api_utils.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "httpx",
+        "llama_cloud"
+      ],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/llms/callbacks.py": {
+      "in_degree": 5,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.811
+    },
+    "llama_index/core/program/multi_modal_llm_program.py": {
+      "in_degree": 1,
+      "out_degree": 8,
+      "classes": [
+        "MultiModalLLMCompletionProgram"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.105
+    },
+    "llama_index/core/evaluation/relevancy.py": {
+      "in_degree": 1,
+      "out_degree": 7,
+      "classes": [
+        "RelevancyEvaluator"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.118
+    },
+    "llama_index/core/prompts/prompts.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/objects/base_node_mapping.py": {
+      "in_degree": 6,
+      "out_degree": 3,
+      "classes": [
+        "_RestrictedUnpickler",
+        "BaseObjectNodeMapping",
+        "SimpleObjectNodeMapping"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.777
+    },
+    "llama_index/core/tools/ondemand_loader_tool.py": {
+      "in_degree": 0,
+      "out_degree": 7,
+      "classes": [
+        "OnDemandLoaderTool"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/tools/utils.py": {
+      "in_degree": 2,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "llama_index/core/prompts/__init__.py": {
+      "in_degree": 34,
+      "out_degree": 3,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 1.0
+    },
+    "llama_index/core/ingestion/data_sources.py": {
+      "in_degree": 0,
+      "out_degree": 3,
+      "classes": [
+        "DataSource",
+        "DocumentGroup",
+        "ConfigurableComponent",
+        "ConfiguredDataSource"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/response/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/img_utils.py": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [
+        "img_2_b64",
+        "b64_2_img"
+      ],
+      "external_deps": [
+        "PIL"
+      ],
+      "reuse_score": 0.632
+    },
+    "llama_index/core/utilities/aws_utils.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "boto3",
+        "botocore"
+      ],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/readers/download.py": {
+      "in_degree": 1,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "deprecated"
+      ],
+      "reuse_score": 0.283
+    },
+    "llama_index/core/utilities/token_counting.py": {
+      "in_degree": 4,
+      "out_degree": 1,
+      "classes": [
+        "TokenCounter"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.865
+    },
+    "llama_index/core/prompts/display_utils.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "IPython"
+      ],
+      "reuse_score": 0.393
+    },
+    "llama_index/core/voice_agents/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 4,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/llama_dataset/__init__.py": {
+      "in_degree": 2,
+      "out_degree": 4,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.33
+    },
+    "llama_index/core/download/module.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [
+        "MODULE_TYPE"
+      ],
+      "functions": [],
+      "external_deps": [
+        "pkg_resources",
+        "requests"
+      ],
+      "reuse_score": 0.393
+    },
+    "llama_index/core/graph_stores/simple.py": {
+      "in_degree": 2,
+      "out_degree": 1,
+      "classes": [
+        "SimpleGraphStoreData",
+        "SimpleGraphStore"
+      ],
+      "functions": [],
+      "external_deps": [
+        "dataclasses_json",
+        "fsspec"
+      ],
+      "reuse_score": 0.632
+    },
+    "llama_index/core/embeddings/pooling.py": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "classes": [
+        "Pooling"
+      ],
+      "functions": [],
+      "external_deps": [
+        "numpy",
+        "torch"
+      ],
+      "reuse_score": 0.632
+    },
+    "llama_index/core/objects/utils.py": {
+      "in_degree": 1,
+      "out_degree": 6,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.133
+    },
+    "llama_index/core/postprocessor/llm_rerank.py": {
+      "in_degree": 1,
+      "out_degree": 11,
+      "classes": [
+        "LLMRerank"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.08
+    },
+    "llama_index/core/callbacks/base.py": {
+      "in_degree": 33,
+      "out_degree": 6,
+      "classes": [
+        "CallbackManager",
+        "EventContext"
+      ],
+      "functions": [
+        "__init__",
+        "on_event_start",
+        "on_event_end",
+        "add_handler",
+        "remove_handler",
+        "set_handlers",
+        "event",
+        "as_trace",
+        "start_trace",
+        "end_trace",
+        "_reset_trace_events",
+        "trace_map",
+        "__get_pydantic_core_schema__",
+        "__get_pydantic_json_schema__",
+        "__init__",
+        "on_start",
+        "on_end"
+      ],
+      "external_deps": [
+        "contextvars"
+      ],
+      "reuse_score": 0.991
+    },
+    "llama_index/core/voice_agents/base.py": {
+      "in_degree": 0,
+      "out_degree": 5,
+      "classes": [
+        "BaseVoiceAgent"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/multi_modal_llms/__init__.py": {
+      "in_degree": 25,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 1.0
+    },
+    "llama_index/core/evaluation/__init__.py": {
+      "in_degree": 5,
+      "out_degree": 13,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.3
+    },
+    "llama_index/core/objects/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 4,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/selectors/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 4,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/objects/tool_node_mapping.py": {
+      "in_degree": 2,
+      "out_degree": 4,
+      "classes": [
+        "BaseToolNodeMapping",
+        "SimpleToolNodeMapping",
+        "BaseQueryToolNodeMapping",
+        "SimpleQueryToolNodeMapping"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.33
+    },
+    "llama_index/core/chat_ui/events.py": {
+      "in_degree": 4,
+      "out_degree": 2,
+      "classes": [
+        "UIEvent",
+        "SourceNodesEvent",
+        "ArtifactEvent"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.736
+    },
+    "llama_index/core/query_engine/cogniswitch_query_engine.py": {
+      "in_degree": 1,
+      "out_degree": 2,
+      "classes": [
+        "CogniswitchQueryEngine"
+      ],
+      "functions": [],
+      "external_deps": [
+        "requests"
+      ],
+      "reuse_score": 0.283
+    },
+    "llama_index/core/embeddings/loading.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/evaluation/dataset_generation.py": {
+      "in_degree": 1,
+      "out_degree": 11,
+      "classes": [
+        "QueryResponseDataset",
+        "DatasetGenerator"
+      ],
+      "functions": [],
+      "external_deps": [
+        "deprecated",
+        "tqdm"
+      ],
+      "reuse_score": 0.08
+    },
+    "llama_index/core/response_synthesizers/tree_summarize.py": {
+      "in_degree": 2,
+      "out_degree": 9,
+      "classes": [
+        "TreeSummarize"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.181
+    },
+    "llama_index/core/retrievers/router_retriever.py": {
+      "in_degree": 1,
+      "out_degree": 9,
+      "classes": [
+        "RouterRetriever"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.095
+    },
+    "llama_index/core/prompts/base.py": {
+      "in_degree": 28,
+      "out_degree": 7,
+      "classes": [
+        "BasePromptTemplate",
+        "PromptTemplate",
+        "ChatPromptTemplate",
+        "SelectorPromptTemplate",
+        "LangchainPromptTemplate"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.97
+    },
+    "llama_index/core/query_engine/router_query_engine.py": {
+      "in_degree": 2,
+      "out_degree": 17,
+      "classes": [
+        "RouterQueryEngine",
+        "RetrieverRouterQueryEngine",
+        "ToolRetrieverRouterQueryEngine"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.105
+    },
+    "llama_index/core/tools/function_tool.py": {
+      "in_degree": 3,
+      "out_degree": 7,
+      "classes": [
+        "FunctionTool"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.313
+    },
+    "llama_index/core/graph_stores/prompts.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "llama_index/core/bridge/pydantic.py": {
+      "in_degree": 73,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "pydantic"
+      ],
+      "reuse_score": 1.0
+    },
+    "llama_index/core/playground/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/bridge/pydantic_core.py": {
+      "in_degree": 3,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.95
+    },
+    "llama_index/core/voice_agents/events.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [
+        "BaseVoiceAgentEvent"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/langchain_helpers/text_splitter.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/base/base_selector.py": {
+      "in_degree": 7,
+      "out_degree": 5,
+      "classes": [
+        "SingleSelection",
+        "MultiSelection",
+        "BaseSelector"
+      ],
+      "functions": [
+        "_wrap_choice",
+        "_wrap_query",
+        "ind",
+        "reason",
+        "inds",
+        "reasons",
+        "_get_prompt_modules",
+        "select",
+        "aselect",
+        "_select",
+        "_aselect"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.689
+    },
+    "llama_index/core/callbacks/schema.py": {
+      "in_degree": 21,
+      "out_degree": 0,
+      "classes": [
+        "CBEventType",
+        "EventPayload",
+        "CBEvent",
+        "EventStats"
+      ],
+      "functions": [
+        "__post_init__"
+      ],
+      "external_deps": [],
+      "reuse_score": 1.0
+    },
+    "llama_index/core/async_utils.py": {
+      "in_degree": 17,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [
+        "get_asyncio_module",
+        "asyncio_module",
+        "asyncio_run",
+        "run_async_tasks",
+        "chunks",
+        "batch_gather",
+        "run_jobs",
+        "_gather",
+        "worker",
+        "run_coro_in_thread",
+        "_tqdm_gather"
+      ],
+      "external_deps": [
+        "contextvars",
+        "nest_asyncio",
+        "tqdm"
+      ],
+      "reuse_score": 1.0
+    },
+    "llama_index/core/evaluation/answer_relevancy.py": {
+      "in_degree": 1,
+      "out_degree": 5,
+      "classes": [
+        "AnswerRelevancyEvaluator"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.154
+    },
+    "llama_index/core/indices/__init__.py": {
+      "in_degree": 5,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.811
+    },
+    "llama_index/core/response_synthesizers/simple_summarize.py": {
+      "in_degree": 2,
+      "out_degree": 8,
+      "classes": [
+        "SimpleSummarize"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.199
+    },
+    "llama_index/core/vector_stores/types.py": {
+      "in_degree": 10,
+      "out_degree": 2,
+      "classes": [
+        "VectorStoreQueryResult",
+        "VectorStoreQueryMode",
+        "FilterOperator",
+        "FilterCondition",
+        "MetadataFilter",
+        "MetadataFilters",
+        "VectorStoreQuerySpec",
+        "MetadataInfo",
+        "VectorStoreInfo",
+        "VectorStoreQuery",
+        "VectorStore",
+        "BasePydanticVectorStore"
+      ],
+      "functions": [],
+      "external_deps": [
+        "deprecated",
+        "fsspec"
+      ],
+      "reuse_score": 0.964
+    },
+    "llama_index/core/data_structs/struct_type.py": {
+      "in_degree": 6,
+      "out_degree": 0,
+      "classes": [
+        "IndexStructType"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.998
+    },
+    "llama_index/core/objects/base.py": {
+      "in_degree": 3,
+      "out_degree": 9,
+      "classes": [
+        "ObjectRetriever",
+        "ObjectIndex"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.259
+    },
+    "llama_index/core/retrievers/transform_retriever.py": {
+      "in_degree": 1,
+      "out_degree": 5,
+      "classes": [
+        "TransformRetriever"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.154
+    },
+    "llama_index/core/postprocessor/__init__.py": {
+      "in_degree": 1,
+      "out_degree": 8,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.105
+    },
+    "llama_index/core/workflow/events.py": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "workflows"
+      ],
+      "reuse_score": 0.632
+    },
+    "llama_index/core/selectors/utils.py": {
+      "in_degree": 3,
+      "out_degree": 4,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.451
+    },
+    "llama_index/core/utilities/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/indices/utils.py": {
+      "in_degree": 4,
+      "out_degree": 5,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.487
+    },
+    "llama_index/core/query_engine/multistep_query_engine.py": {
+      "in_degree": 1,
+      "out_degree": 6,
+      "classes": [
+        "MultiStepQueryEngine"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.133
+    },
+    "llama_index/core/output_parsers/__init__.py": {
+      "in_degree": 2,
+      "out_degree": 3,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "llama_index/core/response/notebook_utils.py": {
+      "in_degree": 0,
+      "out_degree": 3,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "IPython",
+        "PIL",
+        "matplotlib",
+        "requests"
+      ],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/response_synthesizers/type.py": {
+      "in_degree": 2,
+      "out_degree": 0,
+      "classes": [
+        "ResponseMode"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.865
+    },
+    "llama_index/core/data_structs/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/tools/query_plan.py": {
+      "in_degree": 1,
+      "out_degree": 5,
+      "classes": [
+        "QueryNode",
+        "QueryPlan",
+        "QueryPlanTool"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.154
+    },
+    "llama_index/core/prompts/utils.py": {
+      "in_degree": 4,
+      "out_degree": 2,
+      "classes": [
+        "SafeFormatter"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.736
+    },
+    "llama_index/core/query_engine/sub_question_query_engine.py": {
+      "in_degree": 1,
+      "out_degree": 14,
+      "classes": [
+        "SubQuestionAnswerPair",
+        "SubQuestionQueryEngine"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.064
+    },
+    "llama_index/core/chat_engine/__init__.py": {
+      "in_degree": 3,
+      "out_degree": 6,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.349
+    },
+    "llama_index/core/data_structs/table.py": {
+      "in_degree": 2,
+      "out_degree": 2,
+      "classes": [
+        "StructDatapoint",
+        "BaseStructTable",
+        "SQLStructTable",
+        "PandasStructTable"
+      ],
+      "functions": [],
+      "external_deps": [
+        "dataclasses_json"
+      ],
+      "reuse_score": 0.487
+    },
+    "llama_index/core/download/__init__.py": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "llama_index/core/service_context_elements/llm_predictor.py": {
+      "in_degree": 0,
+      "out_degree": 6,
+      "classes": [
+        "BaseLLMPredictor",
+        "LLMPredictor"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/composability/joint_qa_summary.py": {
+      "in_degree": 1,
+      "out_degree": 9,
+      "classes": [
+        "QASummaryQueryEngineBuilder"
+      ],
+      "functions": [
+        "__init__",
+        "build_from_documents"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.095
+    },
+    "llama_index/core/llms/loading.py": {
+      "in_degree": 1,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.283
+    },
+    "llama_index/core/memory/simple_composable_memory.py": {
+      "in_degree": 1,
+      "out_degree": 3,
+      "classes": [
+        "SimpleComposableMemory"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.221
+    },
+    "llama_index/core/embeddings/mock_embed_model.py": {
+      "in_degree": 4,
+      "out_degree": 3,
+      "classes": [
+        "MockEmbedding",
+        "MockMultiModalEmbedding"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "llama_index/core/memory/chat_summary_memory_buffer.py": {
+      "in_degree": 1,
+      "out_degree": 4,
+      "classes": [
+        "ChatSummaryMemoryBuffer"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.181
+    },
+    "llama_index/core/chat_engine/condense_plus_context.py": {
+      "in_degree": 3,
+      "out_degree": 14,
+      "classes": [
+        "CondensePlusContextChatEngine"
+      ],
+      "functions": [
+        "__init__",
+        "from_defaults",
+        "_condense_question",
+        "_acondense_question",
+        "_get_nodes",
+        "_aget_nodes",
+        "_get_response_synthesizer",
+        "_run_c3",
+        "_arun_c3",
+        "chat",
+        "stream_chat",
+        "achat",
+        "astream_chat",
+        "reset",
+        "chat_history",
+        "wrapped_gen",
+        "wrapped_gen"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.181
+    },
+    "llama_index/core/postprocessor/sbert_rerank.py": {
+      "in_degree": 2,
+      "out_degree": 5,
+      "classes": [
+        "SentenceTransformerRerank"
+      ],
+      "functions": [],
+      "external_deps": [
+        "sentence_transformers"
+      ],
+      "reuse_score": 0.283
+    },
+    "llama_index/core/output_parsers/base.py": {
+      "in_degree": 6,
+      "out_degree": 0,
+      "classes": [
+        "StructuredOutput",
+        "OutputParserException"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.998
+    },
+    "llama_index/core/workflow/__init__.py": {
+      "in_degree": 2,
+      "out_degree": 6,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.249
+    },
+    "llama_index/core/chat_engine/multi_modal_context.py": {
+      "in_degree": 2,
+      "out_degree": 14,
+      "classes": [
+        "MultiModalContextChatEngine"
+      ],
+      "functions": [
+        "_get_image_and_text_nodes",
+        "_ensure_query_bundle",
+        "__init__",
+        "from_defaults",
+        "_apply_node_postprocessors",
+        "_async_apply_node_postprocessors",
+        "_get_nodes",
+        "_aget_nodes",
+        "synthesize",
+        "asynthesize",
+        "chat",
+        "stream_chat",
+        "achat",
+        "astream_chat",
+        "reset",
+        "chat_history",
+        "wrapped_gen",
+        "wrapped_gen"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.125
+    },
+    "llama_index/core/indices/prompt_helper.py": {
+      "in_degree": 9,
+      "out_degree": 12,
+      "classes": [
+        "PromptHelper",
+        "ChatPromptHelper"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.5
+    },
+    "llama_index/core/evaluation/context_relevancy.py": {
+      "in_degree": 1,
+      "out_degree": 7,
+      "classes": [
+        "ContextRelevancyEvaluator"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.118
+    },
+    "llama_index/core/download/pack.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "requests"
+      ],
+      "reuse_score": 0.393
+    },
+    "llama_index/core/callbacks/simple_llm_handler.py": {
+      "in_degree": 1,
+      "out_degree": 3,
+      "classes": [
+        "SimpleLLMHandler"
+      ],
+      "functions": [
+        "__init__",
+        "start_trace",
+        "end_trace",
+        "_print_llm_event",
+        "on_event_start",
+        "on_event_end"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.221
+    },
+    "llama_index/core/llama_pack/base.py": {
+      "in_degree": 2,
+      "out_degree": 0,
+      "classes": [
+        "BaseLlamaPack"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.865
+    },
+    "llama_index/core/llms/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 3,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/prompts/system.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/composability/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/indices/postprocessor.py": {
+      "in_degree": 0,
+      "out_degree": 4,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/query_engine/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 17,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/workflow/types.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "workflows"
+      ],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/llms/function_calling.py": {
+      "in_degree": 3,
+      "out_degree": 4,
+      "classes": [
+        "FunctionCallingLLM"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.451
+    },
+    "llama_index/core/node_parser/__init__.py": {
+      "in_degree": 4,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.865
+    },
+    "llama_index/core/evaluation/base.py": {
+      "in_degree": 12,
+      "out_degree": 3,
+      "classes": [
+        "EvaluationResult",
+        "BaseEvaluator"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.95
+    },
+    "llama_index/core/selectors/pydantic_selectors.py": {
+      "in_degree": 4,
+      "out_degree": 8,
+      "classes": [
+        "PydanticSingleSelector",
+        "PydanticMultiSelector"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.359
+    },
+    "llama_index/core/selectors/prompts.py": {
+      "in_degree": 2,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.487
+    },
+    "llama_index/core/program/llm_program.py": {
+      "in_degree": 2,
+      "out_degree": 5,
+      "classes": [
+        "LLMTextCompletionProgram"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.283
+    },
+    "llama_index/core/embeddings/multi_modal_base.py": {
+      "in_degree": 3,
+      "out_degree": 4,
+      "classes": [
+        "MultiModalEmbedding"
+      ],
+      "functions": [],
+      "external_deps": [
+        "tqdm"
+      ],
+      "reuse_score": 0.451
+    },
+    "llama_index/core/postprocessor/rankGPT_rerank.py": {
+      "in_degree": 1,
+      "out_degree": 8,
+      "classes": [
+        "RankGPTRerank"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.105
+    },
+    "llama_index/core/command_line/upgrade.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [
+        "_parse_from_imports",
+        "_parse_hub_downloads",
+        "parse_lines",
+        "_cell_installs_llama_hub",
+        "_format_new_installs",
+        "upgrade_nb_file",
+        "upgrade_py_md_file",
+        "upgrade_file",
+        "_is_hidden",
+        "upgrade_dir"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/readers/base.py": {
+      "in_degree": 8,
+      "out_degree": 3,
+      "classes": [
+        "BaseReader",
+        "BasePydanticReader",
+        "ResourcesReaderMixin",
+        "ReaderConfig"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.865
+    },
+    "llama_index/core/readers/__init__.py": {
+      "in_degree": 2,
+      "out_degree": 5,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.283
+    },
+    "llama_index/core/output_parsers/selection.py": {
+      "in_degree": 2,
+      "out_degree": 3,
+      "classes": [
+        "Answer",
+        "SelectionOutputParser"
+      ],
+      "functions": [],
+      "external_deps": [
+        "dataclasses_json",
+        "yaml"
+      ],
+      "reuse_score": 0.393
+    },
+    "llama_index/core/prompts/rich.py": {
+      "in_degree": 1,
+      "out_degree": 6,
+      "classes": [
+        "RichPromptTemplate"
+      ],
+      "functions": [],
+      "external_deps": [
+        "banks"
+      ],
+      "reuse_score": 0.133
+    },
+    "llama_index/core/evaluation/notebook_utils.py": {
+      "in_degree": 1,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "pandas"
+      ],
+      "reuse_score": 0.283
+    },
+    "llama_index/core/llama_pack/download.py": {
+      "in_degree": 1,
+      "out_degree": 3,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.221
+    },
+    "llama_index/core/workflow/drawing.py": {
+      "in_degree": 0,
+      "out_degree": 4,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "deprecated",
+        "packaging",
+        "pyvis"
+      ],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/selectors/embedding_selectors.py": {
+      "in_degree": 1,
+      "out_degree": 6,
+      "classes": [
+        "EmbeddingSingleSelector"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.133
+    },
+    "llama_index/core/tools/eval_query_engine.py": {
+      "in_degree": 0,
+      "out_degree": 4,
+      "classes": [
+        "EvalQueryEngineTool"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/workflow/utils.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "workflows"
+      ],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/callbacks/__init__.py": {
+      "in_degree": 17,
+      "out_degree": 6,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.912
+    },
+    "llama_index/core/program/llm_prompt_program.py": {
+      "in_degree": 0,
+      "out_degree": 3,
+      "classes": [
+        "BaseLLMFunctionProgram"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/chat_engine/types.py": {
+      "in_degree": 11,
+      "out_degree": 5,
+      "classes": [
+        "ChatResponseMode",
+        "AgentChatResponse",
+        "StreamingAgentChatResponse",
+        "BaseChatEngine",
+        "ChatMode"
+      ],
+      "functions": [
+        "is_function",
+        "set_source_nodes",
+        "__post_init__",
+        "__str__",
+        "response_gen",
+        "async_response_gen",
+        "set_source_nodes",
+        "__post_init__",
+        "__str__",
+        "_ensure_async_setup",
+        "put_in_queue",
+        "aput_in_queue",
+        "write_response_to_history",
+        "awrite_response_to_history",
+        "response_gen",
+        "async_response_gen",
+        "print_response_stream",
+        "aprint_response_stream",
+        "reset",
+        "chat",
+        "stream_chat",
+        "achat",
+        "astream_chat",
+        "chat_repl",
+        "streaming_chat_repl",
+        "chat_history"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.84
+    },
+    "llama_index/core/download/integration.py": {
+      "in_degree": 3,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.95
+    },
+    "llama_index/core/composability/base.py": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "llama_index/core/llama_dataset/rag.py": {
+      "in_degree": 2,
+      "out_degree": 3,
+      "classes": [
+        "RagExamplePrediction",
+        "LabelledRagDataExample",
+        "RagPredictionDataset",
+        "LabelledRagDataset"
+      ],
+      "functions": [],
+      "external_deps": [
+        "pandas"
+      ],
+      "reuse_score": 0.393
+    },
+    "llama_index/core/postprocessor/structured_llm_rerank.py": {
+      "in_degree": 1,
+      "out_degree": 11,
+      "classes": [
+        "DocumentWithRelevance",
+        "DocumentRelevanceList",
+        "StructuredLLMRerank"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.08
+    },
+    "llama_index/core/embeddings/utils.py": {
+      "in_degree": 3,
+      "out_degree": 6,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.349
+    },
+    "llama_index/core/extractors/interface.py": {
+      "in_degree": 4,
+      "out_degree": 4,
+      "classes": [
+        "BaseExtractor"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.551
+    },
+    "llama_index/core/retrievers/fusion_retriever.py": {
+      "in_degree": 1,
+      "out_degree": 9,
+      "classes": [
+        "FUSION_MODES",
+        "QueryFusionRetriever"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.095
+    },
+    "llama_index/core/types.py": {
+      "in_degree": 40,
+      "out_degree": 4,
+      "classes": [
+        "BaseOutputParser",
+        "BasePydanticProgram",
+        "PydanticProgramMode",
+        "Thread"
+      ],
+      "functions": [
+        "parse",
+        "format",
+        "_format_message",
+        "format_messages",
+        "__get_pydantic_core_schema__",
+        "__get_pydantic_json_schema__",
+        "output_cls",
+        "__call__",
+        "acall",
+        "stream_call",
+        "astream_call",
+        "__init__"
+      ],
+      "external_deps": [
+        "contextvars"
+      ],
+      "reuse_score": 1.0
+    },
+    "llama_index/core/response_synthesizers/base.py": {
+      "in_degree": 9,
+      "out_degree": 11,
+      "classes": [
+        "BaseSynthesizer"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.528
+    },
+    "llama_index/core/postprocessor/optimizer.py": {
+      "in_degree": 1,
+      "out_degree": 6,
+      "classes": [
+        "SentenceEmbeddingOptimizer"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.133
+    },
+    "llama_index/core/query_engine/transform_query_engine.py": {
+      "in_degree": 1,
+      "out_degree": 5,
+      "classes": [
+        "TransformQueryEngine"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.154
+    },
+    "llama_index/core/query_engine/sql_vector_query_engine.py": {
+      "in_degree": 1,
+      "out_degree": 9,
+      "classes": [
+        "SQLAutoVectorQueryEngine"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.095
+    },
+    "llama_index/core/agent/react/output_parser.py": {
+      "in_degree": 1,
+      "out_degree": 2,
+      "classes": [
+        "ReActOutputParser"
+      ],
+      "functions": [],
+      "external_deps": [
+        "dirtyjson"
+      ],
+      "reuse_score": 0.283
+    },
+    "llama_index/core/base/__init__.py": {
+      "in_degree": 30,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 1.0
+    },
+    "llama_index/core/callbacks/llama_debug.py": {
+      "in_degree": 1,
+      "out_degree": 2,
+      "classes": [
+        "LlamaDebugHandler"
+      ],
+      "functions": [
+        "__init__",
+        "on_event_start",
+        "on_event_end",
+        "get_events",
+        "_get_event_pairs",
+        "_get_time_stats_from_event_pairs",
+        "get_event_pairs",
+        "get_llm_inputs_outputs",
+        "get_event_time_info",
+        "flush_event_logs",
+        "start_trace",
+        "end_trace",
+        "_print_trace_map",
+        "print_trace_map",
+        "event_pairs_by_type",
+        "events_pairs_by_id",
+        "sequential_events"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.283
+    },
+    "llama_index/core/workflow/context.py": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "workflows"
+      ],
+      "reuse_score": 0.632
+    },
+    "llama_index/core/memory/types.py": {
+      "in_degree": 6,
+      "out_degree": 3,
+      "classes": [
+        "BaseMemory",
+        "BaseChatStoreMemory"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.777
+    },
+    "llama_index/core/llama_dataset/download.py": {
+      "in_degree": 1,
+      "out_degree": 7,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.118
+    },
+    "llama_index/core/question_gen/types.py": {
+      "in_degree": 4,
+      "out_degree": 5,
+      "classes": [
+        "SubQuestion",
+        "SubQuestionList",
+        "BaseQuestionGenerator"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.487
+    },
+    "llama_index/core/question_gen/output_parser.py": {
+      "in_degree": 2,
+      "out_degree": 4,
+      "classes": [
+        "SubQuestionOutputParser"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.33
+    },
+    "llama_index/core/bridge/pydantic_settings.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/node_parser/loading.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/objects/table_node_mapping.py": {
+      "in_degree": 1,
+      "out_degree": 4,
+      "classes": [
+        "SQLTableSchema",
+        "SQLTableNodeMapping"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.181
+    },
+    "llama_index/core/response_synthesizers/compact_and_refine.py": {
+      "in_degree": 2,
+      "out_degree": 4,
+      "classes": [
+        "CompactAndRefine"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.33
+    },
+    "llama_index/core/response_synthesizers/__init__.py": {
+      "in_degree": 12,
+      "out_degree": 9,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.699
+    },
+    "llama_index/core/tools/types.py": {
+      "in_degree": 19,
+      "out_degree": 3,
+      "classes": [
+        "DefaultToolFnSchema",
+        "ToolMetadata",
+        "ToolOutput",
+        "BaseTool",
+        "AsyncBaseTool",
+        "BaseToolAsyncAdapter"
+      ],
+      "functions": [],
+      "external_deps": [
+        "deprecated"
+      ],
+      "reuse_score": 0.991
+    },
+    "llama_index/core/prompts/chat_prompts.py": {
+      "in_degree": 2,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.487
+    },
+    "llama_index/core/extractors/metadata_extractors.py": {
+      "in_degree": 2,
+      "out_degree": 8,
+      "classes": [
+        "TitleExtractor",
+        "KeywordExtractor",
+        "QuestionsAnsweredExtractor",
+        "SummaryExtractor",
+        "PydanticProgramExtractor"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.199
+    },
+    "llama_index/core/indices/base_retriever.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "llama_index/core/graph_stores/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 3,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/readers/json.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [
+        "JSONReader"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/node_parser/node_utils.py": {
+      "in_degree": 1,
+      "out_degree": 2,
+      "classes": [
+        "IdFuncCallable"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.283
+    },
+    "llama_index/core/prompts/default_prompts.py": {
+      "in_degree": 11,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.974
+    },
+    "llama_index/core/callbacks/token_counting.py": {
+      "in_degree": 0,
+      "out_degree": 5,
+      "classes": [
+        "TokenCountingEvent",
+        "TokenCountingHandler"
+      ],
+      "functions": [
+        "get_tokens_from_response",
+        "get_llm_token_counts",
+        "__post_init__",
+        "__init__",
+        "start_trace",
+        "end_trace",
+        "_check_budget",
+        "on_event_start",
+        "on_event_end",
+        "total_llm_token_count",
+        "prompt_llm_token_count",
+        "completion_llm_token_count",
+        "total_embedding_token_count",
+        "reset_counts"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/response_synthesizers/context_only.py": {
+      "in_degree": 1,
+      "out_degree": 3,
+      "classes": [
+        "ContextOnly"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.221
+    },
+    "llama_index/core/program/function_program.py": {
+      "in_degree": 3,
+      "out_degree": 9,
+      "classes": [
+        "FunctionCallingProgram"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.259
+    },
+    "llama_index/core/response_synthesizers/factory.py": {
+      "in_degree": 2,
+      "out_degree": 20,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.091
+    },
+    "llama_index/core/retrievers/recursive_retriever.py": {
+      "in_degree": 1,
+      "out_degree": 6,
+      "classes": [
+        "RecursiveRetriever"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.133
+    },
+    "llama_index/core/voice_agents/interface.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [
+        "BaseVoiceAgentInterface"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/workflow/decorators.py": {
+      "in_degree": 2,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "workflows"
+      ],
+      "reuse_score": 0.865
+    },
+    "llama_index/core/tools/download.py": {
+      "in_degree": 1,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "deprecated"
+      ],
+      "reuse_score": 0.283
+    },
+    "llama_index/core/graph_stores/simple_labelled.py": {
+      "in_degree": 2,
+      "out_degree": 2,
+      "classes": [
+        "SimplePropertyGraphStore"
+      ],
+      "functions": [],
+      "external_deps": [
+        "fsspec",
+        "networkx",
+        "pyvis",
+        "yfiles_jupyter_graphs"
+      ],
+      "reuse_score": 0.487
+    },
+    "llama_index/core/multi_modal_llms/generic_utils.py": {
+      "in_degree": 11,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "filetype",
+        "requests"
+      ],
+      "reuse_score": 0.996
+    },
+    "llama_index/core/utilities/sql_wrapper.py": {
+      "in_degree": 2,
+      "out_degree": 1,
+      "classes": [
+        "SQLDatabase"
+      ],
+      "functions": [],
+      "external_deps": [
+        "sqlalchemy"
+      ],
+      "reuse_score": 0.632
+    },
+    "llama_index/core/workflow/errors.py": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "workflows"
+      ],
+      "reuse_score": 0.632
+    },
+    "llama_index/core/response_synthesizers/refine.py": {
+      "in_degree": 3,
+      "out_degree": 13,
+      "classes": [
+        "StructuredRefineResponse",
+        "DefaultRefineProgram",
+        "Refine"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.193
+    },
+    "llama_index/core/utilities/gemini_utils.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/download/utils.py": {
+      "in_degree": 3,
+      "out_degree": 0,
+      "classes": [
+        "ChangeDirectory"
+      ],
+      "functions": [],
+      "external_deps": [
+        "requests"
+      ],
+      "reuse_score": 0.95
+    },
+    "llama_index/core/download/dataset.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "tqdm"
+      ],
+      "reuse_score": 0.393
+    },
+    "llama_index/core/instrumentation/base_handler.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/storage/storage_context.py": {
+      "in_degree": 10,
+      "out_degree": 8,
+      "classes": [
+        "StorageContext"
+      ],
+      "functions": [],
+      "external_deps": [
+        "fsspec"
+      ],
+      "reuse_score": 0.671
+    },
+    "llama_index/core/embeddings/__init__.py": {
+      "in_degree": 1,
+      "out_degree": 5,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.154
+    },
+    "llama_index/core/callbacks/base_handler.py": {
+      "in_degree": 4,
+      "out_degree": 1,
+      "classes": [
+        "BaseCallbackHandler"
+      ],
+      "functions": [
+        "__init__",
+        "on_event_start",
+        "on_event_end",
+        "start_trace",
+        "end_trace"
+      ],
+      "external_deps": [
+        "contextvars"
+      ],
+      "reuse_score": 0.865
+    },
+    "llama_index/core/image_retriever.py": {
+      "in_degree": 2,
+      "out_degree": 3,
+      "classes": [
+        "BaseImageRetriever"
+      ],
+      "functions": [
+        "text_to_image_retrieve",
+        "_text_to_image_retrieve",
+        "image_to_image_retrieve",
+        "_image_to_image_retrieve",
+        "atext_to_image_retrieve",
+        "_atext_to_image_retrieve",
+        "aimage_to_image_retrieve",
+        "_aimage_to_image_retrieve"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "llama_index/core/extractors/document_context.py": {
+      "in_degree": 1,
+      "out_degree": 5,
+      "classes": [
+        "DocumentContextExtractor"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.154
+    },
+    "llama_index/core/instrumentation/dispatcher.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "llama_index_instrumentation"
+      ],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/prompts/prompt_type.py": {
+      "in_degree": 5,
+      "out_degree": 0,
+      "classes": [
+        "PromptType"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.993
+    },
+    "llama_index/core/llms/structured_llm.py": {
+      "in_degree": 3,
+      "out_degree": 5,
+      "classes": [
+        "StructuredLLM"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "llama_index/core/ingestion/cache.py": {
+      "in_degree": 2,
+      "out_degree": 2,
+      "classes": [
+        "IngestionCache"
+      ],
+      "functions": [],
+      "external_deps": [
+        "fsspec"
+      ],
+      "reuse_score": 0.487
+    },
+    "llama_index/core/agent/react/formatter.py": {
+      "in_degree": 1,
+      "out_degree": 3,
+      "classes": [
+        "BaseAgentChatFormatter",
+        "ReActChatFormatter"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.221
+    },
+    "llama_index/core/chat_engine/multi_modal_condense_plus_context.py": {
+      "in_degree": 1,
+      "out_degree": 16,
+      "classes": [
+        "MultiModalCondensePlusContextChatEngine"
+      ],
+      "functions": [
+        "__init__",
+        "from_defaults",
+        "_condense_question",
+        "_acondense_question",
+        "_get_nodes",
+        "_aget_nodes",
+        "_run_c2",
+        "_arun_c2",
+        "synthesize",
+        "asynthesize",
+        "chat",
+        "stream_chat",
+        "achat",
+        "astream_chat",
+        "reset",
+        "chat_history",
+        "wrapped_gen",
+        "wrapped_gen"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.057
+    },
+    "llama_index/core/program/streaming_utils.py": {
+      "in_degree": 0,
+      "out_degree": 3,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/llms/llm.py": {
+      "in_degree": 47,
+      "out_degree": 16,
+      "classes": [
+        "ToolSelection",
+        "MessagesToPromptType",
+        "CompletionToPromptType",
+        "LLM"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.937
+    },
+    "llama_index/core/extractors/loading.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/ingestion/pipeline.py": {
+      "in_degree": 1,
+      "out_degree": 11,
+      "classes": [
+        "DocstoreStrategy",
+        "IngestionPipeline"
+      ],
+      "functions": [],
+      "external_deps": [
+        "fsspec"
+      ],
+      "reuse_score": 0.08
+    },
+    "llama_index/core/query_engine/sql_join_query_engine.py": {
+      "in_degree": 2,
+      "out_degree": 13,
+      "classes": [
+        "SQLAugmentQueryTransform",
+        "SQLJoinQueryEngine"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.133
+    },
+    "llama_index/core/agent/react/prompts.py": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "llama_index/core/llama_dataset/evaluator_evaluation.py": {
+      "in_degree": 2,
+      "out_degree": 4,
+      "classes": [
+        "EvaluatorExamplePrediction",
+        "LabelledEvaluatorDataExample",
+        "EvaluatorPredictionDataset",
+        "LabelledEvaluatorDataset",
+        "PairwiseEvaluatorExamplePrediction",
+        "PairwiseEvaluatorPredictionDataset",
+        "LabelledPairwiseEvaluatorDataExample",
+        "LabelledPairwiseEvaluatorDataset"
+      ],
+      "functions": [],
+      "external_deps": [
+        "pandas"
+      ],
+      "reuse_score": 0.33
+    },
+    "llama_index/core/node_parser/interface.py": {
+      "in_degree": 2,
+      "out_degree": 5,
+      "classes": [
+        "NodeParser",
+        "TextSplitter",
+        "MetadataAwareTextSplitter"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.283
+    },
+    "llama_index/core/question_gen/llm_generators.py": {
+      "in_degree": 2,
+      "out_degree": 12,
+      "classes": [
+        "LLMQuestionGenerator"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.143
+    },
+    "llama_index/core/response_synthesizers/accumulate.py": {
+      "in_degree": 2,
+      "out_degree": 10,
+      "classes": [
+        "Accumulate"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.166
+    },
+    "llama_index/core/base/base_retriever.py": {
+      "in_degree": 17,
+      "out_degree": 8,
+      "classes": [
+        "BaseRetriever"
+      ],
+      "functions": [
+        "__init__",
+        "_check_callback_manager",
+        "_get_prompts",
+        "_get_prompt_modules",
+        "_update_prompts",
+        "_retrieve_from_object",
+        "_aretrieve_from_object",
+        "_handle_recursive_retrieval",
+        "_ahandle_recursive_retrieval",
+        "retrieve",
+        "aretrieve",
+        "_retrieve",
+        "_aretrieve"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.849
+    },
+    "llama_index/core/evaluation/semantic_similarity.py": {
+      "in_degree": 1,
+      "out_degree": 4,
+      "classes": [
+        "SemanticSimilarityEvaluator"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.181
+    },
+    "llama_index/core/base/base_auto_retriever.py": {
+      "in_degree": 0,
+      "out_degree": 3,
+      "classes": [
+        "BaseAutoRetriever"
+      ],
+      "functions": [
+        "generate_retrieval_spec",
+        "agenerate_retrieval_spec",
+        "_build_retriever_from_spec",
+        "_retrieve",
+        "_aretrieve"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/extractors/__init__.py": {
+      "in_degree": 1,
+      "out_degree": 3,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.221
+    },
+    "llama_index/core/tools/query_engine.py": {
+      "in_degree": 7,
+      "out_degree": 3,
+      "classes": [
+        "QueryEngineTool"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.826
+    },
+    "llama_index/core/query_engine/retriever_query_engine.py": {
+      "in_degree": 5,
+      "out_degree": 13,
+      "classes": [
+        "RetrieverQueryEngine"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.3
+    },
+    "llama_index/core/ingestion/__init__.py": {
+      "in_degree": 4,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.736
+    },
+    "llama_index/core/question_gen/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/chat_engine/context.py": {
+      "in_degree": 1,
+      "out_degree": 12,
+      "classes": [
+        "ContextChatEngine"
+      ],
+      "functions": [
+        "__init__",
+        "from_defaults",
+        "_get_nodes",
+        "_aget_nodes",
+        "_get_response_synthesizer",
+        "chat",
+        "stream_chat",
+        "achat",
+        "astream_chat",
+        "reset",
+        "chat_history",
+        "wrapped_gen",
+        "wrapped_gen"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.074
+    },
+    "llama_index/core/postprocessor/node_recency.py": {
+      "in_degree": 1,
+      "out_degree": 5,
+      "classes": [
+        "FixedRecencyPostprocessor",
+        "EmbeddingRecencyPostprocessor",
+        "TimeWeightedPostprocessor"
+      ],
+      "functions": [],
+      "external_deps": [
+        "numpy",
+        "pandas"
+      ],
+      "reuse_score": 0.154
+    },
+    "llama_index/core/evaluation/pairwise.py": {
+      "in_degree": 2,
+      "out_degree": 5,
+      "classes": [
+        "EvaluationSource",
+        "PairwiseComparisonEvaluator"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.283
+    },
+    "llama_index/core/workflow/handler.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "workflows"
+      ],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/indices/loading.py": {
+      "in_degree": 1,
+      "out_degree": 3,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.221
+    },
+    "llama_index/core/bridge/langchain.py": {
+      "in_degree": 7,
+      "out_degree": 6,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "langchain",
+        "langchain_classic",
+        "langchain_community",
+        "langchain_core"
+      ],
+      "reuse_score": 0.632
+    },
+    "llama_index/core/voice_agents/websocket.py": {
+      "in_degree": 2,
+      "out_degree": 0,
+      "classes": [
+        "BaseVoiceAgentWebsocket"
+      ],
+      "functions": [],
+      "external_deps": [
+        "websockets"
+      ],
+      "reuse_score": 0.865
+    },
+    "llama_index/core/sparse_embeddings/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/evaluation/faithfulness.py": {
+      "in_degree": 1,
+      "out_degree": 7,
+      "classes": [
+        "FaithfulnessEvaluator"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.118
+    },
+    "llama_index/core/instrumentation/__init__.py": {
+      "in_degree": 23,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "llama_index_instrumentation"
+      ],
+      "reuse_score": 1.0
+    },
+    "llama_index/core/base/base_query_engine.py": {
+      "in_degree": 24,
+      "out_degree": 4,
+      "classes": [
+        "BaseQueryEngine"
+      ],
+      "functions": [
+        "__init__",
+        "_get_prompts",
+        "_update_prompts",
+        "query",
+        "aquery",
+        "retrieve",
+        "synthesize",
+        "asynthesize",
+        "_query",
+        "_aquery"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.992
+    },
+    "llama_index/core/data_structs/data_structs.py": {
+      "in_degree": 5,
+      "out_degree": 2,
+      "classes": [
+        "IndexStruct",
+        "IndexGraph",
+        "KeywordTable",
+        "IndexList",
+        "IndexLPG",
+        "IndexDict",
+        "MultiModelIndexDict",
+        "KG",
+        "EmptyIndexStruct"
+      ],
+      "functions": [
+        "get_summary",
+        "get_type",
+        "node_id_to_index",
+        "size",
+        "get_index",
+        "insert",
+        "get_children",
+        "insert_under_parent",
+        "get_type",
+        "add_node",
+        "node_ids",
+        "keywords",
+        "size",
+        "get_type",
+        "add_node",
+        "get_type",
+        "add_node",
+        "get_type",
+        "add_node",
+        "delete",
+        "get_type",
+        "get_type",
+        "node_ids",
+        "add_to_embedding_dict",
+        "add_node"
+      ],
+      "external_deps": [
+        "dataclasses_json"
+      ],
+      "reuse_score": 0.811
+    },
+    "llama_index/core/postprocessor/metadata_replacement.py": {
+      "in_degree": 1,
+      "out_degree": 3,
+      "classes": [
+        "MetadataReplacementPostProcessor"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.221
+    },
+    "llama_index/core/postprocessor/types.py": {
+      "in_degree": 19,
+      "out_degree": 5,
+      "classes": [
+        "BaseNodePostprocessor"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.958
+    },
+    "llama_index/core/workflow/service.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "workflows"
+      ],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/callbacks/utils.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [
+        "trace_method",
+        "decorator",
+        "wrapper",
+        "async_wrapper"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/ingestion/data_sinks.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [
+        "DataSink",
+        "ConfigurableComponent",
+        "ConfiguredDataSink"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/llama_dataset/simple.py": {
+      "in_degree": 0,
+      "out_degree": 3,
+      "classes": [
+        "SimpleExamplePrediction",
+        "SimplePredictionDataset",
+        "LabelledSimpleDataExample",
+        "LabelledSimpleDataset"
+      ],
+      "functions": [],
+      "external_deps": [
+        "pandas"
+      ],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/output_parsers/pydantic.py": {
+      "in_degree": 4,
+      "out_degree": 3,
+      "classes": [
+        "PydanticOutputParser"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "llama_index/core/ingestion/transformations.py": {
+      "in_degree": 0,
+      "out_degree": 3,
+      "classes": [
+        "TransformationIOType",
+        "TransformationIOTypes",
+        "TransformationCategory",
+        "TransformationCategories",
+        "ConfigurableTransformation",
+        "ConfigurableComponent",
+        "ConfiguredTransformation"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/__init__.py": {
+      "in_degree": 7,
+      "out_degree": 16,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.338
+    },
+    "llama_index/core/prompts/guidance_utils.py": {
+      "in_degree": 0,
+      "out_degree": 3,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/evaluation/guideline.py": {
+      "in_degree": 2,
+      "out_degree": 7,
+      "classes": [
+        "EvaluationData",
+        "GuidelineEvaluator"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.221
+    },
+    "llama_index/core/response/utils.py": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "llama_index/core/langchain_helpers/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/service_context.py": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "classes": [
+        "ServiceContext"
+      ],
+      "functions": [
+        "set_global_service_context",
+        "__init__",
+        "from_defaults"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "llama_index/core/vector_stores/utils.py": {
+      "in_degree": 2,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.487
+    },
+    "llama_index/core/graph_stores/types.py": {
+      "in_degree": 4,
+      "out_degree": 6,
+      "classes": [
+        "LabelledNode",
+        "EntityNode",
+        "ChunkNode",
+        "Relation",
+        "LabelledPropertyGraph",
+        "GraphStore",
+        "PropertyGraphStore"
+      ],
+      "functions": [],
+      "external_deps": [
+        "fsspec"
+      ],
+      "reuse_score": 0.435
+    },
+    "llama_index/core/output_parsers/utils.py": {
+      "in_degree": 5,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "yaml"
+      ],
+      "reuse_score": 0.918
+    },
+    "llama_index/core/vector_stores/simple.py": {
+      "in_degree": 2,
+      "out_degree": 5,
+      "classes": [
+        "SimpleVectorStoreData",
+        "SimpleVectorStore"
+      ],
+      "functions": [],
+      "external_deps": [
+        "dataclasses_json",
+        "fsspec"
+      ],
+      "reuse_score": 0.283
+    },
+    "llama_index/core/llama_pack/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/chat_engine/simple.py": {
+      "in_degree": 1,
+      "out_degree": 6,
+      "classes": [
+        "SimpleChatEngine"
+      ],
+      "functions": [
+        "__init__",
+        "from_defaults",
+        "chat",
+        "stream_chat",
+        "achat",
+        "astream_chat",
+        "reset",
+        "chat_history"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.133
+    },
+    "llama_index/core/prompts/prompt_utils.py": {
+      "in_degree": 2,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "llama_index/core/workflow/retry_policy.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "workflows"
+      ],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/postprocessor/node.py": {
+      "in_degree": 3,
+      "out_degree": 7,
+      "classes": [
+        "KeywordNodePostprocessor",
+        "SimilarityPostprocessor",
+        "PrevNextNodePostprocessor",
+        "AutoPrevNextNodePostprocessor",
+        "LongContextReorder"
+      ],
+      "functions": [],
+      "external_deps": [
+        "spacy"
+      ],
+      "reuse_score": 0.313
+    },
+    "llama_index/core/memory/memory.py": {
+      "in_degree": 1,
+      "out_degree": 5,
+      "classes": [
+        "InsertMethod",
+        "BaseMemoryBlock",
+        "Memory"
+      ],
+      "functions": [],
+      "external_deps": [
+        "sqlalchemy"
+      ],
+      "reuse_score": 0.154
+    },
+    "llama_index/core/constants.py": {
+      "in_degree": 6,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.998
+    },
+    "llama_index/core/command_line/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/base/base_multi_modal_retriever.py": {
+      "in_degree": 0,
+      "out_degree": 3,
+      "classes": [
+        "MultiModalRetriever"
+      ],
+      "functions": [
+        "text_retrieve",
+        "text_to_image_retrieve",
+        "image_to_image_retrieve",
+        "atext_retrieve",
+        "atext_to_image_retrieve",
+        "aimage_to_image_retrieve"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/langchain_helpers/streaming.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [
+        "StreamingGeneratorCallbackHandler"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/tools/calling.py": {
+      "in_degree": 3,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "llama_index/core/storage/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/memory/__init__.py": {
+      "in_degree": 9,
+      "out_degree": 6,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.724
+    },
+    "llama_index/core/schema.py": {
+      "in_degree": 100,
+      "out_degree": 5,
+      "classes": [
+        "BaseComponent",
+        "TransformComponent",
+        "NodeRelationship",
+        "ObjectType",
+        "Modality",
+        "MetadataMode",
+        "RelatedNodeInfo",
+        "BaseNode",
+        "MediaResource",
+        "Node",
+        "TextNode",
+        "ImageNode",
+        "IndexNode",
+        "NodeWithScore",
+        "Document",
+        "ImageDocument",
+        "QueryBundle"
+      ],
+      "functions": [
+        "is_image_pil",
+        "is_image_url_pil",
+        "__get_pydantic_json_schema__",
+        "class_name",
+        "json",
+        "custom_model_dump",
+        "dict",
+        "__getstate__",
+        "__setstate__",
+        "to_dict",
+        "to_json",
+        "from_dict",
+        "from_json",
+        "__call__",
+        "acall",
+        "class_name",
+        "get_type",
+        "get_content",
+        "get_content_blocks",
+        "get_metadata_str",
+        "get_metadata_content_blocks",
+        "set_content",
+        "hash",
+        "node_id",
+        "node_id",
+        "source_node",
+        "prev_node",
+        "next_node",
+        "parent_node",
+        "child_nodes",
+        "ref_doc_id",
+        "extra_info",
+        "extra_info",
+        "__str__",
+        "get_embedding",
+        "as_related_node_info",
+        "validate_data",
+        "validate_mimetype",
+        "serialize_path",
+        "hash",
+        "class_name",
+        "get_type",
+        "get_content",
+        "get_content_blocks",
+        "set_content",
+        "hash",
+        "__init__",
+        "class_name",
+        "hash",
+        "get_type",
+        "get_content",
+        "get_content_blocks",
+        "set_content",
+        "get_node_info",
+        "get_text",
+        "node_info",
+        "__init__",
+        "get_type",
+        "class_name",
+        "resolve_image",
+        "hash",
+        "get_content_blocks",
+        "dict",
+        "from_text_node",
+        "from_dict",
+        "get_type",
+        "class_name",
+        "__str__",
+        "get_score",
+        "class_name",
+        "node_id",
+        "id_",
+        "text",
+        "metadata",
+        "embedding",
+        "get_text",
+        "get_content",
+        "get_embedding",
+        "__init__",
+        "custom_model_dump",
+        "text",
+        "get_type",
+        "doc_id",
+        "doc_id",
+        "__str__",
+        "get_doc_id",
+        "to_langchain_format",
+        "from_langchain_format",
+        "to_haystack_format",
+        "from_haystack_format",
+        "to_embedchain_format",
+        "from_embedchain_format",
+        "to_semantic_kernel_format",
+        "from_semantic_kernel_format",
+        "to_vectorflow",
+        "example",
+        "class_name",
+        "to_cloud_document",
+        "from_cloud_document",
+        "__init__",
+        "image",
+        "image",
+        "image_path",
+        "image_path",
+        "image_url",
+        "image_url",
+        "image_mimetype",
+        "image_mimetype",
+        "text_embedding",
+        "text_embedding",
+        "class_name",
+        "resolve_image",
+        "embedding_strs",
+        "embedding_image",
+        "__str__"
+      ],
+      "external_deps": [
+        "PIL",
+        "binascii",
+        "dataclasses_json",
+        "deprecated",
+        "filetype",
+        "haystack",
+        "llama_cloud",
+        "numpy",
+        "requests",
+        "semantic_kernel",
+        "typing_extensions"
+      ],
+      "reuse_score": 1.0
+    },
+    "llama_index/core/tools/__init__.py": {
+      "in_degree": 12,
+      "out_degree": 7,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.777
+    },
+    "llama_index/core/query_engine/retry_source_query_engine.py": {
+      "in_degree": 1,
+      "out_degree": 9,
+      "classes": [
+        "RetrySourceQueryEngine"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.095
+    },
+    "llama_index/core/utils.py": {
+      "in_degree": 33,
+      "out_degree": 2,
+      "classes": [
+        "GlobalsHelper",
+        "Tokenizer",
+        "ErrorToRetry"
+      ],
+      "functions": [
+        "set_global_tokenizer",
+        "get_tokenizer",
+        "get_new_id",
+        "get_new_int_id",
+        "temp_set_attrs",
+        "retry_on_exceptions_with_backoff",
+        "aretry_on_exceptions_with_backoff",
+        "get_retry_on_exceptions_with_backoff_decorator",
+        "truncate_text",
+        "iter_batch",
+        "concat_dirs",
+        "get_tqdm_iterable",
+        "count_tokens",
+        "get_transformer_tokenizer_fn",
+        "get_cache_dir",
+        "add_sync_version",
+        "get_color_mapping",
+        "_get_colored_text",
+        "print_text",
+        "infer_torch_device",
+        "unit_generator",
+        "async_unit_generator",
+        "resolve_binary",
+        "wait_for_nltk_check",
+        "_download_nltk_data",
+        "stopwords",
+        "punkt_tokenizer",
+        "encode",
+        "decorator",
+        "_wrapper",
+        "wrapper",
+        "awrapper",
+        "foo"
+      ],
+      "external_deps": [
+        "binascii",
+        "nltk",
+        "platformdirs",
+        "requests",
+        "tiktoken",
+        "torch",
+        "tqdm",
+        "transformers"
+      ],
+      "reuse_score": 1.0
+    },
+    "llama_index/core/vector_stores/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/query_engine/multi_modal.py": {
+      "in_degree": 1,
+      "out_degree": 10,
+      "classes": [
+        "SimpleMultiModalQueryEngine"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.087
+    },
+    "llama_index/core/llms/custom.py": {
+      "in_degree": 2,
+      "out_degree": 3,
+      "classes": [
+        "CustomLLM"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "llama_index/core/memory/chat_memory_buffer.py": {
+      "in_degree": 1,
+      "out_degree": 4,
+      "classes": [
+        "ChatMemoryBuffer"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.181
+    },
+    "llama_index/core/llms/mock.py": {
+      "in_degree": 3,
+      "out_degree": 9,
+      "classes": [
+        "MockLLM",
+        "MockLLMWithNonyieldingChatStream",
+        "MockLLMWithChatMemoryOfLastCall",
+        "MockFunctionCallingLLM"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.259
+    },
+    "llama_index/core/settings.py": {
+      "in_degree": 46,
+      "out_degree": 11,
+      "classes": [
+        "_Settings"
+      ],
+      "functions": [
+        "llm",
+        "llm",
+        "pydantic_program_mode",
+        "pydantic_program_mode",
+        "embed_model",
+        "embed_model",
+        "global_handler",
+        "global_handler",
+        "callback_manager",
+        "callback_manager",
+        "tokenizer",
+        "tokenizer",
+        "node_parser",
+        "node_parser",
+        "chunk_size",
+        "chunk_size",
+        "chunk_overlap",
+        "chunk_overlap",
+        "text_splitter",
+        "text_splitter",
+        "prompt_helper",
+        "prompt_helper",
+        "num_output",
+        "num_output",
+        "context_window",
+        "context_window",
+        "transformations",
+        "transformations"
+      ],
+      "external_deps": [
+        "transformers"
+      ],
+      "reuse_score": 0.978
+    },
+    "llama_index/core/agent/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 3,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/data_structs/document_summary.py": {
+      "in_degree": 1,
+      "out_degree": 3,
+      "classes": [
+        "IndexDocumentSummary"
+      ],
+      "functions": [
+        "add_summary_and_nodes",
+        "summary_ids",
+        "delete",
+        "delete_nodes",
+        "get_type"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.221
+    },
+    "llama_index/core/evaluation/correctness.py": {
+      "in_degree": 1,
+      "out_degree": 6,
+      "classes": [
+        "CorrectnessEvaluator"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.133
+    },
+    "llama_index/core/agent/utils.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [
+        "messages_to_xml_format",
+        "generate_structured_response"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/prompts/default_prompt_selectors.py": {
+      "in_degree": 6,
+      "out_degree": 4,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.699
+    },
+    "llama_index/core/response_synthesizers/no_text.py": {
+      "in_degree": 1,
+      "out_degree": 3,
+      "classes": [
+        "NoText"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.221
+    },
+    "llama_index/core/bridge/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/query_engine/graph_query_engine.py": {
+      "in_degree": 1,
+      "out_degree": 5,
+      "classes": [
+        "ComposableGraphQueryEngine"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.154
+    },
+    "llama_index/core/rate_limiter.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [
+        "BaseRateLimiter",
+        "TokenBucketRateLimiter",
+        "SlidingWindowRateLimiter"
+      ],
+      "functions": [
+        "acquire",
+        "async_acquire",
+        "__init__",
+        "_refill",
+        "_wait_time",
+        "_consume",
+        "acquire",
+        "async_acquire",
+        "_check_limits",
+        "_prune_request_timestamps",
+        "_prune_token_usage",
+        "_current_token_usage",
+        "_wait_time",
+        "_record_usage",
+        "acquire",
+        "async_acquire"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/indices/registry.py": {
+      "in_degree": 1,
+      "out_degree": 3,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.221
+    },
+    "llama_index/core/indices/base.py": {
+      "in_degree": 6,
+      "out_degree": 12,
+      "classes": [
+        "BaseIndex"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.37
+    },
+    "llama_index/core/retrievers/auto_merging_retriever.py": {
+      "in_degree": 1,
+      "out_degree": 5,
+      "classes": [
+        "AutoMergingRetriever"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.154
+    },
+    "llama_index/core/query_engine/custom.py": {
+      "in_degree": 1,
+      "out_degree": 5,
+      "classes": [
+        "CustomQueryEngine"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.154
+    },
+    "llama_index/core/chat_engine/utils.py": {
+      "in_degree": 3,
+      "out_degree": 5,
+      "classes": [],
+      "functions": [
+        "get_prefix_messages_with_context",
+        "get_response_synthesizer",
+        "response_gen_from_query_engine",
+        "aresponse_gen_from_query_engine"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "llama_index/core/prompts/mixin.py": {
+      "in_degree": 49,
+      "out_degree": 1,
+      "classes": [
+        "PromptMixin"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 1.0
+    },
+    "llama_index/core/postprocessor/pii.py": {
+      "in_degree": 1,
+      "out_degree": 4,
+      "classes": [
+        "PIINodePostprocessor",
+        "NERPIINodePostprocessor"
+      ],
+      "functions": [],
+      "external_deps": [
+        "transformers"
+      ],
+      "reuse_score": 0.181
+    },
+    "llama_index/core/retrievers/__init__.py": {
+      "in_degree": 1,
+      "out_degree": 7,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.118
+    },
+    "llama_index/core/service_context_elements/llama_logger.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [
+        "LlamaLogger"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/tools/retriever_tool.py": {
+      "in_degree": 2,
+      "out_degree": 5,
+      "classes": [
+        "RetrieverTool"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.283
+    },
+    "llama_index/core/data_structs/registry.py": {
+      "in_degree": 0,
+      "out_degree": 4,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "llama_index/core/program/utils.py": {
+      "in_degree": 5,
+      "out_degree": 8,
+      "classes": [
+        "FlexibleModel"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.426
+    },
+    "llama_index/core/query_engine/retry_query_engine.py": {
+      "in_degree": 1,
+      "out_degree": 6,
+      "classes": [
+        "RetryQueryEngine",
+        "RetryGuidelineQueryEngine"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.133
+    },
+    "llama_index/core/workflow/context_serializers.py": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "workflows"
+      ],
+      "reuse_score": 0.632
+    },
+    "llama_index/core/multi_modal_llms/base.py": {
+      "in_degree": 5,
+      "out_degree": 6,
+      "classes": [
+        "MultiModalLLMMetadata",
+        "MultiModalLLM"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.51
+    },
+    "llama_index/core/query_engine/citation_query_engine.py": {
+      "in_degree": 1,
+      "out_degree": 14,
+      "classes": [
+        "CitationQueryEngine"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.064
+    },
+    "llama_index/core/playground/base.py": {
+      "in_degree": 1,
+      "out_degree": 5,
+      "classes": [
+        "Playground"
+      ],
+      "functions": [],
+      "external_deps": [
+        "pandas"
+      ],
+      "reuse_score": 0.154
+    },
+    "llama_index/core/memory/vector_memory.py": {
+      "in_degree": 1,
+      "out_degree": 5,
+      "classes": [
+        "VectorMemory"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.154
+    },
+    "llama_index/core/response_synthesizers/generation.py": {
+      "in_degree": 2,
+      "out_degree": 11,
+      "classes": [
+        "Generation"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.154
+    },
+    "llama_index/core/question_gen/prompts.py": {
+      "in_degree": 1,
+      "out_degree": 3,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.221
+    }
+  },
+  "communities": {
+    "llama_index_core_workflow": [
+      "llama_index/core/chat_ui/events.py",
+      "llama_index/core/extractors/__init__.py",
+      "llama_index/core/extractors/interface.py",
+      "llama_index/core/extractors/loading.py",
+      "llama_index/core/extractors/metadata_extractors.py",
+      "llama_index/core/voice_agents/__init__.py",
+      "llama_index/core/voice_agents/base.py",
+      "llama_index/core/voice_agents/websocket.py",
+      "llama_index/core/workflow/__init__.py",
+      "llama_index/core/workflow/context_serializers.py",
+      "llama_index/core/workflow/decorators.py",
+      "llama_index/core/workflow/drawing.py",
+      "llama_index/core/workflow/errors.py",
+      "llama_index/core/workflow/events.py",
+      "llama_index/core/workflow/workflow.py"
+    ],
+    "llama_index_core_langchain_helpers": [
+      "llama_index/core/langchain_helpers/text_splitter.py",
+      "llama_index/core/text_splitter/__init__.py"
+    ],
+    "llama_index_core_response_synthesizers": [
+      "llama_index/core/indices/prompt_helper.py",
+      "llama_index/core/llms/structured_llm.py",
+      "llama_index/core/multi_modal_llms/__init__.py",
+      "llama_index/core/prompts/default_prompt_selectors.py",
+      "llama_index/core/prompts/prompt_utils.py",
+      "llama_index/core/prompts/utils.py",
+      "llama_index/core/response/utils.py",
+      "llama_index/core/response_synthesizers/__init__.py",
+      "llama_index/core/response_synthesizers/accumulate.py",
+      "llama_index/core/response_synthesizers/base.py",
+      "llama_index/core/response_synthesizers/compact_and_accumulate.py",
+      "llama_index/core/response_synthesizers/compact_and_refine.py",
+      "llama_index/core/response_synthesizers/context_only.py",
+      "llama_index/core/response_synthesizers/factory.py",
+      "llama_index/core/response_synthesizers/generation.py",
+      "llama_index/core/response_synthesizers/no_text.py",
+      "llama_index/core/response_synthesizers/refine.py",
+      "llama_index/core/response_synthesizers/simple_summarize.py",
+      "llama_index/core/response_synthesizers/tree_summarize.py",
+      "llama_index/core/response_synthesizers/type.py"
+    ],
+    "llama_index_core_data_structs": [
+      "llama_index/core/data_structs/__init__.py",
+      "llama_index/core/data_structs/data_structs.py",
+      "llama_index/core/data_structs/document_summary.py",
+      "llama_index/core/data_structs/registry.py",
+      "llama_index/core/data_structs/struct_type.py",
+      "llama_index/core/data_structs/table.py"
+    ],
+    "llama_index_core_postprocessor": [
+      "llama_index/core/agent/utils.py",
+      "llama_index/core/bridge/pydantic.py",
+      "llama_index/core/indices/postprocessor.py",
+      "llama_index/core/postprocessor/__init__.py",
+      "llama_index/core/postprocessor/llm_rerank.py",
+      "llama_index/core/postprocessor/metadata_replacement.py",
+      "llama_index/core/postprocessor/node.py",
+      "llama_index/core/postprocessor/node_recency.py",
+      "llama_index/core/postprocessor/optimizer.py",
+      "llama_index/core/postprocessor/pii.py",
+      "llama_index/core/postprocessor/rankGPT_rerank.py",
+      "llama_index/core/postprocessor/sbert_rerank.py",
+      "llama_index/core/postprocessor/structured_llm_rerank.py",
+      "llama_index/core/postprocessor/types.py",
+      "llama_index/core/program/llm_prompt_program.py",
+      "llama_index/core/prompts/base.py",
+      "llama_index/core/prompts/chat_prompts.py",
+      "llama_index/core/prompts/default_prompts.py",
+      "llama_index/core/prompts/prompt_type.py",
+      "llama_index/core/prompts/prompts.py",
+      "llama_index/core/rate_limiter.py",
+      "llama_index/core/selectors/prompts.py",
+      "llama_index/core/sparse_embeddings/mock_sparse_embedding.py",
+      "llama_index/core/voice_agents/events.py"
+    ],
+    "llama_index_core_download": [
+      "llama_index/core/download/dataset.py",
+      "llama_index/core/download/module.py",
+      "llama_index/core/download/pack.py",
+      "llama_index/core/download/utils.py",
+      "llama_index/core/llama_pack/__init__.py",
+      "llama_index/core/llama_pack/base.py",
+      "llama_index/core/llama_pack/download.py"
+    ],
+    "llama_index_core_query_engine": [
+      "llama_index/core/base/base_auto_retriever.py",
+      "llama_index/core/base/base_multi_modal_retriever.py",
+      "llama_index/core/base/base_query_engine.py",
+      "llama_index/core/base/base_retriever.py",
+      "llama_index/core/callbacks/base.py",
+      "llama_index/core/callbacks/base_handler.py",
+      "llama_index/core/callbacks/global_handlers.py",
+      "llama_index/core/callbacks/llama_debug.py",
+      "llama_index/core/callbacks/pythonically_printing_base_handler.py",
+      "llama_index/core/callbacks/schema.py",
+      "llama_index/core/callbacks/simple_llm_handler.py",
+      "llama_index/core/callbacks/token_counting.py",
+      "llama_index/core/callbacks/utils.py",
+      "llama_index/core/image_retriever.py",
+      "llama_index/core/indices/base.py",
+      "llama_index/core/indices/base_retriever.py",
+      "llama_index/core/indices/loading.py",
+      "llama_index/core/indices/registry.py",
+      "llama_index/core/query_engine/__init__.py",
+      "llama_index/core/query_engine/citation_query_engine.py",
+      "llama_index/core/query_engine/cogniswitch_query_engine.py",
+      "llama_index/core/query_engine/custom.py",
+      "llama_index/core/query_engine/graph_query_engine.py",
+      "llama_index/core/query_engine/knowledge_graph_query_engine.py",
+      "llama_index/core/query_engine/multi_modal.py",
+      "llama_index/core/query_engine/multistep_query_engine.py",
+      "llama_index/core/query_engine/retriever_query_engine.py",
+      "llama_index/core/query_engine/retry_query_engine.py",
+      "llama_index/core/query_engine/retry_source_query_engine.py",
+      "llama_index/core/query_engine/sub_question_query_engine.py",
+      "llama_index/core/query_engine/transform_query_engine.py",
+      "llama_index/core/retrievers/__init__.py",
+      "llama_index/core/retrievers/auto_merging_retriever.py",
+      "llama_index/core/retrievers/recursive_retriever.py",
+      "llama_index/core/retrievers/transform_retriever.py"
+    ],
+    "llama_index_core_objects": [
+      "llama_index/core/__init__.py",
+      "llama_index/core/base/__init__.py",
+      "llama_index/core/bridge/langchain.py",
+      "llama_index/core/bridge/pydantic_core.py",
+      "llama_index/core/constants.py",
+      "llama_index/core/download/__init__.py",
+      "llama_index/core/download/integration.py",
+      "llama_index/core/embeddings/__init__.py",
+      "llama_index/core/embeddings/loading.py",
+      "llama_index/core/embeddings/mock_embed_model.py",
+      "llama_index/core/embeddings/multi_modal_base.py",
+      "llama_index/core/embeddings/pooling.py",
+      "llama_index/core/embeddings/utils.py",
+      "llama_index/core/evaluation/notebook_utils.py",
+      "llama_index/core/extractors/document_context.py",
+      "llama_index/core/graph_stores/__init__.py",
+      "llama_index/core/graph_stores/prompts.py",
+      "llama_index/core/graph_stores/simple.py",
+      "llama_index/core/graph_stores/simple_labelled.py",
+      "llama_index/core/graph_stores/types.py",
+      "llama_index/core/img_utils.py",
+      "llama_index/core/indices/utils.py",
+      "llama_index/core/ingestion/__init__.py",
+      "llama_index/core/ingestion/api_utils.py",
+      "llama_index/core/ingestion/cache.py",
+      "llama_index/core/ingestion/data_sinks.py",
+      "llama_index/core/ingestion/data_sources.py",
+      "llama_index/core/ingestion/pipeline.py",
+      "llama_index/core/ingestion/transformations.py",
+      "llama_index/core/instrumentation/base_handler.py",
+      "llama_index/core/langchain_helpers/streaming.py",
+      "llama_index/core/node_parser/__init__.py",
+      "llama_index/core/node_parser/interface.py",
+      "llama_index/core/node_parser/loading.py",
+      "llama_index/core/node_parser/node_utils.py",
+      "llama_index/core/objects/__init__.py",
+      "llama_index/core/objects/base.py",
+      "llama_index/core/objects/base_node_mapping.py",
+      "llama_index/core/objects/fn_node_mapping.py",
+      "llama_index/core/objects/table_node_mapping.py",
+      "llama_index/core/objects/tool_node_mapping.py",
+      "llama_index/core/objects/utils.py",
+      "llama_index/core/playground/__init__.py",
+      "llama_index/core/playground/base.py",
+      "llama_index/core/readers/__init__.py",
+      "llama_index/core/readers/base.py",
+      "llama_index/core/readers/download.py",
+      "llama_index/core/readers/json.py",
+      "llama_index/core/readers/loading.py",
+      "llama_index/core/readers/string_iterable.py",
+      "llama_index/core/response/notebook_utils.py",
+      "llama_index/core/response/pprint_utils.py",
+      "llama_index/core/schema.py",
+      "llama_index/core/service_context.py",
+      "llama_index/core/storage/__init__.py",
+      "llama_index/core/storage/storage_context.py",
+      "llama_index/core/tools/download.py",
+      "llama_index/core/utilities/sql_wrapper.py",
+      "llama_index/core/utils.py",
+      "llama_index/core/vector_stores/__init__.py",
+      "llama_index/core/vector_stores/simple.py",
+      "llama_index/core/vector_stores/types.py",
+      "llama_index/core/vector_stores/utils.py"
+    ],
+    "llama_index_core_chat_engine": [
+      "llama_index/core/callbacks/__init__.py",
+      "llama_index/core/chat_engine/__init__.py",
+      "llama_index/core/chat_engine/condense_plus_context.py",
+      "llama_index/core/chat_engine/condense_question.py",
+      "llama_index/core/chat_engine/context.py",
+      "llama_index/core/chat_engine/multi_modal_condense_plus_context.py",
+      "llama_index/core/chat_engine/multi_modal_context.py",
+      "llama_index/core/chat_engine/simple.py",
+      "llama_index/core/chat_engine/types.py",
+      "llama_index/core/chat_engine/utils.py",
+      "llama_index/core/instrumentation/__init__.py",
+      "llama_index/core/llms/__init__.py",
+      "llama_index/core/llms/callbacks.py",
+      "llama_index/core/llms/custom.py",
+      "llama_index/core/llms/function_calling.py",
+      "llama_index/core/llms/llm.py",
+      "llama_index/core/llms/loading.py",
+      "llama_index/core/llms/mock.py",
+      "llama_index/core/llms/utils.py",
+      "llama_index/core/memory/__init__.py",
+      "llama_index/core/memory/chat_memory_buffer.py",
+      "llama_index/core/memory/chat_summary_memory_buffer.py",
+      "llama_index/core/memory/memory.py",
+      "llama_index/core/memory/simple_composable_memory.py",
+      "llama_index/core/memory/types.py",
+      "llama_index/core/memory/vector_memory.py",
+      "llama_index/core/multi_modal_llms/base.py",
+      "llama_index/core/multi_modal_llms/generic_utils.py",
+      "llama_index/core/output_parsers/__init__.py",
+      "llama_index/core/output_parsers/pydantic.py",
+      "llama_index/core/program/__init__.py",
+      "llama_index/core/program/function_program.py",
+      "llama_index/core/program/llm_program.py",
+      "llama_index/core/program/multi_modal_llm_program.py",
+      "llama_index/core/program/streaming_utils.py",
+      "llama_index/core/program/utils.py",
+      "llama_index/core/prompts/__init__.py",
+      "llama_index/core/prompts/display_utils.py",
+      "llama_index/core/prompts/rich.py",
+      "llama_index/core/service_context_elements/llm_predictor.py",
+      "llama_index/core/types.py",
+      "llama_index/core/utilities/token_counting.py"
+    ],
+    "llama_index_core_evaluation": [
+      "llama_index/core/async_utils.py",
+      "llama_index/core/evaluation/__init__.py",
+      "llama_index/core/evaluation/answer_relevancy.py",
+      "llama_index/core/evaluation/base.py",
+      "llama_index/core/evaluation/batch_runner.py",
+      "llama_index/core/evaluation/context_relevancy.py",
+      "llama_index/core/evaluation/correctness.py",
+      "llama_index/core/evaluation/dataset_generation.py",
+      "llama_index/core/evaluation/eval_utils.py",
+      "llama_index/core/evaluation/faithfulness.py",
+      "llama_index/core/evaluation/guideline.py",
+      "llama_index/core/evaluation/pairwise.py",
+      "llama_index/core/evaluation/relevancy.py",
+      "llama_index/core/evaluation/semantic_similarity.py",
+      "llama_index/core/indices/__init__.py",
+      "llama_index/core/llama_dataset/__init__.py",
+      "llama_index/core/llama_dataset/base.py",
+      "llama_index/core/llama_dataset/download.py",
+      "llama_index/core/llama_dataset/evaluator_evaluation.py",
+      "llama_index/core/llama_dataset/generator.py",
+      "llama_index/core/llama_dataset/rag.py",
+      "llama_index/core/llama_dataset/simple.py",
+      "llama_index/core/prompts/mixin.py",
+      "llama_index/core/retrievers/fusion_retriever.py",
+      "llama_index/core/settings.py"
+    ],
+    "llama_index_core_tools": [
+      "llama_index/core/agent/__init__.py",
+      "llama_index/core/agent/react/formatter.py",
+      "llama_index/core/agent/react/output_parser.py",
+      "llama_index/core/agent/react/prompts.py",
+      "llama_index/core/base/base_selector.py",
+      "llama_index/core/composability/__init__.py",
+      "llama_index/core/composability/base.py",
+      "llama_index/core/composability/joint_qa_summary.py",
+      "llama_index/core/output_parsers/base.py",
+      "llama_index/core/output_parsers/selection.py",
+      "llama_index/core/output_parsers/utils.py",
+      "llama_index/core/prompts/guidance_utils.py",
+      "llama_index/core/query_engine/router_query_engine.py",
+      "llama_index/core/query_engine/sql_join_query_engine.py",
+      "llama_index/core/query_engine/sql_vector_query_engine.py",
+      "llama_index/core/question_gen/__init__.py",
+      "llama_index/core/question_gen/llm_generators.py",
+      "llama_index/core/question_gen/output_parser.py",
+      "llama_index/core/question_gen/prompts.py",
+      "llama_index/core/question_gen/types.py",
+      "llama_index/core/retrievers/router_retriever.py",
+      "llama_index/core/selectors/__init__.py",
+      "llama_index/core/selectors/embedding_selectors.py",
+      "llama_index/core/selectors/llm_selectors.py",
+      "llama_index/core/selectors/pydantic_selectors.py",
+      "llama_index/core/selectors/utils.py",
+      "llama_index/core/tools/__init__.py",
+      "llama_index/core/tools/calling.py",
+      "llama_index/core/tools/eval_query_engine.py",
+      "llama_index/core/tools/function_tool.py",
+      "llama_index/core/tools/ondemand_loader_tool.py",
+      "llama_index/core/tools/query_engine.py",
+      "llama_index/core/tools/query_plan.py",
+      "llama_index/core/tools/retriever_tool.py",
+      "llama_index/core/tools/types.py",
+      "llama_index/core/tools/utils.py",
+      "llama_index/core/workflow/context.py"
+    ],
+    "_isolated": [
+      "llama_index/core/bridge/__init__.py",
+      "llama_index/core/bridge/pydantic_settings.py",
+      "llama_index/core/chat_ui/__init__.py",
+      "llama_index/core/command_line/__init__.py",
+      "llama_index/core/command_line/upgrade.py",
+      "llama_index/core/graph_stores/utils.py",
+      "llama_index/core/instrumentation/dispatcher.py",
+      "llama_index/core/langchain_helpers/__init__.py",
+      "llama_index/core/llms/chatml_utils.py",
+      "llama_index/core/prompts/system.py",
+      "llama_index/core/response/__init__.py",
+      "llama_index/core/service_context_elements/__init__.py",
+      "llama_index/core/service_context_elements/llama_logger.py",
+      "llama_index/core/sparse_embeddings/__init__.py",
+      "llama_index/core/utilities/__init__.py",
+      "llama_index/core/utilities/aws_utils.py",
+      "llama_index/core/utilities/gemini_utils.py",
+      "llama_index/core/voice_agents/interface.py",
+      "llama_index/core/workflow/handler.py",
+      "llama_index/core/workflow/resource.py",
+      "llama_index/core/workflow/retry_policy.py",
+      "llama_index/core/workflow/service.py",
+      "llama_index/core/workflow/types.py",
+      "llama_index/core/workflow/utils.py"
+    ]
+  },
+  "key_nodes": {
+    "leaf_nodes": [
+      {
+        "file": "llama_index/core/bridge/pydantic.py",
+        "reuse_score": 1.0
+      },
+      {
+        "file": "llama_index/core/callbacks/schema.py",
+        "reuse_score": 1.0
+      },
+      {
+        "file": "llama_index/core/base/__init__.py",
+        "reuse_score": 1.0
+      },
+      {
+        "file": "llama_index/core/instrumentation/__init__.py",
+        "reuse_score": 1.0
+      },
+      {
+        "file": "llama_index/core/data_structs/struct_type.py",
+        "reuse_score": 0.998
+      },
+      {
+        "file": "llama_index/core/output_parsers/base.py",
+        "reuse_score": 0.998
+      },
+      {
+        "file": "llama_index/core/constants.py",
+        "reuse_score": 0.998
+      },
+      {
+        "file": "llama_index/core/prompts/prompt_type.py",
+        "reuse_score": 0.993
+      },
+      {
+        "file": "llama_index/core/bridge/pydantic_core.py",
+        "reuse_score": 0.95
+      },
+      {
+        "file": "llama_index/core/download/integration.py",
+        "reuse_score": 0.95
+      },
+      {
+        "file": "llama_index/core/download/utils.py",
+        "reuse_score": 0.95
+      },
+      {
+        "file": "llama_index/core/response_synthesizers/type.py",
+        "reuse_score": 0.865
+      },
+      {
+        "file": "llama_index/core/llama_pack/base.py",
+        "reuse_score": 0.865
+      },
+      {
+        "file": "llama_index/core/workflow/decorators.py",
+        "reuse_score": 0.865
+      },
+      {
+        "file": "llama_index/core/voice_agents/websocket.py",
+        "reuse_score": 0.865
+      },
+      {
+        "file": "llama_index/core/text_splitter/__init__.py",
+        "reuse_score": 0.632
+      },
+      {
+        "file": "llama_index/core/img_utils.py",
+        "reuse_score": 0.632
+      },
+      {
+        "file": "llama_index/core/embeddings/pooling.py",
+        "reuse_score": 0.632
+      },
+      {
+        "file": "llama_index/core/workflow/events.py",
+        "reuse_score": 0.632
+      },
+      {
+        "file": "llama_index/core/download/__init__.py",
+        "reuse_score": 0.632
+      }
+    ],
+    "hub_nodes": [
+      {
+        "file": "llama_index/core/schema.py",
+        "dependents": 100
+      },
+      {
+        "file": "llama_index/core/bridge/pydantic.py",
+        "dependents": 73
+      },
+      {
+        "file": "llama_index/core/prompts/mixin.py",
+        "dependents": 49
+      },
+      {
+        "file": "llama_index/core/llms/llm.py",
+        "dependents": 47
+      },
+      {
+        "file": "llama_index/core/settings.py",
+        "dependents": 46
+      },
+      {
+        "file": "llama_index/core/types.py",
+        "dependents": 40
+      },
+      {
+        "file": "llama_index/core/prompts/__init__.py",
+        "dependents": 34
+      },
+      {
+        "file": "llama_index/core/callbacks/base.py",
+        "dependents": 33
+      },
+      {
+        "file": "llama_index/core/utils.py",
+        "dependents": 33
+      },
+      {
+        "file": "llama_index/core/base/__init__.py",
+        "dependents": 30
+      },
+      {
+        "file": "llama_index/core/prompts/base.py",
+        "dependents": 28
+      },
+      {
+        "file": "llama_index/core/multi_modal_llms/__init__.py",
+        "dependents": 25
+      },
+      {
+        "file": "llama_index/core/base/base_query_engine.py",
+        "dependents": 24
+      },
+      {
+        "file": "llama_index/core/instrumentation/__init__.py",
+        "dependents": 23
+      },
+      {
+        "file": "llama_index/core/callbacks/schema.py",
+        "dependents": 21
+      },
+      {
+        "file": "llama_index/core/tools/types.py",
+        "dependents": 19
+      },
+      {
+        "file": "llama_index/core/postprocessor/types.py",
+        "dependents": 19
+      },
+      {
+        "file": "llama_index/core/async_utils.py",
+        "dependents": 17
+      },
+      {
+        "file": "llama_index/core/callbacks/__init__.py",
+        "dependents": 17
+      },
+      {
+        "file": "llama_index/core/base/base_retriever.py",
+        "dependents": 17
+      }
+    ]
+  },
+  "all_external_deps": [
+    "IPython",
+    "PIL",
+    "banks",
+    "binascii",
+    "boto3",
+    "botocore",
+    "contextvars",
+    "dataclasses_json",
+    "deprecated",
+    "dirtyjson",
+    "filetype",
+    "fsspec",
+    "haystack",
+    "httpx",
+    "langchain",
+    "langchain_classic",
+    "langchain_community",
+    "langchain_core",
+    "llama_cloud",
+    "llama_index_instrumentation",
+    "matplotlib",
+    "nest_asyncio",
+    "networkx",
+    "nltk",
+    "numpy",
+    "packaging",
+    "pandas",
+    "pkg_resources",
+    "platformdirs",
+    "pydantic",
+    "pyvis",
+    "requests",
+    "semantic_kernel",
+    "sentence_transformers",
+    "spacy",
+    "sqlalchemy",
+    "tenacity",
+    "tiktoken",
+    "torch",
+    "tqdm",
+    "transformers",
+    "typing_extensions",
+    "websockets",
+    "workflows",
+    "yaml",
+    "yfiles_jupyter_graphs"
+  ]
+}

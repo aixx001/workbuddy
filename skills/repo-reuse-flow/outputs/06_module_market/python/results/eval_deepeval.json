@@ -1,0 +1,33 @@
+{
+  "module": "deepeval",
+  "slug": "deepeval",
+  "backend": "azure/gpt-4o-mini",
+  "evaluated_at": "2026-03-30T22:50:00-04:00",
+  "cases": [
+    {
+      "label": "✅ 忠实回答",
+      "case_type": "faithful",
+      "scores": { "faithfulness": 1.0, "hallucination": 0.0, "answer_relevancy": 1.0, "custom_geval": 0.9 },
+      "elapsed_seconds": 18.5,
+      "passed": true
+    },
+    {
+      "label": "❌ 幻觉回答",
+      "case_type": "hallucinated",
+      "scores": { "faithfulness": 0.5, "hallucination": 1.0, "answer_relevancy": 0.0, "custom_geval": 0.1 },
+      "elapsed_seconds": 22.3,
+      "passed": true
+    },
+    {
+      "label": "🔀 跑题回答",
+      "case_type": "off_topic",
+      "scores": { "faithfulness": 1.0, "hallucination": 1.0, "answer_relevancy": 0.0, "custom_geval": 0.0 },
+      "elapsed_seconds": 19.4,
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "total_elapsed": 89.86,
+  "verdict": "可用",
+  "notes": "4 指标全量测试通过。faithfulness 对跑题失灵（给 1.0），但 hallucination(1.0)、answer_relevancy(0.0)、GEval(0.0) 均正确检出。注意 hallucination 分数含义相反：越高=幻觉越多。"
+}

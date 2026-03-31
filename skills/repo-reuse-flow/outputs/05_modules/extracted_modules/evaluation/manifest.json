@@ -1,0 +1,762 @@
+{
+  "name": "evaluation",
+  "description": "RAG evaluation metrics: faithfulness, relevance, context precision, answer correctness",
+  "extracted_at": "2026-03-29T12:16:53.514315",
+  "source_repo": "C:\\Users\\40270\\.workbuddy\\skills\\repo-reuse-flow\\outputs\\03_analysis\\cloned\\ragas\\src\\ragas",
+  "source_package": "ragas",
+  "files": [
+    {
+      "original": "__init__.py",
+      "extracted": "__init__.py"
+    },
+    {
+      "original": "_analytics.py",
+      "extracted": "_analytics.py"
+    },
+    {
+      "original": "async_utils.py",
+      "extracted": "async_utils.py"
+    },
+    {
+      "original": "backends\\__init__.py",
+      "extracted": "backends\\__init__.py"
+    },
+    {
+      "original": "backends\\base.py",
+      "extracted": "backends\\base.py"
+    },
+    {
+      "original": "backends\\gdrive_backend.py",
+      "extracted": "backends\\gdrive_backend.py"
+    },
+    {
+      "original": "backends\\inmemory.py",
+      "extracted": "backends\\inmemory.py"
+    },
+    {
+      "original": "backends\\local_csv.py",
+      "extracted": "backends\\local_csv.py"
+    },
+    {
+      "original": "backends\\local_jsonl.py",
+      "extracted": "backends\\local_jsonl.py"
+    },
+    {
+      "original": "backends\\registry.py",
+      "extracted": "backends\\registry.py"
+    },
+    {
+      "original": "cache.py",
+      "extracted": "cache.py"
+    },
+    {
+      "original": "callbacks.py",
+      "extracted": "callbacks.py"
+    },
+    {
+      "original": "config.py",
+      "extracted": "config.py"
+    },
+    {
+      "original": "cost.py",
+      "extracted": "cost.py"
+    },
+    {
+      "original": "dataset.py",
+      "extracted": "dataset.py"
+    },
+    {
+      "original": "dataset_schema.py",
+      "extracted": "dataset_schema.py"
+    },
+    {
+      "original": "embeddings\\__init__.py",
+      "extracted": "embeddings\\__init__.py"
+    },
+    {
+      "original": "embeddings\\base.py",
+      "extracted": "embeddings\\base.py"
+    },
+    {
+      "original": "embeddings\\google_provider.py",
+      "extracted": "embeddings\\google_provider.py"
+    },
+    {
+      "original": "embeddings\\haystack_wrapper.py",
+      "extracted": "embeddings\\haystack_wrapper.py"
+    },
+    {
+      "original": "embeddings\\huggingface_provider.py",
+      "extracted": "embeddings\\huggingface_provider.py"
+    },
+    {
+      "original": "embeddings\\litellm_provider.py",
+      "extracted": "embeddings\\litellm_provider.py"
+    },
+    {
+      "original": "embeddings\\openai_provider.py",
+      "extracted": "embeddings\\openai_provider.py"
+    },
+    {
+      "original": "embeddings\\utils.py",
+      "extracted": "embeddings\\utils.py"
+    },
+    {
+      "original": "evaluation.py",
+      "extracted": "evaluation.py"
+    },
+    {
+      "original": "exceptions.py",
+      "extracted": "exceptions.py"
+    },
+    {
+      "original": "executor.py",
+      "extracted": "executor.py"
+    },
+    {
+      "original": "experiment.py",
+      "extracted": "experiment.py"
+    },
+    {
+      "original": "integrations\\helicone.py",
+      "extracted": "integrations\\helicone.py"
+    },
+    {
+      "original": "llms\\__init__.py",
+      "extracted": "llms\\__init__.py"
+    },
+    {
+      "original": "llms\\adapters\\__init__.py",
+      "extracted": "llms\\adapters\\__init__.py"
+    },
+    {
+      "original": "llms\\adapters\\base.py",
+      "extracted": "llms\\adapters\\base.py"
+    },
+    {
+      "original": "llms\\adapters\\instructor.py",
+      "extracted": "llms\\adapters\\instructor.py"
+    },
+    {
+      "original": "llms\\adapters\\litellm.py",
+      "extracted": "llms\\adapters\\litellm.py"
+    },
+    {
+      "original": "llms\\base.py",
+      "extracted": "llms\\base.py"
+    },
+    {
+      "original": "llms\\haystack_wrapper.py",
+      "extracted": "llms\\haystack_wrapper.py"
+    },
+    {
+      "original": "llms\\litellm_llm.py",
+      "extracted": "llms\\litellm_llm.py"
+    },
+    {
+      "original": "llms\\oci_genai_wrapper.py",
+      "extracted": "llms\\oci_genai_wrapper.py"
+    },
+    {
+      "original": "losses.py",
+      "extracted": "losses.py"
+    },
+    {
+      "original": "messages.py",
+      "extracted": "messages.py"
+    },
+    {
+      "original": "metrics\\__init__.py",
+      "extracted": "metrics\\__init__.py"
+    },
+    {
+      "original": "metrics\\_answer_correctness.py",
+      "extracted": "metrics\\_answer_correctness.py"
+    },
+    {
+      "original": "metrics\\_answer_relevance.py",
+      "extracted": "metrics\\_answer_relevance.py"
+    },
+    {
+      "original": "metrics\\_answer_similarity.py",
+      "extracted": "metrics\\_answer_similarity.py"
+    },
+    {
+      "original": "metrics\\_aspect_critic.py",
+      "extracted": "metrics\\_aspect_critic.py"
+    },
+    {
+      "original": "metrics\\_bleu_score.py",
+      "extracted": "metrics\\_bleu_score.py"
+    },
+    {
+      "original": "metrics\\_chrf_score.py",
+      "extracted": "metrics\\_chrf_score.py"
+    },
+    {
+      "original": "metrics\\_context_entities_recall.py",
+      "extracted": "metrics\\_context_entities_recall.py"
+    },
+    {
+      "original": "metrics\\_context_precision.py",
+      "extracted": "metrics\\_context_precision.py"
+    },
+    {
+      "original": "metrics\\_context_recall.py",
+      "extracted": "metrics\\_context_recall.py"
+    },
+    {
+      "original": "metrics\\_datacompy_score.py",
+      "extracted": "metrics\\_datacompy_score.py"
+    },
+    {
+      "original": "metrics\\_domain_specific_rubrics.py",
+      "extracted": "metrics\\_domain_specific_rubrics.py"
+    },
+    {
+      "original": "metrics\\_factual_correctness.py",
+      "extracted": "metrics\\_factual_correctness.py"
+    },
+    {
+      "original": "metrics\\_faithfulness.py",
+      "extracted": "metrics\\_faithfulness.py"
+    },
+    {
+      "original": "metrics\\_goal_accuracy.py",
+      "extracted": "metrics\\_goal_accuracy.py"
+    },
+    {
+      "original": "metrics\\_instance_specific_rubrics.py",
+      "extracted": "metrics\\_instance_specific_rubrics.py"
+    },
+    {
+      "original": "metrics\\_multi_modal_faithfulness.py",
+      "extracted": "metrics\\_multi_modal_faithfulness.py"
+    },
+    {
+      "original": "metrics\\_multi_modal_relevance.py",
+      "extracted": "metrics\\_multi_modal_relevance.py"
+    },
+    {
+      "original": "metrics\\_noise_sensitivity.py",
+      "extracted": "metrics\\_noise_sensitivity.py"
+    },
+    {
+      "original": "metrics\\_nv_metrics.py",
+      "extracted": "metrics\\_nv_metrics.py"
+    },
+    {
+      "original": "metrics\\_rouge_score.py",
+      "extracted": "metrics\\_rouge_score.py"
+    },
+    {
+      "original": "metrics\\_simple_criteria.py",
+      "extracted": "metrics\\_simple_criteria.py"
+    },
+    {
+      "original": "metrics\\_sql_semantic_equivalence.py",
+      "extracted": "metrics\\_sql_semantic_equivalence.py"
+    },
+    {
+      "original": "metrics\\_string.py",
+      "extracted": "metrics\\_string.py"
+    },
+    {
+      "original": "metrics\\_summarization.py",
+      "extracted": "metrics\\_summarization.py"
+    },
+    {
+      "original": "metrics\\_tool_call_accuracy.py",
+      "extracted": "metrics\\_tool_call_accuracy.py"
+    },
+    {
+      "original": "metrics\\_tool_call_f1.py",
+      "extracted": "metrics\\_tool_call_f1.py"
+    },
+    {
+      "original": "metrics\\_topic_adherence.py",
+      "extracted": "metrics\\_topic_adherence.py"
+    },
+    {
+      "original": "metrics\\base.py",
+      "extracted": "metrics\\base.py"
+    },
+    {
+      "original": "metrics\\collections\\__init__.py",
+      "extracted": "metrics\\collections\\__init__.py"
+    },
+    {
+      "original": "metrics\\collections\\_bleu_score.py",
+      "extracted": "metrics\\collections\\_bleu_score.py"
+    },
+    {
+      "original": "metrics\\collections\\_rouge_score.py",
+      "extracted": "metrics\\collections\\_rouge_score.py"
+    },
+    {
+      "original": "metrics\\collections\\_semantic_similarity.py",
+      "extracted": "metrics\\collections\\_semantic_similarity.py"
+    },
+    {
+      "original": "metrics\\collections\\_string.py",
+      "extracted": "metrics\\collections\\_string.py"
+    },
+    {
+      "original": "metrics\\collections\\agent_goal_accuracy\\__init__.py",
+      "extracted": "metrics\\collections\\agent_goal_accuracy\\__init__.py"
+    },
+    {
+      "original": "metrics\\collections\\agent_goal_accuracy\\metric.py",
+      "extracted": "metrics\\collections\\agent_goal_accuracy\\metric.py"
+    },
+    {
+      "original": "metrics\\collections\\agent_goal_accuracy\\util.py",
+      "extracted": "metrics\\collections\\agent_goal_accuracy\\util.py"
+    },
+    {
+      "original": "metrics\\collections\\answer_accuracy\\__init__.py",
+      "extracted": "metrics\\collections\\answer_accuracy\\__init__.py"
+    },
+    {
+      "original": "metrics\\collections\\answer_accuracy\\metric.py",
+      "extracted": "metrics\\collections\\answer_accuracy\\metric.py"
+    },
+    {
+      "original": "metrics\\collections\\answer_accuracy\\util.py",
+      "extracted": "metrics\\collections\\answer_accuracy\\util.py"
+    },
+    {
+      "original": "metrics\\collections\\answer_correctness\\__init__.py",
+      "extracted": "metrics\\collections\\answer_correctness\\__init__.py"
+    },
+    {
+      "original": "metrics\\collections\\answer_correctness\\metric.py",
+      "extracted": "metrics\\collections\\answer_correctness\\metric.py"
+    },
+    {
+      "original": "metrics\\collections\\answer_correctness\\util.py",
+      "extracted": "metrics\\collections\\answer_correctness\\util.py"
+    },
+    {
+      "original": "metrics\\collections\\answer_relevancy\\__init__.py",
+      "extracted": "metrics\\collections\\answer_relevancy\\__init__.py"
+    },
+    {
+      "original": "metrics\\collections\\answer_relevancy\\metric.py",
+      "extracted": "metrics\\collections\\answer_relevancy\\metric.py"
+    },
+    {
+      "original": "metrics\\collections\\answer_relevancy\\util.py",
+      "extracted": "metrics\\collections\\answer_relevancy\\util.py"
+    },
+    {
+      "original": "metrics\\collections\\base.py",
+      "extracted": "metrics\\collections\\base.py"
+    },
+    {
+      "original": "metrics\\collections\\chrf_score\\__init__.py",
+      "extracted": "metrics\\collections\\chrf_score\\__init__.py"
+    },
+    {
+      "original": "metrics\\collections\\chrf_score\\metric.py",
+      "extracted": "metrics\\collections\\chrf_score\\metric.py"
+    },
+    {
+      "original": "metrics\\collections\\context_entity_recall\\__init__.py",
+      "extracted": "metrics\\collections\\context_entity_recall\\__init__.py"
+    },
+    {
+      "original": "metrics\\collections\\context_entity_recall\\metric.py",
+      "extracted": "metrics\\collections\\context_entity_recall\\metric.py"
+    },
+    {
+      "original": "metrics\\collections\\context_entity_recall\\util.py",
+      "extracted": "metrics\\collections\\context_entity_recall\\util.py"
+    },
+    {
+      "original": "metrics\\collections\\context_precision\\__init__.py",
+      "extracted": "metrics\\collections\\context_precision\\__init__.py"
+    },
+    {
+      "original": "metrics\\collections\\context_precision\\metric.py",
+      "extracted": "metrics\\collections\\context_precision\\metric.py"
+    },
+    {
+      "original": "metrics\\collections\\context_precision\\util.py",
+      "extracted": "metrics\\collections\\context_precision\\util.py"
+    },
+    {
+      "original": "metrics\\collections\\context_recall\\__init__.py",
+      "extracted": "metrics\\collections\\context_recall\\__init__.py"
+    },
+    {
+      "original": "metrics\\collections\\context_recall\\metric.py",
+      "extracted": "metrics\\collections\\context_recall\\metric.py"
+    },
+    {
+      "original": "metrics\\collections\\context_recall\\util.py",
+      "extracted": "metrics\\collections\\context_recall\\util.py"
+    },
+    {
+      "original": "metrics\\collections\\context_relevance\\__init__.py",
+      "extracted": "metrics\\collections\\context_relevance\\__init__.py"
+    },
+    {
+      "original": "metrics\\collections\\context_relevance\\metric.py",
+      "extracted": "metrics\\collections\\context_relevance\\metric.py"
+    },
+    {
+      "original": "metrics\\collections\\context_relevance\\util.py",
+      "extracted": "metrics\\collections\\context_relevance\\util.py"
+    },
+    {
+      "original": "metrics\\collections\\datacompy_score\\__init__.py",
+      "extracted": "metrics\\collections\\datacompy_score\\__init__.py"
+    },
+    {
+      "original": "metrics\\collections\\datacompy_score\\metric.py",
+      "extracted": "metrics\\collections\\datacompy_score\\metric.py"
+    },
+    {
+      "original": "metrics\\collections\\domain_specific_rubrics\\__init__.py",
+      "extracted": "metrics\\collections\\domain_specific_rubrics\\__init__.py"
+    },
+    {
+      "original": "metrics\\collections\\domain_specific_rubrics\\metric.py",
+      "extracted": "metrics\\collections\\domain_specific_rubrics\\metric.py"
+    },
+    {
+      "original": "metrics\\collections\\domain_specific_rubrics\\util.py",
+      "extracted": "metrics\\collections\\domain_specific_rubrics\\util.py"
+    },
+    {
+      "original": "metrics\\collections\\example_metric.py",
+      "extracted": "metrics\\collections\\example_metric.py"
+    },
+    {
+      "original": "metrics\\collections\\factual_correctness\\__init__.py",
+      "extracted": "metrics\\collections\\factual_correctness\\__init__.py"
+    },
+    {
+      "original": "metrics\\collections\\factual_correctness\\metric.py",
+      "extracted": "metrics\\collections\\factual_correctness\\metric.py"
+    },
+    {
+      "original": "metrics\\collections\\factual_correctness\\util.py",
+      "extracted": "metrics\\collections\\factual_correctness\\util.py"
+    },
+    {
+      "original": "metrics\\collections\\faithfulness\\__init__.py",
+      "extracted": "metrics\\collections\\faithfulness\\__init__.py"
+    },
+    {
+      "original": "metrics\\collections\\faithfulness\\metric.py",
+      "extracted": "metrics\\collections\\faithfulness\\metric.py"
+    },
+    {
+      "original": "metrics\\collections\\faithfulness\\util.py",
+      "extracted": "metrics\\collections\\faithfulness\\util.py"
+    },
+    {
+      "original": "metrics\\collections\\instance_specific_rubrics\\__init__.py",
+      "extracted": "metrics\\collections\\instance_specific_rubrics\\__init__.py"
+    },
+    {
+      "original": "metrics\\collections\\instance_specific_rubrics\\metric.py",
+      "extracted": "metrics\\collections\\instance_specific_rubrics\\metric.py"
+    },
+    {
+      "original": "metrics\\collections\\instance_specific_rubrics\\util.py",
+      "extracted": "metrics\\collections\\instance_specific_rubrics\\util.py"
+    },
+    {
+      "original": "metrics\\collections\\multi_modal_faithfulness\\__init__.py",
+      "extracted": "metrics\\collections\\multi_modal_faithfulness\\__init__.py"
+    },
+    {
+      "original": "metrics\\collections\\multi_modal_faithfulness\\metric.py",
+      "extracted": "metrics\\collections\\multi_modal_faithfulness\\metric.py"
+    },
+    {
+      "original": "metrics\\collections\\multi_modal_faithfulness\\util.py",
+      "extracted": "metrics\\collections\\multi_modal_faithfulness\\util.py"
+    },
+    {
+      "original": "metrics\\collections\\multi_modal_relevance\\__init__.py",
+      "extracted": "metrics\\collections\\multi_modal_relevance\\__init__.py"
+    },
+    {
+      "original": "metrics\\collections\\multi_modal_relevance\\metric.py",
+      "extracted": "metrics\\collections\\multi_modal_relevance\\metric.py"
+    },
+    {
+      "original": "metrics\\collections\\multi_modal_relevance\\util.py",
+      "extracted": "metrics\\collections\\multi_modal_relevance\\util.py"
+    },
+    {
+      "original": "metrics\\collections\\noise_sensitivity\\__init__.py",
+      "extracted": "metrics\\collections\\noise_sensitivity\\__init__.py"
+    },
+    {
+      "original": "metrics\\collections\\noise_sensitivity\\metric.py",
+      "extracted": "metrics\\collections\\noise_sensitivity\\metric.py"
+    },
+    {
+      "original": "metrics\\collections\\noise_sensitivity\\util.py",
+      "extracted": "metrics\\collections\\noise_sensitivity\\util.py"
+    },
+    {
+      "original": "metrics\\collections\\quoted_spans\\__init__.py",
+      "extracted": "metrics\\collections\\quoted_spans\\__init__.py"
+    },
+    {
+      "original": "metrics\\collections\\quoted_spans\\metric.py",
+      "extracted": "metrics\\collections\\quoted_spans\\metric.py"
+    },
+    {
+      "original": "metrics\\collections\\quoted_spans\\util.py",
+      "extracted": "metrics\\collections\\quoted_spans\\util.py"
+    },
+    {
+      "original": "metrics\\collections\\response_groundedness\\__init__.py",
+      "extracted": "metrics\\collections\\response_groundedness\\__init__.py"
+    },
+    {
+      "original": "metrics\\collections\\response_groundedness\\metric.py",
+      "extracted": "metrics\\collections\\response_groundedness\\metric.py"
+    },
+    {
+      "original": "metrics\\collections\\response_groundedness\\util.py",
+      "extracted": "metrics\\collections\\response_groundedness\\util.py"
+    },
+    {
+      "original": "metrics\\collections\\sql_semantic_equivalence\\__init__.py",
+      "extracted": "metrics\\collections\\sql_semantic_equivalence\\__init__.py"
+    },
+    {
+      "original": "metrics\\collections\\sql_semantic_equivalence\\metric.py",
+      "extracted": "metrics\\collections\\sql_semantic_equivalence\\metric.py"
+    },
+    {
+      "original": "metrics\\collections\\sql_semantic_equivalence\\util.py",
+      "extracted": "metrics\\collections\\sql_semantic_equivalence\\util.py"
+    },
+    {
+      "original": "metrics\\collections\\summary_score\\__init__.py",
+      "extracted": "metrics\\collections\\summary_score\\__init__.py"
+    },
+    {
+      "original": "metrics\\collections\\summary_score\\metric.py",
+      "extracted": "metrics\\collections\\summary_score\\metric.py"
+    },
+    {
+      "original": "metrics\\collections\\summary_score\\util.py",
+      "extracted": "metrics\\collections\\summary_score\\util.py"
+    },
+    {
+      "original": "metrics\\collections\\tool_call_accuracy\\__init__.py",
+      "extracted": "metrics\\collections\\tool_call_accuracy\\__init__.py"
+    },
+    {
+      "original": "metrics\\collections\\tool_call_accuracy\\metric.py",
+      "extracted": "metrics\\collections\\tool_call_accuracy\\metric.py"
+    },
+    {
+      "original": "metrics\\collections\\tool_call_accuracy\\util.py",
+      "extracted": "metrics\\collections\\tool_call_accuracy\\util.py"
+    },
+    {
+      "original": "metrics\\collections\\tool_call_f1\\__init__.py",
+      "extracted": "metrics\\collections\\tool_call_f1\\__init__.py"
+    },
+    {
+      "original": "metrics\\collections\\tool_call_f1\\metric.py",
+      "extracted": "metrics\\collections\\tool_call_f1\\metric.py"
+    },
+    {
+      "original": "metrics\\collections\\tool_call_f1\\util.py",
+      "extracted": "metrics\\collections\\tool_call_f1\\util.py"
+    },
+    {
+      "original": "metrics\\collections\\topic_adherence\\__init__.py",
+      "extracted": "metrics\\collections\\topic_adherence\\__init__.py"
+    },
+    {
+      "original": "metrics\\collections\\topic_adherence\\metric.py",
+      "extracted": "metrics\\collections\\topic_adherence\\metric.py"
+    },
+    {
+      "original": "metrics\\collections\\topic_adherence\\util.py",
+      "extracted": "metrics\\collections\\topic_adherence\\util.py"
+    },
+    {
+      "original": "metrics\\decorator.py",
+      "extracted": "metrics\\decorator.py"
+    },
+    {
+      "original": "metrics\\discrete.py",
+      "extracted": "metrics\\discrete.py"
+    },
+    {
+      "original": "metrics\\numeric.py",
+      "extracted": "metrics\\numeric.py"
+    },
+    {
+      "original": "metrics\\quoted_spans.py",
+      "extracted": "metrics\\quoted_spans.py"
+    },
+    {
+      "original": "metrics\\ranking.py",
+      "extracted": "metrics\\ranking.py"
+    },
+    {
+      "original": "metrics\\result.py",
+      "extracted": "metrics\\result.py"
+    },
+    {
+      "original": "metrics\\utils.py",
+      "extracted": "metrics\\utils.py"
+    },
+    {
+      "original": "metrics\\validators.py",
+      "extracted": "metrics\\validators.py"
+    },
+    {
+      "original": "optimizers\\__init__.py",
+      "extracted": "optimizers\\__init__.py"
+    },
+    {
+      "original": "optimizers\\base.py",
+      "extracted": "optimizers\\base.py"
+    },
+    {
+      "original": "optimizers\\dspy_adapter.py",
+      "extracted": "optimizers\\dspy_adapter.py"
+    },
+    {
+      "original": "optimizers\\dspy_llm_wrapper.py",
+      "extracted": "optimizers\\dspy_llm_wrapper.py"
+    },
+    {
+      "original": "optimizers\\dspy_optimizer.py",
+      "extracted": "optimizers\\dspy_optimizer.py"
+    },
+    {
+      "original": "optimizers\\genetic.py",
+      "extracted": "optimizers\\genetic.py"
+    },
+    {
+      "original": "optimizers\\utils.py",
+      "extracted": "optimizers\\utils.py"
+    },
+    {
+      "original": "prompt\\__init__.py",
+      "extracted": "prompt\\__init__.py"
+    },
+    {
+      "original": "prompt\\base.py",
+      "extracted": "prompt\\base.py"
+    },
+    {
+      "original": "prompt\\dynamic_few_shot.py",
+      "extracted": "prompt\\dynamic_few_shot.py"
+    },
+    {
+      "original": "prompt\\few_shot_pydantic_prompt.py",
+      "extracted": "prompt\\few_shot_pydantic_prompt.py"
+    },
+    {
+      "original": "prompt\\metrics\\base_prompt.py",
+      "extracted": "prompt\\metrics\\base_prompt.py"
+    },
+    {
+      "original": "prompt\\metrics\\common.py",
+      "extracted": "prompt\\metrics\\common.py"
+    },
+    {
+      "original": "prompt\\mixin.py",
+      "extracted": "prompt\\mixin.py"
+    },
+    {
+      "original": "prompt\\multi_modal_prompt.py",
+      "extracted": "prompt\\multi_modal_prompt.py"
+    },
+    {
+      "original": "prompt\\pydantic_prompt.py",
+      "extracted": "prompt\\pydantic_prompt.py"
+    },
+    {
+      "original": "prompt\\simple_prompt.py",
+      "extracted": "prompt\\simple_prompt.py"
+    },
+    {
+      "original": "prompt\\utils.py",
+      "extracted": "prompt\\utils.py"
+    },
+    {
+      "original": "run_config.py",
+      "extracted": "run_config.py"
+    },
+    {
+      "original": "tokenizers.py",
+      "extracted": "tokenizers.py"
+    },
+    {
+      "original": "utils.py",
+      "extracted": "utils.py"
+    },
+    {
+      "original": "validation.py",
+      "extracted": "validation.py"
+    }
+  ],
+  "external_deps": [
+    "PIL",
+    "appdirs",
+    "atexit",
+    "binascii",
+    "datacompy",
+    "datasets",
+    "diskcache",
+    "dspy",
+    "git",
+    "google",
+    "google_auth_oauthlib",
+    "googleapiclient",
+    "haystack",
+    "huggingface_hub",
+    "instructor",
+    "langchain",
+    "langchain_community",
+    "langchain_core",
+    "langchain_openai",
+    "llama_index",
+    "nest_asyncio",
+    "numpy",
+    "oci",
+    "openai",
+    "pandas",
+    "pydantic",
+    "pydantic_core",
+    "ragas",
+    "ragas_experimental",
+    "rapidfuzz",
+    "requests",
+    "rich",
+    "rouge_score",
+    "sacrebleu",
+    "scipy",
+    "sentence_transformers",
+    "sklearn",
+    "tenacity",
+    "tiktoken",
+    "torch",
+    "tqdm",
+    "transformers",
+    "vertexai"
+  ],
+  "unresolved_imports": [
+    "__init__.py: from ._version import version"
+  ],
+  "file_count": 176
+}

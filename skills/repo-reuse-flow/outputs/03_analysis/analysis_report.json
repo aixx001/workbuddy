@@ -1,0 +1,74 @@
+{
+  "analyzed_at": "2026-03-28T19:37:56.886080",
+  "total_analyzed": 5,
+  "analyses": [
+    {
+      "path": "C:\\Users\\40270\\OneDrive\\Desktop\\workspace\\textbook-rag\\_reuse\\free-for-dev",
+      "name": "free-for-dev",
+      "analyzed_at": "2026-03-28T19:31:00.018870",
+      "python_files": 0,
+      "has_readme": true,
+      "readme_preview": "# free-for.dev\n\nDevelopers and Open Source authors now have many services offering free tiers, but finding them all takes time to make informed decisions.\n\nThis is a list of software (SaaS, PaaS, IaaS, etc.) and other offerings with free developer tiers.\n\nThe scope of this particular list is limited to things that infrastructure developers (System Administrator, DevOps Practitioners, etc.) are likely to find useful. We love all the free services out there, but it would be good to keep it on topic. It's a grey line sometimes, so this is opinionated; please don't feel offended if I don't accept your contribution.\n\nThis list results from Pull Requests, reviews, ideas, and work done by 1600+ people. You can also help by sending [Pull Requests](https://github.com/ripienaar/free-for-dev) to add more services or remove ones whose offerings have changed or been retired.\n\n[![Track Awesome List](https://www.trackawesomelist.com/badge.svg)](https://www.trackawesomelist.com/ripienaar/free-for-dev)",
+      "repo_info": {
+        "stars": 120389,
+        "language": "HTML",
+        "license": ""
+      }
+    },
+    {
+      "path": "C:\\Users\\40270\\OneDrive\\Desktop\\workspace\\textbook-rag\\_reuse\\DeepSeek-R1",
+      "name": "DeepSeek-R1",
+      "analyzed_at": "2026-03-28T19:34:41.241017",
+      "python_files": 0,
+      "has_readme": true,
+      "readme_preview": "# DeepSeek-R1\n<!-- markdownlint-disable first-line-h1 -->\n<!-- markdownlint-disable html -->\n<!-- markdownlint-disable no-duplicate-header -->\n\n<div align=\"center\">\n  <img src=\"https://github.com/deepseek-ai/DeepSeek-V2/blob/main/figures/logo.svg?raw=true\" width=\"60%\" alt=\"DeepSeek-R1\" />\n</div>\n<hr>\n<div align=\"center\" style=\"line-height: 1;\">\n  <a href=\"https://www.deepseek.com/\" target=\"_blank\"><img alt=\"Homepage\"\n    src=\"https://github.com/deepseek-ai/DeepSeek-V2/blob/main/figures/badge.svg?raw=true\"/></a>\n  <a href=\"https://chat.deepseek.com/\" target=\"_blank\"><img alt=\"Chat\"\n    src=\"https://img.shields.io/badge/🤖%20Chat-DeepSeek%20R1-536af5?color=536af5&logoColor=white\"/></a>\n  <a href=\"https://huggingface.co/deepseek-ai\" target=\"_blank\"><img alt=\"Hugging Face\"\n    src=\"https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-DeepSeek%20AI-ffc107?color=ffc107&logoColor=white\"/></a>\n  <br>\n  <a href=\"https://discord.gg/Tc7c45Zzu5\" target=\"_blank\"><img alt=\"Discord\"\n    src=\"htt",
+      "repo_info": {
+        "stars": 91987,
+        "language": null,
+        "license": "MIT"
+      }
+    },
+    {
+      "path": "C:\\Users\\40270\\OneDrive\\Desktop\\workspace\\textbook-rag\\_reuse\\funNLP",
+      "name": "funNLP",
+      "analyzed_at": "2026-03-28T19:35:05.344829",
+      "python_files": 1,
+      "has_readme": true,
+      "readme_preview": "<center>\n    <img style=\"border-radius: 0.3125em;\n    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);\" \n    src=\"./data/.logo图片/.img.jpg\"width=\"180\">\n    <br>\n    <div style=\"color:orange; border-bottom: 1px solid #d9d9d9;\n    display: inline-block;\n    color: #999;\n    padding: 2px;\">NLP民工的乐园</div>\n</center>\n<br>\n\n[![](https://img.shields.io/github/stars/fighting41love/funnlp?style=social)](https://github.com/fighting41love/funnlp)\n[![](https://img.shields.io/badge/dynamic/json?color=blue&label=%E7%9F%A5%E4%B9%8E%E5%85%B3%E6%B3%A8&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dzhihu%26queryKey%3Dmountain-blue-64)](https://www.zhihu.com/people/mountain-blue-64)\n[![](data/.logo图片/.捐赠图片/.Citations-487-red.svg)](https://scholar.google.com/citations?hl=en&user=aqZdfDUAAAAJ)\n\n[![](data/.logo图片/.捐赠图片/.Home-%E4%BA%BA%E7%94%9F%E6%B5%AA%E8%B4%B9%E6%8C%87%E5%8D%97-brightgreen.svg)](http://fighting41love.github.io/archives/)\n[![]",
+      "repo_info": {
+        "stars": 79660,
+        "language": "Python",
+        "license": ""
+      }
+    },
+    {
+      "path": "C:\\Users\\40270\\OneDrive\\Desktop\\workspace\\textbook-rag\\_reuse\\langchain",
+      "name": "langchain",
+      "analyzed_at": "2026-03-28T19:37:13.613519",
+      "python_files": 50,
+      "has_readme": true,
+      "readme_preview": "<div align=\"center\">\n  <a href=\"https://docs.langchain.com/oss/python/langchain/overview\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\".github/images/logo-dark.svg\">\n      <source media=\"(prefers-color-scheme: light)\" srcset=\".github/images/logo-light.svg\">\n      <img alt=\"LangChain Logo\" src=\".github/images/logo-dark.svg\" width=\"50%\">\n    </picture>\n  </a>\n</div>\n\n<div align=\"center\">\n  <h3>The agent engineering platform.</h3>\n</div>\n\n<div align=\"center\">\n  <a href=\"https://opensource.org/licenses/MIT\" target=\"_blank\"><img src=\"https://img.shields.io/pypi/l/langchain\" alt=\"PyPI - License\"></a>\n  <a href=\"https://pypistats.org/packages/langchain\" target=\"_blank\"><img src=\"https://img.shields.io/pepy/dt/langchain\" alt=\"PyPI - Downloads\"></a>\n  <a href=\"https://pypi.org/project/langchain/#history\" target=\"_blank\"><img src=\"https://img.shields.io/pypi/v/langchain?label=%20\" alt=\"Version\"></a>\n  <a href=\"https://x.com/langchain\" target=\"_blank\"><img src=\"https:",
+      "repo_info": {
+        "stars": 131400,
+        "language": "Python",
+        "license": "MIT"
+      }
+    },
+    {
+      "path": "C:\\Users\\40270\\OneDrive\\Desktop\\workspace\\textbook-rag\\_reuse\\llama_index",
+      "name": "llama_index",
+      "analyzed_at": "2026-03-28T19:37:56.526926",
+      "python_files": 50,
+      "has_readme": true,
+      "readme_preview": "# 🗂️ LlamaIndex 🦙\n\n[![PyPI - Downloads](https://img.shields.io/pypi/dm/llama-index)](https://pypi.org/project/llama-index/)\n[![Build](https://github.com/run-llama/llama_index/actions/workflows/build_package.yml/badge.svg)](https://github.com/run-llama/llama_index/actions/workflows/build_package.yml)\n[![GitHub contributors](https://img.shields.io/github/contributors/jerryjliu/llama_index)](https://github.com/jerryjliu/llama_index/graphs/contributors)\n[![Discord](https://img.shields.io/discord/1059199217496772688)](https://discord.gg/dGcwcsnxhU)\n[![Twitter](https://img.shields.io/twitter/follow/llama_index)](https://x.com/llama_index)\n[![Reddit](https://img.shields.io/reddit/subreddit-subscribers/LlamaIndex?style=plastic&logo=reddit&label=r%2FLlamaIndex&labelColor=white)](https://www.reddit.com/r/LlamaIndex/)\n[![Ask AI](https://img.shields.io/badge/Phorm-Ask_AI-%23F2777A.svg?&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNSIgaGVpZ2h0PSI0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcm",
+      "has_requirements": true,
+      "requirements_file": "pyproject.toml",
+      "dependencies": "[build-system]\nbuild-backend = \"hatchling.build\"\nrequires = [\"hatchling\"]\n\n[dependency-groups]\ndev = [\n    \"black[jupyter]>=23.7.0,<=24.3.0\",\n    \"codespell[toml]>=v2.2.6\",\n    \"ipykernel>=6.29.5,<7\",\n    \"mypy==1.11.0\",\n    \"openai\",\n    \"pandas\",\n    \"pre-commit==3.2.0\",\n    \"pylint==2.15.10\",\n    \"pytest-asyncio>=0.23.7\",\n    \"pytest-mock>=3.14.0\",\n    \"pytest>=8.2.1\",\n    \"ruff==0.11.11\",\n    \"types-Deprecated>=0.1.0\",\n    \"types-PyYAML>=6.0.12.12,<7\",\n    \"types-protobuf>=4.24.0.4,<5\",\n    ",
+      "repo_info": {
+        "stars": 48094,
+        "language": "Python",
+        "license": "MIT"
+      }
+    }
+  ]
+}

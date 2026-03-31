@@ -1,0 +1,15 @@
+{
+    "github_token": "",
+    "max_candidates": 10,
+    "min_stars": 100,
+    "required_licenses": ["MIT", "Apache-2.0", "BSD-3-Clause", "BSD-2-Clause", "ISC"],
+    "blocked_licenses": ["GPL-3.0", "AGPL-3.0", "LGPL-3.0"],
+    "output_dir": "./outputs",
+    "clone_depth": 1,
+    "parallel_workers": 3,
+    "analysis": {
+        "skip_tests": true,
+        "skip_docs": true,
+        "max_file_size_kb": 500
+    }
+}

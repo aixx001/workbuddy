@@ -1,0 +1,20 @@
+{
+  "name": "prompt",
+  "display_name": "Prompt 管理",
+  "description": "结构化 Prompt 模板，用 Pydantic 定义输入输出 schema，支持动态 few-shot",
+  "source": {
+    "library": "ragas",
+    "repo": "https://github.com/explodinggradients/ragas",
+    "sub_module": "ragas.prompt.PydanticPrompt",
+    "version": ">=0.2.0",
+    "license": "Apache-2.0",
+    "install_cmd": "pip install ragas"
+  },
+  "api_used": [
+    "ragas.prompt.PydanticPrompt",
+    "ragas.prompt.StringPrompt",
+    "ragas.prompt.DynamicFewShotPrompt"
+  ],
+  "category": "prompt-mgmt",
+  "tags": ["prompt", "pydantic", "few-shot", "structured-output"]
+}

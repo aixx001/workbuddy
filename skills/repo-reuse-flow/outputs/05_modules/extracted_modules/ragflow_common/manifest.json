@@ -1,0 +1,117 @@
+{
+  "name": "ragflow_common",
+  "extracted_at": "2026-03-28T22:14:30.635949",
+  "source_repo": "C:\\Users\\40270\\.workbuddy\\skills\\repo-reuse-flow\\outputs\\03_analysis\\cloned\\RAGFlow",
+  "files": [
+    {
+      "original": "admin/server/admin_server.py",
+      "extracted": "server_admin_server.py"
+    },
+    {
+      "original": "admin/server/config.py",
+      "extracted": "server_config.py"
+    },
+    {
+      "original": "agent/sandbox/executor_manager/api/handlers.py",
+      "extracted": "api_handlers.py"
+    },
+    {
+      "original": "agent/sandbox/executor_manager/api/routes.py",
+      "extracted": "api_routes.py"
+    },
+    {
+      "original": "agent/sandbox/executor_manager/core/config.py",
+      "extracted": "core_config.py"
+    },
+    {
+      "original": "agent/sandbox/executor_manager/core/container.py",
+      "extracted": "core_container.py"
+    },
+    {
+      "original": "agent/sandbox/executor_manager/core/logger.py",
+      "extracted": "core_logger.py"
+    },
+    {
+      "original": "agent/sandbox/executor_manager/main.py",
+      "extracted": "executor_manager_main.py"
+    },
+    {
+      "original": "agent/sandbox/executor_manager/models/enums.py",
+      "extracted": "models_enums.py"
+    },
+    {
+      "original": "agent/sandbox/executor_manager/models/schemas.py",
+      "extracted": "models_schemas.py"
+    },
+    {
+      "original": "agent/sandbox/executor_manager/services/execution.py",
+      "extracted": "services_execution.py"
+    },
+    {
+      "original": "agent/sandbox/executor_manager/services/limiter.py",
+      "extracted": "services_limiter.py"
+    },
+    {
+      "original": "agent/sandbox/executor_manager/services/security.py",
+      "extracted": "services_security.py"
+    },
+    {
+      "original": "agent/sandbox/executor_manager/util.py",
+      "extracted": "executor_manager_util.py"
+    },
+    {
+      "original": "api/db/reload_config_base.py",
+      "extracted": "db_reload_config_base.py"
+    },
+    {
+      "original": "api/db/runtime_config.py",
+      "extracted": "db_runtime_config.py"
+    },
+    {
+      "original": "api/ragflow_server.py",
+      "extracted": "ragflow_server.py"
+    },
+    {
+      "original": "api/utils/common.py",
+      "extracted": "utils_common.py"
+    },
+    {
+      "original": "api/utils/configs.py",
+      "extracted": "utils_configs.py"
+    },
+    {
+      "original": "common/config_utils.py",
+      "extracted": "config_utils.py"
+    },
+    {
+      "original": "common/log_utils.py",
+      "extracted": "log_utils.py"
+    },
+    {
+      "original": "common/signal_utils.py",
+      "extracted": "signal_utils.py"
+    },
+    {
+      "original": "common/versions.py",
+      "extracted": "versions.py"
+    }
+  ],
+  "external_deps": [
+    "debugpy",
+    "fastapi",
+    "faulthandler",
+    "filelock",
+    "flask",
+    "flask_login",
+    "flask_session",
+    "psutil",
+    "pydantic",
+    "resource",
+    "ruamel",
+    "slowapi",
+    "tracemalloc",
+    "werkzeug",
+    "xxhash"
+  ],
+  "file_count": 23
+}

@@ -1,0 +1,82 @@
+{
+  "_comment": "模块 onboard 进度队列 — 用于定位下一个要处理的模块",
+  "_updated": "2026-03-31",
+  "queue": [
+    {
+      "slug": "ragas-evaluation",
+      "status": "done",
+      "eval": "eval_ragas-evaluation.json",
+      "verify": null,
+      "notes": "完整 Read → Try → Verify → Eval → Take 流程已通过"
+    },
+    {
+      "slug": "deepeval",
+      "status": "done",
+      "eval": "eval_deepeval.json",
+      "verify": "verify_deepeval.json",
+      "notes": "Faithfulness + Hallucination + AnswerRelevancy + GEval 四指标评估通过"
+    },
+    {
+      "slug": "dspy-signatures",
+      "status": "done",
+      "eval": "eval_dspy-signatures.json",
+      "verify": "verify_dspy-signatures.json",
+      "notes": "Azure/Ollama 双模式验证通过，3-case 鉴别测试通过"
+    },
+    {
+      "slug": "promptfoo",
+      "status": "done",
+      "eval": "eval_promptfoo.json",
+      "verify": null,
+      "notes": "YAML 配置生成 + 多模型对比 demo 完成"
+    },
+    {
+      "slug": "ragas-testset",
+      "status": "pending",
+      "eval": null,
+      "verify": null,
+      "notes": null
+    },
+    {
+      "slug": "ragas-prompt",
+      "status": "pending",
+      "eval": null,
+      "verify": null,
+      "notes": null
+    },
+    {
+      "slug": "llamaindex-semantic-chunking",
+      "status": "pending",
+      "eval": null,
+      "verify": null,
+      "notes": null
+    },
+    {
+      "slug": "llamaindex-fusion-retrieval",
+      "status": "pending",
+      "eval": null,
+      "verify": null,
+      "notes": null
+    },
+    {
+      "slug": "llamaindex-reranking",
+      "status": "pending",
+      "eval": null,
+      "verify": null,
+      "notes": null
+    },
+    {
+      "slug": "llamaindex-batch-eval",
+      "status": "pending",
+      "eval": null,
+      "verify": null,
+      "notes": null
+    }
+  ],
+  "next": "ragas-testset",
+  "stats": {
+    "total": 10,
+    "done": 4,
+    "pending": 6
+  }
+}

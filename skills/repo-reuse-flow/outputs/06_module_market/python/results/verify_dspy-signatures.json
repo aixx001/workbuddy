@@ -1,0 +1,45 @@
+{
+  "module": "dspy-signatures",
+  "backend": "azure",
+  "cases": [
+    {
+      "label": "✅ 简单事实题",
+      "case_type": "factual",
+      "question": "什么是光合作用？",
+      "context": "光合作用（Photosynthesis）是植物、藻类和某些细菌利用光能将二氧化碳和水转化为葡萄糖和氧气的生化过程。主要发生在叶绿体中。...",
+      "answer": "光合作用是植物、藻类和某些细菌利用光能将二氧化碳和水转化为葡萄糖和氧气的生化过程，主要发生在叶绿体中。",
+      "reasoning": "根据提供的上下文，光合作用是指植物、藻类和某些细菌利用光能，将二氧化碳和水转化为葡萄糖和氧气的生化过程。这个过程主要发生在叶绿体中。",
+      "elapsed_seconds": 4.84,
+      "passed": true,
+      "pass_reason": "回答包含上下文关键信息",
+      "backend": "azure/gpt-4o-mini"
+    },
+    {
+      "label": "🧠 推理题",
+      "case_type": "reasoning",
+      "question": "如果植物被关在黑暗的屋子里，光合作用会怎样？",
+      "context": "光合作用需要光能作为能量来源。在无光条件下，光反应无法进行，导致 ATP 和 NADPH 无法生成，暗反应也因此停止。植物会转而进行细胞呼吸消耗储存的有机物。...",
+      "answer": "如果植物被关在黑暗的屋子里，光合作用将无法进行，因为缺乏光能，光反应停止，导致暗反应也停止。植物会通过细胞呼吸消耗储存的有机物来维持生命。",
+      "reasoning": "根据上下文，光合作用需要光能作为能量来源。在黑暗环境中，光反应无法进行，导致 ATP 和 NADPH 无法生成，暗反应也会停止。因此，植物无法进行光合作用。为了维持生命活动，植物会转而进行细胞呼吸，消耗储存的有机物。",
+      "elapsed_seconds": 4.09,
+      "passed": true,
+      "pass_reason": "回答包含推理过程",
+      "backend": "azure/gpt-4o-mini"
+    },
+    {
+      "label": "🚫 无关上下文",
+      "case_type": "irrelevant_context",
+      "question": "牛顿第三定律是什么？",
+      "context": "光合作用（Photosynthesis）是植物、藻类和某些细菌利用光能将二氧化碳和水转化为葡萄糖和氧气的生化过程。...",
+      "answer": "上下文中未包含关于牛顿第三定律的信息，无法基于提供的内容回答该问题。",
+      "reasoning": "提供的上下文内容仅涉及光合作用的定义和过程，没有包含关于牛顿第三定律的任何信息。因此，无法基于上下文内容准确回答牛顿第三定律是什么。",
+      "elapsed_seconds": 1.67,
+      "passed": true,
+      "pass_reason": "正确拒绝 — 识别到上下文无关信息",
+      "backend": "azure/gpt-4o-mini"
+    }
+  ],
+  "all_passed": true,
+  "total_elapsed": 10.83,
+  "verified_at": "2026-03-30T23:05:24-0400"
+}

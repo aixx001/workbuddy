@@ -1,0 +1,5531 @@
+{
+  "repo": "C:\\Users\\40270\\.workbuddy\\skills\\repo-reuse-flow\\outputs\\03_analysis\\cloned\\dspy",
+  "repo_name": "dspy",
+  "analyzed_at": "2026-03-28 20:59:54",
+  "dir_summary": {
+    "total_files": 470,
+    "by_extension": {
+      ".py": 240,
+      ".md": 130,
+      ".png": 31,
+      ".ipynb": 19,
+      ".json": 15,
+      ".yml": 9,
+      "(none)": 5,
+      ".js": 4,
+      ".yaml": 3,
+      ".html": 3,
+      ".svg": 3,
+      ".toml": 2,
+      ".lock": 2,
+      ".txt": 1,
+      ".sh": 1,
+      ".css": 1,
+      ".gif": 1
+    },
+    "largest_dirs": [
+      [
+        "docs",
+        192
+      ],
+      [
+        "dspy",
+        141
+      ],
+      [
+        "tests",
+        116
+      ]
+    ],
+    "root_files": [
+      ".gitignore",
+      ".pre-commit-config.yaml",
+      "CONTRIBUTING.md",
+      "LICENSE",
+      "pyproject.toml",
+      "README.md",
+      "SECURITY.md",
+      "uv.lock"
+    ]
+  },
+  "code_files": {
+    ".py": 139,
+    ".js": 1
+  },
+  "analysis": {
+    "files_analyzed": 139,
+    "summary": {
+      "total_classes": 158,
+      "total_methods": 889,
+      "total_imports": 995
+    },
+    "classes": [
+      {
+        "file": "dspy\\adapters\\two_step_adapter.py",
+        "name": "TwoStepAdapter",
+        "start_line": 21,
+        "end_line": 229
+      },
+      {
+        "file": "dspy\\adapters\\baml_adapter.py",
+        "name": "BAMLAdapter",
+        "start_line": 163,
+        "end_line": 270
+      },
+      {
+        "file": "dspy\\adapters\\chat_adapter.py",
+        "name": "FieldInfoWithName",
+        "start_line": 23,
+        "end_line": 25
+      },
+      {
+        "file": "dspy\\adapters\\chat_adapter.py",
+        "name": "ChatAdapter",
+        "start_line": 28,
+        "end_line": 290
+      },
+      {
+        "file": "dspy\\adapters\\json_adapter.py",
+        "name": "JSONAdapter",
+        "start_line": 40,
+        "end_line": 209
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "Adapter",
+        "start_line": 21,
+        "end_line": 535
+      },
+      {
+        "file": "dspy\\adapters\\xml_adapter.py",
+        "name": "XMLAdapter",
+        "start_line": 12,
+        "end_line": 122
+      },
+      {
+        "file": "dspy\\clients\\embedding.py",
+        "name": "Embedder",
+        "start_line": 9,
+        "end_line": 147
+      },
+      {
+        "file": "dspy\\clients\\databricks.py",
+        "name": "TrainingJobDatabricks",
+        "start_line": 19,
+        "end_line": 38
+      },
+      {
+        "file": "dspy\\clients\\databricks.py",
+        "name": "DatabricksProvider",
+        "start_line": 41,
+        "end_line": 260
+      },
+      {
+        "file": "dspy\\clients\\base_lm.py",
+        "name": "BaseLM",
+        "start_line": 13,
+        "end_line": 339
+      },
+      {
+        "file": "dspy\\clients\\lm_local.py",
+        "name": "LocalProvider",
+        "start_line": 22,
+        "end_line": 188
+      },
+      {
+        "file": "dspy\\clients\\cache.py",
+        "name": "Cache",
+        "start_line": 18,
+        "end_line": 187
+      },
+      {
+        "file": "dspy\\clients\\lm.py",
+        "name": "LM",
+        "start_line": 28,
+        "end_line": 334
+      },
+      {
+        "file": "dspy\\datasets\\colors.py",
+        "name": "Colors",
+        "start_line": 147,
+        "end_line": 174
+      },
+      {
+        "file": "dspy\\datasets\\dataset.py",
+        "name": "Dataset",
+        "start_line": 12,
+        "end_line": 139
+      },
+      {
+        "file": "dspy\\clients\\provider.py",
+        "name": "TrainingJob",
+        "start_line": 12,
+        "end_line": 78
+      },
+      {
+        "file": "dspy\\clients\\provider.py",
+        "name": "ReinforceJob",
+        "start_line": 81,
+        "end_line": 177
+      },
+      {
+        "file": "dspy\\clients\\provider.py",
+        "name": "Provider",
+        "start_line": 180,
+        "end_line": 292
+      },
+      {
+        "file": "dspy\\datasets\\dataloader.py",
+        "name": "DataLoader",
+        "start_line": 12,
+        "end_line": 198
+      },
+      {
+        "file": "dspy\\clients\\openai.py",
+        "name": "TrainingJobOpenAI",
+        "start_line": 11,
+        "end_line": 39
+      },
+      {
+        "file": "dspy\\clients\\openai.py",
+        "name": "OpenAIProvider",
+        "start_line": 42,
+        "end_line": 227
+      },
+      {
+        "file": "dspy\\clients\\utils_finetune.py",
+        "name": "TrainingStatus",
+        "start_line": 14,
+        "end_line": 20
+      },
+      {
+        "file": "dspy\\clients\\utils_finetune.py",
+        "name": "TrainDataFormat",
+        "start_line": 23,
+        "end_line": 26
+      },
+      {
+        "file": "dspy\\clients\\utils_finetune.py",
+        "name": "Message",
+        "start_line": 29,
+        "end_line": 31
+      },
+      {
+        "file": "dspy\\clients\\utils_finetune.py",
+        "name": "MessageAssistant",
+        "start_line": 34,
+        "end_line": 36
+      },
+      {
+        "file": "dspy\\clients\\utils_finetune.py",
+        "name": "GRPOChatData",
+        "start_line": 39,
+        "end_line": 42
+      },
+      {
+        "file": "dspy\\clients\\utils_finetune.py",
+        "name": "GRPOGroup",
+        "start_line": 45,
+        "end_line": 47
+      },
+      {
+        "file": "dspy\\clients\\utils_finetune.py",
+        "name": "GRPOStatus",
+        "start_line": 49,
+        "end_line": 55
+      },
+      {
+        "file": "dspy\\datasets\\gsm8k.py",
+        "name": "GSM8K",
+        "start_line": 6,
+        "end_line": 59
+      },
+      {
+        "file": "dspy\\datasets\\hotpotqa.py",
+        "name": "HotPotQA",
+        "start_line": 6,
+        "end_line": 67
+      },
+      {
+        "file": "dspy\\dsp\\colbertv2.py",
+        "name": "ColBERTv2",
+        "start_line": 11,
+        "end_line": 37
+      },
+      {
+        "file": "dspy\\dsp\\colbertv2.py",
+        "name": "ColBERTv2RetrieverLocal",
+        "start_line": 93,
+        "end_line": 186
+      },
+      {
+        "file": "dspy\\dsp\\colbertv2.py",
+        "name": "ColBERTv2RerankerLocal",
+        "start_line": 189,
+        "end_line": 232
+      },
+      {
+        "file": "dspy\\evaluate\\auto_evaluation.py",
+        "name": "SemanticRecallPrecision",
+        "start_line": 7,
+        "end_line": 17
+      },
+      {
+        "file": "dspy\\evaluate\\auto_evaluation.py",
+        "name": "DecompositionalSemanticRecallPrecision",
+        "start_line": 20,
+        "end_line": 33
+      },
+      {
+        "file": "dspy\\evaluate\\auto_evaluation.py",
+        "name": "SemanticF1",
+        "start_line": 42,
+        "end_line": 62
+      },
+      {
+        "file": "dspy\\evaluate\\auto_evaluation.py",
+        "name": "AnswerCompleteness",
+        "start_line": 68,
+        "end_line": 80
+      },
+      {
+        "file": "dspy\\evaluate\\auto_evaluation.py",
+        "name": "AnswerGroundedness",
+        "start_line": 83,
+        "end_line": 99
+      },
+      {
+        "file": "dspy\\evaluate\\auto_evaluation.py",
+        "name": "CompleteAndGrounded",
+        "start_line": 102,
+        "end_line": 123
+      },
+      {
+        "file": "dspy\\datasets\\math.py",
+        "name": "MATH",
+        "start_line": 5,
+        "end_line": 33
+      },
+      {
+        "file": "dspy\\evaluate\\evaluate.py",
+        "name": "EvaluationResult",
+        "start_line": 48,
+        "end_line": 61
+      },
+      {
+        "file": "dspy\\evaluate\\evaluate.py",
+        "name": "Evaluate",
+        "start_line": 64,
+        "end_line": 298
+      },
+      {
+        "file": "dspy\\predict\\best_of_n.py",
+        "name": "BestOfN",
+        "start_line": 7,
+        "end_line": 88
+      },
+      {
+        "file": "dspy\\predict\\chain_of_thought.py",
+        "name": "ChainOfThought",
+        "start_line": 12,
+        "end_line": 41
+      },
+      {
+        "file": "dspy\\predict\\code_act.py",
+        "name": "CodeAct",
+        "start_line": 14,
+        "end_line": 119
+      },
+      {
+        "file": "dspy\\predict\\knn.py",
+        "name": "KNN",
+        "start_line": 7,
+        "end_line": 52
+      },
+      {
+        "file": "dspy\\predict\\multi_chain_comparison.py",
+        "name": "MultiChainComparison",
+        "start_line": 7,
+        "end_line": 53
+      },
+      {
+        "file": "dspy\\predict\\parameter.py",
+        "name": "Parameter",
+        "start_line": 1,
+        "end_line": 2
+      },
+      {
+        "file": "dspy\\predict\\parallel.py",
+        "name": "Parallel",
+        "start_line": 9,
+        "end_line": 127
+      },
+      {
+        "file": "dspy\\predict\\program_of_thought.py",
+        "name": "ProgramOfThought",
+        "start_line": 14,
+        "end_line": 180
+      },
+      {
+        "file": "dspy\\predict\\react.py",
+        "name": "ReAct",
+        "start_line": 16,
+        "end_line": 185
+      },
+      {
+        "file": "dspy\\predict\\predict.py",
+        "name": "Predict",
+        "start_line": 43,
+        "end_line": 277
+      },
+      {
+        "file": "dspy\\predict\\refine.py",
+        "name": "OfferFeedback",
+        "start_line": 15,
+        "end_line": 38
+      },
+      {
+        "file": "dspy\\predict\\refine.py",
+        "name": "Refine",
+        "start_line": 41,
+        "end_line": 177
+      },
+      {
+        "file": "dspy\\primitives\\code_interpreter.py",
+        "name": "CodeInterpreterError",
+        "start_line": 16,
+        "end_line": 36
+      },
+      {
+        "file": "dspy\\primitives\\code_interpreter.py",
+        "name": "FinalOutput",
+        "start_line": 39,
+        "end_line": 55
+      },
+      {
+        "file": "dspy\\primitives\\module.py",
+        "name": "ProgramMeta",
+        "start_line": 18,
+        "end_line": 37
+      },
+      {
+        "file": "dspy\\primitives\\module.py",
+        "name": "Module",
+        "start_line": 40,
+        "end_line": 349
+      },
+      {
+        "file": "dspy\\primitives\\example.py",
+        "name": "Example",
+        "start_line": 4,
+        "end_line": 352
+      },
+      {
+        "file": "dspy\\primitives\\base_module.py",
+        "name": "BaseModule",
+        "start_line": 19,
+        "end_line": 288
+      },
+      {
+        "file": "dspy\\primitives\\prediction.py",
+        "name": "Prediction",
+        "start_line": 4,
+        "end_line": 116
+      },
+      {
+        "file": "dspy\\primitives\\prediction.py",
+        "name": "Completions",
+        "start_line": 119,
+        "end_line": 173
+      },
+      {
+        "file": "dspy\\primitives\\python_interpreter.py",
+        "name": "PythonInterpreter",
+        "start_line": 75,
+        "end_line": 596
+      },
+      {
+        "file": "dspy\\primitives\\repl_types.py",
+        "name": "REPLVariable",
+        "start_line": 26,
+        "end_line": 99
+      },
+      {
+        "file": "dspy\\primitives\\repl_types.py",
+        "name": "REPLEntry",
+        "start_line": 102,
+        "end_line": 125
+      },
+      {
+        "file": "dspy\\primitives\\repl_types.py",
+        "name": "REPLHistory",
+        "start_line": 128,
+        "end_line": 160
+      },
+      {
+        "file": "dspy\\propose\\propose_base.py",
+        "name": "Proposer",
+        "start_line": 4,
+        "end_line": 13
+      },
+      {
+        "file": "dspy\\propose\\dataset_summary_generator.py",
+        "name": "ObservationSummarizer",
+        "start_line": 7,
+        "end_line": 10
+      },
+      {
+        "file": "dspy\\propose\\dataset_summary_generator.py",
+        "name": "DatasetDescriptor",
+        "start_line": 12,
+        "end_line": 18
+      },
+      {
+        "file": "dspy\\propose\\dataset_summary_generator.py",
+        "name": "DatasetDescriptorWithPriorObservations",
+        "start_line": 20,
+        "end_line": 28
+      },
+      {
+        "file": "dspy\\propose\\grounded_proposer.py",
+        "name": "DescribeProgram",
+        "start_line": 28,
+        "end_line": 40
+      },
+      {
+        "file": "dspy\\propose\\grounded_proposer.py",
+        "name": "DescribeModule",
+        "start_line": 43,
+        "end_line": 61
+      },
+      {
+        "file": "dspy\\propose\\grounded_proposer.py",
+        "name": "GenerateSingleModuleInstruction",
+        "start_line": 71,
+        "end_line": 108
+      },
+      {
+        "file": "dspy\\propose\\grounded_proposer.py",
+        "name": "GenerateModuleInstruction",
+        "start_line": 114,
+        "end_line": 245
+      },
+      {
+        "file": "dspy\\propose\\grounded_proposer.py",
+        "name": "GroundedProposer",
+        "start_line": 249,
+        "end_line": 417
+      },
+      {
+        "file": "dspy\\retrievers\\databricks_rm.py",
+        "name": "DatabricksRM",
+        "start_line": 29,
+        "end_line": 452
+      },
+      {
+        "file": "dspy\\retrievers\\embeddings.py",
+        "name": "Embeddings",
+        "start_line": 10,
+        "end_line": 236
+      },
+      {
+        "file": "dspy\\retrievers\\embeddings.py",
+        "name": "EmbeddingsWithScores",
+        "start_line": 239,
+        "end_line": 258
+      },
+      {
+        "file": "dspy\\retrievers\\retrieve.py",
+        "name": "Retrieve",
+        "start_line": 18,
+        "end_line": 65
+      },
+      {
+        "file": "dspy\\signatures\\field.py",
+        "name": "OldField",
+        "start_line": 97,
+        "end_line": 117
+      },
+      {
+        "file": "dspy\\signatures\\field.py",
+        "name": "OldInputField",
+        "start_line": 120,
+        "end_line": 122
+      },
+      {
+        "file": "dspy\\signatures\\field.py",
+        "name": "OldOutputField",
+        "start_line": 125,
+        "end_line": 127
+      },
+      {
+        "file": "dspy\\retrievers\\weaviate_rm.py",
+        "name": "WeaviateRM",
+        "start_line": 17,
+        "end_line": 138
+      },
+      {
+        "file": "dspy\\signatures\\signature.py",
+        "name": "SignatureMeta",
+        "start_line": 41,
+        "end_line": 260
+      },
+      {
+        "file": "dspy\\signatures\\signature.py",
+        "name": "Signature",
+        "start_line": 263,
+        "end_line": 508
+      },
+      {
+        "file": "dspy\\streaming\\messages.py",
+        "name": "StatusMessageProvider",
+        "start_line": 53,
+        "end_line": 95
+      },
+      {
+        "file": "dspy\\streaming\\messages.py",
+        "name": "StatusStreamingCallback",
+        "start_line": 98,
+        "end_line": 184
+      },
+      {
+        "file": "dspy\\teleprompt\\avatar_optimizer.py",
+        "name": "EvalResult",
+        "start_line": 16,
+        "end_line": 19
+      },
+      {
+        "file": "dspy\\teleprompt\\avatar_optimizer.py",
+        "name": "Comparator",
+        "start_line": 22,
+        "end_line": 49
+      },
+      {
+        "file": "dspy\\teleprompt\\avatar_optimizer.py",
+        "name": "FeedbackBasedInstruction",
+        "start_line": 52,
+        "end_line": 72
+      },
+      {
+        "file": "dspy\\teleprompt\\avatar_optimizer.py",
+        "name": "AvatarOptimizer",
+        "start_line": 75,
+        "end_line": 225
+      },
+      {
+        "file": "dspy\\streaming\\streaming_listener.py",
+        "name": "StreamListener",
+        "start_line": 23,
+        "end_line": 367
+      },
+      {
+        "file": "dspy\\teleprompt\\bettertogether.py",
+        "name": "BetterTogether",
+        "start_line": 32,
+        "end_line": 631
+      },
+      {
+        "file": "dspy\\teleprompt\\bootstrap.py",
+        "name": "BootstrapFewShot",
+        "start_line": 36,
+        "end_line": 272
+      },
+      {
+        "file": "dspy\\teleprompt\\bootstrap_finetune.py",
+        "name": "FinetuneTeleprompter",
+        "start_line": 20,
+        "end_line": 33
+      },
+      {
+        "file": "dspy\\teleprompt\\bootstrap_finetune.py",
+        "name": "BootstrapFinetune",
+        "start_line": 36,
+        "end_line": 191
+      },
+      {
+        "file": "dspy\\teleprompt\\bootstrap_trace.py",
+        "name": "TraceData",
+        "start_line": 22,
+        "end_line": 27
+      },
+      {
+        "file": "dspy\\teleprompt\\ensemble.py",
+        "name": "Ensemble",
+        "start_line": 10,
+        "end_line": 40
+      },
+      {
+        "file": "dspy\\teleprompt\\ensemble.py",
+        "name": "EnsembledProgram",
+        "start_line": 26,
+        "end_line": 38
+      }
+    ],
+    "methods": [
+      {
+        "file": "dspy\\adapters\\two_step_adapter.py",
+        "name": "__init__",
+        "start_line": 42,
+        "end_line": 46
+      },
+      {
+        "file": "dspy\\adapters\\two_step_adapter.py",
+        "name": "format",
+        "start_line": 48,
+        "end_line": 75
+      },
+      {
+        "file": "dspy\\adapters\\two_step_adapter.py",
+        "name": "parse",
+        "start_line": 77,
+        "end_line": 104
+      },
+      {
+        "file": "dspy\\adapters\\two_step_adapter.py",
+        "name": "acall",
+        "start_line": 106,
+        "end_line": 161
+      },
+      {
+        "file": "dspy\\adapters\\two_step_adapter.py",
+        "name": "format_task_description",
+        "start_line": 163,
+        "end_line": 175
+      },
+      {
+        "file": "dspy\\adapters\\two_step_adapter.py",
+        "name": "format_user_message_content",
+        "start_line": 177,
+        "end_line": 191
+      },
+      {
+        "file": "dspy\\adapters\\two_step_adapter.py",
+        "name": "format_assistant_message_content",
+        "start_line": 193,
+        "end_line": 205
+      },
+      {
+        "file": "dspy\\adapters\\two_step_adapter.py",
+        "name": "_create_extractor_signature",
+        "start_line": 207,
+        "end_line": 229
+      },
+      {
+        "file": "dspy\\adapters\\baml_adapter.py",
+        "name": "_render_type_str",
+        "start_line": 21,
+        "end_line": 86
+      },
+      {
+        "file": "dspy\\adapters\\baml_adapter.py",
+        "name": "_build_simplified_schema",
+        "start_line": 89,
+        "end_line": 160
+      },
+      {
+        "file": "dspy\\adapters\\baml_adapter.py",
+        "name": "format_field_structure",
+        "start_line": 212,
+        "end_line": 239
+      },
+      {
+        "file": "dspy\\adapters\\baml_adapter.py",
+        "name": "format_user_message_content",
+        "start_line": 241,
+        "end_line": 270
+      },
+      {
+        "file": "dspy\\adapters\\utils.py",
+        "name": "_annotation_is_subclass",
+        "start_line": 20,
+        "end_line": 24
+      },
+      {
+        "file": "dspy\\adapters\\utils.py",
+        "name": "serialize_for_json",
+        "start_line": 27,
+        "end_line": 42
+      },
+      {
+        "file": "dspy\\adapters\\utils.py",
+        "name": "format_field_value",
+        "start_line": 45,
+        "end_line": 74
+      },
+      {
+        "file": "dspy\\adapters\\utils.py",
+        "name": "_get_json_schema",
+        "start_line": 77,
+        "end_line": 90
+      },
+      {
+        "file": "dspy\\adapters\\utils.py",
+        "name": "move_type_to_front",
+        "start_line": 78,
+        "end_line": 86
+      },
+      {
+        "file": "dspy\\adapters\\utils.py",
+        "name": "translate_field_type",
+        "start_line": 93,
+        "end_line": 118
+      },
+      {
+        "file": "dspy\\adapters\\utils.py",
+        "name": "find_enum_member",
+        "start_line": 121,
+        "end_line": 146
+      },
+      {
+        "file": "dspy\\adapters\\utils.py",
+        "name": "parse_value",
+        "start_line": 149,
+        "end_line": 198
+      },
+      {
+        "file": "dspy\\adapters\\utils.py",
+        "name": "get_annotation_name",
+        "start_line": 201,
+        "end_line": 222
+      },
+      {
+        "file": "dspy\\adapters\\utils.py",
+        "name": "get_field_description_string",
+        "start_line": 225,
+        "end_line": 242
+      },
+      {
+        "file": "dspy\\adapters\\utils.py",
+        "name": "_format_input_list_field_value",
+        "start_line": 245,
+        "end_line": 259
+      },
+      {
+        "file": "dspy\\adapters\\utils.py",
+        "name": "_format_blob",
+        "start_line": 262,
+        "end_line": 276
+      },
+      {
+        "file": "dspy\\adapters\\utils.py",
+        "name": "_quoted_string_for_literal_type_annotation",
+        "start_line": 279,
+        "end_line": 298
+      },
+      {
+        "file": "dspy\\adapters\\chat_adapter.py",
+        "name": "__init__",
+        "start_line": 40,
+        "end_line": 61
+      },
+      {
+        "file": "dspy\\adapters\\chat_adapter.py",
+        "name": "__call__",
+        "start_line": 63,
+        "end_line": 85
+      },
+      {
+        "file": "dspy\\adapters\\chat_adapter.py",
+        "name": "acall",
+        "start_line": 87,
+        "end_line": 109
+      },
+      {
+        "file": "dspy\\adapters\\chat_adapter.py",
+        "name": "format_field_description",
+        "start_line": 111,
+        "end_line": 115
+      },
+      {
+        "file": "dspy\\adapters\\chat_adapter.py",
+        "name": "format_field_structure",
+        "start_line": 117,
+        "end_line": 137
+      },
+      {
+        "file": "dspy\\adapters\\chat_adapter.py",
+        "name": "format_signature_fields_for_instructions",
+        "start_line": 126,
+        "end_line": 132
+      },
+      {
+        "file": "dspy\\adapters\\chat_adapter.py",
+        "name": "format_task_description",
+        "start_line": 139,
+        "end_line": 142
+      },
+      {
+        "file": "dspy\\adapters\\chat_adapter.py",
+        "name": "format_user_message_content",
+        "start_line": 144,
+        "end_line": 165
+      },
+      {
+        "file": "dspy\\adapters\\chat_adapter.py",
+        "name": "user_message_output_requirements",
+        "start_line": 167,
+        "end_line": 194
+      },
+      {
+        "file": "dspy\\adapters\\chat_adapter.py",
+        "name": "type_info",
+        "start_line": 185,
+        "end_line": 189
+      },
+      {
+        "file": "dspy\\adapters\\chat_adapter.py",
+        "name": "format_assistant_message_content",
+        "start_line": 196,
+        "end_line": 209
+      },
+      {
+        "file": "dspy\\adapters\\chat_adapter.py",
+        "name": "parse",
+        "start_line": 211,
+        "end_line": 246
+      },
+      {
+        "file": "dspy\\adapters\\chat_adapter.py",
+        "name": "format_field_with_value",
+        "start_line": 248,
+        "end_line": 266
+      },
+      {
+        "file": "dspy\\adapters\\chat_adapter.py",
+        "name": "format_finetune_data",
+        "start_line": 268,
+        "end_line": 290
+      },
+      {
+        "file": "dspy\\adapters\\json_adapter.py",
+        "name": "_has_open_ended_mapping",
+        "start_line": 27,
+        "end_line": 37
+      },
+      {
+        "file": "dspy\\adapters\\json_adapter.py",
+        "name": "__init__",
+        "start_line": 41,
+        "end_line": 43
+      },
+      {
+        "file": "dspy\\adapters\\json_adapter.py",
+        "name": "_json_adapter_call_common",
+        "start_line": 45,
+        "end_line": 56
+      },
+      {
+        "file": "dspy\\adapters\\json_adapter.py",
+        "name": "__call__",
+        "start_line": 58,
+        "end_line": 79
+      },
+      {
+        "file": "dspy\\adapters\\json_adapter.py",
+        "name": "acall",
+        "start_line": 81,
+        "end_line": 102
+      },
+      {
+        "file": "dspy\\adapters\\json_adapter.py",
+        "name": "format_field_structure",
+        "start_line": 104,
+        "end_line": 121
+      },
+      {
+        "file": "dspy\\adapters\\json_adapter.py",
+        "name": "format_signature_fields_for_instructions",
+        "start_line": 108,
+        "end_line": 115
+      },
+      {
+        "file": "dspy\\adapters\\json_adapter.py",
+        "name": "user_message_output_requirements",
+        "start_line": 123,
+        "end_line": 134
+      },
+      {
+        "file": "dspy\\adapters\\json_adapter.py",
+        "name": "type_info",
+        "start_line": 124,
+        "end_line": 129
+      },
+      {
+        "file": "dspy\\adapters\\json_adapter.py",
+        "name": "format_assistant_message_content",
+        "start_line": 136,
+        "end_line": 146
+      },
+      {
+        "file": "dspy\\adapters\\json_adapter.py",
+        "name": "parse",
+        "start_line": 148,
+        "end_line": 181
+      },
+      {
+        "file": "dspy\\adapters\\json_adapter.py",
+        "name": "format_field_with_value",
+        "start_line": 183,
+        "end_line": 203
+      },
+      {
+        "file": "dspy\\adapters\\json_adapter.py",
+        "name": "format_finetune_data",
+        "start_line": 205,
+        "end_line": 209
+      },
+      {
+        "file": "dspy\\adapters\\json_adapter.py",
+        "name": "_get_structured_outputs_response_format",
+        "start_line": 212,
+        "end_line": 290
+      },
+      {
+        "file": "dspy\\adapters\\json_adapter.py",
+        "name": "enforce_required",
+        "start_line": 256,
+        "end_line": 283
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "__init__",
+        "start_line": 38,
+        "end_line": 57
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "__init_subclass__",
+        "start_line": 59,
+        "end_line": 64
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "_call_preprocess",
+        "start_line": 66,
+        "end_line": 108
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "_call_postprocess",
+        "start_line": 110,
+        "end_line": 176
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "__call__",
+        "start_line": 178,
+        "end_line": 206
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "acall",
+        "start_line": 208,
+        "end_line": 220
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "format",
+        "start_line": 222,
+        "end_line": 296
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "format_system_message",
+        "start_line": 298,
+        "end_line": 309
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "format_field_description",
+        "start_line": 311,
+        "end_line": 323
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "format_field_structure",
+        "start_line": 325,
+        "end_line": 335
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "format_task_description",
+        "start_line": 337,
+        "end_line": 349
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "format_user_message_content",
+        "start_line": 351,
+        "end_line": 373
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "format_assistant_message_content",
+        "start_line": 375,
+        "end_line": 394
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "format_demos",
+        "start_line": 396,
+        "end_line": 456
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "_get_history_field_name",
+        "start_line": 458,
+        "end_line": 462
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "_get_tool_call_input_field_name",
+        "start_line": 464,
+        "end_line": 472
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "_get_tool_call_output_field_name",
+        "start_line": 474,
+        "end_line": 478
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "format_conversation_history",
+        "start_line": 480,
+        "end_line": 521
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "parse",
+        "start_line": 523,
+        "end_line": 535
+      },
+      {
+        "file": "dspy\\adapters\\xml_adapter.py",
+        "name": "__init__",
+        "start_line": 13,
+        "end_line": 15
+      },
+      {
+        "file": "dspy\\adapters\\xml_adapter.py",
+        "name": "format_field_with_value",
+        "start_line": 17,
+        "end_line": 22
+      },
+      {
+        "file": "dspy\\adapters\\xml_adapter.py",
+        "name": "format_field_structure",
+        "start_line": 24,
+        "end_line": 42
+      },
+      {
+        "file": "dspy\\adapters\\xml_adapter.py",
+        "name": "format_signature_fields_for_instructions",
+        "start_line": 32,
+        "end_line": 38
+      },
+      {
+        "file": "dspy\\adapters\\xml_adapter.py",
+        "name": "format_user_message_content",
+        "start_line": 44,
+        "end_line": 67
+      },
+      {
+        "file": "dspy\\adapters\\xml_adapter.py",
+        "name": "format_assistant_message_content",
+        "start_line": 69,
+        "end_line": 80
+      },
+      {
+        "file": "dspy\\adapters\\xml_adapter.py",
+        "name": "user_message_output_requirements",
+        "start_line": 82,
+        "end_line": 86
+      },
+      {
+        "file": "dspy\\adapters\\xml_adapter.py",
+        "name": "parse",
+        "start_line": 88,
+        "end_line": 107
+      },
+      {
+        "file": "dspy\\adapters\\xml_adapter.py",
+        "name": "_parse_field_value",
+        "start_line": 109,
+        "end_line": 122
+      },
+      {
+        "file": "dspy\\clients\\embedding.py",
+        "name": "__init__",
+        "start_line": 79,
+        "end_line": 83
+      },
+      {
+        "file": "dspy\\clients\\embedding.py",
+        "name": "_preprocess",
+        "start_line": 85,
+        "end_line": 104
+      },
+      {
+        "file": "dspy\\clients\\embedding.py",
+        "name": "_postprocess",
+        "start_line": 106,
+        "end_line": 111
+      },
+      {
+        "file": "dspy\\clients\\embedding.py",
+        "name": "__call__",
+        "start_line": 113,
+        "end_line": 137
+      },
+      {
+        "file": "dspy\\clients\\embedding.py",
+        "name": "acall",
+        "start_line": 139,
+        "end_line": 147
+      },
+      {
+        "file": "dspy\\clients\\embedding.py",
+        "name": "_compute_embeddings",
+        "start_line": 150,
+        "end_line": 158
+      },
+      {
+        "file": "dspy\\clients\\embedding.py",
+        "name": "_acompute_embeddings",
+        "start_line": 166,
+        "end_line": 174
+      },
+      {
+        "file": "dspy\\clients\\databricks.py",
+        "name": "__init__",
+        "start_line": 20,
+        "end_line": 25
+      },
+      {
+        "file": "dspy\\clients\\databricks.py",
+        "name": "status",
+        "start_line": 27,
+        "end_line": 38
+      },
+      {
+        "file": "dspy\\clients\\databricks.py",
+        "name": "_get_workspace_client",
+        "start_line": 263,
+        "end_line": 270
+      },
+      {
+        "file": "dspy\\clients\\databricks.py",
+        "name": "_create_directory_in_databricks_unity_catalog",
+        "start_line": 273,
+        "end_line": 302
+      },
+      {
+        "file": "dspy\\clients\\databricks.py",
+        "name": "_save_data_to_local_file",
+        "start_line": 305,
+        "end_line": 321
+      },
+      {
+        "file": "dspy\\clients\\databricks.py",
+        "name": "_validate_chat_data",
+        "start_line": 324,
+        "end_line": 343
+      },
+      {
+        "file": "dspy\\clients\\databricks.py",
+        "name": "_validate_completion_data",
+        "start_line": 346,
+        "end_line": 356
+      },
+      {
+        "file": "dspy\\clients\\base_lm.py",
+        "name": "__init__",
+        "start_line": 63,
+        "end_line": 68
+      },
+      {
+        "file": "dspy\\clients\\base_lm.py",
+        "name": "_process_lm_response",
+        "start_line": 90,
+        "end_line": 120
+      },
+      {
+        "file": "dspy\\clients\\base_lm.py",
+        "name": "forward",
+        "start_line": 145,
+        "end_line": 167
+      },
+      {
+        "file": "dspy\\clients\\base_lm.py",
+        "name": "aforward",
+        "start_line": 169,
+        "end_line": 191
+      }
+    ],
+    "imports": [
+      {
+        "file": "dspy\\__init__.py",
+        "name": "os",
+        "start_line": 1,
+        "end_line": 1
+      },
+      {
+        "file": "dspy\\__init__.py",
+        "name": "*",
+        "start_line": 4,
+        "end_line": 4
+      },
+      {
+        "file": "dspy\\__init__.py",
+        "name": "*",
+        "start_line": 5,
+        "end_line": 5
+      },
+      {
+        "file": "dspy\\__init__.py",
+        "name": "*",
+        "start_line": 6,
+        "end_line": 6
+      },
+      {
+        "file": "dspy\\__init__.py",
+        "name": "*",
+        "start_line": 7,
+        "end_line": 7
+      },
+      {
+        "file": "dspy\\__init__.py",
+        "name": "*",
+        "start_line": 8,
+        "end_line": 8
+      },
+      {
+        "file": "dspy\\__init__.py",
+        "name": "Evaluate",
+        "start_line": 10,
+        "end_line": 10
+      },
+      {
+        "file": "dspy\\__init__.py",
+        "name": "*",
+        "start_line": 11,
+        "end_line": 11
+      },
+      {
+        "file": "dspy\\__init__.py",
+        "name": "Adapter, ChatAdapter, JSONAdapter, XMLAdapter, TwoStepAdapter, Image, Audio, File, History, Type, Tool, ToolCalls, Code, Reasoning",
+        "start_line": 12,
+        "end_line": 12
+      },
+      {
+        "file": "dspy\\__init__.py",
+        "name": "ContextWindowExceededError",
+        "start_line": 13,
+        "end_line": 13
+      },
+      {
+        "file": "dspy\\__init__.py",
+        "name": "configure_dspy_loggers, disable_logging, enable_logging",
+        "start_line": 14,
+        "end_line": 14
+      },
+      {
+        "file": "dspy\\__init__.py",
+        "name": "asyncify",
+        "start_line": 15,
+        "end_line": 15
+      },
+      {
+        "file": "dspy\\__init__.py",
+        "name": "syncify",
+        "start_line": 16,
+        "end_line": 16
+      },
+      {
+        "file": "dspy\\__init__.py",
+        "name": "load",
+        "start_line": 17,
+        "end_line": 17
+      },
+      {
+        "file": "dspy\\__init__.py",
+        "name": "streamify",
+        "start_line": 18,
+        "end_line": 18
+      },
+      {
+        "file": "dspy\\__init__.py",
+        "name": "track_usage",
+        "start_line": 19,
+        "end_line": 19
+      },
+      {
+        "file": "dspy\\__init__.py",
+        "name": "settings",
+        "start_line": 21,
+        "end_line": 21
+      },
+      {
+        "file": "dspy\\__init__.py",
+        "name": "ColBERTv2",
+        "start_line": 22,
+        "end_line": 22
+      },
+      {
+        "file": "dspy\\__init__.py",
+        "name": "DSPY_CACHE",
+        "start_line": 23,
+        "end_line": 23
+      },
+      {
+        "file": "dspy\\__init__.py",
+        "name": "__name__, __version__, __description__, __url__, __author__, __author_email__",
+        "start_line": 24,
+        "end_line": 24
+      },
+      {
+        "file": "dspy\\adapters\\two_step_adapter.py",
+        "name": "Any",
+        "start_line": 1,
+        "end_line": 1
+      },
+      {
+        "file": "dspy\\adapters\\two_step_adapter.py",
+        "name": "json_repair",
+        "start_line": 3,
+        "end_line": 3
+      },
+      {
+        "file": "dspy\\adapters\\two_step_adapter.py",
+        "name": "Adapter",
+        "start_line": 5,
+        "end_line": 5
+      },
+      {
+        "file": "dspy\\adapters\\two_step_adapter.py",
+        "name": "ChatAdapter",
+        "start_line": 6,
+        "end_line": 6
+      },
+      {
+        "file": "dspy\\adapters\\two_step_adapter.py",
+        "name": "ToolCalls",
+        "start_line": 7,
+        "end_line": 7
+      },
+      {
+        "file": "dspy\\adapters\\two_step_adapter.py",
+        "name": "get_field_description_string",
+        "start_line": 8,
+        "end_line": 8
+      },
+      {
+        "file": "dspy\\adapters\\two_step_adapter.py",
+        "name": "BaseLM",
+        "start_line": 9,
+        "end_line": 9
+      },
+      {
+        "file": "dspy\\adapters\\two_step_adapter.py",
+        "name": "InputField",
+        "start_line": 10,
+        "end_line": 10
+      },
+      {
+        "file": "dspy\\adapters\\two_step_adapter.py",
+        "name": "Signature, make_signature",
+        "start_line": 11,
+        "end_line": 11
+      },
+      {
+        "file": "dspy\\adapters\\baml_adapter.py",
+        "name": "inspect",
+        "start_line": 6,
+        "end_line": 6
+      },
+      {
+        "file": "dspy\\adapters\\baml_adapter.py",
+        "name": "types",
+        "start_line": 7,
+        "end_line": 7
+      },
+      {
+        "file": "dspy\\adapters\\baml_adapter.py",
+        "name": "Any, Literal, Union, get_args, get_origin",
+        "start_line": 8,
+        "end_line": 8
+      },
+      {
+        "file": "dspy\\adapters\\baml_adapter.py",
+        "name": "BaseModel",
+        "start_line": 10,
+        "end_line": 10
+      },
+      {
+        "file": "dspy\\adapters\\baml_adapter.py",
+        "name": "JSONAdapter",
+        "start_line": 12,
+        "end_line": 12
+      },
+      {
+        "file": "dspy\\adapters\\baml_adapter.py",
+        "name": "format_field_value as original_format_field_value",
+        "start_line": 13,
+        "end_line": 13
+      },
+      {
+        "file": "dspy\\adapters\\baml_adapter.py",
+        "name": "Signature",
+        "start_line": 14,
+        "end_line": 14
+      },
+      {
+        "file": "dspy\\adapters\\utils.py",
+        "name": "ast",
+        "start_line": 1,
+        "end_line": 1
+      },
+      {
+        "file": "dspy\\adapters\\utils.py",
+        "name": "enum",
+        "start_line": 2,
+        "end_line": 2
+      },
+      {
+        "file": "dspy\\adapters\\utils.py",
+        "name": "inspect",
+        "start_line": 3,
+        "end_line": 3
+      },
+      {
+        "file": "dspy\\adapters\\utils.py",
+        "name": "json",
+        "start_line": 4,
+        "end_line": 4
+      },
+      {
+        "file": "dspy\\adapters\\utils.py",
+        "name": "types",
+        "start_line": 5,
+        "end_line": 5
+      },
+      {
+        "file": "dspy\\adapters\\utils.py",
+        "name": "Mapping",
+        "start_line": 6,
+        "end_line": 6
+      },
+      {
+        "file": "dspy\\adapters\\utils.py",
+        "name": "Any, Literal, Union, get_args, get_origin",
+        "start_line": 7,
+        "end_line": 7
+      },
+      {
+        "file": "dspy\\adapters\\utils.py",
+        "name": "json_repair",
+        "start_line": 9,
+        "end_line": 9
+      },
+      {
+        "file": "dspy\\adapters\\utils.py",
+        "name": "pydantic",
+        "start_line": 10,
+        "end_line": 10
+      },
+      {
+        "file": "dspy\\adapters\\utils.py",
+        "name": "TypeAdapter",
+        "start_line": 11,
+        "end_line": 11
+      },
+      {
+        "file": "dspy\\adapters\\utils.py",
+        "name": "FieldInfo",
+        "start_line": 12,
+        "end_line": 12
+      },
+      {
+        "file": "dspy\\adapters\\utils.py",
+        "name": "Type as DspyType",
+        "start_line": 14,
+        "end_line": 14
+      },
+      {
+        "file": "dspy\\adapters\\utils.py",
+        "name": "Code",
+        "start_line": 15,
+        "end_line": 15
+      },
+      {
+        "file": "dspy\\adapters\\utils.py",
+        "name": "Reasoning",
+        "start_line": 16,
+        "end_line": 16
+      },
+      {
+        "file": "dspy\\adapters\\utils.py",
+        "name": "get_dspy_field_type",
+        "start_line": 17,
+        "end_line": 17
+      },
+      {
+        "file": "dspy\\adapters\\chat_adapter.py",
+        "name": "re",
+        "start_line": 1,
+        "end_line": 1
+      },
+      {
+        "file": "dspy\\adapters\\chat_adapter.py",
+        "name": "textwrap",
+        "start_line": 2,
+        "end_line": 2
+      },
+      {
+        "file": "dspy\\adapters\\chat_adapter.py",
+        "name": "Any, NamedTuple",
+        "start_line": 3,
+        "end_line": 3
+      },
+      {
+        "file": "dspy\\adapters\\chat_adapter.py",
+        "name": "FieldInfo",
+        "start_line": 5,
+        "end_line": 5
+      },
+      {
+        "file": "dspy\\adapters\\chat_adapter.py",
+        "name": "Adapter",
+        "start_line": 7,
+        "end_line": 7
+      },
+      {
+        "file": "dspy\\adapters\\chat_adapter.py",
+        "name": "(\n    format_field_value,\n    get_annotation_name,\n    get_field_description_string,\n    parse_value,\n    translate_field_type,\n)",
+        "start_line": 8,
+        "end_line": 14
+      },
+      {
+        "file": "dspy\\adapters\\chat_adapter.py",
+        "name": "BaseLM",
+        "start_line": 15,
+        "end_line": 15
+      },
+      {
+        "file": "dspy\\adapters\\chat_adapter.py",
+        "name": "Signature",
+        "start_line": 16,
+        "end_line": 16
+      },
+      {
+        "file": "dspy\\adapters\\chat_adapter.py",
+        "name": "BaseCallback",
+        "start_line": 17,
+        "end_line": 17
+      },
+      {
+        "file": "dspy\\adapters\\chat_adapter.py",
+        "name": "AdapterParseError, ContextWindowExceededError",
+        "start_line": 18,
+        "end_line": 18
+      },
+      {
+        "file": "dspy\\adapters\\chat_adapter.py",
+        "name": "JSONAdapter",
+        "start_line": 75,
+        "end_line": 75
+      },
+      {
+        "file": "dspy\\adapters\\chat_adapter.py",
+        "name": "JSONAdapter",
+        "start_line": 99,
+        "end_line": 99
+      },
+      {
+        "file": "dspy\\adapters\\json_adapter.py",
+        "name": "json",
+        "start_line": 1,
+        "end_line": 1
+      },
+      {
+        "file": "dspy\\adapters\\json_adapter.py",
+        "name": "logging",
+        "start_line": 2,
+        "end_line": 2
+      },
+      {
+        "file": "dspy\\adapters\\json_adapter.py",
+        "name": "Any, get_origin",
+        "start_line": 3,
+        "end_line": 3
+      },
+      {
+        "file": "dspy\\adapters\\json_adapter.py",
+        "name": "json_repair",
+        "start_line": 5,
+        "end_line": 5
+      },
+      {
+        "file": "dspy\\adapters\\json_adapter.py",
+        "name": "pydantic",
+        "start_line": 6,
+        "end_line": 6
+      },
+      {
+        "file": "dspy\\adapters\\json_adapter.py",
+        "name": "regex",
+        "start_line": 7,
+        "end_line": 7
+      },
+      {
+        "file": "dspy\\adapters\\json_adapter.py",
+        "name": "FieldInfo",
+        "start_line": 8,
+        "end_line": 8
+      },
+      {
+        "file": "dspy\\adapters\\json_adapter.py",
+        "name": "ChatAdapter, FieldInfoWithName",
+        "start_line": 10,
+        "end_line": 10
+      },
+      {
+        "file": "dspy\\adapters\\json_adapter.py",
+        "name": "ToolCalls",
+        "start_line": 11,
+        "end_line": 11
+      },
+      {
+        "file": "dspy\\adapters\\json_adapter.py",
+        "name": "(\n    format_field_value,\n    get_annotation_name,\n    parse_value,\n    serialize_for_json,\n    translate_field_type,\n)",
+        "start_line": 12,
+        "end_line": 18
+      },
+      {
+        "file": "dspy\\adapters\\json_adapter.py",
+        "name": "BaseLM",
+        "start_line": 19,
+        "end_line": 19
+      },
+      {
+        "file": "dspy\\adapters\\json_adapter.py",
+        "name": "Signature, SignatureMeta",
+        "start_line": 20,
+        "end_line": 20
+      },
+      {
+        "file": "dspy\\adapters\\json_adapter.py",
+        "name": "BaseCallback",
+        "start_line": 21,
+        "end_line": 21
+      },
+      {
+        "file": "dspy\\adapters\\json_adapter.py",
+        "name": "AdapterParseError",
+        "start_line": 22,
+        "end_line": 22
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "logging",
+        "start_line": 1,
+        "end_line": 1
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "Any, get_origin",
+        "start_line": 2,
+        "end_line": 2
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "json_repair",
+        "start_line": 4,
+        "end_line": 4
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "History, Type",
+        "start_line": 6,
+        "end_line": 6
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "split_message_content_for_custom_types",
+        "start_line": 7,
+        "end_line": 7
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "Reasoning",
+        "start_line": 8,
+        "end_line": 8
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "Tool, ToolCalls",
+        "start_line": 9,
+        "end_line": 9
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "BaseLM",
+        "start_line": 10,
+        "end_line": 10
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "Citations",
+        "start_line": 11,
+        "end_line": 11
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "Signature",
+        "start_line": 12,
+        "end_line": 12
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "BaseCallback, with_callbacks",
+        "start_line": 13,
+        "end_line": 13
+      },
+      {
+        "file": "dspy\\adapters\\base.py",
+        "name": "AdapterParseError",
+        "start_line": 14,
+        "end_line": 14
+      },
+      {
+        "file": "dspy\\adapters\\__init__.py",
+        "name": "Adapter",
+        "start_line": 1,
+        "end_line": 1
+      },
+      {
+        "file": "dspy\\adapters\\__init__.py",
+        "name": "ChatAdapter",
+        "start_line": 2,
+        "end_line": 2
+      },
+      {
+        "file": "dspy\\adapters\\__init__.py",
+        "name": "JSONAdapter",
+        "start_line": 3,
+        "end_line": 3
+      },
+      {
+        "file": "dspy\\adapters\\__init__.py",
+        "name": "TwoStepAdapter",
+        "start_line": 4,
+        "end_line": 4
+      },
+      {
+        "file": "dspy\\adapters\\__init__.py",
+        "name": "Audio, Code, File, History, Image, Reasoning, Tool, ToolCalls, Type",
+        "start_line": 5,
+        "end_line": 5
+      },
+      {
+        "file": "dspy\\adapters\\__init__.py",
+        "name": "XMLAdapter",
+        "start_line": 6,
+        "end_line": 6
+      },
+      {
+        "file": "dspy\\adapters\\xml_adapter.py",
+        "name": "re",
+        "start_line": 1,
+        "end_line": 1
+      },
+      {
+        "file": "dspy\\adapters\\xml_adapter.py",
+        "name": "Any",
+        "start_line": 2,
+        "end_line": 2
+      },
+      {
+        "file": "dspy\\adapters\\xml_adapter.py",
+        "name": "FieldInfo",
+        "start_line": 4,
+        "end_line": 4
+      },
+      {
+        "file": "dspy\\adapters\\xml_adapter.py",
+        "name": "ChatAdapter, FieldInfoWithName",
+        "start_line": 6,
+        "end_line": 6
+      },
+      {
+        "file": "dspy\\adapters\\xml_adapter.py",
+        "name": "format_field_value, translate_field_type",
+        "start_line": 7,
+        "end_line": 7
+      },
+      {
+        "file": "dspy\\adapters\\xml_adapter.py",
+        "name": "Signature",
+        "start_line": 8,
+        "end_line": 8
+      },
+      {
+        "file": "dspy\\adapters\\xml_adapter.py",
+        "name": "BaseCallback",
+        "start_line": 9,
+        "end_line": 9
+      },
+      {
+        "file": "dspy\\adapters\\xml_adapter.py",
+        "name": "AdapterParseError",
+        "start_line": 99,
+        "end_line": 99
+      },
+      {
+        "file": "dspy\\adapters\\xml_adapter.py",
+        "name": "parse_value",
+        "start_line": 110,
+        "end_line": 110
+      },
+      {
+        "file": "dspy\\adapters\\xml_adapter.py",
+        "name": "AdapterParseError",
+        "start_line": 115,
+        "end_line": 115
+      },
+      {
+        "file": "dspy\\clients\\embedding.py",
+        "name": "Any, Callable",
+        "start_line": 1,
+        "end_line": 1
+      },
+      {
+        "file": "dspy\\clients\\embedding.py",
+        "name": "litellm",
+        "start_line": 3,
+        "end_line": 3
+      },
+      {
+        "file": "dspy\\clients\\embedding.py",
+        "name": "numpy as np",
+        "start_line": 4,
+        "end_line": 4
+      },
+      {
+        "file": "dspy\\clients\\embedding.py",
+        "name": "request_cache",
+        "start_line": 6,
+        "end_line": 6
+      },
+      {
+        "file": "dspy\\clients\\databricks.py",
+        "name": "logging",
+        "start_line": 1,
+        "end_line": 1
+      },
+      {
+        "file": "dspy\\clients\\databricks.py",
+        "name": "os",
+        "start_line": 2,
+        "end_line": 2
+      },
+      {
+        "file": "dspy\\clients\\databricks.py",
+        "name": "re",
+        "start_line": 3,
+        "end_line": 3
+      },
+      {
+        "file": "dspy\\clients\\databricks.py",
+        "name": "time",
+        "start_line": 4,
+        "end_line": 4
+      },
+      {
+        "file": "dspy\\clients\\databricks.py",
+        "name": "TYPE_CHECKING, Any",
+        "start_line": 5,
+        "end_line": 5
+      },
+      {
+        "file": "dspy\\clients\\databricks.py",
+        "name": "orjson",
+        "start_line": 7,
+        "end_line": 7
+      },
+      {
+        "file": "dspy\\clients\\databricks.py",
+        "name": "requests",
+        "start_line": 8,
+        "end_line": 8
+      },
+      {
+        "file": "dspy\\clients\\databricks.py",
+        "name": "Provider, TrainingJob",
+        "start_line": 10,
+        "end_line": 10
+      },
+      {
+        "file": "dspy\\clients\\databricks.py",
+        "name": "TrainDataFormat, get_finetune_directory",
+        "start_line": 11,
+        "end_line": 11
+      },
+      {
+        "file": "dspy\\clients\\databricks.py",
+        "name": "WorkspaceClient",
+        "start_line": 14,
+        "end_line": 14
+      },
+      {
+        "file": "dspy\\clients\\databricks.py",
+        "name": "foundation_model as fm",
+        "start_line": 31,
+        "end_line": 31
+      },
+      {
+        "file": "dspy\\clients\\databricks.py",
+        "name": "OpenAI",
+        "start_line": 141,
+        "end_line": 141
+      },
+      {
+        "file": "dspy\\clients\\databricks.py",
+        "name": "foundation_model as fm",
+        "start_line": 193,
+        "end_line": 193
+      },
+      {
+        "file": "dspy\\clients\\databricks.py",
+        "name": "WorkspaceClient",
+        "start_line": 265,
+        "end_line": 265
+      },
+      {
+        "file": "dspy\\clients\\databricks.py",
+        "name": "uuid",
+        "start_line": 306,
+        "end_line": 306
+      },
+      {
+        "file": "dspy\\clients\\base_lm.py",
+        "name": "datetime",
+        "start_line": 1,
+        "end_line": 1
+      },
+      {
+        "file": "dspy\\clients\\base_lm.py",
+        "name": "uuid",
+        "start_line": 2,
+        "end_line": 2
+      },
+      {
+        "file": "dspy\\clients\\base_lm.py",
+        "name": "Any, TextIO",
+        "start_line": 3,
+        "end_line": 3
+      },
+      {
+        "file": "dspy\\clients\\base_lm.py",
+        "name": "settings",
+        "start_line": 5,
+        "end_line": 5
+      },
+      {
+        "file": "dspy\\clients\\base_lm.py",
+        "name": "with_callbacks",
+        "start_line": 6,
+        "end_line": 6
+      },
+      {
+        "file": "dspy\\clients\\base_lm.py",
+        "name": "pretty_print_history",
+        "start_line": 7,
+        "end_line": 7
+      },
+      {
+        "file": "dspy\\clients\\base_lm.py",
+        "name": "copy",
+        "start_line": 201,
+        "end_line": 201
+      },
+      {
+        "file": "dspy\\clients\\lm_local.py",
+        "name": "datetime",
+        "start_line": 1,
+        "end_line": 1
+      },
+      {
+        "file": "dspy\\clients\\lm_local.py",
+        "name": "logging",
+        "start_line": 2,
+        "end_line": 2
+      },
+      {
+        "file": "dspy\\clients\\lm_local.py",
+        "name": "random",
+        "start_line": 3,
+        "end_line": 3
+      },
+      {
+        "file": "dspy\\clients\\lm_local.py",
+        "name": "socket",
+        "start_line": 4,
+        "end_line": 4
+      },
+      {
+        "file": "dspy\\clients\\lm_local.py",
+        "name": "string",
+        "start_line": 5,
+        "end_line": 5
+      },
+      {
+        "file": "dspy\\clients\\lm_local.py",
+        "name": "subprocess",
+        "start_line": 6,
+        "end_line": 6
+      },
+      {
+        "file": "dspy\\clients\\lm_local.py",
+        "name": "threading",
+        "start_line": 7,
+        "end_line": 7
+      },
+      {
+        "file": "dspy\\clients\\lm_local.py",
+        "name": "time",
+        "start_line": 8,
+        "end_line": 8
+      },
+      {
+        "file": "dspy\\clients\\lm_local.py",
+        "name": "TYPE_CHECKING, Any",
+        "start_line": 9,
+        "end_line": 9
+      },
+      {
+        "file": "dspy\\clients\\lm_local.py",
+        "name": "requests",
+        "start_line": 11,
+        "end_line": 11
+      },
+      {
+        "file": "dspy\\clients\\lm_local.py",
+        "name": "Provider, TrainingJob",
+        "start_line": 13,
+        "end_line": 13
+      },
+      {
+        "file": "dspy\\clients\\lm_local.py",
+        "name": "TrainDataFormat, save_data",
+        "start_line": 14,
+        "end_line": 14
+      },
+      {
+        "file": "dspy\\clients\\lm_local.py",
+        "name": "LM",
+        "start_line": 17,
+        "end_line": 17
+      },
+      {
+        "file": "dspy\\clients\\lm_local.py",
+        "name": "sglang",
+        "start_line": 31,
+        "end_line": 31
+      },
+      {
+        "file": "dspy\\clients\\lm_local.py",
+        "name": "os",
+        "start_line": 44,
+        "end_line": 44
+      },
+      {
+        "file": "dspy\\clients\\lm_local.py",
+        "name": "terminate_process",
+        "start_line": 132,
+        "end_line": 132
+      },
+      {
+        "file": "dspy\\clients\\lm_local.py",
+        "name": "torch",
+        "start_line": 202,
+        "end_line": 202
+      },
+      {
+        "file": "dspy\\clients\\lm_local.py",
+        "name": "AutoModelForCausalLM, AutoTokenizer",
+        "start_line": 203,
+        "end_line": 203
+      },
+      {
+        "file": "dspy\\clients\\lm_local.py",
+        "name": "SFTConfig, SFTTrainer, setup_chat_format",
+        "start_line": 204,
+        "end_line": 204
+      },
+      {
+        "file": "dspy\\clients\\lm_local.py",
+        "name": "Dataset",
+        "start_line": 236,
+        "end_line": 236
+      },
+      {
+        "file": "dspy\\clients\\lm_local.py",
+        "name": "LoraConfig",
+        "start_line": 251,
+        "end_line": 251
+      },
+      {
+        "file": "dspy\\clients\\lm_local.py",
+        "name": "AutoPeftModelForCausalLM",
+        "start_line": 302,
+        "end_line": 302
+      },
+      {
+        "file": "dspy\\clients\\lm_local.py",
+        "name": "gc",
+        "start_line": 315,
+        "end_line": 315
+      },
+      {
+        "file": "dspy\\clients\\lm_local.py",
+        "name": "torch",
+        "start_line": 370,
+        "end_line": 370
+      },
+      {
+        "file": "dspy\\clients\\cache.py",
+        "name": "copy",
+        "start_line": 1,
+        "end_line": 1
+      },
+      {
+        "file": "dspy\\clients\\cache.py",
+        "name": "inspect",
+        "start_line": 2,
+        "end_line": 2
+      },
+      {
+        "file": "dspy\\clients\\cache.py",
+        "name": "logging",
+        "start_line": 3,
+        "end_line": 3
+      },
+      {
+        "file": "dspy\\clients\\cache.py",
+        "name": "threading",
+        "start_line": 4,
+        "end_line": 4
+      },
+      {
+        "file": "dspy\\clients\\cache.py",
+        "name": "wraps",
+        "start_line": 5,
+        "end_line": 5
+      },
+      {
+        "file": "dspy\\clients\\cache.py",
+        "name": "sha256",
+        "start_line": 6,
+        "end_line": 6
+      },
+      {
+        "file": "dspy\\clients\\cache.py",
+        "name": "Any",
+        "start_line": 7,
+        "end_line": 7
+      },
+      {
+        "file": "dspy\\clients\\cache.py",
+        "name": "cloudpickle",
+        "start_line": 9,
+        "end_line": 9
+      },
+      {
+        "file": "dspy\\clients\\cache.py",
+        "name": "orjson",
+        "start_line": 10,
+        "end_line": 10
+      },
+      {
+        "file": "dspy\\clients\\cache.py",
+        "name": "pydantic",
+        "start_line": 11,
+        "end_line": 11
+      },
+      {
+        "file": "dspy\\clients\\cache.py",
+        "name": "LRUCache",
+        "start_line": 12,
+        "end_line": 12
+      },
+      {
+        "file": "dspy\\clients\\cache.py",
+        "name": "FanoutCache",
+        "start_line": 13,
+        "end_line": 13
+      },
+      {
+        "file": "dspy\\clients\\cache.py",
+        "name": "inspect",
+        "start_line": 85,
+        "end_line": 85
+      },
+      {
+        "file": "dspy\\clients\\cache.py",
+        "name": "dspy",
+        "start_line": 239,
+        "end_line": 239
+      },
+      {
+        "file": "dspy\\clients\\cache.py",
+        "name": "dspy",
+        "start_line": 261,
+        "end_line": 261
+      },
+      {
+        "file": "dspy\\clients\\lm.py",
+        "name": "logging",
+        "start_line": 1,
+        "end_line": 1
+      },
+      {
+        "file": "dspy\\clients\\lm.py",
+        "name": "os",
+        "start_line": 2,
+        "end_line": 2
+      },
+      {
+        "file": "dspy\\clients\\lm.py",
+        "name": "re",
+        "start_line": 3,
+        "end_line": 3
+      },
+      {
+        "file": "dspy\\clients\\lm.py",
+        "name": "threading",
+        "start_line": 4,
+        "end_line": 4
+      },
+      {
+        "file": "dspy\\clients\\lm.py",
+        "name": "warnings",
+        "start_line": 5,
+        "end_line": 5
+      },
+      {
+        "file": "dspy\\clients\\lm.py",
+        "name": "Any, Literal, cast",
+        "start_line": 6,
+        "end_line": 6
+      },
+      {
+        "file": "dspy\\clients\\lm.py",
+        "name": "litellm",
+        "start_line": 8,
+        "end_line": 8
+      },
+      {
+        "file": "dspy\\clients\\lm.py",
+        "name": "pydantic",
+        "start_line": 9,
+        "end_line": 9
+      },
+      {
+        "file": "dspy\\clients\\lm.py",
+        "name": "MemoryObjectSendStream",
+        "start_line": 10,
+        "end_line": 10
+      },
+      {
+        "file": "dspy\\clients\\lm.py",
+        "name": "syncify",
+        "start_line": 11,
+        "end_line": 11
+      },
+      {
+        "file": "dspy\\clients\\lm.py",
+        "name": "ContextWindowExceededError as LitellmContextWindowExceededError",
+        "start_line": 12,
+        "end_line": 12
+      },
+      {
+        "file": "dspy\\clients\\lm.py",
+        "name": "dspy",
+        "start_line": 14,
+        "end_line": 14
+      },
+      {
+        "file": "dspy\\clients\\lm.py",
+        "name": "request_cache",
+        "start_line": 15,
+        "end_line": 15
+      },
+      {
+        "file": "dspy\\clients\\lm.py",
+        "name": "OpenAIProvider",
+        "start_line": 16,
+        "end_line": 16
+      },
+      {
+        "file": "dspy\\clients\\lm.py",
+        "name": "Provider, ReinforceJob, TrainingJob",
+        "start_line": 17,
+        "end_line": 17
+      },
+      {
+        "file": "dspy\\clients\\lm.py",
+        "name": "TrainDataFormat",
+        "start_line": 18,
+        "end_line": 18
+      },
+      {
+        "file": "dspy\\clients\\lm.py",
+        "name": "settings",
+        "start_line": 19,
+        "end_line": 19
+      },
+      {
+        "file": "dspy\\clients\\lm.py",
+        "name": "BaseCallback",
+        "start_line": 20,
+        "end_line": 20
+      },
+      {
+        "file": "dspy\\clients\\lm.py",
+        "name": "ContextWindowExceededError",
+        "start_line": 21,
+        "end_line": 21
+      },
+      {
+        "file": "dspy\\clients\\lm.py",
+        "name": "BaseLM",
+        "start_line": 23,
+        "end_line": 23
+      },
+      {
+        "file": "dspy\\clients\\lm.py",
+        "name": "settings as settings",
+        "start_line": 253,
+        "end_line": 253
+      },
+      {
+        "file": "dspy\\clients\\lm.py",
+        "name": "settings as settings",
+        "start_line": 281,
+        "end_line": 281
+      },
+      {
+        "file": "dspy\\datasets\\colors.py",
+        "name": "random",
+        "start_line": 1,
+        "end_line": 1
+      },
+      {
+        "file": "dspy\\datasets\\colors.py",
+        "name": "Dataset",
+        "start_line": 3,
+        "end_line": 3
+      },
+      {
+        "file": "dspy\\datasets\\dataset.py",
+        "name": "random",
+        "start_line": 3,
+        "end_line": 3
+      },
+      {
+        "file": "dspy\\datasets\\dataset.py",
+        "name": "uuid",
+        "start_line": 4,
+        "end_line": 4
+      },
+      {
+        "file": "dspy\\datasets\\dataset.py",
+        "name": "Iterable",
+        "start_line": 5,
+        "end_line": 5
+      },
+      {
+        "file": "dspy\\datasets\\dataset.py",
+        "name": "Any",
+        "start_line": 6,
+        "end_line": 6
+      },
+      {
+        "file": "dspy\\datasets\\dataset.py",
+        "name": "Example",
+        "start_line": 8,
+        "end_line": 8
+      },
+      {
+        "file": "dspy\\datasets\\dataset.py",
+        "name": "dotdict",
+        "start_line": 9,
+        "end_line": 9
+      }
+    ],
+    "by_file": {
+      "dspy\\adapters\\two_step_adapter.py": {
+        "classes": [
+          "TwoStepAdapter"
+        ],
+        "functions": [
+          "__init__",
+          "format",
+          "parse",
+          "acall",
+          "format_task_description",
+          "format_user_message_content",
+          "format_assistant_message_content",
+          "_create_extractor_signature"
+        ],
+        "imports": [
+          "Any",
+          "json_repair",
+          "Adapter",
+          "ChatAdapter",
+          "ToolCalls",
+          "get_field_description_string",
+          "BaseLM",
+          "InputField",
+          "Signature, make_signature"
+        ]
+      },
+      "dspy\\adapters\\baml_adapter.py": {
+        "classes": [
+          "BAMLAdapter"
+        ],
+        "functions": [
+          "_render_type_str",
+          "_build_simplified_schema",
+          "format_field_structure",
+          "format_user_message_content"
+        ],
+        "imports": [
+          "inspect",
+          "types",
+          "Any, Literal, Union, get_args, get_origin",
+          "BaseModel",
+          "JSONAdapter",
+          "format_field_value as original_format_field_value",
+          "Signature"
+        ]
+      },
+      "dspy\\adapters\\chat_adapter.py": {
+        "classes": [
+          "FieldInfoWithName",
+          "ChatAdapter"
+        ],
+        "functions": [
+          "__init__",
+          "__call__",
+          "acall",
+          "format_field_description",
+          "format_field_structure",
+          "format_signature_fields_for_instructions",
+          "format_task_description",
+          "format_user_message_content",
+          "user_message_output_requirements",
+          "type_info",
+          "format_assistant_message_content",
+          "parse",
+          "format_field_with_value",
+          "format_finetune_data"
+        ],
+        "imports": [
+          "re",
+          "textwrap",
+          "Any, NamedTuple",
+          "FieldInfo",
+          "Adapter",
+          "(\n    format_field_value,\n    get_annotation_name,\n    get_field_description_string,\n    parse_value,\n    translate_field_type,\n)",
+          "BaseLM",
+          "Signature",
+          "BaseCallback",
+          "AdapterParseError, ContextWindowExceededError",
+          "JSONAdapter",
+          "JSONAdapter"
+        ]
+      },
+      "dspy\\adapters\\json_adapter.py": {
+        "classes": [
+          "JSONAdapter"
+        ],
+        "functions": [
+          "_has_open_ended_mapping",
+          "__init__",
+          "_json_adapter_call_common",
+          "__call__",
+          "acall",
+          "format_field_structure",
+          "format_signature_fields_for_instructions",
+          "user_message_output_requirements",
+          "type_info",
+          "format_assistant_message_content",
+          "parse",
+          "format_field_with_value",
+          "format_finetune_data",
+          "_get_structured_outputs_response_format",
+          "enforce_required"
+        ],
+        "imports": [
+          "json",
+          "logging",
+          "Any, get_origin",
+          "json_repair",
+          "pydantic",
+          "regex",
+          "FieldInfo",
+          "ChatAdapter, FieldInfoWithName",
+          "ToolCalls",
+          "(\n    format_field_value,\n    get_annotation_name,\n    parse_value,\n    serialize_for_json,\n    translate_field_type,\n)",
+          "BaseLM",
+          "Signature, SignatureMeta",
+          "BaseCallback",
+          "AdapterParseError"
+        ]
+      },
+      "dspy\\adapters\\base.py": {
+        "classes": [
+          "Adapter"
+        ],
+        "functions": [
+          "__init__",
+          "__init_subclass__",
+          "_call_preprocess",
+          "_call_postprocess",
+          "__call__",
+          "acall",
+          "format",
+          "format_system_message",
+          "format_field_description",
+          "format_field_structure",
+          "format_task_description",
+          "format_user_message_content",
+          "format_assistant_message_content",
+          "format_demos",
+          "_get_history_field_name",
+          "_get_tool_call_input_field_name",
+          "_get_tool_call_output_field_name",
+          "format_conversation_history",
+          "parse"
+        ],
+        "imports": [
+          "logging",
+          "Any, get_origin",
+          "json_repair",
+          "History, Type",
+          "split_message_content_for_custom_types",
+          "Reasoning",
+          "Tool, ToolCalls",
+          "BaseLM",
+          "Citations",
+          "Signature",
+          "BaseCallback, with_callbacks",
+          "AdapterParseError"
+        ]
+      },
+      "dspy\\adapters\\xml_adapter.py": {
+        "classes": [
+          "XMLAdapter"
+        ],
+        "functions": [
+          "__init__",
+          "format_field_with_value",
+          "format_field_structure",
+          "format_signature_fields_for_instructions",
+          "format_user_message_content",
+          "format_assistant_message_content",
+          "user_message_output_requirements",
+          "parse",
+          "_parse_field_value"
+        ],
+        "imports": [
+          "re",
+          "Any",
+          "FieldInfo",
+          "ChatAdapter, FieldInfoWithName",
+          "format_field_value, translate_field_type",
+          "Signature",
+          "BaseCallback",
+          "AdapterParseError",
+          "parse_value",
+          "AdapterParseError"
+        ]
+      },
+      "dspy\\clients\\embedding.py": {
+        "classes": [
+          "Embedder"
+        ],
+        "functions": [
+          "__init__",
+          "_preprocess",
+          "_postprocess",
+          "__call__",
+          "acall",
+          "_compute_embeddings",
+          "_acompute_embeddings"
+        ],
+        "imports": [
+          "Any, Callable",
+          "litellm",
+          "numpy as np",
+          "request_cache"
+        ]
+      },
+      "dspy\\clients\\databricks.py": {
+        "classes": [
+          "TrainingJobDatabricks",
+          "DatabricksProvider"
+        ],
+        "functions": [
+          "__init__",
+          "status",
+          "_get_workspace_client",
+          "_create_directory_in_databricks_unity_catalog",
+          "_save_data_to_local_file",
+          "_validate_chat_data",
+          "_validate_completion_data"
+        ],
+        "imports": [
+          "logging",
+          "os",
+          "re",
+          "time",
+          "TYPE_CHECKING, Any",
+          "orjson",
+          "requests",
+          "Provider, TrainingJob",
+          "TrainDataFormat, get_finetune_directory",
+          "WorkspaceClient",
+          "foundation_model as fm",
+          "OpenAI",
+          "foundation_model as fm",
+          "WorkspaceClient",
+          "uuid"
+        ]
+      },
+      "dspy\\clients\\base_lm.py": {
+        "classes": [
+          "BaseLM"
+        ],
+        "functions": [
+          "__init__",
+          "_process_lm_response",
+          "forward",
+          "aforward",
+          "copy",
+          "inspect_history",
+          "update_history",
+          "_process_completion",
+          "_extract_citations_from_response",
+          "_process_response",
+          "inspect_history"
+        ],
+        "imports": [
+          "datetime",
+          "uuid",
+          "Any, TextIO",
+          "settings",
+          "with_callbacks",
+          "pretty_print_history",
+          "copy"
+        ]
+      },
+      "dspy\\clients\\lm_local.py": {
+        "classes": [
+          "LocalProvider"
+        ],
+        "functions": [
+          "__init__",
+          "create_output_dir",
+          "train_sft_locally",
+          "tokenize_function",
+          "get_free_port",
+          "wait_for_server",
+          "encode_sft_example"
+        ],
+        "imports": [
+          "datetime",
+          "logging",
+          "random",
+          "socket",
+          "string",
+          "subprocess",
+          "threading",
+          "time",
+          "TYPE_CHECKING, Any",
+          "requests",
+          "Provider, TrainingJob",
+          "TrainDataFormat, save_data",
+          "LM",
+          "sglang",
+          "os",
+          "terminate_process",
+          "torch",
+          "AutoModelForCausalLM, AutoTokenizer",
+          "SFTConfig, SFTTrainer, setup_chat_format",
+          "Dataset",
+          "LoraConfig",
+          "AutoPeftModelForCausalLM",
+          "gc",
+          "torch"
+        ]
+      },
+      "dspy\\clients\\cache.py": {
+        "classes": [
+          "Cache"
+        ],
+        "functions": [
+          "__init__",
+          "__contains__",
+          "cache_key",
+          "transform_value",
+          "get",
+          "put",
+          "reset_memory_cache",
+          "save_memory_cache",
+          "load_memory_cache",
+          "request_cache",
+          "decorator"
+        ],
+        "imports": [
+          "copy",
+          "inspect",
+          "logging",
+          "threading",
+          "wraps",
+          "sha256",
+          "Any",
+          "cloudpickle",
+          "orjson",
+          "pydantic",
+          "LRUCache",
+          "FanoutCache",
+          "inspect",
+          "dspy",
+          "dspy"
+        ]
+      },
+      "dspy\\clients\\lm.py": {
+        "classes": [
+          "LM"
+        ],
+        "functions": [
+          "__init__",
+          "_warn_zero_temp_rollout",
+          "_get_cached_completion_fn",
+          "forward",
+          "aforward",
+          "launch",
+          "kill",
+          "finetune",
+          "thread_function_wrapper",
+          "reinforce",
+          "_run_finetune_job",
+          "infer_provider",
+          "dump_state",
+          "_check_truncation",
+          "_get_stream_completion_fn",
+          "stream_completion",
+          "sync_stream_completion",
+          "async_stream_completion",
+          "litellm_completion",
+          "litellm_text_completion",
+          "alitellm_completion",
+          "alitellm_text_completion",
+          "litellm_responses_completion",
+          "alitellm_responses_completion",
+          "_convert_chat_request_to_responses_request",
+          "_convert_content_item_to_responses_format",
+          "_add_dspy_identifier_to_headers"
+        ],
+        "imports": [
+          "logging",
+          "os",
+          "re",
+          "threading",
+          "warnings",
+          "Any, Literal, cast",
+          "litellm",
+          "pydantic",
+          "MemoryObjectSendStream",
+          "syncify",
+          "ContextWindowExceededError as LitellmContextWindowExceededError",
+          "dspy",
+          "request_cache",
+          "OpenAIProvider",
+          "Provider, ReinforceJob, TrainingJob",
+          "TrainDataFormat",
+          "settings",
+          "BaseCallback",
+          "ContextWindowExceededError",
+          "BaseLM",
+          "settings as settings",
+          "settings as settings"
+        ]
+      },
+      "dspy\\datasets\\colors.py": {
+        "classes": [
+          "Colors"
+        ],
+        "functions": [
+          "__init__",
+          "sorted_by_suffix"
+        ],
+        "imports": [
+          "random",
+          "Dataset"
+        ]
+      },
+      "dspy\\datasets\\dataset.py": {
+        "classes": [
+          "Dataset"
+        ],
+        "functions": [
+          "__init__",
+          "reset_seeds",
+          "_shuffle_and_sample"
+        ],
+        "imports": [
+          "random",
+          "uuid",
+          "Iterable",
+          "Any",
+          "Example",
+          "dotdict"
+        ]
+      },
+      "dspy\\clients\\provider.py": {
+        "classes": [
+          "TrainingJob",
+          "ReinforceJob",
+          "Provider"
+        ],
+        "functions": [
+          "__init__",
+          "cancel",
+          "__init__",
+          "cancel",
+          "status",
+          "__init__"
+        ],
+        "imports": [
+          "abstractmethod",
+          "Future",
+          "Thread",
+          "TYPE_CHECKING, Any",
+          "TrainDataFormat",
+          "LM"
+        ]
+      },
+      "dspy\\datasets\\dataloader.py": {
+        "classes": [
+          "DataLoader"
+        ],
+        "functions": [
+          "__init__",
+          "from_huggingface",
+          "from_csv",
+          "from_pandas",
+          "from_json",
+          "from_parquet",
+          "from_rm",
+          "sample",
+          "train_test_split"
+        ],
+        "imports": [
+          "random",
+          "Mapping",
+          "TYPE_CHECKING",
+          "dspy",
+          "Dataset",
+          "pandas as pd",
+          "load_dataset",
+          "load_dataset",
+          "load_dataset",
+          "load_dataset"
+        ]
+      },
+      "dspy\\clients\\openai.py": {
+        "classes": [
+          "TrainingJobOpenAI",
+          "OpenAIProvider"
+        ],
+        "functions": [
+          "__init__",
+          "cancel",
+          "status",
+          "__init__"
+        ],
+        "imports": [
+          "time",
+          "datetime",
+          "Any",
+          "openai",
+          "Provider, TrainingJob",
+          "TrainDataFormat, TrainingStatus, save_data"
+        ]
+      },
+      "dspy\\clients\\utils_finetune.py": {
+        "classes": [
+          "TrainingStatus",
+          "TrainDataFormat",
+          "Message",
+          "MessageAssistant",
+          "GRPOChatData",
+          "GRPOGroup",
+          "GRPOStatus"
+        ],
+        "functions": [
+          "infer_data_format",
+          "get_finetune_directory",
+          "write_lines",
+          "save_data",
+          "validate_data_format",
+          "find_data_errors_completion",
+          "find_data_error_chat",
+          "find_data_error_chat_message"
+        ],
+        "imports": [
+          "os",
+          "Enum",
+          "TYPE_CHECKING, Any, Literal, TypedDict",
+          "orjson",
+          "dspy",
+          "DSPY_CACHEDIR",
+          "Adapter",
+          "Hasher"
+        ]
+      },
+      "dspy\\datasets\\gsm8k.py": {
+        "classes": [
+          "GSM8K"
+        ],
+        "functions": [
+          "__init__",
+          "parse_integer_answer",
+          "gsm8k_metric"
+        ],
+        "imports": [
+          "random",
+          "tqdm",
+          "load_dataset",
+          "dspy"
+        ]
+      },
+      "dspy\\datasets\\hotpotqa.py": {
+        "classes": [
+          "HotPotQA"
+        ],
+        "functions": [
+          "__init__"
+        ],
+        "imports": [
+          "random",
+          "Dataset",
+          "load_dataset",
+          "dotdict"
+        ]
+      },
+      "dspy\\dsp\\colbertv2.py": {
+        "classes": [
+          "ColBERTv2",
+          "ColBERTv2RetrieverLocal",
+          "ColBERTv2RerankerLocal"
+        ],
+        "functions": [
+          "__init__",
+          "__call__",
+          "__init__",
+          "build_index",
+          "get_index",
+          "__call__",
+          "forward",
+          "__init__",
+          "__call__",
+          "forward"
+        ],
+        "imports": [
+          "Any",
+          "requests",
+          "request_cache",
+          "dotdict",
+          "colbert",
+          "Indexer",
+          "Run, RunConfig",
+          "colbert",
+          "Searcher",
+          "Run, RunConfig",
+          "torch",
+          "colbert",
+          "numpy as np",
+          "ColBERT",
+          "DocTokenizer",
+          "QueryTokenizer"
+        ]
+      },
+      "dspy\\evaluate\\auto_evaluation.py": {
+        "classes": [
+          "SemanticRecallPrecision",
+          "DecompositionalSemanticRecallPrecision",
+          "SemanticF1",
+          "AnswerCompleteness",
+          "AnswerGroundedness",
+          "CompleteAndGrounded"
+        ],
+        "functions": [
+          "f1_score",
+          "__init__",
+          "forward",
+          "__init__",
+          "forward"
+        ],
+        "imports": [
+          "ChainOfThought",
+          "Module",
+          "Prediction",
+          "InputField, OutputField, Signature"
+        ]
+      },
+      "dspy\\datasets\\math.py": {
+        "classes": [
+          "MATH"
+        ],
+        "functions": [
+          "__init__",
+          "metric",
+          "extract_answer"
+        ],
+        "imports": [
+          "random",
+          "re",
+          "load_dataset",
+          "dspy",
+          "math_equivalence"
+        ]
+      },
+      "dspy\\evaluate\\evaluate.py": {
+        "classes": [
+          "EvaluationResult",
+          "Evaluate"
+        ],
+        "functions": [
+          "__init__",
+          "__repr__",
+          "__init__",
+          "_construct_result_table",
+          "_display_result_table",
+          "prediction_is_dictlike",
+          "merge_dicts",
+          "truncate_cell",
+          "stylize_metric_name",
+          "format_metric",
+          "display_dataframe",
+          "configure_dataframe_for_ipython_notebook_display",
+          "is_in_ipython_notebook_environment"
+        ],
+        "imports": [
+          "csv",
+          "lib",
+          "json",
+          "logging",
+          "types",
+          "TYPE_CHECKING, Any, Callable",
+          "pandas as pd",
+          "tqdm",
+          "dspy",
+          "Prediction",
+          "with_callbacks",
+          "ParallelExecutor",
+          "HTML",
+          "display as display",
+          "pandas as pd",
+          "andas as pd\n\n    if",
+          "andas as pd\n\n    pd",
+          "thon import get_ipython\n\n      "
+        ]
+      },
+      "dspy\\predict\\best_of_n.py": {
+        "classes": [
+          "BestOfN"
+        ],
+        "functions": [
+          "__init__",
+          "forward"
+        ],
+        "imports": [
+          "Callable",
+          "dspy",
+          "Module, Prediction"
+        ]
+      },
+      "dspy\\predict\\chain_of_thought.py": {
+        "classes": [
+          "ChainOfThought"
+        ],
+        "functions": [
+          "__init__",
+          "forward",
+          "aforward"
+        ],
+        "imports": [
+          "Any",
+          "FieldInfo",
+          "dspy",
+          "Module",
+          "Signature, ensure_signature"
+        ]
+      },
+      "dspy\\predict\\code_act.py": {
+        "classes": [
+          "CodeAct"
+        ],
+        "functions": [
+          "__init__",
+          "_build_instructions",
+          "forward"
+        ],
+        "imports": [
+          "inspect",
+          "logging",
+          "Callable",
+          "dspy",
+          "Tool",
+          "ProgramOfThought",
+          "ReAct",
+          "PythonInterpreter",
+          "Signature, ensure_signature"
+        ]
+      },
+      "dspy\\predict\\knn.py": {
+        "classes": [
+          "KNN"
+        ],
+        "functions": [
+          "__init__",
+          "__call__"
+        ],
+        "imports": [
+          "numpy as np",
+          "Embedder",
+          "Example"
+        ]
+      },
+      "dspy\\predict\\multi_chain_comparison.py": {
+        "classes": [
+          "MultiChainComparison"
+        ],
+        "functions": [
+          "__init__",
+          "forward"
+        ],
+        "imports": [
+          "Predict",
+          "Module",
+          "InputField, OutputField",
+          "ensure_signature"
+        ]
+      },
+      "dspy\\predict\\parameter.py": {
+        "classes": [
+          "Parameter"
+        ],
+        "functions": [],
+        "imports": []
+      },
+      "dspy\\predict\\parallel.py": {
+        "classes": [
+          "Parallel"
+        ],
+        "functions": [
+          "__init__",
+          "forward",
+          "process_pair",
+          "__call__"
+        ],
+        "imports": [
+          "threading",
+          "Any",
+          "settings",
+          "Example",
+          "ParallelExecutor"
+        ]
+      },
+      "dspy\\predict\\program_of_thought.py": {
+        "classes": [
+          "ProgramOfThought"
+        ],
+        "functions": [
+          "__init__",
+          "_generate_signature",
+          "_generate_instruction",
+          "_parse_code",
+          "_execute_code",
+          "forward"
+        ],
+        "imports": [
+          "json",
+          "logging",
+          "re",
+          "dspy",
+          "FinalOutput",
+          "Module",
+          "PythonInterpreter",
+          "Signature, ensure_signature"
+        ]
+      },
+      "dspy\\predict\\react.py": {
+        "classes": [
+          "ReAct"
+        ],
+        "functions": [
+          "__init__",
+          "_format_trajectory",
+          "forward",
+          "aforward",
+          "_call_with_potential_trajectory_truncation",
+          "_async_call_with_potential_trajectory_truncation",
+          "truncate_trajectory",
+          "_fmt_exc"
+        ],
+        "imports": [
+          "logging",
+          "TYPE_CHECKING, Any, Callable, Literal",
+          "dspy",
+          "Tool",
+          "Module",
+          "ensure_signature",
+          "ContextWindowExceededError",
+          "Signature",
+          "traceback"
+        ]
+      },
+      "dspy\\predict\\predict.py": {
+        "classes": [
+          "Predict"
+        ],
+        "functions": [
+          "_sanitize_lm_state",
+          "__init__",
+          "reset",
+          "dump_state",
+          "load_state",
+          "_get_positional_args_error_message",
+          "__call__",
+          "acall",
+          "_forward_preprocess",
+          "_forward_postprocess",
+          "_should_stream",
+          "forward",
+          "aforward",
+          "update_config",
+          "get_config",
+          "__repr__",
+          "_get_type_name",
+          "_is_value_compatible_with_type",
+          "serialize_object"
+        ],
+        "imports": [
+          "logging",
+          "random",
+          "Any, Literal, get_args, get_origin",
+          "BaseModel",
+          "PydanticUndefined",
+          "TypeCheckError, check_type",
+          "ChatAdapter",
+          "BaseLM",
+          "LM",
+          "settings",
+          "Parameter",
+          "Module",
+          "Prediction",
+          "Signature, ensure_signature",
+          "BaseCallback",
+          "IS_TYPE_UNDEFINED"
+        ]
+      },
+      "dspy\\predict\\refine.py": {
+        "classes": [
+          "OfferFeedback",
+          "Refine"
+        ],
+        "functions": [
+          "__init__",
+          "forward",
+          "inspect_modules",
+          "recursive_mask"
+        ],
+        "imports": [
+          "inspect",
+          "textwrap",
+          "Callable",
+          "orjson",
+          "dspy",
+          "get_field_description_string",
+          "Prediction",
+          "InputField, OutputField, Signature",
+          "Module"
+        ]
+      },
+      "dspy\\primitives\\code_interpreter.py": {
+        "classes": [
+          "CodeInterpreterError",
+          "FinalOutput"
+        ],
+        "functions": [
+          "__init__",
+          "__repr__",
+          "__eq__"
+        ],
+        "imports": [
+          "Any, Callable, Protocol, runtime_checkable"
+        ]
+      },
+      "dspy\\primitives\\module.py": {
+        "classes": [
+          "ProgramMeta",
+          "Module"
+        ],
+        "functions": [
+          "__call__",
+          "_base_init",
+          "__init__",
+          "__getstate__",
+          "__setstate__",
+          "named_predictors",
+          "predictors",
+          "set_lm",
+          "get_lm",
+          "__repr__",
+          "map_named_predictors",
+          "inspect_history",
+          "batch",
+          "_set_lm_usage",
+          "__getattribute__",
+          "set_attribute_by_name"
+        ],
+        "imports": [
+          "inspect",
+          "logging",
+          "Any, TextIO",
+          "settings",
+          "Parallel",
+          "BaseModule",
+          "Example",
+          "Prediction",
+          "magicattr",
+          "with_callbacks",
+          "pretty_print_history",
+          "track_usage",
+          "thread_local_overrides",
+          "thread_local_overrides",
+          "Predict"
+        ]
+      },
+      "dspy\\primitives\\example.py": {
+        "classes": [
+          "Example"
+        ],
+        "functions": [
+          "__init__",
+          "__getattr__",
+          "__setattr__",
+          "__getitem__",
+          "__setitem__",
+          "__delitem__",
+          "__contains__",
+          "__len__",
+          "__repr__",
+          "__str__",
+          "__eq__",
+          "__hash__",
+          "keys",
+          "values",
+          "items",
+          "get",
+          "with_inputs",
+          "inputs",
+          "labels",
+          "__iter__",
+          "copy",
+          "without",
+          "toDict",
+          "convert_to_serializable"
+        ],
+        "imports": [
+          "BaseModel"
+        ]
+      },
+      "dspy\\primitives\\base_module.py": {
+        "classes": [
+          "BaseModule"
+        ],
+        "functions": [
+          "__init__",
+          "named_parameters",
+          "add_parameter",
+          "named_sub_modules",
+          "add_to_queue",
+          "parameters",
+          "deepcopy",
+          "reset_copy",
+          "dump_state",
+          "load_state",
+          "save",
+          "load"
+        ],
+        "imports": [
+          "copy",
+          "logging",
+          "deque",
+          "Generator",
+          "Path",
+          "cloudpickle",
+          "orjson",
+          "get_dependency_versions",
+          "dspy",
+          "Parameter",
+          "Predict"
+        ]
+      },
+      "dspy\\primitives\\prediction.py": {
+        "classes": [
+          "Prediction",
+          "Completions"
+        ],
+        "functions": [
+          "__init__",
+          "get_lm_usage",
+          "set_lm_usage",
+          "__repr__",
+          "__str__",
+          "__float__",
+          "__add__",
+          "__radd__",
+          "__truediv__",
+          "__rtruediv__",
+          "__lt__",
+          "__le__",
+          "__gt__",
+          "__ge__",
+          "__init__",
+          "items",
+          "__getitem__",
+          "__getattr__",
+          "__len__",
+          "__contains__",
+          "__repr__",
+          "__str__"
+        ],
+        "imports": [
+          "Example"
+        ]
+      },
+      "dspy\\primitives\\python_interpreter.py": {
+        "classes": [
+          "PythonInterpreter"
+        ],
+        "functions": [
+          "_jsonrpc_request",
+          "_jsonrpc_notification",
+          "_jsonrpc_result",
+          "_jsonrpc_error",
+          "__init__",
+          "_check_thread_ownership",
+          "_get_runner_path",
+          "_mount_files",
+          "_sync_files",
+          "_extract_parameters",
+          "_register_tools",
+          "_handle_tool_call",
+          "_ensure_deno_process",
+          "_read_response_line",
+          "_parse_response_line",
+          "_send_request",
+          "_health_check",
+          "_to_json_compatible",
+          "_inject_variables",
+          "_serialize_value",
+          "_inject_large_var",
+          "execute",
+          "start",
+          "__enter__",
+          "__exit__",
+          "__call__",
+          "shutdown"
+        ],
+        "imports": [
+          "functools",
+          "inspect",
+          "json",
+          "keyword",
+          "logging",
+          "os",
+          "subprocess",
+          "threading",
+          "PathLike",
+          "Any, Callable",
+          "SIMPLE_TYPES, CodeInterpreterError, FinalOutput"
+        ]
+      },
+      "dspy\\primitives\\repl_types.py": {
+        "classes": [
+          "REPLVariable",
+          "REPLEntry",
+          "REPLHistory"
+        ],
+        "functions": [
+          "format",
+          "format",
+          "format",
+          "append",
+          "__len__",
+          "__iter__",
+          "__bool__"
+        ],
+        "imports": [
+          "json",
+          "TYPE_CHECKING, Any, Iterator",
+          "pydantic",
+          "Field",
+          "serialize_for_json",
+          "FieldInfo"
+        ]
+      },
+      "dspy\\propose\\propose_base.py": {
+        "classes": [
+          "Proposer"
+        ],
+        "functions": [
+          "__init__",
+          "propose_instruction_for_predictor"
+        ],
+        "imports": [
+          "ABC, abstractmethod"
+        ]
+      },
+      "dspy\\propose\\dataset_summary_generator.py": {
+        "classes": [
+          "ObservationSummarizer",
+          "DatasetDescriptor",
+          "DatasetDescriptorWithPriorObservations"
+        ],
+        "functions": [
+          "order_input_keys_in_string",
+          "reorder_keys",
+          "create_dataset_summary"
+        ],
+        "imports": [
+          "re",
+          "dspy",
+          "strip_prefix"
+        ]
+      },
+      "dspy\\propose\\grounded_proposer.py": {
+        "classes": [
+          "DescribeProgram",
+          "DescribeModule",
+          "GenerateSingleModuleInstruction",
+          "GenerateModuleInstruction",
+          "GroundedProposer"
+        ],
+        "functions": [
+          "generate_instruction_class",
+          "__init__",
+          "forward",
+          "gather_examples_from_sets",
+          "__init__",
+          "propose_instructions_for_program",
+          "propose_instruction_for_predictor"
+        ],
+        "imports": [
+          "random",
+          "dspy",
+          "create_dataset_summary",
+          "Proposer",
+          "(\n    create_example_string,\n    create_predictor_level_history_string,\n    get_dspy_source_code,\n    strip_prefix,\n)",
+          "get_prompt_model, get_signature"
+        ]
+      },
+      "dspy\\retrievers\\databricks_rm.py": {
+        "classes": [
+          "DatabricksRM"
+        ],
+        "functions": [
+          "__init__",
+          "_extract_doc_ids",
+          "_get_extra_columns",
+          "forward"
+        ],
+        "imports": [
+          "json",
+          "os",
+          "dataclass",
+          "lib.util",
+          "Any",
+          "requests",
+          "dspy",
+          "Prediction",
+          "mlflow",
+          "WorkspaceClient"
+        ]
+      },
+      "dspy\\retrievers\\embeddings.py": {
+        "classes": [
+          "Embeddings",
+          "EmbeddingsWithScores"
+        ],
+        "functions": [
+          "__init__",
+          "__call__",
+          "forward",
+          "_batch_forward",
+          "_build_faiss",
+          "_faiss_search",
+          "_rerank_and_predict",
+          "_normalize",
+          "save",
+          "load",
+          "forward"
+        ],
+        "imports": [
+          "json",
+          "os",
+          "Any",
+          "numpy as np",
+          "Unbatchify",
+          "dspy",
+          "faiss",
+          "faiss",
+          "faiss",
+          "dspy"
+        ]
+      },
+      "dspy\\retrievers\\retrieve.py": {
+        "classes": [
+          "Retrieve"
+        ],
+        "functions": [
+          "single_query_passage",
+          "__init__",
+          "reset",
+          "dump_state",
+          "load_state",
+          "forward"
+        ],
+        "imports": [
+          "random",
+          "Parameter",
+          "Prediction",
+          "with_callbacks",
+          "dspy",
+          "Iterable"
+        ]
+      },
+      "dspy\\signatures\\field.py": {
+        "classes": [
+          "OldField",
+          "OldInputField",
+          "OldOutputField"
+        ],
+        "functions": [
+          "move_kwargs",
+          "_translate_pydantic_field_constraints",
+          "_warn_deprecated_field_args",
+          "InputField",
+          "OutputField",
+          "new_to_old_field",
+          "__init__",
+          "finalize",
+          "__repr__",
+          "__eq__",
+          "__init__",
+          "__init__"
+        ],
+        "imports": [
+          "warnings",
+          "pydantic",
+          "IS_TYPE_UNDEFINED"
+        ]
+      },
+      "dspy\\retrievers\\weaviate_rm.py": {
+        "classes": [
+          "WeaviateRM"
+        ],
+        "functions": [
+          "__init__",
+          "forward",
+          "get_objects",
+          "insert"
+        ],
+        "imports": [
+          "dspy",
+          "dotdict",
+          "Prediction",
+          "uuid4",
+          "weaviate",
+          "get_valid_uuid"
+        ]
+      },
+      "dspy\\signatures\\signature.py": {
+        "classes": [
+          "SignatureMeta",
+          "Signature"
+        ],
+        "functions": [
+          "_default_instructions",
+          "__call__",
+          "__new__",
+          "_validate_fields",
+          "_get_fields_with_type",
+          "__repr__",
+          "ensure_signature",
+          "make_signature",
+          "_parse_signature",
+          "_parse_field_string",
+          "_parse_type_node",
+          "resolve_name",
+          "infer_prefix"
+        ],
+        "imports": [
+          "ast",
+          "lib",
+          "inspect",
+          "re",
+          "sys",
+          "types",
+          "typing",
+          "deepcopy",
+          "Any, Iterator",
+          "BaseModel, Field, create_model",
+          "FieldInfo",
+          "InputField, OutputField",
+          "IS_TYPE_UNDEFINED",
+          "logging",
+          "logging",
+          "annotationlib"
+        ]
+      },
+      "dspy\\streaming\\messages.py": {
+        "classes": [
+          "StatusMessageProvider",
+          "StatusStreamingCallback"
+        ],
+        "functions": [
+          "sync_send_to_stream",
+          "_send",
+          "run_in_new_loop",
+          "tool_start_status_message",
+          "tool_end_status_message",
+          "module_start_status_message",
+          "module_end_status_message",
+          "lm_start_status_message",
+          "lm_end_status_message",
+          "__init__",
+          "on_tool_start",
+          "on_tool_end",
+          "on_lm_start",
+          "on_lm_end",
+          "on_module_start",
+          "on_module_end"
+        ],
+        "imports": [
+          "asyncio",
+          "concurrent.futures",
+          "dataclass",
+          "Any",
+          "syncify",
+          "settings",
+          "BaseCallback"
+        ]
+      },
+      "dspy\\teleprompt\\avatar_optimizer.py": {
+        "classes": [
+          "EvalResult",
+          "Comparator",
+          "FeedbackBasedInstruction",
+          "AvatarOptimizer"
+        ],
+        "functions": [
+          "__init__",
+          "process_example",
+          "thread_safe_evaluator",
+          "_get_pos_neg_results",
+          "compile"
+        ],
+        "imports": [
+          "ThreadPoolExecutor",
+          "deepcopy",
+          "sample",
+          "Callable",
+          "BaseModel",
+          "tqdm",
+          "dspy",
+          "ActionOutput",
+          "Teleprompter"
+        ]
+      },
+      "dspy\\streaming\\streaming_listener.py": {
+        "classes": [
+          "StreamListener"
+        ],
+        "functions": [
+          "__init__",
+          "_buffered_message_end_with_start_identifier",
+          "_could_form_end_identifier",
+          "receive",
+          "_json_adapter_handle_stream_chunk",
+          "_default_handle_stream_chunk",
+          "flush",
+          "finalize",
+          "find_predictor_for_stream_listeners"
+        ],
+        "imports": [
+          "inspect",
+          "re",
+          "defaultdict",
+          "Queue",
+          "TYPE_CHECKING, Any",
+          "jiter",
+          "ModelResponseStream",
+          "ChatAdapter",
+          "JSONAdapter",
+          "Type",
+          "XMLAdapter",
+          "settings",
+          "StreamResponse",
+          "Module"
+        ]
+      },
+      "dspy\\teleprompt\\bettertogether.py": {
+        "classes": [
+          "BetterTogether"
+        ],
+        "functions": [
+          "__init__",
+          "compile",
+          "_prepare_student_and_teacher",
+          "_prepare_trainset_and_valset",
+          "_prepare_strategy",
+          "_prepare_optimizer_compile_args",
+          "_validate_compile_args",
+          "_run_strategies",
+          "_run_and_evaluate_step",
+          "_models_changed",
+          "_add_candidate",
+          "_evaluate_on_valset"
+        ],
+        "imports": [
+          "inspect",
+          "logging",
+          "random",
+          "Any, Callable",
+          "dspy",
+          "Evaluate",
+          "Example",
+          "Module",
+          "(\n    BootstrapFinetune,\n    all_predictors_have_lms,\n    kill_lms,\n    launch_lms,\n    prepare_student,\n    prepare_teacher,\n)",
+          "BootstrapFewShotWithRandomSearch",
+          "Teleprompter",
+          "eval_candidate_program"
+        ]
+      },
+      "dspy\\teleprompt\\bootstrap.py": {
+        "classes": [
+          "BootstrapFewShot"
+        ],
+        "functions": [
+          "__init__",
+          "compile",
+          "_prepare_student_and_teacher",
+          "_prepare_predictor_mappings",
+          "_bootstrap",
+          "_bootstrap_one_example",
+          "_train"
+        ],
+        "imports": [
+          "logging",
+          "random",
+          "threading",
+          "tqdm",
+          "dspy",
+          "Teleprompter",
+          "LabeledFewShot",
+          "Hasher"
+        ]
+      },
+      "dspy\\teleprompt\\bootstrap_finetune.py": {
+        "classes": [
+          "FinetuneTeleprompter",
+          "BootstrapFinetune"
+        ],
+        "functions": [
+          "__init__",
+          "__init__",
+          "compile",
+          "_prepare_finetune_data",
+          "build_call_data_from_trace",
+          "all_predictors_have_lms",
+          "copy_program_with_lms",
+          "prepare_student",
+          "prepare_teacher",
+          "assert_structural_equivalency",
+          "assert_no_shared_predictor",
+          "get_unique_lms",
+          "launch_lms",
+          "kill_lms"
+        ],
+        "imports": [
+          "logging",
+          "defaultdict",
+          "Any, Callable",
+          "dspy",
+          "Adapter",
+          "ChatAdapter",
+          "LM",
+          "infer_data_format",
+          "settings",
+          "Predict",
+          "Example",
+          "Module",
+          "bootstrap_trace_data",
+          "Teleprompter",
+          "random"
+        ]
+      },
+      "dspy\\teleprompt\\bootstrap_trace.py": {
+        "classes": [
+          "TraceData"
+        ],
+        "functions": [
+          "bootstrap_trace_data",
+          "wrapped_metric",
+          "patched_forward"
+        ],
+        "imports": [
+          "logging",
+          "dataclass",
+          "MethodType",
+          "Any, Callable, TypedDict",
+          "dspy",
+          "Evaluate",
+          "Example",
+          "Module",
+          "Prediction",
+          "AdapterParseError"
+        ]
+      },
+      "dspy\\teleprompt\\ensemble.py": {
+        "classes": [
+          "Ensemble",
+          "EnsembledProgram"
+        ],
+        "functions": [
+          "__init__",
+          "compile",
+          "__init__",
+          "forward"
+        ],
+        "imports": [
+          "random",
+          "Teleprompter",
+          "dspy"
+        ]
+      },
+      "dspy\\teleprompt\\copro_optimizer.py": {
+        "classes": [
+          "BasicGenerateInstruction",
+          "GenerateInstructionGivenAttempts",
+          "COPRO"
+        ],
+        "functions": [
+          "__init__",
+          "_check_candidates_equal",
+          "_drop_duplicates",
+          "_print_signature",
+          "_get_signature",
+          "_set_signature",
+          "compile"
+        ],
+        "imports": [
+          "logging",
+          "defaultdict",
+          "dspy",
+          "Evaluate",
+          "Signature",
+          "Teleprompter",
+          "numpy as np"
+        ]
+      },
+      "dspy\\teleprompt\\knn_fewshot.py": {
+        "classes": [
+          "KNNFewShot"
+        ],
+        "functions": [
+          "__init__",
+          "compile",
+          "forward_pass"
+        ],
+        "imports": [
+          "types",
+          "Any",
+          "Embedder",
+          "KNN",
+          "Example",
+          "BootstrapFewShot",
+          "Teleprompter"
+        ]
+      },
+      "dspy\\teleprompt\\infer_rules.py": {
+        "classes": [
+          "InferRules",
+          "RulesInductionProgram",
+          "CustomRulesInduction"
+        ],
+        "functions": [
+          "__init__",
+          "compile",
+          "induce_natural_language_rules",
+          "update_program_instructions",
+          "format_examples",
+          "get_predictor_demos",
+          "evaluate_program",
+          "__init__",
+          "forward"
+        ],
+        "imports": [
+          "logging",
+          "random",
+          "numpy as np",
+          "dspy",
+          "Evaluate",
+          "BootstrapFewShot"
+        ]
+      },
+      "dspy\\teleprompt\\grpo.py": {
+        "classes": [
+          "GRPO"
+        ],
+        "functions": [
+          "__init__",
+          "validate_trace_data_and_log_issues",
+          "report_validation_metrics",
+          "update_shuffled_trainset",
+          "select_training_sample_and_update_shuffled_trainset",
+          "compile",
+          "_any_available_for_step",
+          "disable_lm_cache",
+          "recover_lm_cache"
+        ],
+        "imports": [
+          "logging",
+          "random",
+          "time",
+          "Counter, deque",
+          "Any, Callable, Literal",
+          "Adapter",
+          "ChatAdapter",
+          "XMLAdapter",
+          "LM",
+          "GRPOGroup, GRPOStatus, TrainDataFormat",
+          "settings",
+          "Evaluate",
+          "Example",
+          "Module",
+          "(\n    FinetuneTeleprompter,\n    all_predictors_have_lms,\n    assert_structural_equivalency,\n)",
+          "FailedPrediction, bootstrap_trace_data"
+        ]
+      },
+      "dspy\\teleprompt\\mipro_optimizer_v2.py": {
+        "classes": [
+          "MIPROv2"
+        ],
+        "functions": [
+          "_import_optuna",
+          "__init__",
+          "compile",
+          "_set_random_seeds",
+          "_set_num_trials_from_num_candidates",
+          "_set_hyperparams_from_run_mode",
+          "_set_and_validate_datasets",
+          "_print_auto_run_settings",
+          "_estimate_lm_calls",
+          "_bootstrap_fewshot_examples",
+          "_propose_instructions",
+          "_optimize_prompt_parameters",
+          "objective",
+          "_log_minibatch_eval",
+          "_log_normal_eval",
+          "_select_and_insert_instructions_and_demos",
+          "_get_param_distributions",
+          "_perform_full_evaluation"
+        ],
+        "imports": [
+          "logging",
+          "random",
+          "defaultdict",
+          "TYPE_CHECKING, Any, Callable, Literal",
+          "numpy as np",
+          "dspy",
+          "Evaluate",
+          "GroundedProposer",
+          "Teleprompter",
+          "(\n    create_minibatch,\n    create_n_fewshot_demo_sets,\n    eval_candidate_program,\n    get_program_with_highest_avg_score,\n    get_signature,\n    print_full_program,\n    save_candidate_program,\n    set_signature,\n)",
+          "optuna",
+          "optuna"
+        ]
+      },
+      "dspy\\teleprompt\\random_search.py": {
+        "classes": [
+          "BootstrapFewShotWithRandomSearch"
+        ],
+        "functions": [
+          "__init__",
+          "compile"
+        ],
+        "imports": [
+          "random",
+          "dspy",
+          "Evaluate",
+          "Teleprompter",
+          "BootstrapFewShot",
+          "LabeledFewShot"
+        ]
+      },
+      "dspy\\teleprompt\\signature_opt.py": {
+        "classes": [
+          "SignatureOptimizer"
+        ],
+        "functions": [
+          "__init__",
+          "compile"
+        ],
+        "imports": [
+          "COPRO"
+        ]
+      },
+      "dspy\\teleprompt\\simba.py": {
+        "classes": [
+          "SIMBA"
+        ],
+        "functions": [
+          "__init__",
+          "compile",
+          "calc_average_score",
+          "top_k_plus_baseline",
+          "softmax_sample",
+          "register_new_program"
+        ],
+        "imports": [
+          "logging",
+          "random",
+          "Any, Callable",
+          "numpy as np",
+          "dspy",
+          "append_a_demo, append_a_rule, prepare_models_for_resampling, wrap_program",
+          "Teleprompter"
+        ]
+      },
+      "dspy\\teleprompt\\teleprompt.py": {
+        "classes": [
+          "Teleprompter"
+        ],
+        "functions": [
+          "__init__",
+          "compile",
+          "get_params"
+        ],
+        "imports": [
+          "Any",
+          "Example, Module"
+        ]
+      },
+      "dspy\\teleprompt\\teleprompt_optuna.py": {
+        "classes": [
+          "BootstrapFewShotWithOptuna"
+        ],
+        "functions": [
+          "_import_optuna",
+          "__init__",
+          "objective",
+          "compile"
+        ],
+        "imports": [
+          "Evaluate",
+          "Teleprompter",
+          "BootstrapFewShot",
+          "optuna"
+        ]
+      },
+      "dspy\\teleprompt\\simba_utils.py": {
+        "classes": [
+          "OfferFeedback"
+        ],
+        "functions": [
+          "prepare_models_for_resampling",
+          "wrap_program",
+          "wrapped_program",
+          "append_a_demo",
+          "append_a_demo_",
+          "append_a_rule",
+          "inspect_modules",
+          "recursive_mask"
+        ],
+        "imports": [
+          "inspect",
+          "logging",
+          "textwrap",
+          "Callable",
+          "orjson",
+          "dspy",
+          "get_field_description_string",
+          "InputField, OutputField"
+        ]
+      },
+      "dspy\\teleprompt\\vanilla.py": {
+        "classes": [
+          "LabeledFewShot"
+        ],
+        "functions": [
+          "__init__",
+          "compile"
+        ],
+        "imports": [
+          "random",
+          "Teleprompter"
+        ]
+      },
+      "dspy\\utils\\callback.py": {
+        "classes": [
+          "BaseCallback"
+        ],
+        "functions": [
+          "on_module_start",
+          "on_module_end",
+          "on_lm_start",
+          "on_lm_end",
+          "on_adapter_format_start",
+          "on_adapter_format_end",
+          "on_adapter_parse_start",
+          "on_adapter_parse_end",
+          "on_tool_start",
+          "on_tool_end",
+          "on_evaluate_start",
+          "on_evaluate_end",
+          "with_callbacks",
+          "_execute_start_callbacks",
+          "_execute_end_callbacks",
+          "_get_active_callbacks",
+          "_get_on_start_handler",
+          "_get_on_end_handler"
+        ],
+        "imports": [
+          "functools",
+          "inspect",
+          "logging",
+          "uuid",
+          "ContextVar",
+          "Any, Callable",
+          "dspy"
+        ]
+      },
+      "dspy\\utils\\dummies.py": {
+        "classes": [
+          "DummyLM",
+          "DummyVectorizer"
+        ],
+        "functions": [
+          "__init__",
+          "_use_example",
+          "_format_answer_fields",
+          "forward",
+          "aforward",
+          "get_convo",
+          "dummy_rm",
+          "inner",
+          "inner",
+          "__init__",
+          "_hash",
+          "__call__"
+        ],
+        "imports": [
+          "random",
+          "defaultdict",
+          "Any",
+          "numpy as np",
+          "FieldInfoWithName, field_header_pattern",
+          "BaseLM",
+          "dotdict",
+          "OutputField",
+          "ChatAdapter"
+        ]
+      },
+      "dspy\\utils\\exceptions.py": {
+        "classes": [
+          "ContextWindowExceededError",
+          "AdapterParseError"
+        ],
+        "functions": [
+          "__init__",
+          "__init__"
+        ],
+        "imports": [
+          "Signature"
+        ]
+      },
+      "dspy\\utils\\hasher.py": {
+        "classes": [
+          "Hasher"
+        ],
+        "functions": [
+          "__init__",
+          "update",
+          "hexdigest"
+        ],
+        "imports": [
+          "dumps",
+          "Any",
+          "xxhash"
+        ]
+      },
+      "dspy\\utils\\logging_utils.py": {
+        "classes": [
+          "DSPyLoggingStream"
+        ],
+        "functions": [
+          "__init__",
+          "write",
+          "flush",
+          "disable_logging",
+          "enable_logging",
+          "configure_dspy_loggers"
+        ],
+        "imports": [
+          "logging",
+          "logging.config",
+          "sys"
+        ]
+      },
+      "dspy\\utils\\parallelizer.py": {
+        "classes": [
+          "ParallelExecutor"
+        ],
+        "functions": [
+          "__init__",
+          "execute",
+          "_wrap_function",
+          "safe_func",
+          "_execute_sequential",
+          "_execute_parallel",
+          "worker",
+          "all_done",
+          "_process_outcome",
+          "_report_progress",
+          "_update_progress"
+        ],
+        "imports": [
+          "contextlib",
+          "copy",
+          "logging",
+          "signal",
+          "sys",
+          "threading",
+          "time",
+          "traceback",
+          "FIRST_COMPLETED, ThreadPoolExecutor, wait",
+          "tqdm",
+          "settings",
+          "thread_local_overrides",
+          "thread_local_overrides"
+        ]
+      },
+      "dspy\\utils\\unbatchify.py": {
+        "classes": [
+          "Unbatchify"
+        ],
+        "functions": [
+          "__init__",
+          "__call__",
+          "_worker",
+          "close",
+          "__enter__",
+          "__exit__",
+          "__del__"
+        ],
+        "imports": [
+          "queue",
+          "threading",
+          "time",
+          "Future",
+          "Any, Callable"
+        ]
+      },
+      "dspy\\utils\\usage_tracker.py": {
+        "classes": [
+          "UsageTracker"
+        ],
+        "functions": [
+          "__init__",
+          "_flatten_usage_entry",
+          "_merge_usage_entries",
+          "add_usage",
+          "get_total_tokens"
+        ],
+        "imports": [
+          "defaultdict",
+          "contextmanager",
+          "Any, Generator",
+          "BaseModel",
+          "settings"
+        ]
+      },
+      "dspy\\adapters\\types\\base_type.py": {
+        "classes": [
+          "Type"
+        ],
+        "functions": [
+          "format",
+          "split_message_content_for_custom_types",
+          "_parse_doubly_quoted_json"
+        ],
+        "imports": [
+          "json",
+          "re",
+          "TYPE_CHECKING, Any, Optional, get_args, get_origin",
+          "json_repair",
+          "pydantic",
+          "BaseLM",
+          "ModelResponseStream",
+          "Signature"
+        ]
+      },
+      "dspy\\adapters\\types\\audio.py": {
+        "classes": [
+          "Audio"
+        ],
+        "functions": [
+          "_normalize_audio_format",
+          "format",
+          "__str__",
+          "__repr__",
+          "encode_audio"
+        ],
+        "imports": [
+          "base64",
+          "io",
+          "mimetypes",
+          "os",
+          "Any, Union",
+          "pydantic",
+          "requests",
+          "Type",
+          "soundfile as sf"
+        ]
+      },
+      "dspy\\adapters\\types\\code.py": {
+        "classes": [
+          "Code"
+        ],
+        "functions": [
+          "format",
+          "_filter_code",
+          "_code_class_getitem"
+        ],
+        "imports": [
+          "re",
+          "Any, ClassVar",
+          "pydantic",
+          "create_model",
+          "Type"
+        ]
+      },
+      "dspy\\adapters\\types\\file.py": {
+        "classes": [
+          "File"
+        ],
+        "functions": [
+          "format",
+          "__str__",
+          "__repr__",
+          "encode_file_to_dict"
+        ],
+        "imports": [
+          "base64",
+          "mimetypes",
+          "os",
+          "Any",
+          "pydantic",
+          "Type"
+        ]
+      },
+      "dspy\\adapters\\types\\history.py": {
+        "classes": [
+          "History"
+        ],
+        "functions": [],
+        "imports": [
+          "Any",
+          "pydantic"
+        ]
+      },
+      "dspy\\adapters\\types\\image.py": {
+        "classes": [
+          "Image"
+        ],
+        "functions": [
+          "__init__",
+          "__str__",
+          "__repr__",
+          "is_url",
+          "encode_image",
+          "_encode_image_from_file",
+          "_encode_image_from_url",
+          "_encode_pil_image",
+          "_get_file_extension",
+          "is_image"
+        ],
+        "imports": [
+          "base64",
+          "io",
+          "mimetypes",
+          "os",
+          "warnings",
+          "lru_cache",
+          "Any, Union",
+          "urlparse",
+          "pydantic",
+          "requests",
+          "Type",
+          "Image as PILImage"
+        ]
+      },
+      "dspy\\adapters\\types\\reasoning.py": {
+        "classes": [
+          "Reasoning"
+        ],
+        "functions": [
+          "format",
+          "__repr__",
+          "__str__",
+          "__eq__",
+          "__ne__",
+          "__len__",
+          "__getitem__",
+          "__contains__",
+          "__iter__",
+          "__add__",
+          "__radd__",
+          "__getattr__"
+        ],
+        "imports": [
+          "TYPE_CHECKING, Any, Optional",
+          "pydantic",
+          "Type",
+          "BaseLM",
+          "Signature"
+        ]
+      },
+      "dspy\\datasets\\alfworld\\alfworld.py": {
+        "classes": [
+          "EnvPool",
+          "_EnvSession",
+          "AlfWorld"
+        ],
+        "functions": [
+          "env_worker",
+          "__init__",
+          "_acquire",
+          "_release",
+          "close_all",
+          "session",
+          "__init__",
+          "__enter__",
+          "__exit__",
+          "init",
+          "step",
+          "__init__",
+          "__del__"
+        ],
+        "imports": [
+          "os",
+          "queue",
+          "random",
+          "io",
+          "redirect_stderr, redirect_stdout",
+          "alfworld.agents.environment as environment",
+          "yaml",
+          "multiprocess as mp",
+          "dspy"
+        ]
+      },
+      "dspy\\adapters\\types\\tool.py": {
+        "classes": [
+          "Tool",
+          "ToolCalls",
+          "ToolCall"
+        ],
+        "functions": [
+          "__init__",
+          "_parse_function",
+          "_validate_and_parse_args",
+          "format",
+          "format_as_litellm_function_call",
+          "_run_async_in_sync",
+          "__repr__",
+          "__str__",
+          "format",
+          "execute",
+          "format",
+          "_resolve_json_schema_reference",
+          "resolve_refs",
+          "convert_input_schema_to_tool_args"
+        ],
+        "imports": [
+          "asyncio",
+          "inspect",
+          "TYPE_CHECKING, Any, Callable, get_origin, get_type_hints",
+          "pydantic",
+          "ValidationError, validate",
+          "BaseModel, TypeAdapter, create_model",
+          "Type",
+          "settings",
+          "with_callbacks",
+          "mcp",
+          "BaseTool",
+          "convert_mcp_tool",
+          "convert_langchain_tool"
+        ]
+      },
+      "dspy\\dsp\\utils\\dpr.py": {
+        "classes": [
+          "Tokens",
+          "Tokenizer",
+          "SimpleTokenizer"
+        ],
+        "functions": [
+          "__init__",
+          "__len__",
+          "slice",
+          "untokenize",
+          "words",
+          "offsets",
+          "pos",
+          "lemmas",
+          "entities",
+          "ngrams",
+          "_skip",
+          "entity_groups",
+          "tokenize",
+          "shutdown",
+          "__del__",
+          "__init__",
+          "tokenize",
+          "has_answer",
+          "locate_answers",
+          "DPR_tokenize",
+          "DPR_normalize",
+          "strip_accents"
+        ],
+        "imports": [
+          "copy",
+          "logging",
+          "unicodedata",
+          "regex"
+        ]
+      },
+      "dspy\\dsp\\utils\\settings.py": {
+        "classes": [
+          "Settings"
+        ],
+        "functions": [
+          "__new__",
+          "__getattr__",
+          "__setattr__",
+          "__getitem__",
+          "__setitem__",
+          "__contains__",
+          "get",
+          "copy",
+          "_ensure_configure_allowed",
+          "configure",
+          "__repr__",
+          "save"
+        ],
+        "imports": [
+          "asyncio",
+          "contextvars",
+          "copy",
+          "logging",
+          "threading",
+          "contextmanager",
+          "Any",
+          "cloudpickle",
+          "dotdict",
+          "get_ipython"
+        ]
+      },
+      "dspy\\dsp\\utils\\utils.py": {
+        "classes": [
+          "dotdict",
+          "dotdict_lax",
+          "NullContextManager"
+        ],
+        "functions": [
+          "print_message",
+          "timestamp",
+          "file_tqdm",
+          "create_directory",
+          "deduplicate",
+          "batch",
+          "__getattr__",
+          "__setattr__",
+          "__delattr__",
+          "__deepcopy__",
+          "flatten",
+          "zipstar",
+          "zip_first",
+          "int_or_float",
+          "groupby_first_item",
+          "process_grouped_by_first_item",
+          "grouper",
+          "lengths2offsets",
+          "__init__",
+          "__enter__",
+          "__exit__",
+          "load_batch_backgrounds"
+        ],
+        "imports": [
+          "copy",
+          "datetime",
+          "itertools",
+          "os",
+          "defaultdict",
+          "tqdm"
+        ]
+      },
+      "dspy\\predict\\avatar\\models.py": {
+        "classes": [
+          "Tool",
+          "Action",
+          "ActionOutput"
+        ],
+        "functions": [
+          "__str__",
+          "__repr__"
+        ],
+        "imports": [
+          "Any",
+          "BaseModel, Field"
+        ]
+      },
+      "dspy\\predict\\avatar\\signatures.py": {
+        "classes": [
+          "Actor"
+        ],
+        "functions": [],
+        "imports": [
+          "dspy",
+          "Action"
+        ]
+      },
+      "dspy\\predict\\avatar\\avatar.py": {
+        "classes": [
+          "Avatar"
+        ],
+        "functions": [
+          "get_number_with_suffix",
+          "__init__",
+          "_get_field",
+          "_update_signature",
+          "_call_tool",
+          "forward"
+        ],
+        "imports": [
+          "deepcopy",
+          "FieldInfo",
+          "dspy",
+          "Action, ActionOutput, Tool",
+          "Actor",
+          "ensure_signature"
+        ]
+      },
+      "dspy\\teleprompt\\gepa\\instruction_proposal.py": {
+        "classes": [
+          "GenerateEnhancedMultimodalInstructionFromFeedback",
+          "SingleComponentMultiModalProposer",
+          "MultiModalInstructionProposer"
+        ],
+        "functions": [
+          "__init__",
+          "forward",
+          "_format_examples_with_pattern_analysis",
+          "_analyze_feedback_patterns",
+          "_create_pattern_summary",
+          "_format_examples_for_instruction_generation",
+          "render_value_with_images",
+          "convert_sample_to_markdown_with_images",
+          "_create_multimodal_examples",
+          "__init__",
+          "__call__"
+        ],
+        "imports": [
+          "logging",
+          "Any",
+          "ProposalFn",
+          "dspy",
+          "Type",
+          "ReflectiveExample"
+        ]
+      },
+      "dspy\\teleprompt\\gepa\\gepa_utils.py": {
+        "classes": [
+          "LoggerAdapter",
+          "ScoreWithFeedback",
+          "PredictorFeedbackFn",
+          "DspyAdapter"
+        ],
+        "functions": [
+          "__init__",
+          "log",
+          "__call__",
+          "__init__",
+          "propose_new_texts",
+          "build_program",
+          "evaluate",
+          "make_reflective_dataset",
+          "stripped_lm_call"
+        ],
+        "imports": [
+          "logging",
+          "random",
+          "Any, Callable, Protocol, TypedDict",
+          "EvaluationBatch, GEPAAdapter",
+          "ProposalFn",
+          "InstructionProposalSignature",
+          "dspy",
+          "ChatAdapter",
+          "History",
+          "Type",
+          "Evaluate",
+          "Example, Prediction",
+          "FailedPrediction, TraceData",
+          "bootstrap_trace as bootstrap_trace_module"
+        ]
+      },
+      "dspy\\adapters\\utils.py": {
+        "classes": [],
+        "functions": [
+          "_annotation_is_subclass",
+          "serialize_for_json",
+          "format_field_value",
+          "_get_json_schema",
+          "move_type_to_front",
+          "translate_field_type",
+          "find_enum_member",
+          "parse_value",
+          "get_annotation_name",
+          "get_field_description_string",
+          "_format_input_list_field_value",
+          "_format_blob",
+          "_quoted_string_for_literal_type_annotation"
+        ],
+        "imports": [
+          "ast",
+          "enum",
+          "inspect",
+          "json",
+          "types",
+          "Mapping",
+          "Any, Literal, Union, get_args, get_origin",
+          "json_repair",
+          "pydantic",
+          "TypeAdapter",
+          "FieldInfo",
+          "Type as DspyType",
+          "Code",
+          "Reasoning",
+          "get_dspy_field_type"
+        ]
+      },
+      "dspy\\clients\\__init__.py": {
+        "classes": [],
+        "functions": [
+          "configure_cache",
+          "_get_dspy_cache",
+          "configure_litellm_logging",
+          "enable_litellm_logging",
+          "disable_litellm_logging"
+        ],
+        "imports": [
+          "logging",
+          "os",
+          "Path",
+          "litellm",
+          "BaseLM, inspect_history",
+          "Cache",
+          "Embedder",
+          "LM",
+          "Provider, TrainingJob",
+          "dspy",
+          "verbose_logger"
+        ]
+      },
+      "dspy\\evaluate\\metrics.py": {
+        "classes": [],
+        "functions": [
+          "EM",
+          "F1",
+          "HotPotF1",
+          "normalize_text",
+          "remove_articles",
+          "white_space_fix",
+          "remove_punc",
+          "lower",
+          "em_score",
+          "f1_score",
+          "hotpot_f1_score",
+          "precision_score",
+          "_passage_match",
+          "passage_has_answers",
+          "_answer_match",
+          "answer_exact_match",
+          "answer_passage_match"
+        ],
+        "imports": [
+          "re",
+          "string",
+          "unicodedata",
+          "Counter",
+          "print_message",
+          "DPR_normalize, has_answer"
+        ]
+      },
+      "dspy\\predict\\aggregation.py": {
+        "classes": [],
+        "functions": [
+          "default_normalize",
+          "majority"
+        ],
+        "imports": [
+          "normalize_text",
+          "Completions, Prediction"
+        ]
+      },
+      "dspy\\predict\\rlm.py": {
+        "classes": [],
+        "functions": [
+          "_strip_code_fences"
+        ],
+        "imports": [
+          "logging",
+          "threading",
+          "ThreadPoolExecutor, as_completed",
+          "contextmanager",
+          "TYPE_CHECKING, Any, Callable, Iterator",
+          "pydantic",
+          "dspy",
+          "Tool",
+          "parse_value, translate_field_type",
+          "SIMPLE_TYPES, CodeInterpreter, CodeInterpreterError, FinalOutput",
+          "Module",
+          "Prediction",
+          "PythonInterpreter",
+          "REPLEntry, REPLHistory, REPLVariable",
+          "ensure_signature",
+          "experimental",
+          "Signature"
+        ]
+      },
+      "dspy\\propose\\utils.py": {
+        "classes": [],
+        "functions": [
+          "strip_prefix",
+          "create_instruction_set_history_string",
+          "parse_list_of_instructions",
+          "get_program_instruction_set_string",
+          "create_predictor_level_history_string",
+          "create_example_string",
+          "get_dspy_source_code"
+        ],
+        "imports": [
+          "inspect",
+          "json",
+          "re",
+          "dspy",
+          "extract_symbols",
+          "Parameter",
+          "get_signature, new_getfile"
+        ]
+      },
+      "dspy\\signatures\\utils.py": {
+        "classes": [],
+        "functions": [
+          "get_dspy_field_type"
+        ],
+        "imports": [
+          "Literal",
+          "FieldInfo"
+        ]
+      },
+      "dspy\\streaming\\streamify.py": {
+        "classes": [],
+        "functions": [
+          "streamify",
+          "generator",
+          "async_streamer",
+          "apply_sync_streaming",
+          "producer",
+          "runner",
+          "streaming_response"
+        ],
+        "imports": [
+          "asyncio",
+          "contextvars",
+          "logging",
+          "threading",
+          "iscoroutinefunction",
+          "Queue",
+          "TYPE_CHECKING, Any, AsyncGenerator, Awaitable, Callable, Generator",
+          "litellm",
+          "orjson",
+          "create_memory_object_stream, create_task_group",
+          "MemoryObjectSendStream",
+          "ModelResponseStream",
+          "settings",
+          "Prediction",
+          "StatusMessage, StatusMessageProvider, StatusStreamingCallback",
+          "StreamListener, find_predictor_for_stream_listeners",
+          "asyncify",
+          "Module"
+        ]
+      },
+      "dspy\\teleprompt\\utils.py": {
+        "classes": [],
+        "functions": [
+          "create_minibatch",
+          "eval_candidate_program",
+          "eval_candidate_program_with_pruning",
+          "get_program_with_highest_avg_score",
+          "calculate_last_n_proposed_quality",
+          "get_task_model_history_for_full_example",
+          "print_full_program",
+          "save_candidate_program",
+          "save_file_to_log_dir",
+          "setup_logging",
+          "get_token_usage",
+          "log_token_usage",
+          "get_prompt_model",
+          "get_signature",
+          "set_signature",
+          "create_n_fewshot_demo_sets",
+          "old_getfile",
+          "new_getfile"
+        ],
+        "imports": [
+          "inspect",
+          "logging",
+          "math",
+          "os",
+          "random",
+          "shutil",
+          "sys",
+          "numpy as np",
+          "extract_symbols",
+          "dspy",
+          "BootstrapFewShot, LabeledFewShot"
+        ]
+      },
+      "dspy\\utils\\annotation.py": {
+        "classes": [],
+        "functions": [
+          "experimental",
+          "_experimental",
+          "_get_min_indent_of_docstring"
+        ],
+        "imports": [
+          "inspect",
+          "re",
+          "types",
+          "Callable, ParamSpec, TypeVar, overload"
+        ]
+      },
+      "dspy\\utils\\caching.py": {
+        "classes": [],
+        "functions": [
+          "create_subdir_in_cachedir"
+        ],
+        "imports": [
+          "os",
+          "Path"
+        ]
+      },
+      "dspy\\utils\\asyncify.py": {
+        "classes": [],
+        "functions": [
+          "get_async_max_workers",
+          "get_limiter",
+          "asyncify",
+          "async_program",
+          "wrapped_program"
+        ],
+        "imports": [
+          "TYPE_CHECKING, Any, Awaitable, Callable",
+          "asyncer",
+          "CapacityLimiter",
+          "Module",
+          "dspy",
+          "thread_local_overrides",
+          "thread_local_overrides"
+        ]
+      },
+      "dspy\\utils\\inspect_history.py": {
+        "classes": [],
+        "functions": [
+          "_green",
+          "_red",
+          "_blue",
+          "pretty_print_history"
+        ],
+        "imports": [
+          "sys",
+          "Any, TextIO"
+        ]
+      },
+      "dspy\\utils\\langchain_tool.py": {
+        "classes": [],
+        "functions": [
+          "convert_langchain_tool",
+          "func"
+        ],
+        "imports": [
+          "TYPE_CHECKING, Any",
+          "Tool, convert_input_schema_to_tool_args",
+          "BaseTool"
+        ]
+      },
+      "dspy\\utils\\magicattr.py": {
+        "classes": [],
+        "functions": [
+          "get",
+          "set",
+          "delete",
+          "lookup",
+          "_parse",
+          "_lookup_subscript_value",
+          "_lookup"
+        ],
+        "imports": [
+          "ast",
+          "sys",
+          "reduce"
+        ]
+      },
+      "dspy\\utils\\mcp.py": {
+        "classes": [],
+        "functions": [
+          "_convert_mcp_tool_result",
+          "convert_mcp_tool",
+          "func"
+        ],
+        "imports": [
+          "TYPE_CHECKING, Any",
+          "Tool, convert_input_schema_to_tool_args",
+          "mcp",
+          "TextContent"
+        ]
+      },
+      "dspy\\utils\\syncify.py": {
+        "classes": [],
+        "functions": [
+          "run_async",
+          "syncify",
+          "forward"
+        ],
+        "imports": [
+          "asyncio",
+          "MethodType",
+          "TYPE_CHECKING",
+          "Module",
+          "nest_asyncio",
+          "Module"
+        ]
+      },
+      "dspy\\utils\\saving.py": {
+        "classes": [],
+        "functions": [
+          "get_dependency_versions",
+          "load"
+        ],
+        "imports": [
+          "logging",
+          "sys",
+          "Path",
+          "TYPE_CHECKING",
+          "cloudpickle",
+          "orjson",
+          "Module",
+          "dspy"
+        ]
+      },
+      "dspy\\utils\\__init__.py": {
+        "classes": [],
+        "functions": [
+          "download"
+        ],
+        "imports": [
+          "os",
+          "requests",
+          "StatusMessage, StatusMessageProvider",
+          "exceptions",
+          "experimental",
+          "BaseCallback, with_callbacks",
+          "DummyLM, DummyVectorizer, dummy_rm",
+          "pretty_print_history",
+          "syncify"
+        ]
+      },
+      "dspy\\__init__.py": {
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "os",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "Evaluate",
+          "*",
+          "Adapter, ChatAdapter, JSONAdapter, XMLAdapter, TwoStepAdapter, Image, Audio, File, History, Type, Tool, ToolCalls, Code, Reasoning",
+          "ContextWindowExceededError",
+          "configure_dspy_loggers, disable_logging, enable_logging",
+          "asyncify",
+          "syncify",
+          "load",
+          "streamify",
+          "track_usage",
+          "settings",
+          "ColBERTv2",
+          "DSPY_CACHE",
+          "__name__, __version__, __description__, __url__, __author__, __author_email__"
+        ]
+      },
+      "dspy\\adapters\\__init__.py": {
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "Adapter",
+          "ChatAdapter",
+          "JSONAdapter",
+          "TwoStepAdapter",
+          "Audio, Code, File, History, Image, Reasoning, Tool, ToolCalls, Type",
+          "XMLAdapter"
+        ]
+      },
+      "dspy\\datasets\\__init__.py": {
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "AlfWorld",
+          "Colors",
+          "DataLoader",
+          "Dataset",
+          "HotPotQA",
+          "MATH"
+        ]
+      },
+      "dspy\\evaluate\\__init__.py": {
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "CompleteAndGrounded, SemanticF1",
+          "Evaluate, EvaluationResult",
+          "EM, answer_exact_match, answer_passage_match, normalize_text"
+        ]
+      },
+      "dspy\\experimental\\__init__.py": {
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "Citations",
+          "Document"
+        ]
+      },
+      "dspy\\predict\\__init__.py": {
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "majority",
+          "BestOfN",
+          "ChainOfThought",
+          "CodeAct",
+          "KNN",
+          "MultiChainComparison",
+          "Parallel",
+          "Predict",
+          "ProgramOfThought",
+          "ReAct, Tool",
+          "Refine",
+          "RLM"
+        ]
+      },
+      "dspy\\primitives\\__init__.py": {
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "BaseModule",
+          "CodeInterpreter, CodeInterpreterError, FinalOutput",
+          "Example",
+          "Module",
+          "Completions, Prediction",
+          "PythonInterpreter"
+        ]
+      },
+      "dspy\\propose\\__init__.py": {
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "GroundedProposer"
+        ]
+      },
+      "dspy\\retrievers\\__init__.py": {
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "Embeddings, EmbeddingsWithScores",
+          "Retrieve"
+        ]
+      },
+      "dspy\\signatures\\__init__.py": {
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "InputField, OldField, OldInputField, OldOutputField, OutputField",
+          "(\n    Signature,\n    SignatureMeta,\n    ensure_signature,\n    infer_prefix,\n    make_signature,\n)"
+        ]
+      },
+      "dspy\\streaming\\__init__.py": {
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "StatusMessage, StatusMessageProvider, StreamResponse",
+          "apply_sync_streaming, streamify, streaming_response",
+          "StreamListener"
+        ]
+      },
+      "dspy\\teleprompt\\__init__.py": {
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "AvatarOptimizer",
+          "BetterTogether",
+          "BootstrapFewShot",
+          "BootstrapFinetune",
+          "bootstrap_trace_data",
+          "COPRO",
+          "Ensemble",
+          "InferRules",
+          "KNNFewShot",
+          "MIPROv2",
+          "BootstrapFewShotWithRandomSearch",
+          "SIMBA",
+          "Teleprompter",
+          "BootstrapFewShotWithOptuna",
+          "LabeledFewShot",
+          "GEPA"
+        ]
+      },
+      "dspy\\adapters\\types\\citation.py": {
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "Any, Optional",
+          "pydantic",
+          "Type",
+          "experimental"
+        ]
+      },
+      "dspy\\adapters\\types\\document.py": {
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "Any, Literal",
+          "pydantic",
+          "Type",
+          "experimental"
+        ]
+      },
+      "dspy\\adapters\\types\\__init__.py": {
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "Audio",
+          "Type",
+          "Code",
+          "File",
+          "History",
+          "Image",
+          "Reasoning",
+          "Tool, ToolCalls"
+        ]
+      },
+      "dspy\\datasets\\alfworld\\__init__.py": {
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "AlfWorld"
+        ]
+      },
+      "dspy\\dsp\\utils\\__init__.py": {
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "*",
+          "*",
+          "*"
+        ]
+      },
+      "dspy\\predict\\avatar\\__init__.py": {
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "*",
+          "*",
+          "*"
+        ]
+      },
+      "dspy\\teleprompt\\gepa\\gepa.py": {
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "inspect",
+          "logging",
+          "random",
+          "dataclass",
+          "Any, Literal, Optional, Protocol, Union",
+          "GEPAResult",
+          "ProposalFn",
+          "ReflectionComponentSelector",
+          "LM",
+          "Example, Module, Prediction",
+          "DspyAdapter, DSPyTrace, PredictorFeedbackFn, ScoreWithFeedback",
+          "Teleprompter",
+          "experimental",
+          "numpy as np",
+          "GEPAResult, optimize",
+          "DspyAdapter, LoggerAdapter"
+        ]
+      },
+      "dspy\\teleprompt\\gepa\\__init__.py": {
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "GEPA"
+        ]
+      }
+    }
+  },
+  "elapsed_seconds": 6.64
+}

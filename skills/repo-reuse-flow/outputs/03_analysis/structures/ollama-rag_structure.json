@@ -1,0 +1,528 @@
+{
+  "repo": "C:\\Users\\40270\\.workbuddy\\skills\\repo-reuse-flow\\outputs\\03_analysis\\cloned\\ollama-rag",
+  "repo_name": "ollama-rag",
+  "analyzed_at": "2026-03-28 20:59:43",
+  "dir_summary": {
+    "total_files": 13,
+    "by_extension": {
+      ".py": 4,
+      ".sh": 4,
+      "(none)": 3,
+      ".md": 1,
+      ".txt": 1
+    },
+    "largest_dirs": [],
+    "root_files": [
+      ".gitignore",
+      ".python-version",
+      "app.py",
+      "cleanRun.sh",
+      "converse.py",
+      "ingest-pdf.py",
+      "Modelfile-template",
+      "README.md",
+      "requirements.txt",
+      "reset.sh",
+      "run.sh",
+      "scrape-pdf-list.sh",
+      "setup.py"
+    ]
+  },
+  "code_files": {
+    ".py": 4
+  },
+  "analysis": {
+    "files_analyzed": 4,
+    "summary": {
+      "total_classes": 1,
+      "total_methods": 37,
+      "total_imports": 26
+    },
+    "classes": [
+      {
+        "file": "converse.py",
+        "name": "Converse",
+        "start_line": 26,
+        "end_line": 307
+      }
+    ],
+    "methods": [
+      {
+        "file": "ingest-pdf.py",
+        "name": "start",
+        "start_line": 20,
+        "end_line": 21
+      },
+      {
+        "file": "ingest-pdf.py",
+        "name": "getFileList",
+        "start_line": 23,
+        "end_line": 51
+      },
+      {
+        "file": "ingest-pdf.py",
+        "name": "isAlreadyProcessed",
+        "start_line": 53,
+        "end_line": 54
+      },
+      {
+        "file": "ingest-pdf.py",
+        "name": "processPdf",
+        "start_line": 56,
+        "end_line": 79
+      },
+      {
+        "file": "ingest-pdf.py",
+        "name": "getPdfChromaDbChunks",
+        "start_line": 82,
+        "end_line": 90
+      },
+      {
+        "file": "ingest-pdf.py",
+        "name": "getPdfTitle",
+        "start_line": 92,
+        "end_line": 99
+      },
+      {
+        "file": "ingest-pdf.py",
+        "name": "removeNonAlphaNumOrSpace",
+        "start_line": 101,
+        "end_line": 102
+      },
+      {
+        "file": "setup.py",
+        "name": "start",
+        "start_line": 15,
+        "end_line": 22
+      },
+      {
+        "file": "setup.py",
+        "name": "configAgent",
+        "start_line": 24,
+        "end_line": 71
+      },
+      {
+        "file": "setup.py",
+        "name": "configModel",
+        "start_line": 73,
+        "end_line": 100
+      },
+      {
+        "file": "setup.py",
+        "name": "writeModelfile",
+        "start_line": 102,
+        "end_line": 122
+      },
+      {
+        "file": "setup.py",
+        "name": "createModel",
+        "start_line": 125,
+        "end_line": 127
+      },
+      {
+        "file": "setup.py",
+        "name": "flatten",
+        "start_line": 129,
+        "end_line": 139
+      },
+      {
+        "file": "setup.py",
+        "name": "inputForAccepted",
+        "start_line": 141,
+        "end_line": 153
+      },
+      {
+        "file": "setup.py",
+        "name": "inputAccepted",
+        "start_line": 155,
+        "end_line": 157
+      },
+      {
+        "file": "app.py",
+        "name": "display_messages",
+        "start_line": 14,
+        "end_line": 26
+      },
+      {
+        "file": "app.py",
+        "name": "process_input",
+        "start_line": 28,
+        "end_line": 37
+      },
+      {
+        "file": "app.py",
+        "name": "process_check_box",
+        "start_line": 39,
+        "end_line": 43
+      },
+      {
+        "file": "app.py",
+        "name": "page",
+        "start_line": 45,
+        "end_line": 56
+      },
+      {
+        "file": "converse.py",
+        "name": "__init__",
+        "start_line": 49,
+        "end_line": 108
+      },
+      {
+        "file": "converse.py",
+        "name": "orchestrateRetrievers",
+        "start_line": 110,
+        "end_line": 123
+      },
+      {
+        "file": "converse.py",
+        "name": "retrieverLogBookMetadata",
+        "start_line": 125,
+        "end_line": 139
+      },
+      {
+        "file": "converse.py",
+        "name": "retrieverAddBookMetadataToBookPassage",
+        "start_line": 141,
+        "end_line": 153
+      },
+      {
+        "file": "converse.py",
+        "name": "retrieverAddDateToPageContent",
+        "start_line": 155,
+        "end_line": 158
+      },
+      {
+        "file": "converse.py",
+        "name": "retrieverFilterByDateRelevance",
+        "start_line": 160,
+        "end_line": 181
+      },
+      {
+        "file": "converse.py",
+        "name": "logRetrieval",
+        "start_line": 183,
+        "end_line": 188
+      },
+      {
+        "file": "converse.py",
+        "name": "logRetrievalFinal",
+        "start_line": 190,
+        "end_line": 195
+      },
+      {
+        "file": "converse.py",
+        "name": "ingest",
+        "start_line": 197,
+        "end_line": 214
+      },
+      {
+        "file": "converse.py",
+        "name": "getIsInteresting",
+        "start_line": 216,
+        "end_line": 217
+      },
+      {
+        "file": "converse.py",
+        "name": "testQueryForYesNo",
+        "start_line": 219,
+        "end_line": 225
+      },
+      {
+        "file": "converse.py",
+        "name": "ask",
+        "start_line": 227,
+        "end_line": 251
+      },
+      {
+        "file": "converse.py",
+        "name": "generateResponse",
+        "start_line": 253,
+        "end_line": 261
+      },
+      {
+        "file": "converse.py",
+        "name": "getSearch",
+        "start_line": 263,
+        "end_line": 271
+      },
+      {
+        "file": "converse.py",
+        "name": "sayIt",
+        "start_line": 273,
+        "end_line": 278
+      },
+      {
+        "file": "converse.py",
+        "name": "dateStrToClass",
+        "start_line": 280,
+        "end_line": 281
+      },
+      {
+        "file": "converse.py",
+        "name": "dateToTimeAgo",
+        "start_line": 283,
+        "end_line": 300
+      },
+      {
+        "file": "converse.py",
+        "name": "clear",
+        "start_line": 302,
+        "end_line": 307
+      }
+    ],
+    "imports": [
+      {
+        "file": "ingest-pdf.py",
+        "name": "Chroma",
+        "start_line": 1,
+        "end_line": 1
+      },
+      {
+        "file": "ingest-pdf.py",
+        "name": "FastEmbedEmbeddings",
+        "start_line": 2,
+        "end_line": 2
+      },
+      {
+        "file": "ingest-pdf.py",
+        "name": "RecursiveCharacterTextSplitter",
+        "start_line": 3,
+        "end_line": 3
+      },
+      {
+        "file": "ingest-pdf.py",
+        "name": "filter_complex_metadata",
+        "start_line": 4,
+        "end_line": 4
+      },
+      {
+        "file": "ingest-pdf.py",
+        "name": "PyPDFLoader",
+        "start_line": 5,
+        "end_line": 5
+      },
+      {
+        "file": "ingest-pdf.py",
+        "name": "TinyDB, where",
+        "start_line": 6,
+        "end_line": 6
+      },
+      {
+        "file": "ingest-pdf.py",
+        "name": "re, math",
+        "start_line": 7,
+        "end_line": 7
+      },
+      {
+        "file": "setup.py",
+        "name": "TinyDB",
+        "start_line": 1,
+        "end_line": 1
+      },
+      {
+        "file": "setup.py",
+        "name": "os, re, shutil, subprocess",
+        "start_line": 2,
+        "end_line": 2
+      },
+      {
+        "file": "app.py",
+        "name": "streamlit as st",
+        "start_line": 1,
+        "end_line": 1
+      },
+      {
+        "file": "app.py",
+        "name": "message",
+        "start_line": 2,
+        "end_line": 2
+      },
+      {
+        "file": "app.py",
+        "name": "Converse",
+        "start_line": 3,
+        "end_line": 3
+      },
+      {
+        "file": "app.py",
+        "name": "TinyDB",
+        "start_line": 4,
+        "end_line": 4
+      },
+      {
+        "file": "converse.py",
+        "name": "Chroma",
+        "start_line": 1,
+        "end_line": 1
+      },
+      {
+        "file": "converse.py",
+        "name": "ChatOllama",
+        "start_line": 2,
+        "end_line": 2
+      },
+      {
+        "file": "converse.py",
+        "name": "FastEmbedEmbeddings",
+        "start_line": 3,
+        "end_line": 3
+      },
+      {
+        "file": "converse.py",
+        "name": "RunnablePassthrough",
+        "start_line": 4,
+        "end_line": 4
+      },
+      {
+        "file": "converse.py",
+        "name": "StrOutputParser",
+        "start_line": 5,
+        "end_line": 5
+      },
+      {
+        "file": "converse.py",
+        "name": "RecursiveCharacterTextSplitter",
+        "start_line": 6,
+        "end_line": 6
+      },
+      {
+        "file": "converse.py",
+        "name": "ConversationBufferMemory",
+        "start_line": 7,
+        "end_line": 7
+      },
+      {
+        "file": "converse.py",
+        "name": "PromptTemplate",
+        "start_line": 8,
+        "end_line": 8
+      },
+      {
+        "file": "converse.py",
+        "name": "ChatPromptTemplate",
+        "start_line": 9,
+        "end_line": 9
+      },
+      {
+        "file": "converse.py",
+        "name": "TinyDB",
+        "start_line": 10,
+        "end_line": 10
+      },
+      {
+        "file": "converse.py",
+        "name": "datetime",
+        "start_line": 11,
+        "end_line": 11
+      },
+      {
+        "file": "converse.py",
+        "name": "randrange",
+        "start_line": 12,
+        "end_line": 12
+      },
+      {
+        "file": "converse.py",
+        "name": "os, re, subprocess",
+        "start_line": 13,
+        "end_line": 13
+      }
+    ],
+    "by_file": {
+      "converse.py": {
+        "classes": [
+          "Converse"
+        ],
+        "functions": [
+          "__init__",
+          "orchestrateRetrievers",
+          "retrieverLogBookMetadata",
+          "retrieverAddBookMetadataToBookPassage",
+          "retrieverAddDateToPageContent",
+          "retrieverFilterByDateRelevance",
+          "logRetrieval",
+          "logRetrievalFinal",
+          "ingest",
+          "getIsInteresting",
+          "testQueryForYesNo",
+          "ask",
+          "generateResponse",
+          "getSearch",
+          "sayIt",
+          "dateStrToClass",
+          "dateToTimeAgo",
+          "clear"
+        ],
+        "imports": [
+          "Chroma",
+          "ChatOllama",
+          "FastEmbedEmbeddings",
+          "RunnablePassthrough",
+          "StrOutputParser",
+          "RecursiveCharacterTextSplitter",
+          "ConversationBufferMemory",
+          "PromptTemplate",
+          "ChatPromptTemplate",
+          "TinyDB",
+          "datetime",
+          "randrange",
+          "os, re, subprocess"
+        ]
+      },
+      "ingest-pdf.py": {
+        "classes": [],
+        "functions": [
+          "start",
+          "getFileList",
+          "isAlreadyProcessed",
+          "processPdf",
+          "getPdfChromaDbChunks",
+          "getPdfTitle",
+          "removeNonAlphaNumOrSpace"
+        ],
+        "imports": [
+          "Chroma",
+          "FastEmbedEmbeddings",
+          "RecursiveCharacterTextSplitter",
+          "filter_complex_metadata",
+          "PyPDFLoader",
+          "TinyDB, where",
+          "re, math"
+        ]
+      },
+      "setup.py": {
+        "classes": [],
+        "functions": [
+          "start",
+          "configAgent",
+          "configModel",
+          "writeModelfile",
+          "createModel",
+          "flatten",
+          "inputForAccepted",
+          "inputAccepted"
+        ],
+        "imports": [
+          "TinyDB",
+          "os, re, shutil, subprocess"
+        ]
+      },
+      "app.py": {
+        "classes": [],
+        "functions": [
+          "display_messages",
+          "process_input",
+          "process_check_box",
+          "page"
+        ],
+        "imports": [
+          "streamlit as st",
+          "message",
+          "Converse",
+          "TinyDB"
+        ]
+      }
+    }
+  },
+  "elapsed_seconds": 0.28
+}

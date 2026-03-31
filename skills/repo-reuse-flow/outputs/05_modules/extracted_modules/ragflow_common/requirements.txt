@@ -1,0 +1,18 @@
+# Auto-generated external dependencies
+# Review and pin versions before using in production
+
+debugpy
+fastapi
+faulthandler
+filelock
+flask
+flask_login
+flask_session
+psutil
+pydantic
+resource
+ruamel
+slowapi
+tracemalloc
+werkzeug
+xxhash

@@ -1,0 +1,21 @@
+{
+  "name": "question_gen",
+  "display_name": "题目生成",
+  "description": "从文档自动生成测试问题，基于知识图谱驱动，支持单跳/多跳推理题型",
+  "source": {
+    "library": "ragas",
+    "repo": "https://github.com/explodinggradients/ragas",
+    "sub_module": "ragas.testset.TestsetGenerator",
+    "version": ">=0.2.0",
+    "license": "Apache-2.0",
+    "install_cmd": "pip install ragas"
+  },
+  "api_used": [
+    "ragas.testset.TestsetGenerator",
+    "ragas.testset.synthesizers.SingleHopSpecificQuerySynthesizer",
+    "ragas.testset.synthesizers.MultiHopAbstractQuerySynthesizer",
+    "ragas.llms.LangchainLLMWrapper"
+  ],
+  "category": "question-gen",
+  "tags": ["question-generation", "testset", "knowledge-graph", "synthetic-data"]
+}

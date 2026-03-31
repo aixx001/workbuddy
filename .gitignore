@@ -1,0 +1,6 @@
+skills/repo-reuse-flow/outputs/03_analysis/cloned/
+.agent/
+node_modules/
+__pycache__/
+*.pyc
+.env

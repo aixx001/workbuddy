@@ -1,0 +1,3274 @@
+{
+  "repo_name": "RAGFlow",
+  "source_file": "outputs\\03_analysis\\structures\\ragflow_structure.json",
+  "graph_stats": {
+    "nodes": 200,
+    "edges": 542,
+    "connected_components": 31
+  },
+  "nodes": {
+    "agent/sandbox/providers/manager.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [
+        "ProviderManager"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "agent/tools/retrieval.py": {
+      "in_degree": 0,
+      "out_degree": 7,
+      "classes": [
+        "RetrievalParam",
+        "Retrieval"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "agent/sandbox/executor_manager/core/config.py": {
+      "in_degree": 4,
+      "out_degree": 3,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "fastapi"
+      ],
+      "reuse_score": 0.632
+    },
+    "agent/sandbox/executor_manager/models/schemas.py": {
+      "in_degree": 3,
+      "out_degree": 1,
+      "classes": [
+        "ArtifactItem",
+        "CodeExecutionResult",
+        "CodeExecutionRequest"
+      ],
+      "functions": [],
+      "external_deps": [
+        "pydantic"
+      ],
+      "reuse_score": 0.777
+    },
+    "api/utils/web_utils.py": {
+      "in_degree": 6,
+      "out_degree": 3,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "aiosmtplib",
+        "hmac",
+        "ipaddress",
+        "quart",
+        "selenium",
+        "webdriver_manager"
+      ],
+      "reuse_score": 0.777
+    },
+    "run_tests.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [
+        "Colors",
+        "TestRunner"
+      ],
+      "functions": [
+        "main",
+        "__init__",
+        "print_info",
+        "print_error",
+        "show_usage",
+        "build_pytest_command",
+        "run_tests",
+        "parse_arguments",
+        "run"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "admin/server/admin_server.py": {
+      "in_degree": 0,
+      "out_degree": 8,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "faulthandler",
+        "flask",
+        "flask_login",
+        "flask_session",
+        "werkzeug"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/apps/sdk/session.py": {
+      "in_degree": 0,
+      "out_degree": 11,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "quart"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/apps/dialog_app.py": {
+      "in_degree": 0,
+      "out_degree": 6,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "quart"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/utils/health_utils.py": {
+      "in_degree": 1,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "requests"
+      ],
+      "reuse_score": 0.283
+    },
+    "agent/tools/googlescholar.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [
+        "GoogleScholarParam",
+        "GoogleScholar"
+      ],
+      "functions": [],
+      "external_deps": [
+        "scholarly"
+      ],
+      "reuse_score": 0.0
+    },
+    "agent/sandbox/providers/base.py": {
+      "in_degree": 6,
+      "out_degree": 0,
+      "classes": [
+        "SandboxInstance",
+        "ExecutionResult",
+        "SandboxProvider"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.998
+    },
+    "api/apps/auth/oauth.py": {
+      "in_degree": 5,
+      "out_degree": 1,
+      "classes": [
+        "UserInfo",
+        "OAuthClient"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.918
+    },
+    "api/utils/image_utils.py": {
+      "in_degree": 2,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "PIL"
+      ],
+      "reuse_score": 0.632
+    },
+    "agent/component/loop.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [
+        "LoopParam",
+        "Loop"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "agent/component/invoke.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [
+        "InvokeParam",
+        "Invoke"
+      ],
+      "functions": [],
+      "external_deps": [
+        "requests"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/db/services/common_service.py": {
+      "in_degree": 3,
+      "out_degree": 3,
+      "classes": [
+        "CommonService"
+      ],
+      "functions": [],
+      "external_deps": [
+        "peewee",
+        "tenacity"
+      ],
+      "reuse_score": 0.528
+    },
+    "admin/client/http_client.py": {
+      "in_degree": 3,
+      "out_degree": 0,
+      "classes": [
+        "HttpClient"
+      ],
+      "functions": [
+        "__init__",
+        "api_base",
+        "non_api_base",
+        "build_url",
+        "_headers",
+        "request",
+        "request_json",
+        "parse_json_bytes"
+      ],
+      "external_deps": [
+        "requests"
+      ],
+      "reuse_score": 0.95
+    },
+    "common/float_utils.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [
+        "get_float",
+        "normalize_overlapped_percent"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "agent/sandbox/executor_manager/core/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "api/apps/restful_apis/dataset_api.py": {
+      "in_degree": 2,
+      "out_degree": 5,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "peewee",
+        "quart"
+      ],
+      "reuse_score": 0.283
+    },
+    "api/db/reload_config_base.py": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "classes": [
+        "ReloadConfigBase"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "agent/__init__.py": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "common/constants.py": {
+      "in_degree": 47,
+      "out_degree": 0,
+      "classes": [
+        "CustomEnum",
+        "RetCode",
+        "StatusEnum",
+        "ActiveEnum",
+        "LLMType",
+        "TaskStatus",
+        "ParserType",
+        "FileSource",
+        "PipelineTaskType",
+        "MCPServerType",
+        "Storage",
+        "MemoryType",
+        "MemoryStorageType",
+        "ForgettingPolicy"
+      ],
+      "functions": [
+        "valid",
+        "values",
+        "names"
+      ],
+      "external_deps": [
+        "strenum"
+      ],
+      "reuse_score": 1.0
+    },
+    "api/apps/kb_app.py": {
+      "in_degree": 0,
+      "out_degree": 8,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "numpy",
+        "quart"
+      ],
+      "reuse_score": 0.0
+    },
+    "memory/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "common/crypto_utils.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [
+        "BaseCrypto",
+        "AESCrypto",
+        "AES128CBC",
+        "AES256CBC",
+        "SM4CBC",
+        "CryptoUtil"
+      ],
+      "functions": [
+        "__init__",
+        "_normalize_key",
+        "encrypt",
+        "decrypt",
+        "_encrypt",
+        "_decrypt",
+        "__init__",
+        "_encrypt",
+        "_decrypt",
+        "__init__",
+        "__init__",
+        "__init__",
+        "_encrypt",
+        "_decrypt",
+        "__init__",
+        "encrypt",
+        "decrypt"
+      ],
+      "external_deps": [
+        "cryptography"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/apps/services/memory_api_service.py": {
+      "in_degree": 0,
+      "out_degree": 9,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "api/validation.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [
+        "python_version_validation",
+        "download_nltk_data"
+      ],
+      "external_deps": [
+        "nltk"
+      ],
+      "reuse_score": 0.0
+    },
+    "agent/sandbox/executor_manager/api/routes.py": {
+      "in_degree": 2,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "fastapi"
+      ],
+      "reuse_score": 0.632
+    },
+    "agent/sandbox/executor_manager/utils/common.py": {
+      "in_degree": 36,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 1.0
+    },
+    "api/common/exceptions.py": {
+      "in_degree": 9,
+      "out_degree": 0,
+      "classes": [
+        "AdminException",
+        "UserNotFoundError",
+        "UserAlreadyExistsError",
+        "CannotDeleteAdminError",
+        "NotAdminError"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 1.0
+    },
+    "api/apps/sdk/agents.py": {
+      "in_degree": 0,
+      "out_degree": 7,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "hmac",
+        "ipaddress",
+        "jwt",
+        "quart"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/db/init_data.py": {
+      "in_degree": 1,
+      "out_degree": 10,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "peewee"
+      ],
+      "reuse_score": 0.087
+    },
+    "agent/tools/exesql.py": {
+      "in_degree": 0,
+      "out_degree": 3,
+      "classes": [
+        "ExeSQLParam",
+        "ExeSQL"
+      ],
+      "functions": [],
+      "external_deps": [
+        "ibm_db",
+        "pandas",
+        "psycopg2",
+        "pymysql",
+        "pyodbc",
+        "trino"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/utils/configs.py": {
+      "in_degree": 1,
+      "out_degree": 2,
+      "classes": [
+        "RestrictedUnpickler"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.283
+    },
+    "agent/sandbox/executor_manager/services/limiter.py": {
+      "in_degree": 2,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "fastapi",
+        "slowapi"
+      ],
+      "reuse_score": 0.487
+    },
+    "api/apps/auth/oidc.py": {
+      "in_degree": 1,
+      "out_degree": 2,
+      "classes": [
+        "OIDCClient"
+      ],
+      "functions": [],
+      "external_deps": [
+        "jwt"
+      ],
+      "reuse_score": 0.283
+    },
+    "admin/server/auth.py": {
+      "in_degree": 0,
+      "out_degree": 10,
+      "classes": [],
+      "functions": [
+        "setup_auth",
+        "init_default_admin",
+        "add_tenant_for_admin",
+        "check_admin_auth",
+        "login_admin",
+        "check_admin",
+        "login_verify",
+        "load_user",
+        "wrapper",
+        "decorated"
+      ],
+      "external_deps": [
+        "flask",
+        "flask_login",
+        "itsdangerous"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/db/__init__.py": {
+      "in_degree": 21,
+      "out_degree": 0,
+      "classes": [
+        "UserTenantRole",
+        "TenantPermission",
+        "SerializedType",
+        "FileType",
+        "InputType",
+        "CanvasCategory",
+        "PipelineTaskType"
+      ],
+      "functions": [],
+      "external_deps": [
+        "strenum"
+      ],
+      "reuse_score": 1.0
+    },
+    "api/db/db_models.py": {
+      "in_degree": 27,
+      "out_degree": 8,
+      "classes": [
+        "TextFieldType",
+        "LongTextField",
+        "JSONField",
+        "ListField",
+        "SerializedField",
+        "BaseModel",
+        "JsonSerializedField",
+        "RetryingPooledMySQLDatabase",
+        "RetryingPooledPostgresqlDatabase",
+        "RetryingPooledOceanBaseDatabase",
+        "PooledDatabase",
+        "DatabaseMigrator",
+        "BaseDataBase",
+        "PostgresDatabaseLock",
+        "MysqlDatabaseLock",
+        "DatabaseLock",
+        "DataBaseModel",
+        "User",
+        "Tenant",
+        "UserTenant",
+        "InvitationCode",
+        "LLMFactories",
+        "LLM",
+        "TenantLLM",
+        "TenantLangfuse",
+        "Knowledgebase",
+        "Document",
+        "File",
+        "File2Document",
+        "Task",
+        "Dialog",
+        "Conversation",
+        "APIToken",
+        "API4Conversation",
+        "UserCanvas",
+        "CanvasTemplate",
+        "UserCanvasVersion",
+        "MCPServer",
+        "Search",
+        "PipelineOperationLog",
+        "Connector",
+        "Connector2Kb",
+        "DateTimeTzField",
+        "SyncLogs",
+        "EvaluationDataset",
+        "EvaluationCase",
+        "EvaluationRun",
+        "EvaluationResult",
+        "Memory",
+        "SystemSettings"
+      ],
+      "functions": [],
+      "external_deps": [
+        "itsdangerous",
+        "peewee",
+        "playhouse",
+        "pytz",
+        "quart_auth"
+      ],
+      "reuse_score": 0.95
+    },
+    "api/common/base64.py": {
+      "in_degree": 2,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.865
+    },
+    "api/utils/crypt.py": {
+      "in_degree": 3,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "Crypto",
+        "Cryptodome"
+      ],
+      "reuse_score": 0.777
+    },
+    "agent/component/begin.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [
+        "BeginParam",
+        "Begin"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "api/apps/auth/github.py": {
+      "in_degree": 1,
+      "out_degree": 2,
+      "classes": [
+        "GithubOAuthClient"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.283
+    },
+    "api/db/joint_services/__init__.py": {
+      "in_degree": 14,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 1.0
+    },
+    "common/connection_utils.py": {
+      "in_degree": 28,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [
+        "timeout",
+        "construct_response",
+        "sync_construct_response",
+        "decorator",
+        "wrapper",
+        "async_wrapper",
+        "target"
+      ],
+      "external_deps": [
+        "flask",
+        "quart"
+      ],
+      "reuse_score": 1.0
+    },
+    "api/apps/canvas_app.py": {
+      "in_degree": 0,
+      "out_degree": 11,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "ibm_db",
+        "peewee",
+        "pyodbc",
+        "quart",
+        "trino"
+      ],
+      "reuse_score": 0.0
+    },
+    "agent/tools/email.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [
+        "EmailParam",
+        "Email"
+      ],
+      "functions": [],
+      "external_deps": [
+        "smtplib"
+      ],
+      "reuse_score": 0.0
+    },
+    "agent/component/llm.py": {
+      "in_degree": 2,
+      "out_degree": 4,
+      "classes": [
+        "LLMParam",
+        "LLM"
+      ],
+      "functions": [],
+      "external_deps": [
+        "json_repair"
+      ],
+      "reuse_score": 0.33
+    },
+    "admin/server/services.py": {
+      "in_degree": 1,
+      "out_degree": 11,
+      "classes": [
+        "UserMgr",
+        "UserServiceMgr",
+        "ServiceMgr",
+        "SettingsMgr",
+        "ConfigMgr",
+        "EnvironmentsMgr",
+        "SandboxMgr"
+      ],
+      "functions": [],
+      "external_deps": [
+        "werkzeug"
+      ],
+      "reuse_score": 0.08
+    },
+    "api/apps/system_app.py": {
+      "in_degree": 0,
+      "out_degree": 8,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "quart"
+      ],
+      "reuse_score": 0.0
+    },
+    "common/versions.py": {
+      "in_degree": 5,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [
+        "get_ragflow_version",
+        "get_closest_tag_and_count"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.993
+    },
+    "agent/sandbox/executor_manager/core/logger.py": {
+      "in_degree": 5,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.993
+    },
+    "agent/tools/yahoofinance.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [
+        "YahooFinanceParam",
+        "YahooFinance"
+      ],
+      "functions": [],
+      "external_deps": [
+        "pandas",
+        "yfinance"
+      ],
+      "reuse_score": 0.0
+    },
+    "agent/tools/google.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [
+        "GoogleParam",
+        "Google"
+      ],
+      "functions": [],
+      "external_deps": [
+        "serpapi"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/apps/conversation_app.py": {
+      "in_degree": 0,
+      "out_degree": 5,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "quart"
+      ],
+      "reuse_score": 0.0
+    },
+    "agent/component/data_operations.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [
+        "DataOperationsParam",
+        "DataOperations"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "api/apps/llm_app.py": {
+      "in_degree": 0,
+      "out_degree": 5,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "quart"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/db/services/connector_service.py": {
+      "in_degree": 3,
+      "out_degree": 6,
+      "classes": [
+        "ConnectorService",
+        "SyncLogsService",
+        "Connector2KbService"
+      ],
+      "functions": [],
+      "external_deps": [
+        "anthropic",
+        "peewee"
+      ],
+      "reuse_score": 0.349
+    },
+    "common/string_utils.py": {
+      "in_degree": 2,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [
+        "remove_redundant_spaces",
+        "clean_markdown_block"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.865
+    },
+    "common/log_utils.py": {
+      "in_degree": 3,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [
+        "init_root_logger",
+        "log_exception"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.777
+    },
+    "agent/plugin/common.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "agent/component/fillup.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [
+        "UserFillUpParam",
+        "UserFillUp"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "common/token_utils.py": {
+      "in_degree": 2,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [
+        "num_tokens_from_string",
+        "total_token_count_from_response",
+        "truncate"
+      ],
+      "external_deps": [
+        "tiktoken"
+      ],
+      "reuse_score": 0.632
+    },
+    "api/utils/commands.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "click",
+        "quart",
+        "werkzeug"
+      ],
+      "reuse_score": 0.0
+    },
+    "download_deps.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [
+        "get_urls",
+        "download_model"
+      ],
+      "external_deps": [
+        "huggingface_hub",
+        "nltk"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/apps/restful_apis/memory_api.py": {
+      "in_degree": 0,
+      "out_degree": 6,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "quart"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/apps/langfuse_app.py": {
+      "in_degree": 0,
+      "out_degree": 3,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "langfuse"
+      ],
+      "reuse_score": 0.0
+    },
+    "admin/server/models.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "agent/component/list_operations.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [
+        "ListOperationsParam",
+        "ListOperations"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "agent/tools/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "agent/plugin/__init__.py": {
+      "in_degree": 2,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "deepdoc/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "beartype"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/utils/tenant_utils.py": {
+      "in_degree": 3,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.777
+    },
+    "api/utils/memory_utils.py": {
+      "in_degree": 2,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "agent/plugin/plugin_manager.py": {
+      "in_degree": 1,
+      "out_degree": 2,
+      "classes": [
+        "PluginManager"
+      ],
+      "functions": [],
+      "external_deps": [
+        "pluginlib"
+      ],
+      "reuse_score": 0.283
+    },
+    "check_comment_ascii.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [
+        "check"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "agent/tools/pubmed.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [
+        "PubMedParam",
+        "PubMed"
+      ],
+      "functions": [],
+      "external_deps": [
+        "Bio"
+      ],
+      "reuse_score": 0.0
+    },
+    "common/settings.py": {
+      "in_degree": 0,
+      "out_degree": 5,
+      "classes": [
+        "StorageFactory"
+      ],
+      "functions": [
+        "get_svr_queue_name",
+        "get_svr_queue_names",
+        "_get_or_create_secret_key",
+        "init_settings",
+        "check_and_install_torch",
+        "_parse_model_entry",
+        "_resolve_per_model_config",
+        "print_rag_settings",
+        "create"
+      ],
+      "external_deps": [
+        "torch"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/apps/chunk_app.py": {
+      "in_degree": 0,
+      "out_degree": 9,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "quart",
+        "xxhash"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/apps/sdk/chat.py": {
+      "in_degree": 0,
+      "out_degree": 3,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "quart"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/apps/services/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "api/apps/__init__.py": {
+      "in_degree": 24,
+      "out_degree": 10,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "itsdangerous",
+        "quart",
+        "quart_auth",
+        "quart_cors",
+        "quart_schema",
+        "werkzeug"
+      ],
+      "reuse_score": 0.887
+    },
+    "api/apps/services/file_api_service.py": {
+      "in_degree": 0,
+      "out_degree": 7,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "agent/sandbox/executor_manager/services/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "agent/component/iteration.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [
+        "IterationParam",
+        "Iteration"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "agent/component/__init__.py": {
+      "in_degree": 3,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.95
+    },
+    "api/apps/services/dataset_api_service.py": {
+      "in_degree": 0,
+      "out_degree": 5,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "agent/sandbox/providers/__init__.py": {
+      "in_degree": 2,
+      "out_degree": 5,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.283
+    },
+    "api/apps/auth/__init__.py": {
+      "in_degree": 2,
+      "out_degree": 3,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "agent/component/message.py": {
+      "in_degree": 2,
+      "out_degree": 5,
+      "classes": [
+        "MessageParam",
+        "Message"
+      ],
+      "functions": [],
+      "external_deps": [
+        "jinja2",
+        "nest_asyncio",
+        "pandas",
+        "pypandoc"
+      ],
+      "reuse_score": 0.283
+    },
+    "agent/tools/github.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [
+        "GitHubParam",
+        "GitHub"
+      ],
+      "functions": [],
+      "external_deps": [
+        "requests"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/ragflow_server.py": {
+      "in_degree": 0,
+      "out_degree": 11,
+      "classes": [],
+      "functions": [
+        "update_progress",
+        "signal_handler",
+        "delayed_start_update_progress"
+      ],
+      "external_deps": [
+        "debugpy",
+        "faulthandler"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/apps/sdk/doc.py": {
+      "in_degree": 0,
+      "out_degree": 11,
+      "classes": [
+        "Chunk"
+      ],
+      "functions": [],
+      "external_deps": [
+        "peewee",
+        "pydantic",
+        "quart",
+        "xxhash"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/apps/file2document_app.py": {
+      "in_degree": 0,
+      "out_degree": 5,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "agent/sandbox/executor_manager/models/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "api/apps/restful_apis/search_api.py": {
+      "in_degree": 0,
+      "out_degree": 7,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "quart"
+      ],
+      "reuse_score": 0.0
+    },
+    "rag/raptor.py": {
+      "in_degree": 0,
+      "out_degree": 5,
+      "classes": [
+        "RecursiveAbstractiveProcessing4TreeOrganizedRetrieval"
+      ],
+      "functions": [
+        "__init__",
+        "_check_task_canceled",
+        "_chat",
+        "_embedding_encode",
+        "_get_optimal_clusters",
+        "__call__",
+        "summarize"
+      ],
+      "external_deps": [
+        "numpy",
+        "sklearn",
+        "umap"
+      ],
+      "reuse_score": 0.0
+    },
+    "agent/component/switch.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [
+        "SwitchParam",
+        "Switch"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "agent/tools/crawler.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [
+        "CrawlerParam",
+        "Crawler"
+      ],
+      "functions": [],
+      "external_deps": [
+        "crawl4ai"
+      ],
+      "reuse_score": 0.0
+    },
+    "agent/component/docs_generator.py": {
+      "in_degree": 0,
+      "out_degree": 3,
+      "classes": [
+        "PDFGeneratorParam",
+        "PDFGenerator"
+      ],
+      "functions": [],
+      "external_deps": [
+        "docx",
+        "reportlab"
+      ],
+      "reuse_score": 0.0
+    },
+    "agent/plugin/embedded_plugins/llm_tools/bad_calculator.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [
+        "BadCalculatorPlugin"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "agent/sandbox/executor_manager/api/handlers.py": {
+      "in_degree": 1,
+      "out_degree": 7,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "fastapi"
+      ],
+      "reuse_score": 0.118
+    },
+    "api/settings.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "agent/tools/searxng.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [
+        "SearXNGParam",
+        "SearXNG"
+      ],
+      "functions": [],
+      "external_deps": [
+        "requests"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/apps/api_app.py": {
+      "in_degree": 0,
+      "out_degree": 5,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "quart"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/utils/base64_image.py": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "agent/tools/base.py": {
+      "in_degree": 17,
+      "out_degree": 4,
+      "classes": [
+        "ToolParameter",
+        "ToolMeta",
+        "LLMToolPluginCallSession",
+        "ToolParamBase",
+        "ToolBase"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.967
+    },
+    "agent/sandbox/executor_manager/services/security.py": {
+      "in_degree": 1,
+      "out_degree": 2,
+      "classes": [
+        "SecurePythonAnalyzer"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.283
+    },
+    "api/db/db_utils.py": {
+      "in_degree": 1,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "playhouse"
+      ],
+      "reuse_score": 0.283
+    },
+    "api/utils/__init__.py": {
+      "in_degree": 4,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.982
+    },
+    "agent/component/excel_processor.py": {
+      "in_degree": 0,
+      "out_degree": 4,
+      "classes": [
+        "ExcelProcessorParam",
+        "ExcelProcessor"
+      ],
+      "functions": [],
+      "external_deps": [
+        "pandas"
+      ],
+      "reuse_score": 0.0
+    },
+    "common/decorator.py": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [
+        "singleton",
+        "_singleton"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "agent/tools/code_exec.py": {
+      "in_degree": 0,
+      "out_degree": 5,
+      "classes": [
+        "Language",
+        "CodeExecutionRequest",
+        "CodeExecParam",
+        "CodeExec"
+      ],
+      "functions": [],
+      "external_deps": [
+        "minio",
+        "pydantic",
+        "requests",
+        "strenum"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/apps/services/canvas_replica_service.py": {
+      "in_degree": 2,
+      "out_degree": 1,
+      "classes": [
+        "CanvasReplicaService"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "agent/sandbox/executor_manager/main.py": {
+      "in_degree": 0,
+      "out_degree": 3,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "fastapi",
+        "slowapi"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/db/joint_services/user_account_service.py": {
+      "in_degree": 1,
+      "out_degree": 6,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.133
+    },
+    "admin/client/user.py": {
+      "in_degree": 2,
+      "out_degree": 1,
+      "classes": [
+        "AuthException"
+      ],
+      "functions": [
+        "encrypt_password",
+        "register_user",
+        "login_user",
+        "__init__",
+        "crypt"
+      ],
+      "external_deps": [
+        "Cryptodome"
+      ],
+      "reuse_score": 0.632
+    },
+    "api/db/joint_services/tenant_model_service.py": {
+      "in_degree": 14,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.991
+    },
+    "agent/tools/duckduckgo.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [
+        "DuckDuckGoParam",
+        "DuckDuckGo"
+      ],
+      "functions": [],
+      "external_deps": [
+        "duckduckgo_search"
+      ],
+      "reuse_score": 0.0
+    },
+    "rag/__init__.py": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "rag/settings.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "api/apps/user_app.py": {
+      "in_degree": 0,
+      "out_degree": 14,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "captcha",
+        "quart",
+        "werkzeug"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/apps/tenant_app.py": {
+      "in_degree": 0,
+      "out_degree": 9,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "api/utils/validation_utils.py": {
+      "in_degree": 2,
+      "out_degree": 1,
+      "classes": [
+        "Base",
+        "RaptorConfig",
+        "GraphragConfig",
+        "AutoMetadataField",
+        "AutoMetadataConfig",
+        "ParserConfig",
+        "CreateDatasetReq",
+        "UpdateDatasetReq",
+        "DeleteReq",
+        "DeleteDatasetReq",
+        "BaseListReq",
+        "ListDatasetReq",
+        "CreateFolderReq",
+        "DeleteFileReq",
+        "MoveFileReq",
+        "ListFileReq"
+      ],
+      "functions": [],
+      "external_deps": [
+        "pydantic",
+        "pydantic_core",
+        "quart",
+        "werkzeug"
+      ],
+      "reuse_score": 0.632
+    },
+    "common/file_utils.py": {
+      "in_degree": 8,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [
+        "get_project_base_directory",
+        "traversal_files"
+      ],
+      "external_deps": [],
+      "reuse_score": 1.0
+    },
+    "common/misc_utils.py": {
+      "in_degree": 31,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [
+        "get_uuid",
+        "download_img",
+        "hash_str2int",
+        "convert_bytes",
+        "once",
+        "pip_install_torch",
+        "_thread_pool_executor",
+        "thread_pool_exec",
+        "wrapper"
+      ],
+      "external_deps": [],
+      "reuse_score": 1.0
+    },
+    "agent/tools/deepl.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [
+        "DeepLParam",
+        "DeepL"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "admin/server/responses.py": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [
+        "success_response",
+        "error_response"
+      ],
+      "external_deps": [
+        "flask"
+      ],
+      "reuse_score": 0.632
+    },
+    "admin/client/parser.py": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "classes": [
+        "RAGFlowCLITransformer"
+      ],
+      "functions": [
+        "start",
+        "command",
+        "login_user",
+        "ping_server",
+        "list_services",
+        "show_service",
+        "startup_service",
+        "shutdown_service",
+        "restart_service",
+        "register_user",
+        "list_users",
+        "show_user",
+        "drop_user",
+        "alter_user",
+        "create_user",
+        "activate_user",
+        "list_datasets",
+        "list_agents",
+        "create_role",
+        "drop_role",
+        "alter_role",
+        "list_roles",
+        "show_role",
+        "grant_permission",
+        "revoke_permission",
+        "alter_user_role",
+        "show_user_permission",
+        "show_version",
+        "grant_admin",
+        "revoke_admin",
+        "generate_key",
+        "list_keys",
+        "drop_key",
+        "set_variable",
+        "show_variable",
+        "list_variables",
+        "list_configs",
+        "list_environments",
+        "show_fingerprint",
+        "set_license",
+        "set_license_config",
+        "show_license",
+        "check_license",
+        "list_server_configs",
+        "create_model_provider",
+        "drop_model_provider",
+        "show_current_user",
+        "set_default_llm",
+        "set_default_vlm",
+        "set_default_embedding",
+        "set_default_reranker",
+        "set_default_asr",
+        "set_default_tts",
+        "reset_default_llm",
+        "reset_default_vlm",
+        "reset_default_embedding",
+        "reset_default_reranker",
+        "reset_default_asr",
+        "reset_default_tts",
+        "list_user_datasets",
+        "create_user_dataset_with_parser",
+        "create_user_dataset_with_pipeline",
+        "drop_user_dataset",
+        "list_user_dataset_files",
+        "list_user_dataset_documents",
+        "list_user_datasets_metadata",
+        "list_user_documents_metadata_summary",
+        "list_user_agents",
+        "list_user_chats",
+        "create_user_chat",
+        "drop_user_chat",
+        "create_index",
+        "drop_index",
+        "create_doc_meta_index",
+        "drop_doc_meta_index",
+        "list_user_model_providers",
+        "list_user_default_models",
+        "parse_dataset_docs",
+        "parse_dataset_sync",
+        "parse_dataset_async",
+        "create_chat_session",
+        "drop_chat_session",
+        "list_chat_sessions",
+        "chat_on_session",
+        "import_docs_into_dataset",
+        "search_on_datasets",
+        "get_chunk",
+        "list_chunks",
+        "benchmark",
+        "action_list",
+        "meta_command",
+        "meta_command_name",
+        "meta_args"
+      ],
+      "external_deps": [
+        "lark"
+      ],
+      "reuse_score": 0.632
+    },
+    "agent/sandbox/client.py": {
+      "in_degree": 1,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.283
+    },
+    "rag/benchmark.py": {
+      "in_degree": 0,
+      "out_degree": 4,
+      "classes": [
+        "Benchmark"
+      ],
+      "functions": [
+        "__init__",
+        "_get_retrieval",
+        "embedding",
+        "init_index",
+        "ms_marco_index",
+        "trivia_qa_index",
+        "miracl_index",
+        "save_results",
+        "__call__"
+      ],
+      "external_deps": [
+        "pandas",
+        "ranx",
+        "tqdm"
+      ],
+      "reuse_score": 0.0
+    },
+    "common/exceptions.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [
+        "TaskCanceledException",
+        "ArgumentException",
+        "NotFoundException"
+      ],
+      "functions": [
+        "__init__",
+        "__init__",
+        "__init__"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "agent/sandbox/executor_manager/core/container.py": {
+      "in_degree": 3,
+      "out_degree": 4,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.451
+    },
+    "api/apps/connector_app.py": {
+      "in_degree": 0,
+      "out_degree": 6,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "box_sdk_gen",
+        "google_auth_oauthlib",
+        "quart"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/db/runtime_config.py": {
+      "in_degree": 1,
+      "out_degree": 2,
+      "classes": [
+        "RuntimeConfig"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.283
+    },
+    "api/utils/common.py": {
+      "in_degree": 2,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "xxhash"
+      ],
+      "reuse_score": 0.865
+    },
+    "agent/sandbox/executor_manager/util.py": {
+      "in_degree": 2,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.865
+    },
+    "agent/tools/wikipedia.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [
+        "WikipediaParam",
+        "Wikipedia"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "agent/sandbox/executor_manager/api/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "api/apps/plugin_app.py": {
+      "in_degree": 0,
+      "out_degree": 3,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "quart"
+      ],
+      "reuse_score": 0.0
+    },
+    "admin/client/ragflow_cli.py": {
+      "in_degree": 0,
+      "out_degree": 4,
+      "classes": [
+        "RAGFlowCLI"
+      ],
+      "functions": [
+        "encrypt",
+        "encode_to_base64",
+        "main",
+        "__init__",
+        "onecmd",
+        "emptyline",
+        "default",
+        "parse_command",
+        "verify_auth",
+        "_format_service_detail_table",
+        "_print_table_simple",
+        "run_interactive",
+        "run_single_command",
+        "parse_connection_args",
+        "execute_command",
+        "get_string_width"
+      ],
+      "external_deps": [
+        "Cryptodome",
+        "cmd",
+        "getpass",
+        "lark",
+        "requests"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/apps/file_app.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "admin/server/exceptions.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [
+        "AdminException",
+        "UserNotFoundError",
+        "UserAlreadyExistsError",
+        "CannotDeleteAdminError"
+      ],
+      "functions": [
+        "__init__",
+        "__init__",
+        "__init__",
+        "__init__"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "common/metadata_utils.py": {
+      "in_degree": 7,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [
+        "convert_conditions",
+        "meta_filter",
+        "apply_meta_data_filter",
+        "dedupe_list",
+        "update_metadata_to",
+        "metadata_schema",
+        "_is_json_schema",
+        "_is_metadata_list",
+        "turn2jsonschema",
+        "filter_out"
+      ],
+      "external_deps": [
+        "json_repair"
+      ],
+      "reuse_score": 0.999
+    },
+    "admin/client/ragflow_client.py": {
+      "in_degree": 1,
+      "out_degree": 2,
+      "classes": [
+        "RAGFlowClient"
+      ],
+      "functions": [
+        "encrypt",
+        "run_command",
+        "_handle_meta_command",
+        "show_help",
+        "run_benchmark",
+        "__init__",
+        "login_user",
+        "ping_server",
+        "register_user",
+        "list_services",
+        "show_service",
+        "restart_service",
+        "shutdown_service",
+        "startup_service",
+        "list_users",
+        "show_user",
+        "drop_user",
+        "alter_user",
+        "create_user",
+        "activate_user",
+        "grant_admin",
+        "revoke_admin",
+        "create_role",
+        "drop_role",
+        "alter_role",
+        "list_roles",
+        "show_role",
+        "grant_permission",
+        "revoke_permission",
+        "alter_user_role",
+        "show_user_permission",
+        "generate_key",
+        "list_keys",
+        "drop_key",
+        "set_variable",
+        "show_variable",
+        "list_variables",
+        "list_configs",
+        "list_environments",
+        "show_fingerprint",
+        "set_license",
+        "set_license_config",
+        "show_license",
+        "check_license",
+        "list_server_configs",
+        "handle_list_datasets",
+        "handle_list_agents",
+        "show_current_user",
+        "create_model_provider",
+        "drop_model_provider",
+        "set_default_model",
+        "reset_default_model",
+        "list_user_datasets",
+        "create_user_dataset",
+        "drop_user_dataset",
+        "list_user_dataset_files",
+        "list_user_dataset_documents",
+        "list_user_datasets_metadata",
+        "list_user_documents_metadata_summary",
+        "list_user_agents",
+        "list_user_chats",
+        "create_user_chat",
+        "create_index",
+        "drop_index",
+        "create_doc_meta_index",
+        "drop_doc_meta_index",
+        "drop_user_chat",
+        "_get_chat_id_by_name",
+        "_list_chat_sessions",
+        "create_chat_session",
+        "drop_chat_session",
+        "list_chat_sessions",
+        "chat_on_session",
+        "list_user_model_providers",
+        "list_user_default_models",
+        "parse_dataset_docs",
+        "parse_dataset",
+        "import_docs_into_dataset",
+        "search_on_datasets",
+        "get_chunk",
+        "list_chunks",
+        "show_version",
+        "_wait_parse_done",
+        "_list_documents",
+        "_get_dataset_id",
+        "_list_chats",
+        "_get_default_models",
+        "_set_default_models",
+        "_format_service_detail_table",
+        "_print_table_simple",
+        "_print_key_value",
+        "flatten",
+        "get_string_width"
+      ],
+      "external_deps": [
+        "Cryptodome",
+        "getpass",
+        "lark",
+        "requests_toolbelt"
+      ],
+      "reuse_score": 0.283
+    },
+    "api/apps/restful_apis/file_api.py": {
+      "in_degree": 0,
+      "out_degree": 8,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "quart"
+      ],
+      "reuse_score": 0.0
+    },
+    "common/signal_utils.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [
+        "start_tracemalloc_and_snapshot",
+        "stop_tracemalloc"
+      ],
+      "external_deps": [
+        "psutil",
+        "resource",
+        "tracemalloc"
+      ],
+      "reuse_score": 0.0
+    },
+    "agent/tools/qweather.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [
+        "QWeatherParam",
+        "QWeather"
+      ],
+      "functions": [],
+      "external_deps": [
+        "pandas",
+        "requests"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/common/check_team_permission.py": {
+      "in_degree": 2,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.487
+    },
+    "common/mcp_tool_call_conn.py": {
+      "in_degree": 5,
+      "out_degree": 1,
+      "classes": [
+        "ToolCallSession",
+        "MCPToolCallSession"
+      ],
+      "functions": [
+        "close_multiple_mcp_toolcall_sessions",
+        "shutdown_all_mcp_sessions",
+        "mcp_tool_metadata_to_openai_tool",
+        "tool_call",
+        "__init__",
+        "_mcp_server_loop",
+        "_process_mcp_tasks",
+        "_call_mcp_server",
+        "_call_mcp_tool",
+        "_get_tools_from_mcp_server",
+        "get_tools",
+        "tool_call",
+        "close",
+        "close_sync",
+        "_gather_and_stop"
+      ],
+      "external_deps": [
+        "mcp",
+        "typing_extensions"
+      ],
+      "reuse_score": 0.918
+    },
+    "api/utils/json_encode.py": {
+      "in_degree": 3,
+      "out_degree": 1,
+      "classes": [
+        "BaseType",
+        "CustomJSONEncoder"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.777
+    },
+    "agent/sandbox/executor_manager/utils/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "agent/component/base.py": {
+      "in_degree": 24,
+      "out_degree": 4,
+      "classes": [
+        "ComponentParamBase",
+        "ComponentBase"
+      ],
+      "functions": [
+        "__init__",
+        "set_name",
+        "check",
+        "_get_or_init_deprecated_params_set",
+        "_get_or_init_feeded_deprecated_params_set",
+        "_get_or_init_user_feeded_params_set"
+      ],
+      "external_deps": [
+        "builtins",
+        "pandas"
+      ],
+      "reuse_score": 0.992
+    },
+    "agent/component/exit_loop.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [
+        "ExitLoopParam",
+        "ExitLoop"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "admin/server/roles.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [
+        "RoleMgr"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "api/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "common/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "api/db/services/api_service.py": {
+      "in_degree": 6,
+      "out_degree": 3,
+      "classes": [
+        "APITokenService",
+        "API4ConversationService"
+      ],
+      "functions": [],
+      "external_deps": [
+        "peewee"
+      ],
+      "reuse_score": 0.777
+    },
+    "agent/component/iterationitem.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [
+        "IterationItemParam",
+        "IterationItem"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "agent/sandbox/executor_manager/models/enums.py": {
+      "in_degree": 6,
+      "out_degree": 0,
+      "classes": [
+        "SupportLanguage",
+        "ResultStatus",
+        "ResourceLimitType",
+        "UnauthorizedAccessType",
+        "RuntimeErrorType"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.998
+    },
+    "agent/sandbox/providers/self_managed.py": {
+      "in_degree": 1,
+      "out_degree": 2,
+      "classes": [
+        "SelfManagedProvider"
+      ],
+      "functions": [],
+      "external_deps": [
+        "requests"
+      ],
+      "reuse_score": 0.283
+    },
+    "common/http_client.py": {
+      "in_degree": 5,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [
+        "_clean_headers",
+        "_get_delay",
+        "_redact_sensitive_url_params",
+        "_is_sensitive_url",
+        "async_request",
+        "sync_request"
+      ],
+      "external_deps": [
+        "httpx"
+      ],
+      "reuse_score": 0.918
+    },
+    "common/config_utils.py": {
+      "in_degree": 5,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [
+        "load_yaml_conf",
+        "rewrite_yaml_conf",
+        "conf_realpath",
+        "read_config",
+        "show_configs",
+        "get_base_config",
+        "decrypt_database_password",
+        "decrypt_database_config",
+        "update_config"
+      ],
+      "external_deps": [
+        "filelock",
+        "ruamel"
+      ],
+      "reuse_score": 0.811
+    },
+    "api/db/joint_services/memory_message_service.py": {
+      "in_degree": 3,
+      "out_degree": 8,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.283
+    },
+    "agent/tools/jin10.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [
+        "Jin10Param",
+        "Jin10"
+      ],
+      "functions": [],
+      "external_deps": [
+        "pandas",
+        "requests"
+      ],
+      "reuse_score": 0.0
+    },
+    "agent/settings.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "agent/sandbox/executor_manager/services/execution.py": {
+      "in_degree": 1,
+      "out_degree": 6,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.133
+    },
+    "agent/tools/arxiv.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [
+        "ArXivParam",
+        "ArXiv"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "agent/tools/tushare.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [
+        "TuShareParam",
+        "TuShare"
+      ],
+      "functions": [],
+      "external_deps": [
+        "pandas",
+        "requests"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/utils/email_templates.py": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "common/query_base.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [
+        "QueryBase"
+      ],
+      "functions": [
+        "is_chinese",
+        "sub_special_char",
+        "rmWWW",
+        "add_space_between_eng_zh",
+        "question"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "common/parser_config_utils.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [
+        "normalize_layout_recognizer"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "common/time_utils.py": {
+      "in_degree": 13,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [
+        "current_timestamp",
+        "timestamp_to_date",
+        "date_string_to_timestamp",
+        "datetime_format",
+        "get_format_time",
+        "delta_seconds",
+        "format_iso_8601_to_ymd_hms"
+      ],
+      "external_deps": [
+        "dateutil"
+      ],
+      "reuse_score": 1.0
+    },
+    "agent/component/string_transform.py": {
+      "in_degree": 0,
+      "out_degree": 3,
+      "classes": [
+        "StringTransformParam",
+        "StringTransform"
+      ],
+      "functions": [],
+      "external_deps": [
+        "jinja2"
+      ],
+      "reuse_score": 0.0
+    },
+    "agent/canvas.py": {
+      "in_degree": 6,
+      "out_degree": 6,
+      "classes": [
+        "Graph",
+        "Canvas"
+      ],
+      "functions": [
+        "__init__",
+        "load",
+        "__str__",
+        "reset",
+        "get_component_name",
+        "run",
+        "get_component",
+        "get_component_obj",
+        "get_component_type",
+        "get_component_input_form",
+        "get_tenant_id",
+        "get_value_with_variable",
+        "get_variable_value",
+        "get_variable_param_value",
+        "set_variable_value",
+        "set_variable_param_value",
+        "is_canceled",
+        "cancel_task",
+        "__init__",
+        "load",
+        "__str__",
+        "reset",
+        "run",
+        "is_reff",
+        "tts",
+        "get_history",
+        "add_user_input",
+        "get_prologue",
+        "get_mode",
+        "get_sys_query",
+        "set_global_param",
+        "get_preset_param",
+        "get_component_input_elements",
+        "get_files_async",
+        "get_files",
+        "tool_use_callback",
+        "add_reference",
+        "get_reference",
+        "_has_reference",
+        "_build_message_end",
+        "add_memory",
+        "get_memory",
+        "get_component_thoughts",
+        "decorate",
+        "_run_batch",
+        "_node_finished",
+        "clean_tts_text",
+        "image_to_base64",
+        "parse_file",
+        "_invoke_one",
+        "_append_path",
+        "_extend_path",
+        "_process_stream"
+      ],
+      "external_deps": [
+        "binascii"
+      ],
+      "reuse_score": 0.576
+    },
+    "api/db/services/canvas_service.py": {
+      "in_degree": 7,
+      "out_degree": 7,
+      "classes": [
+        "CanvasTemplateService",
+        "DataFlowTemplateService",
+        "UserCanvasService"
+      ],
+      "functions": [],
+      "external_deps": [
+        "peewee",
+        "tiktoken"
+      ],
+      "reuse_score": 0.583
+    },
+    "common/text_utils.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [
+        "normalize_arabic_digits",
+        "normalize_arabic_presentation_forms"
+      ],
+      "external_deps": [
+        "unicodedata"
+      ],
+      "reuse_score": 0.0
+    },
+    "agent/tools/wencai.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [
+        "WenCaiParam",
+        "WenCai"
+      ],
+      "functions": [],
+      "external_deps": [
+        "pandas"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/constants.py": {
+      "in_degree": 7,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.999
+    },
+    "api/utils/api_utils.py": {
+      "in_degree": 36,
+      "out_degree": 9,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "peewee",
+        "quart",
+        "requests",
+        "werkzeug"
+      ],
+      "reuse_score": 0.973
+    },
+    "agent/component/varaiable_aggregator.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [
+        "VariableAggregatorParam",
+        "VariableAggregator"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "agent/plugin/llm_tool_plugin.py": {
+      "in_degree": 2,
+      "out_degree": 1,
+      "classes": [
+        "LLMToolParameter",
+        "LLMToolMetadata",
+        "LLMToolPlugin"
+      ],
+      "functions": [],
+      "external_deps": [
+        "pluginlib"
+      ],
+      "reuse_score": 0.632
+    },
+    "api/apps/evaluation_app.py": {
+      "in_degree": 0,
+      "out_degree": 3,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "quart"
+      ],
+      "reuse_score": 0.0
+    },
+    "agent/tools/akshare.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [
+        "AkShareParam",
+        "AkShare"
+      ],
+      "functions": [],
+      "external_deps": [
+        "pandas"
+      ],
+      "reuse_score": 0.0
+    },
+    "agent/sandbox/providers/aliyun_codeinterpreter.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [
+        "AliyunCodeInterpreterProvider"
+      ],
+      "functions": [],
+      "external_deps": [
+        "agentrun"
+      ],
+      "reuse_score": 0.393
+    },
+    "agent/tools/tavily.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [
+        "TavilySearchParam",
+        "TavilySearch",
+        "TavilyExtractParam",
+        "TavilyExtract"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "admin/server/routes.py": {
+      "in_degree": 0,
+      "out_degree": 8,
+      "classes": [],
+      "functions": [
+        "ping",
+        "login",
+        "logout",
+        "auth_admin",
+        "list_users",
+        "create_user",
+        "delete_user",
+        "change_password",
+        "alter_user_activate_status",
+        "grant_admin",
+        "revoke_admin",
+        "get_user_details",
+        "get_user_datasets",
+        "get_user_agents",
+        "get_services",
+        "get_services_by_type",
+        "get_service",
+        "shutdown_service",
+        "restart_service",
+        "create_role",
+        "update_role",
+        "delete_role",
+        "list_roles",
+        "get_role_permission",
+        "grant_role_permission",
+        "revoke_role_permission",
+        "update_user_role",
+        "get_user_permission",
+        "set_variable",
+        "get_variable",
+        "get_config",
+        "get_environments",
+        "generate_user_api_key",
+        "get_user_api_keys",
+        "delete_user_api_key",
+        "show_version",
+        "list_sandbox_providers",
+        "get_sandbox_provider_schema",
+        "get_sandbox_config",
+        "set_sandbox_config",
+        "test_sandbox_connection"
+      ],
+      "external_deps": [
+        "flask",
+        "flask_login"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/apps/mcp_server_app.py": {
+      "in_degree": 0,
+      "out_degree": 7,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "quart"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/apps/sdk/dify_retrieval.py": {
+      "in_degree": 0,
+      "out_degree": 5,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "quart"
+      ],
+      "reuse_score": 0.0
+    },
+    "admin/server/config.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [
+        "BaseConfig",
+        "ServiceConfigs",
+        "ServiceType",
+        "MetaConfig",
+        "MySQLConfig",
+        "PostgresConfig",
+        "RetrievalConfig",
+        "InfinityConfig",
+        "ElasticsearchConfig",
+        "MessageQueueConfig",
+        "RedisConfig",
+        "RabbitMQConfig",
+        "RAGFlowServerConfig",
+        "TaskExecutorConfig",
+        "FileStoreConfig",
+        "MinioConfig"
+      ],
+      "functions": [
+        "load_configurations",
+        "to_dict",
+        "__init__",
+        "to_dict",
+        "to_dict",
+        "to_dict",
+        "to_dict",
+        "to_dict",
+        "to_dict",
+        "to_dict",
+        "to_dict",
+        "to_dict",
+        "to_dict",
+        "to_dict",
+        "to_dict",
+        "to_dict"
+      ],
+      "external_deps": [
+        "pydantic"
+      ],
+      "reuse_score": 0.0
+    },
+    "agent/component/loopitem.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [
+        "LoopItemParam",
+        "LoopItem"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "agent/component/categorize.py": {
+      "in_degree": 0,
+      "out_degree": 4,
+      "classes": [
+        "CategorizeParam",
+        "Categorize"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "api/utils/file_utils.py": {
+      "in_degree": 2,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "PIL",
+        "pdfplumber"
+      ],
+      "reuse_score": 0.487
+    },
+    "agent/sandbox/providers/e2b.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [
+        "E2BProvider"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "agent/component/variable_assigner.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [
+        "VariableAssignerParam",
+        "VariableAssigner"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "api/apps/document_app.py": {
+      "in_degree": 0,
+      "out_degree": 14,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "quart",
+        "seleniumwire"
+      ],
+      "reuse_score": 0.0
+    },
+    "api/utils/log_utils.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "agent/component/agent_with_tools.py": {
+      "in_degree": 0,
+      "out_degree": 6,
+      "classes": [
+        "AgentParam",
+        "Agent"
+      ],
+      "functions": [],
+      "external_deps": [
+        "json_repair"
+      ],
+      "reuse_score": 0.0
+    }
+  },
+  "communities": {
+    "api_apps_auth": [
+      "agent/tools/crawler.py",
+      "api/apps/auth/__init__.py",
+      "api/apps/auth/github.py",
+      "api/apps/auth/oauth.py",
+      "api/apps/auth/oidc.py",
+      "api/apps/user_app.py",
+      "api/utils/email_templates.py",
+      "api/utils/web_utils.py",
+      "common/http_client.py"
+    ],
+    "agent_sandbox_providers": [
+      "agent/sandbox/client.py",
+      "agent/sandbox/providers/__init__.py",
+      "agent/sandbox/providers/aliyun_codeinterpreter.py",
+      "agent/sandbox/providers/base.py",
+      "agent/sandbox/providers/e2b.py",
+      "agent/sandbox/providers/manager.py",
+      "agent/sandbox/providers/self_managed.py"
+    ],
+    "common": [
+      "admin/server/admin_server.py",
+      "admin/server/config.py",
+      "agent/sandbox/executor_manager/api/handlers.py",
+      "agent/sandbox/executor_manager/api/routes.py",
+      "agent/sandbox/executor_manager/core/config.py",
+      "agent/sandbox/executor_manager/core/container.py",
+      "agent/sandbox/executor_manager/core/logger.py",
+      "agent/sandbox/executor_manager/main.py",
+      "agent/sandbox/executor_manager/models/enums.py",
+      "agent/sandbox/executor_manager/models/schemas.py",
+      "agent/sandbox/executor_manager/services/execution.py",
+      "agent/sandbox/executor_manager/services/limiter.py",
+      "agent/sandbox/executor_manager/services/security.py",
+      "agent/sandbox/executor_manager/util.py",
+      "api/db/reload_config_base.py",
+      "api/db/runtime_config.py",
+      "api/ragflow_server.py",
+      "api/utils/common.py",
+      "api/utils/configs.py",
+      "common/config_utils.py",
+      "common/log_utils.py",
+      "common/signal_utils.py",
+      "common/versions.py"
+    ],
+    "admin_server": [
+      "admin/server/auth.py",
+      "admin/server/responses.py",
+      "admin/server/roles.py",
+      "admin/server/routes.py",
+      "admin/server/services.py",
+      "api/common/base64.py",
+      "api/common/exceptions.py",
+      "api/db/joint_services/user_account_service.py",
+      "api/utils/__init__.py",
+      "api/utils/crypt.py",
+      "common/file_utils.py",
+      "common/settings.py",
+      "common/token_utils.py",
+      "rag/raptor.py"
+    ],
+    "agent_plugin": [
+      "agent/plugin/__init__.py",
+      "agent/plugin/embedded_plugins/llm_tools/bad_calculator.py",
+      "agent/plugin/llm_tool_plugin.py",
+      "agent/plugin/plugin_manager.py",
+      "agent/sandbox/executor_manager/utils/common.py",
+      "agent/tools/retrieval.py",
+      "api/apps/chunk_app.py",
+      "api/apps/kb_app.py",
+      "api/apps/sdk/dify_retrieval.py",
+      "api/apps/sdk/doc.py",
+      "api/db/init_data.py",
+      "api/db/joint_services/tenant_model_service.py",
+      "api/utils/image_utils.py",
+      "common/metadata_utils.py",
+      "common/string_utils.py",
+      "rag/benchmark.py"
+    ],
+    "api_apps": [
+      "agent/canvas.py",
+      "agent/component/__init__.py",
+      "api/apps/api_app.py",
+      "api/apps/canvas_app.py",
+      "api/apps/document_app.py",
+      "api/apps/sdk/agents.py",
+      "api/apps/sdk/session.py",
+      "api/apps/services/canvas_replica_service.py",
+      "api/apps/services/dataset_api_service.py",
+      "api/apps/services/file_api_service.py",
+      "api/apps/services/memory_api_service.py",
+      "api/apps/system_app.py",
+      "api/apps/tenant_app.py",
+      "api/common/check_team_permission.py",
+      "api/constants.py",
+      "api/db/__init__.py",
+      "api/db/db_models.py",
+      "api/db/db_utils.py",
+      "api/db/joint_services/memory_message_service.py",
+      "api/db/services/api_service.py",
+      "api/db/services/canvas_service.py",
+      "api/db/services/common_service.py",
+      "api/db/services/connector_service.py",
+      "api/utils/file_utils.py",
+      "api/utils/health_utils.py",
+      "api/utils/memory_utils.py",
+      "common/decorator.py",
+      "common/misc_utils.py",
+      "common/time_utils.py"
+    ],
+    "agent_component": [
+      "agent/__init__.py",
+      "agent/component/agent_with_tools.py",
+      "agent/component/base.py",
+      "agent/component/begin.py",
+      "agent/component/categorize.py",
+      "agent/component/data_operations.py",
+      "agent/component/docs_generator.py",
+      "agent/component/excel_processor.py",
+      "agent/component/exit_loop.py",
+      "agent/component/fillup.py",
+      "agent/component/invoke.py",
+      "agent/component/iteration.py",
+      "agent/component/iterationitem.py",
+      "agent/component/list_operations.py",
+      "agent/component/llm.py",
+      "agent/component/loop.py",
+      "agent/component/loopitem.py",
+      "agent/component/message.py",
+      "agent/component/string_transform.py",
+      "agent/component/switch.py",
+      "agent/component/varaiable_aggregator.py",
+      "agent/component/variable_assigner.py",
+      "agent/tools/akshare.py",
+      "agent/tools/arxiv.py",
+      "agent/tools/base.py",
+      "agent/tools/code_exec.py",
+      "agent/tools/deepl.py",
+      "agent/tools/duckduckgo.py",
+      "agent/tools/email.py",
+      "agent/tools/exesql.py",
+      "agent/tools/github.py",
+      "agent/tools/google.py",
+      "agent/tools/googlescholar.py",
+      "agent/tools/jin10.py",
+      "agent/tools/pubmed.py",
+      "agent/tools/qweather.py",
+      "agent/tools/searxng.py",
+      "agent/tools/tavily.py",
+      "agent/tools/tushare.py",
+      "agent/tools/wencai.py",
+      "agent/tools/wikipedia.py",
+      "agent/tools/yahoofinance.py",
+      "common/connection_utils.py"
+    ],
+    "admin_client": [
+      "admin/client/http_client.py",
+      "admin/client/parser.py",
+      "admin/client/ragflow_cli.py",
+      "admin/client/ragflow_client.py",
+      "admin/client/user.py"
+    ],
+    "_isolated": [
+      "admin/server/exceptions.py",
+      "admin/server/models.py",
+      "agent/plugin/common.py",
+      "agent/sandbox/executor_manager/api/__init__.py",
+      "agent/sandbox/executor_manager/core/__init__.py",
+      "agent/sandbox/executor_manager/models/__init__.py",
+      "agent/sandbox/executor_manager/services/__init__.py",
+      "agent/sandbox/executor_manager/utils/__init__.py",
+      "agent/settings.py",
+      "agent/tools/__init__.py",
+      "api/__init__.py",
+      "api/apps/file_app.py",
+      "api/apps/services/__init__.py",
+      "api/settings.py",
+      "api/utils/log_utils.py",
+      "api/validation.py",
+      "check_comment_ascii.py",
+      "common/__init__.py",
+      "common/crypto_utils.py",
+      "common/exceptions.py",
+      "common/float_utils.py",
+      "common/parser_config_utils.py",
+      "common/query_base.py",
+      "common/text_utils.py",
+      "deepdoc/__init__.py",
+      "download_deps.py",
+      "memory/__init__.py",
+      "rag/settings.py",
+      "run_tests.py"
+    ]
+  },
+  "key_nodes": {
+    "leaf_nodes": [
+      {
+        "file": "common/constants.py",
+        "reuse_score": 1.0
+      },
+      {
+        "file": "agent/sandbox/executor_manager/utils/common.py",
+        "reuse_score": 1.0
+      },
+      {
+        "file": "api/common/exceptions.py",
+        "reuse_score": 1.0
+      },
+      {
+        "file": "api/db/__init__.py",
+        "reuse_score": 1.0
+      },
+      {
+        "file": "api/db/joint_services/__init__.py",
+        "reuse_score": 1.0
+      },
+      {
+        "file": "common/file_utils.py",
+        "reuse_score": 1.0
+      },
+      {
+        "file": "common/time_utils.py",
+        "reuse_score": 1.0
+      },
+      {
+        "file": "common/metadata_utils.py",
+        "reuse_score": 0.999
+      },
+      {
+        "file": "api/constants.py",
+        "reuse_score": 0.999
+      },
+      {
+        "file": "agent/sandbox/providers/base.py",
+        "reuse_score": 0.998
+      },
+      {
+        "file": "agent/sandbox/executor_manager/models/enums.py",
+        "reuse_score": 0.998
+      },
+      {
+        "file": "common/versions.py",
+        "reuse_score": 0.993
+      },
+      {
+        "file": "agent/sandbox/executor_manager/core/logger.py",
+        "reuse_score": 0.993
+      },
+      {
+        "file": "api/utils/__init__.py",
+        "reuse_score": 0.982
+      },
+      {
+        "file": "admin/client/http_client.py",
+        "reuse_score": 0.95
+      },
+      {
+        "file": "agent/component/__init__.py",
+        "reuse_score": 0.95
+      },
+      {
+        "file": "api/common/base64.py",
+        "reuse_score": 0.865
+      },
+      {
+        "file": "common/string_utils.py",
+        "reuse_score": 0.865
+      },
+      {
+        "file": "api/utils/common.py",
+        "reuse_score": 0.865
+      },
+      {
+        "file": "agent/sandbox/executor_manager/util.py",
+        "reuse_score": 0.865
+      }
+    ],
+    "hub_nodes": [
+      {
+        "file": "common/constants.py",
+        "dependents": 47
+      },
+      {
+        "file": "agent/sandbox/executor_manager/utils/common.py",
+        "dependents": 36
+      },
+      {
+        "file": "api/utils/api_utils.py",
+        "dependents": 36
+      },
+      {
+        "file": "common/misc_utils.py",
+        "dependents": 31
+      },
+      {
+        "file": "common/connection_utils.py",
+        "dependents": 28
+      },
+      {
+        "file": "api/db/db_models.py",
+        "dependents": 27
+      },
+      {
+        "file": "api/apps/__init__.py",
+        "dependents": 24
+      },
+      {
+        "file": "agent/component/base.py",
+        "dependents": 24
+      },
+      {
+        "file": "api/db/__init__.py",
+        "dependents": 21
+      },
+      {
+        "file": "agent/tools/base.py",
+        "dependents": 17
+      },
+      {
+        "file": "api/db/joint_services/__init__.py",
+        "dependents": 14
+      },
+      {
+        "file": "api/db/joint_services/tenant_model_service.py",
+        "dependents": 14
+      },
+      {
+        "file": "common/time_utils.py",
+        "dependents": 13
+      },
+      {
+        "file": "api/common/exceptions.py",
+        "dependents": 9
+      },
+      {
+        "file": "common/file_utils.py",
+        "dependents": 8
+      },
+      {
+        "file": "common/metadata_utils.py",
+        "dependents": 7
+      },
+      {
+        "file": "api/db/services/canvas_service.py",
+        "dependents": 7
+      },
+      {
+        "file": "api/constants.py",
+        "dependents": 7
+      },
+      {
+        "file": "api/utils/web_utils.py",
+        "dependents": 6
+      },
+      {
+        "file": "agent/sandbox/providers/base.py",
+        "dependents": 6
+      }
+    ]
+  },
+  "all_external_deps": [
+    "Bio",
+    "Crypto",
+    "Cryptodome",
+    "PIL",
+    "agentrun",
+    "aiosmtplib",
+    "anthropic",
+    "beartype",
+    "binascii",
+    "box_sdk_gen",
+    "builtins",
+    "captcha",
+    "click",
+    "cmd",
+    "crawl4ai",
+    "cryptography",
+    "dateutil",
+    "debugpy",
+    "docx",
+    "duckduckgo_search",
+    "fastapi",
+    "faulthandler",
+    "filelock",
+    "flask",
+    "flask_login",
+    "flask_session",
+    "getpass",
+    "google_auth_oauthlib",
+    "hmac",
+    "httpx",
+    "huggingface_hub",
+    "ibm_db",
+    "ipaddress",
+    "itsdangerous",
+    "jinja2",
+    "json_repair",
+    "jwt",
+    "langfuse",
+    "lark",
+    "mcp",
+    "minio",
+    "nest_asyncio",
+    "nltk",
+    "numpy",
+    "pandas",
+    "pdfplumber",
+    "peewee",
+    "playhouse",
+    "pluginlib",
+    "psutil",
+    "psycopg2",
+    "pydantic",
+    "pydantic_core",
+    "pymysql",
+    "pyodbc",
+    "pypandoc",
+    "pytz",
+    "quart",
+    "quart_auth",
+    "quart_cors",
+    "quart_schema",
+    "ranx",
+    "reportlab",
+    "requests",
+    "requests_toolbelt",
+    "resource",
+    "ruamel",
+    "scholarly",
+    "selenium",
+    "seleniumwire",
+    "serpapi",
+    "sklearn",
+    "slowapi",
+    "smtplib",
+    "strenum",
+    "tenacity",
+    "tiktoken",
+    "torch",
+    "tqdm",
+    "tracemalloc",
+    "trino",
+    "typing_extensions",
+    "umap",
+    "unicodedata",
+    "webdriver_manager",
+    "werkzeug",
+    "xxhash",
+    "yfinance"
+  ]
+}

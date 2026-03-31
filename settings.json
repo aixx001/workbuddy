@@ -1,0 +1,12 @@
+{
+  "enabledPlugins": {
+    "pptx@codebuddy-plugins-official": true,
+    "pdf@codebuddy-plugins-official": true,
+    "docx@codebuddy-plugins-official": true,
+    "xlsx@codebuddy-plugins-official": true,
+    "agent-browser@codebuddy-plugins-official": true,
+    "playwright-cli@codebuddy-plugins-official": true,
+    "skills-sec-audit@codebuddy-plugins-official": true,
+    "find-skills@codebuddy-plugins-official": true
+  }
+}

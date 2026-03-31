@@ -1,0 +1,392 @@
+{
+  "name": "prompt_management",
+  "description": "Structured prompt templates with Pydantic models, dynamic few-shot, and multi-format output",
+  "extracted_at": "2026-03-29T12:20:30.247303",
+  "source_repo": "C:\\Users\\40270\\.workbuddy\\skills\\repo-reuse-flow\\outputs\\03_analysis\\cloned\\ragas\\src\\ragas",
+  "source_package": "ragas",
+  "files": [
+    {
+      "original": "__init__.py",
+      "extracted": "__init__.py"
+    },
+    {
+      "original": "_analytics.py",
+      "extracted": "_analytics.py"
+    },
+    {
+      "original": "async_utils.py",
+      "extracted": "async_utils.py"
+    },
+    {
+      "original": "backends\\__init__.py",
+      "extracted": "backends\\__init__.py"
+    },
+    {
+      "original": "backends\\base.py",
+      "extracted": "backends\\base.py"
+    },
+    {
+      "original": "backends\\gdrive_backend.py",
+      "extracted": "backends\\gdrive_backend.py"
+    },
+    {
+      "original": "backends\\inmemory.py",
+      "extracted": "backends\\inmemory.py"
+    },
+    {
+      "original": "backends\\local_csv.py",
+      "extracted": "backends\\local_csv.py"
+    },
+    {
+      "original": "backends\\local_jsonl.py",
+      "extracted": "backends\\local_jsonl.py"
+    },
+    {
+      "original": "backends\\registry.py",
+      "extracted": "backends\\registry.py"
+    },
+    {
+      "original": "cache.py",
+      "extracted": "cache.py"
+    },
+    {
+      "original": "callbacks.py",
+      "extracted": "callbacks.py"
+    },
+    {
+      "original": "config.py",
+      "extracted": "config.py"
+    },
+    {
+      "original": "cost.py",
+      "extracted": "cost.py"
+    },
+    {
+      "original": "dataset.py",
+      "extracted": "dataset.py"
+    },
+    {
+      "original": "dataset_schema.py",
+      "extracted": "dataset_schema.py"
+    },
+    {
+      "original": "embeddings\\__init__.py",
+      "extracted": "embeddings\\__init__.py"
+    },
+    {
+      "original": "embeddings\\base.py",
+      "extracted": "embeddings\\base.py"
+    },
+    {
+      "original": "embeddings\\google_provider.py",
+      "extracted": "embeddings\\google_provider.py"
+    },
+    {
+      "original": "embeddings\\haystack_wrapper.py",
+      "extracted": "embeddings\\haystack_wrapper.py"
+    },
+    {
+      "original": "embeddings\\huggingface_provider.py",
+      "extracted": "embeddings\\huggingface_provider.py"
+    },
+    {
+      "original": "embeddings\\litellm_provider.py",
+      "extracted": "embeddings\\litellm_provider.py"
+    },
+    {
+      "original": "embeddings\\openai_provider.py",
+      "extracted": "embeddings\\openai_provider.py"
+    },
+    {
+      "original": "embeddings\\utils.py",
+      "extracted": "embeddings\\utils.py"
+    },
+    {
+      "original": "evaluation.py",
+      "extracted": "evaluation.py"
+    },
+    {
+      "original": "exceptions.py",
+      "extracted": "exceptions.py"
+    },
+    {
+      "original": "executor.py",
+      "extracted": "executor.py"
+    },
+    {
+      "original": "experiment.py",
+      "extracted": "experiment.py"
+    },
+    {
+      "original": "integrations\\helicone.py",
+      "extracted": "integrations\\helicone.py"
+    },
+    {
+      "original": "llms\\__init__.py",
+      "extracted": "llms\\__init__.py"
+    },
+    {
+      "original": "llms\\adapters\\__init__.py",
+      "extracted": "llms\\adapters\\__init__.py"
+    },
+    {
+      "original": "llms\\adapters\\base.py",
+      "extracted": "llms\\adapters\\base.py"
+    },
+    {
+      "original": "llms\\adapters\\instructor.py",
+      "extracted": "llms\\adapters\\instructor.py"
+    },
+    {
+      "original": "llms\\adapters\\litellm.py",
+      "extracted": "llms\\adapters\\litellm.py"
+    },
+    {
+      "original": "llms\\base.py",
+      "extracted": "llms\\base.py"
+    },
+    {
+      "original": "llms\\haystack_wrapper.py",
+      "extracted": "llms\\haystack_wrapper.py"
+    },
+    {
+      "original": "llms\\litellm_llm.py",
+      "extracted": "llms\\litellm_llm.py"
+    },
+    {
+      "original": "llms\\oci_genai_wrapper.py",
+      "extracted": "llms\\oci_genai_wrapper.py"
+    },
+    {
+      "original": "losses.py",
+      "extracted": "losses.py"
+    },
+    {
+      "original": "messages.py",
+      "extracted": "messages.py"
+    },
+    {
+      "original": "metrics\\_answer_correctness.py",
+      "extracted": "metrics\\_answer_correctness.py"
+    },
+    {
+      "original": "metrics\\_answer_relevance.py",
+      "extracted": "metrics\\_answer_relevance.py"
+    },
+    {
+      "original": "metrics\\_answer_similarity.py",
+      "extracted": "metrics\\_answer_similarity.py"
+    },
+    {
+      "original": "metrics\\_aspect_critic.py",
+      "extracted": "metrics\\_aspect_critic.py"
+    },
+    {
+      "original": "metrics\\_context_precision.py",
+      "extracted": "metrics\\_context_precision.py"
+    },
+    {
+      "original": "metrics\\_context_recall.py",
+      "extracted": "metrics\\_context_recall.py"
+    },
+    {
+      "original": "metrics\\_faithfulness.py",
+      "extracted": "metrics\\_faithfulness.py"
+    },
+    {
+      "original": "metrics\\_string.py",
+      "extracted": "metrics\\_string.py"
+    },
+    {
+      "original": "metrics\\base.py",
+      "extracted": "metrics\\base.py"
+    },
+    {
+      "original": "metrics\\result.py",
+      "extracted": "metrics\\result.py"
+    },
+    {
+      "original": "metrics\\utils.py",
+      "extracted": "metrics\\utils.py"
+    },
+    {
+      "original": "metrics\\validators.py",
+      "extracted": "metrics\\validators.py"
+    },
+    {
+      "original": "optimizers\\__init__.py",
+      "extracted": "optimizers\\__init__.py"
+    },
+    {
+      "original": "optimizers\\base.py",
+      "extracted": "optimizers\\base.py"
+    },
+    {
+      "original": "optimizers\\dspy_adapter.py",
+      "extracted": "optimizers\\dspy_adapter.py"
+    },
+    {
+      "original": "optimizers\\dspy_llm_wrapper.py",
+      "extracted": "optimizers\\dspy_llm_wrapper.py"
+    },
+    {
+      "original": "optimizers\\dspy_optimizer.py",
+      "extracted": "optimizers\\dspy_optimizer.py"
+    },
+    {
+      "original": "optimizers\\genetic.py",
+      "extracted": "optimizers\\genetic.py"
+    },
+    {
+      "original": "optimizers\\utils.py",
+      "extracted": "optimizers\\utils.py"
+    },
+    {
+      "original": "prompt\\__init__.py",
+      "extracted": "prompt\\__init__.py"
+    },
+    {
+      "original": "prompt\\base.py",
+      "extracted": "prompt\\base.py"
+    },
+    {
+      "original": "prompt\\dynamic_few_shot.py",
+      "extracted": "prompt\\dynamic_few_shot.py"
+    },
+    {
+      "original": "prompt\\few_shot_pydantic_prompt.py",
+      "extracted": "prompt\\few_shot_pydantic_prompt.py"
+    },
+    {
+      "original": "prompt\\metrics\\__init__.py",
+      "extracted": "prompt\\metrics\\__init__.py"
+    },
+    {
+      "original": "prompt\\metrics\\answer_accuracy.py",
+      "extracted": "prompt\\metrics\\answer_accuracy.py"
+    },
+    {
+      "original": "prompt\\metrics\\answer_correctness.py",
+      "extracted": "prompt\\metrics\\answer_correctness.py"
+    },
+    {
+      "original": "prompt\\metrics\\answer_relevance.py",
+      "extracted": "prompt\\metrics\\answer_relevance.py"
+    },
+    {
+      "original": "prompt\\metrics\\base_prompt.py",
+      "extracted": "prompt\\metrics\\base_prompt.py"
+    },
+    {
+      "original": "prompt\\metrics\\common.py",
+      "extracted": "prompt\\metrics\\common.py"
+    },
+    {
+      "original": "prompt\\metrics\\context_entity_recall.py",
+      "extracted": "prompt\\metrics\\context_entity_recall.py"
+    },
+    {
+      "original": "prompt\\metrics\\context_recall.py",
+      "extracted": "prompt\\metrics\\context_recall.py"
+    },
+    {
+      "original": "prompt\\metrics\\context_relevance.py",
+      "extracted": "prompt\\metrics\\context_relevance.py"
+    },
+    {
+      "original": "prompt\\metrics\\factual_correctness.py",
+      "extracted": "prompt\\metrics\\factual_correctness.py"
+    },
+    {
+      "original": "prompt\\metrics\\noise_sensitivity.py",
+      "extracted": "prompt\\metrics\\noise_sensitivity.py"
+    },
+    {
+      "original": "prompt\\metrics\\response_groundedness.py",
+      "extracted": "prompt\\metrics\\response_groundedness.py"
+    },
+    {
+      "original": "prompt\\metrics\\summary_score.py",
+      "extracted": "prompt\\metrics\\summary_score.py"
+    },
+    {
+      "original": "prompt\\mixin.py",
+      "extracted": "prompt\\mixin.py"
+    },
+    {
+      "original": "prompt\\multi_modal_prompt.py",
+      "extracted": "prompt\\multi_modal_prompt.py"
+    },
+    {
+      "original": "prompt\\pydantic_prompt.py",
+      "extracted": "prompt\\pydantic_prompt.py"
+    },
+    {
+      "original": "prompt\\simple_prompt.py",
+      "extracted": "prompt\\simple_prompt.py"
+    },
+    {
+      "original": "prompt\\utils.py",
+      "extracted": "prompt\\utils.py"
+    },
+    {
+      "original": "run_config.py",
+      "extracted": "run_config.py"
+    },
+    {
+      "original": "tokenizers.py",
+      "extracted": "tokenizers.py"
+    },
+    {
+      "original": "utils.py",
+      "extracted": "utils.py"
+    },
+    {
+      "original": "validation.py",
+      "extracted": "validation.py"
+    }
+  ],
+  "external_deps": [
+    "PIL",
+    "appdirs",
+    "atexit",
+    "binascii",
+    "datasets",
+    "diskcache",
+    "dspy",
+    "git",
+    "google",
+    "google_auth_oauthlib",
+    "googleapiclient",
+    "haystack",
+    "huggingface_hub",
+    "instructor",
+    "langchain_community",
+    "langchain_core",
+    "langchain_openai",
+    "llama_index",
+    "nest_asyncio",
+    "numpy",
+    "oci",
+    "openai",
+    "pandas",
+    "pydantic",
+    "pydantic_core",
+    "ragas",
+    "ragas_experimental",
+    "rapidfuzz",
+    "requests",
+    "rich",
+    "sentence_transformers",
+    "tenacity",
+    "tiktoken",
+    "torch",
+    "tqdm",
+    "transformers",
+    "vertexai"
+  ],
+  "unresolved_imports": [
+    "__init__.py: from ._version import version"
+  ],
+  "file_count": 85
+}

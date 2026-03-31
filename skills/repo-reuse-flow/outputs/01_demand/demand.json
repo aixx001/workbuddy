@@ -1,0 +1,9 @@
+{
+  "business_goal": "RAG-based Educational QA System",
+  "existing_project": "C:\\Users\\40270\\OneDrive\\Desktop\\workspace\\textbook-rag",
+  "pain_points": ["deep source tracing", "educational content processing"],
+  "constraints": ["must use local LLM", "easy to extend"],
+  "language": "Python",
+  "search_keywords": ["RAG", "vector database", "PDF processing", "educational AI"],
+  "generated_keywords": ["RAG", "vector database", "PDF processing", "educational AI", "Python"]
+}

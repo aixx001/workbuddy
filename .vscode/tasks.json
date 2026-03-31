@@ -1,0 +1,80 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Module Market: docker up",
+      "type": "shell",
+      "command": "Start-Process 'C:\\Program Files\\Docker\\Docker\\Docker Desktop.exe' -ErrorAction SilentlyContinue; $timeout=60; while($timeout -gt 0) { try { docker info 2>$null | Out-Null; if($LASTEXITCODE -eq 0) { break } } catch {} Start-Sleep -Seconds 2; $timeout-=2 }; docker start module_market_pg",
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Module Market: start",
+      "type": "shell",
+      "command": "pnpm dev",
+      "options": {
+        "cwd": "${workspaceFolder}/skills/repo-reuse-flow/outputs/06_module_market/payload"
+      },
+      "dependsOn": ["Module Market: docker up"],
+      "group": "build",
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "next",
+        "pattern": {
+          "regexp": "^(.*)$",
+          "message": 1
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "Starting...",
+          "endsPattern": "Ready in"
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Module Market: demo api",
+      "type": "shell",
+      "command": ".venv\\Scripts\\python.exe -m uvicorn main:app --reload --port 8100",
+      "options": {
+        "cwd": "${workspaceFolder}/skills/repo-reuse-flow/outputs/06_module_market/python"
+      },
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "uvicorn",
+        "pattern": {
+          "regexp": "^(.*)$",
+          "message": 1
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "Started",
+          "endsPattern": "Application startup complete"
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Module Market: all",
+      "dependsOn": ["Module Market: start", "Module Market: demo api"],
+      "dependsOrder": "parallel",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always"
+      }
+    }
+  ]
+}

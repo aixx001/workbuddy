@@ -1,0 +1,6071 @@
+{
+  "repo_name": "langchain",
+  "source_file": "outputs\\04_gitingest_analysis\\langchain_structure.json",
+  "graph_stats": {
+    "nodes": 500,
+    "edges": 1342,
+    "connected_components": 15
+  },
+  "nodes": {
+    "libs/core/langchain_core/tracers/_compat.py": {
+      "in_degree": 4,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.865
+    },
+    "libs/langchain/langchain_classic/agents/__init__.py": {
+      "in_degree": 1,
+      "out_degree": 9,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "langchain_community"
+      ],
+      "reuse_score": 0.095
+    },
+    "libs/langchain/langchain_classic/chains/moderation.py": {
+      "in_degree": 0,
+      "out_degree": 5,
+      "classes": [
+        "OpenAIModerationChain"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/conllu.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/python.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/github.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/utils/image.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/messages/block_translators/langchain_v0.py": {
+      "in_degree": 2,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "libs/core/langchain_core/runnables/config.py": {
+      "in_degree": 24,
+      "out_degree": 4,
+      "classes": [
+        "EmptyDict",
+        "RunnableConfig",
+        "ContextThreadPoolExecutor"
+      ],
+      "functions": [],
+      "external_deps": [
+        "contextvars",
+        "langsmith",
+        "typing_extensions"
+      ],
+      "reuse_score": 0.992
+    },
+    "libs/langchain/langchain_classic/document_loaders/blockchain.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/baiducloud_bos_directory.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/googledrive.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/language_models/base.py": {
+      "in_degree": 5,
+      "out_degree": 9,
+      "classes": [
+        "LangSmithParams",
+        "BaseLanguageModel"
+      ],
+      "functions": [
+        "get_tokenizer",
+        "_get_token_ids_default_method",
+        "_get_verbosity",
+        "set_verbose",
+        "InputType",
+        "generate_prompt",
+        "agenerate_prompt",
+        "with_structured_output",
+        "_get_ls_params",
+        "_get_ls_params_with_defaults",
+        "_identifying_params",
+        "get_token_ids",
+        "get_num_tokens",
+        "get_num_tokens_from_messages"
+      ],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.393
+    },
+    "libs/langchain/langchain_classic/callbacks/whylabs_callback.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "libs/core/langchain_core/utils/interactive_env.py": {
+      "in_degree": 4,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.982
+    },
+    "libs/core/langchain_core/tracers/memory_stream.py": {
+      "in_degree": 2,
+      "out_degree": 0,
+      "classes": [
+        "_SendStream",
+        "_ReceiveStream",
+        "_MemoryStream"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.865
+    },
+    "libs/langchain/langchain_classic/document_loaders/rtf.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/embeddings/gradient_ai.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chat_models/fireworks.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/output_parsers/format_instructions.py": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "libs/core/langchain_core/tracers/log_stream.py": {
+      "in_degree": 3,
+      "out_degree": 10,
+      "classes": [
+        "LogEntry",
+        "RunState",
+        "RunLogPatch",
+        "RunLog",
+        "LogStreamCallbackHandler"
+      ],
+      "functions": [],
+      "external_deps": [
+        "jsonpatch",
+        "typing_extensions"
+      ],
+      "reuse_score": 0.239
+    },
+    "libs/core/langchain_core/messages/content.py": {
+      "in_degree": 6,
+      "out_degree": 1,
+      "classes": [
+        "Citation",
+        "NonStandardAnnotation",
+        "TextContentBlock",
+        "ToolCall",
+        "ToolCallChunk",
+        "InvalidToolCall",
+        "ServerToolCall",
+        "ServerToolCallChunk",
+        "ServerToolResult",
+        "ReasoningContentBlock",
+        "ImageContentBlock",
+        "VideoContentBlock",
+        "AudioContentBlock",
+        "PlainTextContentBlock",
+        "FileContentBlock",
+        "NonStandardContentBlock"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.95
+    },
+    "libs/langchain/langchain_classic/document_loaders/org_mode.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/twitter.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/obs_file.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/hn.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/embeddings/mlflow_gateway.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chat_models/yandex.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/slack_directory.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/mastodon.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/embeddings/__init__.py": {
+      "in_degree": 43,
+      "out_degree": 3,
+      "classes": [],
+      "functions": [
+        "__getattr__",
+        "__dir__"
+      ],
+      "external_deps": [],
+      "reuse_score": 1.0
+    },
+    "libs/langchain/langchain_classic/embeddings/infinity.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/_security/_ssrf_protection.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "ipaddress"
+      ],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/prompts/base.py": {
+      "in_degree": 6,
+      "out_degree": 9,
+      "classes": [
+        "BasePromptTemplate"
+      ],
+      "functions": [],
+      "external_deps": [
+        "builtins",
+        "typing_extensions",
+        "yaml"
+      ],
+      "reuse_score": 0.451
+    },
+    "libs/langchain/langchain_classic/document_loaders/whatsapp_chat.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/scripts/check_imports.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/agents/tools.py": {
+      "in_degree": 1,
+      "out_degree": 2,
+      "classes": [
+        "InvalidTool"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.283
+    },
+    "libs/langchain/langchain_classic/embeddings/azure_openai.py": {
+      "in_degree": 1,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.283
+    },
+    "libs/langchain/langchain_classic/document_loaders/iugu.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/callbacks/manager.py": {
+      "in_degree": 11,
+      "out_degree": 14,
+      "classes": [
+        "BaseRunManager",
+        "RunManager",
+        "ParentRunManager",
+        "AsyncRunManager",
+        "AsyncParentRunManager",
+        "CallbackManagerForLLMRun",
+        "AsyncCallbackManagerForLLMRun",
+        "CallbackManagerForChainRun",
+        "AsyncCallbackManagerForChainRun",
+        "CallbackManagerForToolRun",
+        "AsyncCallbackManagerForToolRun",
+        "CallbackManagerForRetrieverRun",
+        "AsyncCallbackManagerForRetrieverRun",
+        "CallbackManager",
+        "CallbackManagerForChainGroup",
+        "AsyncCallbackManager",
+        "AsyncCallbackManagerForChainGroup"
+      ],
+      "functions": [
+        "_get_debug",
+        "trace_as_chain_group",
+        "atrace_as_chain_group",
+        "shielded",
+        "handle_event",
+        "_run_coros",
+        "_ahandle_event_for_handler",
+        "ahandle_event",
+        "_configure",
+        "adispatch_custom_event",
+        "dispatch_custom_event",
+        "_executor",
+        "wrapped",
+        "__init__",
+        "get_noop_manager",
+        "on_text",
+        "on_retry",
+        "get_child",
+        "get_sync",
+        "on_text",
+        "on_retry",
+        "get_child",
+        "on_llm_new_token",
+        "on_llm_end",
+        "on_llm_error",
+        "get_sync",
+        "on_llm_new_token",
+        "on_llm_end",
+        "on_llm_error",
+        "on_chain_end",
+        "on_chain_error",
+        "on_agent_action",
+        "on_agent_finish",
+        "get_sync",
+        "on_chain_end",
+        "on_chain_error",
+        "on_agent_action",
+        "on_agent_finish",
+        "on_tool_end",
+        "on_tool_error",
+        "get_sync",
+        "on_tool_end",
+        "on_tool_error",
+        "on_retriever_end",
+        "on_retriever_error",
+        "get_sync",
+        "on_retriever_end",
+        "on_retriever_error",
+        "on_llm_start",
+        "on_chat_model_start",
+        "on_chain_start",
+        "on_tool_start",
+        "on_retriever_start",
+        "on_custom_event",
+        "configure",
+        "__init__",
+        "copy",
+        "merge",
+        "on_chain_end",
+        "on_chain_error",
+        "is_async",
+        "on_llm_start",
+        "on_chat_model_start",
+        "on_chain_start",
+        "on_tool_start",
+        "on_custom_event",
+        "on_retriever_start",
+        "configure",
+        "__init__",
+        "copy",
+        "merge",
+        "on_chain_end",
+        "on_chain_error"
+      ],
+      "external_deps": [
+        "contextvars",
+        "langsmith",
+        "tenacity",
+        "typing_extensions"
+      ],
+      "reuse_score": 0.52
+    },
+    "libs/langchain/langchain_classic/document_loaders/evernote.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/joplin.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/cube_semantic.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/docusaurus.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/quip.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/language_models/llms.py": {
+      "in_degree": 4,
+      "out_degree": 11,
+      "classes": [
+        "BaseLLM",
+        "LLM"
+      ],
+      "functions": [
+        "_log_error_once",
+        "create_base_retry_decorator"
+      ],
+      "external_deps": [
+        "tenacity",
+        "typing_extensions",
+        "yaml"
+      ],
+      "reuse_score": 0.283
+    },
+    "libs/langchain/langchain_classic/base_memory.py": {
+      "in_degree": 1,
+      "out_degree": 4,
+      "classes": [
+        "BaseMemory"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.181
+    },
+    "libs/core/langchain_core/_api/__init__.py": {
+      "in_degree": 293,
+      "out_degree": 4,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 1.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/image.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/output_parsers/string.py": {
+      "in_degree": 2,
+      "out_degree": 1,
+      "classes": [
+        "StrOutputParser"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.632
+    },
+    "libs/langchain/langchain_classic/embeddings/bookend.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/odt.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/messages/tool.py": {
+      "in_degree": 5,
+      "out_degree": 5,
+      "classes": [
+        "ToolOutputMixin",
+        "ToolMessage",
+        "ToolMessageChunk",
+        "ToolCall",
+        "ToolCallChunk"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.565
+    },
+    "libs/core/langchain_core/runnables/utils.py": {
+      "in_degree": 16,
+      "out_degree": 2,
+      "classes": [
+        "IsLocalDict",
+        "IsFunctionArgDict",
+        "NonLocals",
+        "FunctionNonLocals",
+        "GetLambdaSource",
+        "AddableDict",
+        "SupportsAdd",
+        "ConfigurableField",
+        "ConfigurableFieldSingleOption",
+        "ConfigurableFieldMultiOption",
+        "ConfigurableFieldSpec",
+        "_RootEventFilter"
+      ],
+      "functions": [],
+      "external_deps": [
+        "contextvars",
+        "typing_extensions"
+      ],
+      "reuse_score": 0.995
+    },
+    "libs/core/langchain_core/language_models/fake_chat_models.py": {
+      "in_degree": 1,
+      "out_degree": 5,
+      "classes": [
+        "FakeMessagesListChatModel",
+        "FakeListChatModelError",
+        "FakeListChatModel",
+        "FakeChatModel",
+        "GenericFakeChatModel",
+        "ParrotFakeChatModel"
+      ],
+      "functions": [
+        "_generate",
+        "_llm_type",
+        "_llm_type",
+        "_call",
+        "_stream",
+        "_astream",
+        "_identifying_params",
+        "batch",
+        "abatch",
+        "_call",
+        "_agenerate",
+        "_llm_type",
+        "_identifying_params",
+        "_generate",
+        "_stream",
+        "_llm_type",
+        "_generate",
+        "_llm_type"
+      ],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.154
+    },
+    "libs/core/langchain_core/messages/block_translators/openai.py": {
+      "in_degree": 6,
+      "out_degree": 3,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.777
+    },
+    "libs/langchain/langchain_classic/chat_loaders/gmail.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/agents/agent_iterator.py": {
+      "in_degree": 2,
+      "out_degree": 8,
+      "classes": [
+        "AgentExecutorIterator"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.199
+    },
+    "libs/langchain/langchain_classic/document_loaders/tencent_cos_directory.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/callbacks/utils.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/airtable.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/ifixit.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chat_models/gigachat.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/embeddings/databricks.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/utils/pydantic.py": {
+      "in_degree": 63,
+      "out_degree": 0,
+      "classes": [
+        "_IgnoreUnserializable"
+      ],
+      "functions": [],
+      "external_deps": [
+        "packaging",
+        "pydantic",
+        "pydantic_core",
+        "typing_extensions"
+      ],
+      "reuse_score": 1.0
+    },
+    "libs/core/langchain_core/output_parsers/xml.py": {
+      "in_degree": 1,
+      "out_degree": 4,
+      "classes": [
+        "_StreamingParser",
+        "XMLOutputParser"
+      ],
+      "functions": [],
+      "external_deps": [
+        "defusedxml",
+        "typing_extensions"
+      ],
+      "reuse_score": 0.181
+    },
+    "libs/langchain/langchain_classic/document_loaders/youtube.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/language_models/model_profile.py": {
+      "in_degree": 2,
+      "out_degree": 1,
+      "classes": [
+        "ModelProfile"
+      ],
+      "functions": [
+        "_warn_unknown_profile_keys"
+      ],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.632
+    },
+    "libs/langchain/langchain_classic/document_loaders/rst.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_transformers/openai_functions.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/airbyte_json.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/imsdb.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/prompts/prompt.py": {
+      "in_degree": 9,
+      "out_degree": 3,
+      "classes": [
+        "PromptTemplate"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.895
+    },
+    "libs/langchain/langchain_classic/chains/sequential.py": {
+      "in_degree": 0,
+      "out_degree": 4,
+      "classes": [
+        "SequentialChain",
+        "SimpleSequentialChain"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/url.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/max_compute.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/prompts/few_shot_with_templates.py": {
+      "in_degree": 1,
+      "out_degree": 5,
+      "classes": [
+        "FewShotPromptWithTemplates"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.154
+    },
+    "libs/langchain/langchain_classic/document_loaders/xml.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/utils/env.py": {
+      "in_degree": 3,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.95
+    },
+    "libs/langchain/langchain_classic/embeddings/gpt4all.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/larksuite.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/runnables/schema.py": {
+      "in_degree": 4,
+      "out_degree": 0,
+      "classes": [
+        "EventData",
+        "BaseStreamEvent",
+        "StandardStreamEvent",
+        "CustomStreamEvent"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.982
+    },
+    "libs/core/langchain_core/output_parsers/openai_tools.py": {
+      "in_degree": 2,
+      "out_degree": 7,
+      "classes": [
+        "JsonOutputToolsParser",
+        "JsonOutputKeyToolsParser",
+        "PydanticToolsParser"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.221
+    },
+    "libs/core/langchain_core/runnables/graph.py": {
+      "in_degree": 6,
+      "out_degree": 6,
+      "classes": [
+        "Stringifiable",
+        "LabelsDict",
+        "Edge",
+        "Node",
+        "Branch",
+        "CurveStyle",
+        "NodeStyles",
+        "MermaidDrawMethod",
+        "Graph"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.576
+    },
+    "libs/langchain/langchain_classic/docstore/__init__.py": {
+      "in_degree": 1,
+      "out_degree": 4,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.181
+    },
+    "libs/langchain/langchain_classic/chains/retrieval.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/docstore/wikipedia.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "libs/core/langchain_core/documents/__init__.py": {
+      "in_degree": 20,
+      "out_degree": 4,
+      "classes": [],
+      "functions": [
+        "__getattr__",
+        "__dir__"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.982
+    },
+    "libs/core/langchain_core/env.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [
+        "get_runtime_environment"
+      ],
+      "external_deps": [
+        "platform"
+      ],
+      "reuse_score": 0.393
+    },
+    "libs/langchain/langchain_classic/chains/history_aware_retriever.py": {
+      "in_degree": 0,
+      "out_degree": 5,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/rocksetdb.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/output_parsers/base.py": {
+      "in_degree": 4,
+      "out_degree": 6,
+      "classes": [
+        "BaseLLMOutputParser",
+        "BaseGenerationOutputParser",
+        "BaseOutputParser"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.435
+    },
+    "libs/langchain/langchain_classic/callbacks/base.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/obs_directory.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/embeddings/edenai.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/messages/__init__.py": {
+      "in_degree": 47,
+      "out_degree": 13,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.965
+    },
+    "libs/core/langchain_core/messages/block_translators/google_vertexai.py": {
+      "in_degree": 1,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.283
+    },
+    "libs/core/langchain_core/tools/convert.py": {
+      "in_degree": 2,
+      "out_degree": 6,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.249
+    },
+    "libs/langchain/langchain_classic/document_loaders/rspace.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/onedrive.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/polars_dataframe.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/azure_ai_data.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/runnables/graph_png.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [
+        "PngDrawer"
+      ],
+      "functions": [],
+      "external_deps": [
+        "pygraphviz"
+      ],
+      "reuse_score": 0.393
+    },
+    "libs/langchain/langchain_classic/chat_models/meta.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/browserless.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/messages/block_translators/bedrock.py": {
+      "in_degree": 1,
+      "out_degree": 3,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.221
+    },
+    "libs/core/langchain_core/prompts/loading.py": {
+      "in_degree": 2,
+      "out_degree": 6,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "yaml"
+      ],
+      "reuse_score": 0.249
+    },
+    "libs/langchain/langchain_classic/callbacks/file.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/base_o365.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/bigquery.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/load/serializable.py": {
+      "in_degree": 11,
+      "out_degree": 1,
+      "classes": [
+        "BaseSerialized",
+        "SerializedConstructor",
+        "SerializedSecret",
+        "SerializedNotImplemented",
+        "Serializable"
+      ],
+      "functions": [],
+      "external_deps": [
+        "pydantic",
+        "typing_extensions"
+      ],
+      "reuse_score": 0.996
+    },
+    "libs/langchain/langchain_classic/document_loaders/gitbook.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/version.py": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "libs/langchain/langchain_classic/chat_models/__init__.py": {
+      "in_degree": 1,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.283
+    },
+    "libs/langchain/langchain_classic/document_loaders/bilibili.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/callbacks/comet_ml_callback.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "libs/langchain/langchain_classic/document_loaders/onedrive_file.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/embeddings/cloudflare_workersai.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/s3_directory.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chat_models/baichuan.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/prompts/few_shot.py": {
+      "in_degree": 4,
+      "out_degree": 8,
+      "classes": [
+        "_FewShotPromptTemplateMixin",
+        "FewShotPromptTemplate",
+        "FewShotChatMessagePromptTemplate"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.359
+    },
+    "libs/langchain/langchain_classic/callbacks/confident_callback.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/model_laboratory.py": {
+      "in_degree": 0,
+      "out_degree": 5,
+      "classes": [
+        "ModelLaboratory"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/callbacks/streaming_stdout_final_only.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [
+        "FinalStreamingStdOutCallbackHandler"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.393
+    },
+    "libs/core/langchain_core/callbacks/streaming_stdout.py": {
+      "in_degree": 1,
+      "out_degree": 4,
+      "classes": [
+        "StreamingStdOutCallbackHandler"
+      ],
+      "functions": [
+        "on_llm_start",
+        "on_chat_model_start",
+        "on_llm_new_token",
+        "on_llm_end",
+        "on_llm_error",
+        "on_chain_start",
+        "on_chain_end",
+        "on_chain_error",
+        "on_tool_start",
+        "on_agent_action",
+        "on_tool_end",
+        "on_tool_error",
+        "on_text",
+        "on_agent_finish"
+      ],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.181
+    },
+    "libs/langchain/langchain_classic/embeddings/llamacpp.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/prompts/__init__.py": {
+      "in_degree": 8,
+      "out_degree": 9,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.551
+    },
+    "libs/core/langchain_core/load/_validation.py": {
+      "in_degree": 2,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "libs/core/langchain_core/utils/json_schema.py": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "libs/langchain/langchain_classic/document_loaders/toml.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/utils/json.py": {
+      "in_degree": 3,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.777
+    },
+    "libs/langchain/langchain_classic/document_loaders/acreom.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/embeddings/huggingface.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/embeddings/minimax.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/arcgis_loader.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/python.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/tracers/run_collector.py": {
+      "in_degree": 1,
+      "out_degree": 3,
+      "classes": [
+        "RunCollectorCallbackHandler"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.221
+    },
+    "libs/langchain/langchain_classic/base_language.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chat_models/ernie.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/stores.py": {
+      "in_degree": 1,
+      "out_degree": 2,
+      "classes": [
+        "BaseStore",
+        "InMemoryBaseStore",
+        "InMemoryStore",
+        "InMemoryByteStore",
+        "InvalidKeyException"
+      ],
+      "functions": [
+        "mget",
+        "amget",
+        "mset",
+        "amset",
+        "mdelete",
+        "amdelete",
+        "yield_keys",
+        "ayield_keys",
+        "__init__",
+        "mget",
+        "amget",
+        "mset",
+        "amset",
+        "mdelete",
+        "amdelete",
+        "yield_keys",
+        "ayield_keys"
+      ],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.283
+    },
+    "libs/core/langchain_core/documents/base.py": {
+      "in_degree": 3,
+      "out_degree": 2,
+      "classes": [
+        "BaseMedia",
+        "Blob",
+        "Document"
+      ],
+      "functions": [
+        "source",
+        "check_blob_is_valid",
+        "as_string",
+        "as_bytes",
+        "as_bytes_io",
+        "from_path",
+        "from_data",
+        "__repr__",
+        "__init__",
+        "is_lc_serializable",
+        "get_lc_namespace",
+        "__str__"
+      ],
+      "external_deps": [
+        "mimetypes"
+      ],
+      "reuse_score": 0.632
+    },
+    "libs/langchain/langchain_classic/document_transformers/nuclia_text_transform.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/callbacks/flyte_callback.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "libs/langchain/langchain_classic/chains/loading.py": {
+      "in_degree": 1,
+      "out_degree": 6,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "langchain_community",
+        "yaml"
+      ],
+      "reuse_score": 0.133
+    },
+    "libs/core/langchain_core/output_parsers/openai_functions.py": {
+      "in_degree": 0,
+      "out_degree": 5,
+      "classes": [
+        "OutputFunctionsParser",
+        "JsonOutputFunctionsParser",
+        "JsonKeyOutputFunctionsParser",
+        "PydanticOutputFunctionsParser",
+        "PydanticAttrOutputFunctionsParser"
+      ],
+      "functions": [],
+      "external_deps": [
+        "jsonpatch",
+        "pydantic",
+        "typing_extensions"
+      ],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/hub.py": {
+      "in_degree": 0,
+      "out_degree": 4,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "langchainhub"
+      ],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/runnables/__init__.py": {
+      "in_degree": 31,
+      "out_degree": 9,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.955
+    },
+    "libs/core/langchain_core/tools/structured.py": {
+      "in_degree": 3,
+      "out_degree": 5,
+      "classes": [
+        "StructuredTool"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.393
+    },
+    "libs/langchain/langchain_classic/document_loaders/hugging_face_dataset.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/docugami.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/lakefs.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chat_models/everlyai.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/tools/render.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    ".github/scripts/check_diff.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [
+        "all_package_dirs",
+        "dependents_graph",
+        "add_dependents",
+        "_get_configs_for_single_dir",
+        "_get_pydantic_test_configs",
+        "_get_configs_for_multi_dirs"
+      ],
+      "external_deps": [
+        "packaging"
+      ],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/callbacks/openai_info.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "libs/langchain/langchain_classic/agents/agent_types.py": {
+      "in_degree": 4,
+      "out_degree": 2,
+      "classes": [
+        "AgentType"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.736
+    },
+    "libs/langchain/langchain_classic/document_loaders/wikipedia.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chat_models/azureml_endpoint.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/figma.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/load/mapping.py": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "libs/core/langchain_core/outputs/run_info.py": {
+      "in_degree": 2,
+      "out_degree": 1,
+      "classes": [
+        "RunInfo"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "libs/langchain/langchain_classic/document_loaders/notion.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chat_loaders/utils.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/docstore/in_memory.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "libs/langchain/langchain_classic/document_loaders/xorbits.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chat_models/databricks.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/s3_file.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/tracers/_streaming.py": {
+      "in_degree": 4,
+      "out_degree": 0,
+      "classes": [
+        "_StreamingCallbackHandler"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.982
+    },
+    "libs/langchain/langchain_classic/document_transformers/beautiful_soup_transformer.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/prompt_values.py": {
+      "in_degree": 11,
+      "out_degree": 2,
+      "classes": [
+        "PromptValue",
+        "StringPromptValue",
+        "ChatPromptValue",
+        "ImageURL",
+        "ImagePromptValue",
+        "ChatPromptValueConcrete"
+      ],
+      "functions": [
+        "is_lc_serializable",
+        "get_lc_namespace",
+        "to_string",
+        "to_messages",
+        "get_lc_namespace",
+        "to_string",
+        "to_messages",
+        "to_string",
+        "to_messages",
+        "get_lc_namespace",
+        "to_string",
+        "to_messages"
+      ],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.974
+    },
+    "libs/core/langchain_core/outputs/chat_generation.py": {
+      "in_degree": 4,
+      "out_degree": 4,
+      "classes": [
+        "ChatGeneration",
+        "ChatGenerationChunk"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.551
+    },
+    "libs/core/langchain_core/tracers/base.py": {
+      "in_degree": 7,
+      "out_degree": 7,
+      "classes": [
+        "BaseTracer",
+        "AsyncBaseTracer"
+      ],
+      "functions": [],
+      "external_deps": [
+        "tenacity",
+        "typing_extensions"
+      ],
+      "reuse_score": 0.583
+    },
+    "libs/langchain/langchain_classic/chat_loaders/telegram.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chat_loaders/slack.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chains/llm.py": {
+      "in_degree": 4,
+      "out_degree": 13,
+      "classes": [
+        "LLMChain"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.249
+    },
+    "libs/langchain/langchain_classic/document_loaders/bibtex.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/tools/base.py": {
+      "in_degree": 5,
+      "out_degree": 7,
+      "classes": [
+        "SchemaAnnotationError",
+        "_SchemaConfig",
+        "ToolException",
+        "BaseTool",
+        "InjectedToolArg",
+        "_DirectlyInjectedToolArg",
+        "InjectedToolCallId",
+        "BaseToolkit"
+      ],
+      "functions": [],
+      "external_deps": [
+        "pydantic",
+        "typing_extensions"
+      ],
+      "reuse_score": 0.465
+    },
+    "libs/langchain/langchain_classic/document_loaders/discord.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/concurrent.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/scripts/check_imports.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chat_models/human.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/spreedly.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chains/mapreduce.py": {
+      "in_degree": 0,
+      "out_degree": 9,
+      "classes": [
+        "MapReduceChain"
+      ],
+      "functions": [],
+      "external_deps": [
+        "langchain_text_splitters"
+      ],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/pyspark_dataframe.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/messages/modifier.py": {
+      "in_degree": 2,
+      "out_degree": 1,
+      "classes": [
+        "RemoveMessage"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "libs/langchain/langchain_classic/document_loaders/gutenberg.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_transformers/embeddings_redundant_filter.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/output_parsers/json.py": {
+      "in_degree": 2,
+      "out_degree": 6,
+      "classes": [
+        "JsonOutputParser"
+      ],
+      "functions": [],
+      "external_deps": [
+        "jsonpatch",
+        "pydantic",
+        "typing_extensions"
+      ],
+      "reuse_score": 0.249
+    },
+    "libs/langchain/langchain_classic/embeddings/nlpcloud.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/directory.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/excel.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/azure_blob_storage_file.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/brave_search.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_transformers/__init__.py": {
+      "in_degree": 10,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.993
+    },
+    "libs/core/langchain_core/chat_sessions.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [
+        "ChatSession"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "libs/core/langchain_core/utils/strings.py": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "libs/langchain/langchain_classic/document_loaders/__init__.py": {
+      "in_degree": 133,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 1.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/news.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/document_loaders/langsmith.py": {
+      "in_degree": 6,
+      "out_degree": 3,
+      "classes": [
+        "LangSmithLoader"
+      ],
+      "functions": [
+        "_stringify",
+        "__init__",
+        "lazy_load"
+      ],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.777
+    },
+    "libs/core/langchain_core/tracers/stdout.py": {
+      "in_degree": 2,
+      "out_degree": 3,
+      "classes": [
+        "FunctionCallbackHandler",
+        "ConsoleCallbackHandler"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "libs/core/langchain_core/messages/utils.py": {
+      "in_degree": 1,
+      "out_degree": 17,
+      "classes": [
+        "_RunnableSupportCallable"
+      ],
+      "functions": [],
+      "external_deps": [
+        "langchain_text_splitters"
+      ],
+      "reuse_score": 0.054
+    },
+    "libs/langchain/langchain_classic/document_loaders/mongodb.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/callbacks/sagemaker_callback.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "libs/langchain/langchain_classic/document_loaders/async_html.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/embeddings/cache.py": {
+      "in_degree": 0,
+      "out_degree": 3,
+      "classes": [
+        "CacheBackedEmbeddings"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/callbacks/mlflow_callback.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "libs/langchain/langchain_classic/document_loaders/notiondb.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/prompts/chat.py": {
+      "in_degree": 7,
+      "out_degree": 13,
+      "classes": [
+        "MessagesPlaceholder",
+        "BaseStringMessagePromptTemplate",
+        "ChatMessagePromptTemplate",
+        "_TextTemplateParam",
+        "_ImageTemplateParam",
+        "_StringImageMessagePromptTemplate",
+        "HumanMessagePromptTemplate",
+        "AIMessagePromptTemplate",
+        "SystemMessagePromptTemplate",
+        "BaseChatPromptTemplate",
+        "ChatPromptTemplate"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.393
+    },
+    "libs/langchain/langchain_classic/document_loaders/stripe.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chains/example_generator.py": {
+      "in_degree": 1,
+      "out_degree": 4,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.181
+    },
+    "libs/langchain/langchain_classic/embeddings/awa.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/outputs/__init__.py": {
+      "in_degree": 26,
+      "out_degree": 6,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.976
+    },
+    "libs/core/langchain_core/cross_encoders.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [
+        "BaseCrossEncoder"
+      ],
+      "functions": [
+        "score"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/callbacks/file.py": {
+      "in_degree": 2,
+      "out_degree": 4,
+      "classes": [
+        "FileCallbackHandler"
+      ],
+      "functions": [
+        "__init__",
+        "__enter__",
+        "__exit__",
+        "__del__",
+        "close",
+        "_write",
+        "on_chain_start",
+        "on_chain_end",
+        "on_agent_action",
+        "on_tool_end",
+        "on_text",
+        "on_agent_finish"
+      ],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.33
+    },
+    "libs/core/langchain_core/__init__.py": {
+      "in_degree": 2,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.487
+    },
+    "libs/langchain/langchain_classic/chat_models/azure_openai.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/_api/beta_decorator.py": {
+      "in_degree": 2,
+      "out_degree": 1,
+      "classes": [
+        "LangChainBetaWarning"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "libs/core/langchain_core/prompts/message.py": {
+      "in_degree": 2,
+      "out_degree": 4,
+      "classes": [
+        "BaseMessagePromptTemplate"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.33
+    },
+    "libs/core/langchain_core/runnables/fallbacks.py": {
+      "in_degree": 2,
+      "out_degree": 5,
+      "classes": [
+        "RunnableWithFallbacks"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.283
+    },
+    "libs/core/langchain_core/output_parsers/__init__.py": {
+      "in_degree": 6,
+      "out_degree": 9,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.451
+    },
+    "libs/core/langchain_core/messages/chat.py": {
+      "in_degree": 2,
+      "out_degree": 2,
+      "classes": [
+        "ChatMessage",
+        "ChatMessageChunk"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.487
+    },
+    "libs/langchain/langchain_classic/document_loaders/url_selenium.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/sys_info.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [
+        "_get_sub_deps",
+        "print_sys_info"
+      ],
+      "external_deps": [
+        "pkgutil",
+        "platform"
+      ],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/indexing/base.py": {
+      "in_degree": 3,
+      "out_degree": 4,
+      "classes": [
+        "RecordManager",
+        "_Record",
+        "InMemoryRecordManager",
+        "UpsertResponse",
+        "DeleteResponse",
+        "DocumentIndex"
+      ],
+      "functions": [
+        "__init__",
+        "create_schema",
+        "acreate_schema",
+        "get_time",
+        "aget_time",
+        "update",
+        "aupdate",
+        "exists",
+        "aexists",
+        "list_keys",
+        "alist_keys",
+        "delete_keys",
+        "adelete_keys",
+        "__init__",
+        "create_schema",
+        "acreate_schema",
+        "get_time",
+        "aget_time",
+        "update",
+        "aupdate",
+        "exists",
+        "aexists",
+        "list_keys",
+        "alist_keys",
+        "delete_keys",
+        "adelete_keys",
+        "upsert",
+        "aupsert",
+        "delete",
+        "adelete",
+        "get",
+        "aget"
+      ],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.451
+    },
+    "libs/core/langchain_core/rate_limiters.py": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "classes": [
+        "BaseRateLimiter",
+        "InMemoryRateLimiter"
+      ],
+      "functions": [
+        "acquire",
+        "aacquire",
+        "__init__",
+        "_consume",
+        "acquire",
+        "aacquire"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "libs/langchain/langchain_classic/chat_models/mlflow.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/_security/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chat_models/pai_eas_endpoint.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/chat_loaders.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [
+        "BaseChatLoader"
+      ],
+      "functions": [
+        "lazy_load",
+        "load"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "libs/core/langchain_core/utils/__init__.py": {
+      "in_degree": 6,
+      "out_degree": 9,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.451
+    },
+    "libs/langchain/langchain_classic/document_loaders/chatgpt.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/document_loaders/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 4,
+      "classes": [],
+      "functions": [
+        "__getattr__",
+        "__dir__"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/docstore/arbitrary_fn.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "libs/core/langchain_core/caches.py": {
+      "in_degree": 4,
+      "out_degree": 2,
+      "classes": [
+        "BaseCache",
+        "InMemoryCache"
+      ],
+      "functions": [
+        "lookup",
+        "update",
+        "clear",
+        "alookup",
+        "aupdate",
+        "aclear",
+        "__init__",
+        "lookup",
+        "update",
+        "clear",
+        "alookup",
+        "aupdate",
+        "aclear"
+      ],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.736
+    },
+    "libs/langchain/langchain_classic/serpapi.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "langchain_community"
+      ],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/json_loader.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/_api/deprecation.py": {
+      "in_degree": 7,
+      "out_degree": 1,
+      "classes": [
+        "LangChainDeprecationWarning",
+        "LangChainPendingDeprecationWarning"
+      ],
+      "functions": [],
+      "external_deps": [
+        "pydantic"
+      ],
+      "reuse_score": 0.97
+    },
+    "libs/langchain/langchain_classic/embeddings/localai.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chat_models/openai.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/__init__.py": {
+      "in_degree": 1,
+      "out_degree": 6,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "langchain_community"
+      ],
+      "reuse_score": 0.133
+    },
+    "libs/langchain/langchain_classic/document_loaders/reddit.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/sharepoint.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/example_generator.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/dataframe.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/messages/ai.py": {
+      "in_degree": 4,
+      "out_degree": 10,
+      "classes": [
+        "InputTokenDetails",
+        "OutputTokenDetails",
+        "UsageMetadata",
+        "AIMessage",
+        "AIMessageChunk"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.305
+    },
+    "libs/core/langchain_core/prompts/structured.py": {
+      "in_degree": 0,
+      "out_degree": 7,
+      "classes": [
+        "StructuredPrompt"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/powerpoint.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/embeddings/embaas.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/assemblyai.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/embeddings/ollama.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/tensorflow_datasets.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/helpers.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/duckdb_loader.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/pdf.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/embeddings/jina.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/embeddings/fastembed.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/epub.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/tracers/context.py": {
+      "in_degree": 5,
+      "out_degree": 5,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "contextvars"
+      ],
+      "reuse_score": 0.565
+    },
+    "libs/langchain/langchain_classic/callbacks/context_callback.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "libs/core/langchain_core/runnables/passthrough.py": {
+      "in_degree": 3,
+      "out_degree": 8,
+      "classes": [
+        "RunnablePassthrough",
+        "RunnableAssign",
+        "RunnablePick"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.283
+    },
+    "libs/core/langchain_core/messages/block_translators/groq.py": {
+      "in_degree": 1,
+      "out_degree": 3,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.221
+    },
+    "libs/langchain/langchain_classic/document_loaders/rss.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/load/load.py": {
+      "in_degree": 4,
+      "out_degree": 4,
+      "classes": [
+        "Reviver"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.551
+    },
+    "libs/langchain/langchain_classic/callbacks/streaming_aiter.py": {
+      "in_degree": 2,
+      "out_degree": 2,
+      "classes": [
+        "AsyncIteratorCallbackHandler"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.487
+    },
+    "libs/langchain/langchain_classic/document_loaders/base.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/diffbot.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/output_parsers/transform.py": {
+      "in_degree": 6,
+      "out_degree": 5,
+      "classes": [
+        "BaseTransformOutputParser",
+        "BaseCumulativeTransformOutputParser"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.632
+    },
+    "libs/core/langchain_core/vectorstores/__init__.py": {
+      "in_degree": 4,
+      "out_degree": 3,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "libs/langchain/langchain_classic/chat_loaders/base.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/callbacks/infino_callback.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "libs/langchain/langchain_classic/callbacks/arthur_callback.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "libs/langchain/langchain_classic/embeddings/deepinfra.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/documents/transformers.py": {
+      "in_degree": 2,
+      "out_degree": 2,
+      "classes": [
+        "BaseDocumentTransformer"
+      ],
+      "functions": [
+        "transform_documents",
+        "atransform_documents"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.487
+    },
+    "libs/langchain/langchain_classic/embeddings/baidu_qianfan_endpoint.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/example_selectors/semantic_similarity.py": {
+      "in_degree": 1,
+      "out_degree": 5,
+      "classes": [
+        "_VectorStoreExampleSelector",
+        "SemanticSimilarityExampleSelector",
+        "MaxMarginalRelevanceExampleSelector"
+      ],
+      "functions": [
+        "sorted_values",
+        "_example_to_text",
+        "_documents_to_examples",
+        "add_example",
+        "aadd_example",
+        "select_examples",
+        "aselect_examples",
+        "from_examples",
+        "afrom_examples",
+        "select_examples",
+        "aselect_examples",
+        "from_examples",
+        "afrom_examples"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.154
+    },
+    "libs/core/langchain_core/embeddings/fake.py": {
+      "in_degree": 1,
+      "out_degree": 2,
+      "classes": [
+        "FakeEmbeddings",
+        "DeterministicFakeEmbedding"
+      ],
+      "functions": [
+        "_get_embedding",
+        "embed_documents",
+        "embed_query",
+        "_get_embedding",
+        "_get_seed",
+        "embed_documents",
+        "embed_query"
+      ],
+      "external_deps": [
+        "numpy",
+        "typing_extensions"
+      ],
+      "reuse_score": 0.283
+    },
+    "libs/langchain/langchain_classic/document_loaders/college_confidential.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/facebook_chat.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chat_loaders/whatsapp.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/geodataframe.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/_api/internal.py": {
+      "in_degree": 2,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.865
+    },
+    "libs/langchain/langchain_classic/chat_models/promptlayer_openai.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/globals.py": {
+      "in_degree": 5,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [
+        "set_verbose",
+        "get_verbose",
+        "set_debug",
+        "get_debug",
+        "set_llm_cache",
+        "get_llm_cache"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.918
+    },
+    "libs/core/langchain_core/language_models/chat_models.py": {
+      "in_degree": 4,
+      "out_degree": 22,
+      "classes": [
+        "BaseChatModel",
+        "SimpleChatModel"
+      ],
+      "functions": [
+        "_generate_response_from_error",
+        "_format_for_tracing",
+        "generate_from_stream",
+        "agenerate_from_stream",
+        "_format_ls_structured_output",
+        "_gen_info_and_msg_metadata",
+        "_cleanup_llm_representation",
+        "_resolve_model_profile",
+        "_set_model_profile",
+        "_check_profile_keys",
+        "_serialized",
+        "OutputType",
+        "_convert_input",
+        "invoke",
+        "ainvoke",
+        "_should_stream",
+        "stream",
+        "astream",
+        "_combine_llm_outputs",
+        "_convert_cached_generations",
+        "_get_invocation_params",
+        "_get_ls_params",
+        "_get_ls_params_with_defaults",
+        "_get_llm_string",
+        "generate",
+        "agenerate",
+        "generate_prompt",
+        "agenerate_prompt",
+        "_generate_with_cache",
+        "_agenerate_with_cache",
+        "_generate",
+        "_agenerate",
+        "_stream",
+        "_astream",
+        "_call_async",
+        "_llm_type",
+        "dict",
+        "bind_tools",
+        "with_structured_output",
+        "_generate",
+        "_call",
+        "_agenerate"
+      ],
+      "external_deps": [
+        "builtins",
+        "typing_extensions"
+      ],
+      "reuse_score": 0.16
+    },
+    "libs/core/langchain_core/indexing/__init__.py": {
+      "in_degree": 1,
+      "out_degree": 3,
+      "classes": [],
+      "functions": [
+        "__getattr__",
+        "__dir__"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.221
+    },
+    "libs/langchain/langchain_classic/callbacks/stdout.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chat_models/konko.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/example_selectors/base.py": {
+      "in_degree": 3,
+      "out_degree": 1,
+      "classes": [
+        "BaseExampleSelector"
+      ],
+      "functions": [
+        "add_example",
+        "aadd_example",
+        "select_examples",
+        "aselect_examples"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.777
+    },
+    "libs/core/langchain_core/tracers/event_stream.py": {
+      "in_degree": 1,
+      "out_degree": 12,
+      "classes": [
+        "RunInfo",
+        "_AstreamEventsCallbackHandler"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.074
+    },
+    "libs/langchain/langchain_classic/callbacks/wandb_callback.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "libs/core/langchain_core/outputs/chat_result.py": {
+      "in_degree": 1,
+      "out_degree": 2,
+      "classes": [
+        "ChatResult"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.283
+    },
+    "libs/core/langchain_core/example_selectors/length_based.py": {
+      "in_degree": 1,
+      "out_degree": 3,
+      "classes": [
+        "LengthBasedExampleSelector"
+      ],
+      "functions": [
+        "_get_length_based",
+        "add_example",
+        "aadd_example",
+        "post_init",
+        "select_examples",
+        "aselect_examples"
+      ],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.221
+    },
+    "libs/core/langchain_core/chat_history.py": {
+      "in_degree": 1,
+      "out_degree": 3,
+      "classes": [
+        "BaseChatMessageHistory",
+        "InMemoryChatMessageHistory"
+      ],
+      "functions": [
+        "aget_messages",
+        "add_user_message",
+        "add_ai_message",
+        "add_message",
+        "add_messages",
+        "aadd_messages",
+        "clear",
+        "aclear",
+        "__str__",
+        "aget_messages",
+        "add_message",
+        "aadd_messages",
+        "clear",
+        "aclear"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.221
+    },
+    "libs/langchain/langchain_classic/agents/agent.py": {
+      "in_degree": 5,
+      "out_degree": 21,
+      "classes": [
+        "BaseSingleActionAgent",
+        "BaseMultiActionAgent",
+        "AgentOutputParser",
+        "MultiActionAgentOutputParser",
+        "RunnableAgent",
+        "RunnableMultiActionAgent",
+        "LLMSingleActionAgent",
+        "Agent",
+        "ExceptionTool",
+        "AgentExecutor"
+      ],
+      "functions": [],
+      "external_deps": [
+        "builtins",
+        "typing_extensions",
+        "yaml"
+      ],
+      "reuse_score": 0.203
+    },
+    "libs/langchain/langchain_classic/embeddings/mosaicml.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/prompts/image.py": {
+      "in_degree": 1,
+      "out_degree": 5,
+      "classes": [
+        "ImagePromptTemplate"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.154
+    },
+    "libs/core/langchain_core/utils/input.py": {
+      "in_degree": 9,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 1.0
+    },
+    "libs/core/langchain_core/tracers/schemas.py": {
+      "in_degree": 13,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.998
+    },
+    "libs/langchain/langchain_classic/document_transformers/html2text.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/roam.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/gcs_directory.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/open_city_data.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chat_loaders/facebook_messenger.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/utils/utils.py": {
+      "in_degree": 5,
+      "out_degree": 2,
+      "classes": [
+        "_NoDefaultType"
+      ],
+      "functions": [],
+      "external_deps": [
+        "packaging",
+        "typing_extensions"
+      ],
+      "reuse_score": 0.811
+    },
+    "libs/langchain/langchain_classic/document_loaders/psychic.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/callbacks/streaming_stdout.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chat_loaders/imessage.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/mhtml.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/embeddings/dashscope.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/tools/__init__.py": {
+      "in_degree": 12,
+      "out_degree": 7,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.777
+    },
+    "libs/langchain/langchain_classic/chains/base.py": {
+      "in_degree": 8,
+      "out_degree": 7,
+      "classes": [
+        "Chain"
+      ],
+      "functions": [],
+      "external_deps": [
+        "builtins",
+        "typing_extensions",
+        "yaml"
+      ],
+      "reuse_score": 0.632
+    },
+    "libs/langchain/langchain_classic/document_loaders/tomarkdown.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/vectorstores/in_memory.py": {
+      "in_degree": 1,
+      "out_degree": 5,
+      "classes": [
+        "InMemoryVectorStore"
+      ],
+      "functions": [],
+      "external_deps": [
+        "numpy",
+        "typing_extensions"
+      ],
+      "reuse_score": 0.154
+    },
+    "libs/langchain/langchain_classic/document_loaders/email.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/outputs/llm_result.py": {
+      "in_degree": 1,
+      "out_degree": 4,
+      "classes": [
+        "LLMResult"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.181
+    },
+    "libs/langchain/langchain_classic/document_loaders/fauna.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/utils/usage.py": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "libs/core/langchain_core/vectorstores/base.py": {
+      "in_degree": 1,
+      "out_degree": 6,
+      "classes": [
+        "VectorStore",
+        "VectorStoreRetriever"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.133
+    },
+    "libs/core/langchain_core/_import_utils.py": {
+      "in_degree": 18,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [
+        "import_attr"
+      ],
+      "external_deps": [],
+      "reuse_score": 1.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/telegram.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/callbacks/usage.py": {
+      "in_degree": 1,
+      "out_degree": 5,
+      "classes": [
+        "UsageMetadataCallbackHandler"
+      ],
+      "functions": [
+        "get_usage_metadata_callback",
+        "__init__",
+        "__repr__",
+        "on_llm_end"
+      ],
+      "external_deps": [
+        "contextvars",
+        "typing_extensions"
+      ],
+      "reuse_score": 0.154
+    },
+    "libs/langchain/langchain_classic/agents/schema.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [
+        "AgentScratchPadChatPromptTemplate"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/utils/_merge.py": {
+      "in_degree": 7,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.999
+    },
+    "libs/langchain/langchain_classic/document_loaders/confluence.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/requests.py": {
+      "in_degree": 3,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "langchain_community"
+      ],
+      "reuse_score": 0.777
+    },
+    "libs/langchain/langchain_classic/document_loaders/azlyrics.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/messages/block_translators/google_genai.py": {
+      "in_degree": 3,
+      "out_degree": 3,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "filetype"
+      ],
+      "reuse_score": 0.528
+    },
+    "libs/core/langchain_core/runnables/configurable.py": {
+      "in_degree": 2,
+      "out_degree": 5,
+      "classes": [
+        "DynamicRunnable",
+        "RunnableConfigurableFields",
+        "StrEnum",
+        "RunnableConfigurableAlternatives"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.283
+    },
+    "libs/langchain/langchain_classic/document_loaders/blackboard.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chat_loaders/langsmith.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/utils/aiter.py": {
+      "in_degree": 4,
+      "out_degree": 1,
+      "classes": [
+        "NoLock",
+        "Tee",
+        "aclosing"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.865
+    },
+    "libs/langchain/langchain_classic/chat_models/cohere.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chat_models/hunyuan.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chat_models/google_palm.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/tools/simple.py": {
+      "in_degree": 2,
+      "out_degree": 4,
+      "classes": [
+        "Tool"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.33
+    },
+    "libs/langchain/langchain_classic/chains/prompt_selector.py": {
+      "in_degree": 0,
+      "out_degree": 5,
+      "classes": [
+        "BasePromptSelector",
+        "ConditionalPromptSelector"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/recursive_url_loader.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chat_models/fake.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_transformers/google_translate.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chat_models/tongyi.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/onenote.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/web_base.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/callbacks/__init__.py": {
+      "in_degree": 29,
+      "out_degree": 25,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "langchain_community"
+      ],
+      "reuse_score": 0.672
+    },
+    "libs/langchain/langchain_classic/document_loaders/readthedocs.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chat_models/ollama.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/tencent_cos_file.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/html_bs.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/baiducloud_bos_file.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/mediawikidump.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chat_models/javelin_ai_gateway.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/azure_blob_storage_container.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/example_selectors/__init__.py": {
+      "in_degree": 2,
+      "out_degree": 4,
+      "classes": [],
+      "functions": [
+        "__getattr__",
+        "__dir__"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.33
+    },
+    "libs/core/langchain_core/tracers/core.py": {
+      "in_degree": 1,
+      "out_degree": 6,
+      "classes": [
+        "_TracerCore"
+      ],
+      "functions": [],
+      "external_deps": [
+        "tenacity"
+      ],
+      "reuse_score": 0.133
+    },
+    "libs/langchain/langchain_classic/chat_models/minimax.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/callbacks/human.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "libs/langchain/langchain_classic/document_loaders/gcs_file.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/indexing/in_memory.py": {
+      "in_degree": 0,
+      "out_degree": 6,
+      "classes": [
+        "InMemoryDocumentIndex"
+      ],
+      "functions": [
+        "upsert",
+        "delete",
+        "get",
+        "_get_relevant_documents"
+      ],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/load/dump.py": {
+      "in_degree": 3,
+      "out_degree": 5,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "libs/langchain/langchain_classic/embeddings/google_palm.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/outputs/generation.py": {
+      "in_degree": 3,
+      "out_degree": 2,
+      "classes": [
+        "Generation",
+        "GenerationChunk"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "libs/langchain/langchain_classic/document_loaders/git.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/agents/loading.py": {
+      "in_degree": 2,
+      "out_degree": 6,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "yaml"
+      ],
+      "reuse_score": 0.249
+    },
+    "libs/core/langchain_core/runnables/history.py": {
+      "in_degree": 1,
+      "out_degree": 10,
+      "classes": [
+        "RunnableWithMessageHistory"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.087
+    },
+    "libs/core/langchain_core/_api/path.py": {
+      "in_degree": 2,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.865
+    },
+    "libs/langchain/langchain_classic/document_loaders/csv_loader.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/runnables/graph_ascii.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [
+        "VertexViewer",
+        "AsciiCanvas",
+        "_EdgeViewer"
+      ],
+      "functions": [],
+      "external_deps": [
+        "grandalf"
+      ],
+      "reuse_score": 0.393
+    },
+    "libs/core/langchain_core/tracers/evaluation.py": {
+      "in_degree": 1,
+      "out_degree": 7,
+      "classes": [
+        "EvaluatorCallbackHandler"
+      ],
+      "functions": [],
+      "external_deps": [
+        "langsmith"
+      ],
+      "reuse_score": 0.118
+    },
+    "libs/langchain/langchain_classic/agents/load_tools.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/sitemap.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_transformers/long_context_reorder.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/indexing/api.py": {
+      "in_degree": 1,
+      "out_degree": 5,
+      "classes": [
+        "IndexingException",
+        "_HashedDocument",
+        "IndexingResult"
+      ],
+      "functions": [
+        "_hash_string_to_uuid",
+        "_warn_about_sha1",
+        "_hash_string",
+        "_hash_nested_dict",
+        "_batch",
+        "_abatch",
+        "_get_source_id_assigner",
+        "_deduplicate_in_order",
+        "_calculate_hash",
+        "_get_document_with_hash",
+        "_delete",
+        "index",
+        "_to_async_iterator",
+        "_adelete",
+        "aindex",
+        "__init__"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.154
+    },
+    "libs/langchain/langchain_classic/document_loaders/text.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/embeddings/johnsnowlabs.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chains/transform.py": {
+      "in_degree": 0,
+      "out_degree": 3,
+      "classes": [
+        "TransformChain"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chat_models/base.py": {
+      "in_degree": 1,
+      "out_degree": 10,
+      "classes": [
+        "_ConfigurableModel"
+      ],
+      "functions": [],
+      "external_deps": [
+        "langchain_anthropic",
+        "langchain_aws",
+        "langchain_cohere",
+        "langchain_deepseek",
+        "langchain_fireworks",
+        "langchain_google_genai",
+        "langchain_google_vertexai",
+        "langchain_groq",
+        "langchain_huggingface",
+        "langchain_ibm",
+        "langchain_mistralai",
+        "langchain_nvidia_ai_endpoints",
+        "langchain_ollama",
+        "langchain_openai",
+        "langchain_perplexity",
+        "langchain_together",
+        "langchain_upstage",
+        "langchain_xai",
+        "typing_extensions"
+      ],
+      "reuse_score": 0.087
+    },
+    "libs/langchain/langchain_classic/document_loaders/merge.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/messages/function.py": {
+      "in_degree": 2,
+      "out_degree": 2,
+      "classes": [
+        "FunctionMessage",
+        "FunctionMessageChunk"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.487
+    },
+    "libs/core/langchain_core/document_loaders/base.py": {
+      "in_degree": 3,
+      "out_degree": 3,
+      "classes": [
+        "BaseLoader",
+        "BaseBlobParser"
+      ],
+      "functions": [
+        "load",
+        "aload",
+        "load_and_split",
+        "lazy_load",
+        "alazy_load",
+        "lazy_parse",
+        "parse"
+      ],
+      "external_deps": [
+        "langchain_text_splitters"
+      ],
+      "reuse_score": 0.528
+    },
+    "libs/langchain/langchain_classic/chat_models/anyscale.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/tsv.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/apify_dataset.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_transformers/doctran_text_translate.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/google_speech_to_text.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/runnables/router.py": {
+      "in_degree": 1,
+      "out_degree": 4,
+      "classes": [
+        "RouterInput",
+        "RouterRunnable"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.181
+    },
+    "libs/core/langchain_core/tools/retriever.py": {
+      "in_degree": 1,
+      "out_degree": 6,
+      "classes": [
+        "RetrieverInput"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.133
+    },
+    "libs/langchain/langchain_classic/chat_models/jinachat.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/structured_query.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [
+        "Visitor",
+        "Expr",
+        "Operator",
+        "Comparator",
+        "FilterDirective",
+        "Comparison",
+        "Operation",
+        "StructuredQuery"
+      ],
+      "functions": [
+        "_to_snake_case",
+        "_validate_func",
+        "visit_operation",
+        "visit_comparison",
+        "visit_structured_query",
+        "accept",
+        "__init__",
+        "__init__",
+        "__init__"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    ".github/scripts/get_min_versions.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [
+        "get_pypi_versions",
+        "get_minimum_version",
+        "_check_python_version_from_requirement",
+        "get_min_version_from_toml",
+        "check_python_version"
+      ],
+      "external_deps": [
+        "packaging",
+        "tomli"
+      ],
+      "reuse_score": 0.393
+    },
+    "libs/langchain/langchain_classic/document_loaders/url_playwright.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/exceptions.py": {
+      "in_degree": 13,
+      "out_degree": 0,
+      "classes": [
+        "LangChainException",
+        "TracerException",
+        "OutputParserException",
+        "ContextOverflowError",
+        "ErrorCode"
+      ],
+      "functions": [
+        "create_message",
+        "__init__"
+      ],
+      "external_deps": [],
+      "reuse_score": 1.0
+    },
+    "libs/langchain/langchain_classic/callbacks/promptlayer_callback.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "libs/core/langchain_core/output_parsers/pydantic.py": {
+      "in_degree": 1,
+      "out_degree": 4,
+      "classes": [
+        "PydanticOutputParser"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.181
+    },
+    "libs/langchain/langchain_classic/embeddings/elasticsearch.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/env.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "platform"
+      ],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/html.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/agents/utils.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/embeddings/huggingface_hub.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/snowflake_loader.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/prompts/string.py": {
+      "in_degree": 8,
+      "out_degree": 6,
+      "classes": [
+        "StringPromptTemplate"
+      ],
+      "functions": [],
+      "external_deps": [
+        "jinja2",
+        "typing_extensions"
+      ],
+      "reuse_score": 0.681
+    },
+    "libs/core/langchain_core/tracers/__init__.py": {
+      "in_degree": 2,
+      "out_degree": 7,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.221
+    },
+    "libs/langchain/langchain_classic/input.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/docstore/document.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/dropbox.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/utils/formatting.py": {
+      "in_degree": 3,
+      "out_degree": 0,
+      "classes": [
+        "StrictFormatter"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.95
+    },
+    "libs/core/langchain_core/embeddings/embeddings.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [
+        "Embeddings"
+      ],
+      "functions": [
+        "embed_documents",
+        "embed_query",
+        "aembed_documents",
+        "aembed_query"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "libs/langchain/langchain_classic/document_loaders/image_captions.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/messages/base.py": {
+      "in_degree": 11,
+      "out_degree": 13,
+      "classes": [
+        "TextAccessor",
+        "BaseMessage",
+        "BaseMessageChunk"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.544
+    },
+    "libs/core/langchain_core/messages/block_translators/__init__.py": {
+      "in_degree": 8,
+      "out_degree": 8,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.589
+    },
+    "libs/langchain/langchain_classic/document_loaders/chromium.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/runnables/branch.py": {
+      "in_degree": 1,
+      "out_degree": 4,
+      "classes": [
+        "RunnableBranch"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.181
+    },
+    "libs/langchain/langchain_classic/embeddings/aleph_alpha.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/weather.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/embeddings/base.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "langchain_aws",
+        "langchain_cohere",
+        "langchain_google_genai",
+        "langchain_google_vertexai",
+        "langchain_huggingface",
+        "langchain_mistralai",
+        "langchain_ollama",
+        "langchain_openai"
+      ],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/utils/function_calling.py": {
+      "in_degree": 3,
+      "out_degree": 6,
+      "classes": [
+        "FunctionDescription",
+        "ToolDescription"
+      ],
+      "functions": [],
+      "external_deps": [
+        "pydantic",
+        "typing_extensions"
+      ],
+      "reuse_score": 0.349
+    },
+    "libs/langchain/langchain_classic/document_loaders/unstructured.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chat_models/mlflow_ai_gateway.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_transformers/doctran_text_qa.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/callbacks/argilla_callback.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "libs/core/langchain_core/language_models/fake.py": {
+      "in_degree": 1,
+      "out_degree": 4,
+      "classes": [
+        "FakeListLLM",
+        "FakeListLLMError",
+        "FakeStreamingListLLM"
+      ],
+      "functions": [
+        "_llm_type",
+        "_call",
+        "_acall",
+        "_identifying_params",
+        "stream",
+        "astream"
+      ],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.181
+    },
+    "libs/langchain/langchain_classic/document_loaders/couchbase.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chat_models/baidu_qianfan_endpoint.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/runnables/graph_mermaid.py": {
+      "in_degree": 1,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "pyppeteer",
+        "yaml"
+      ],
+      "reuse_score": 0.283
+    },
+    "libs/core/langchain_core/utils/iter.py": {
+      "in_degree": 4,
+      "out_degree": 0,
+      "classes": [
+        "NoLock",
+        "Tee"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.982
+    },
+    "libs/langchain/langchain_classic/cache.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "langchain_community"
+      ],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chat_models/anthropic.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chains/llm_requests.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "libs/langchain/langchain_classic/embeddings/javelin_ai_gateway.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/callbacks/llmonitor_callback.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "libs/core/langchain_core/callbacks/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 7,
+      "classes": [],
+      "functions": [
+        "__getattr__",
+        "__dir__"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/embeddings/octoai_embeddings.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/nuclia.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/arxiv.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/messages/human.py": {
+      "in_degree": 2,
+      "out_degree": 2,
+      "classes": [
+        "HumanMessage",
+        "HumanMessageChunk"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.487
+    },
+    "libs/core/scripts/check_version.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [
+        "get_pyproject_version",
+        "get_version_py_version",
+        "main"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/embeddings/clarifai.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/vectorstores/utils.py": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "numpy",
+        "simsimd"
+      ],
+      "reuse_score": 0.632
+    },
+    "libs/core/langchain_core/callbacks/base.py": {
+      "in_degree": 9,
+      "out_degree": 4,
+      "classes": [
+        "RetrieverManagerMixin",
+        "LLMManagerMixin",
+        "ChainManagerMixin",
+        "ToolManagerMixin",
+        "CallbackManagerMixin",
+        "RunManagerMixin",
+        "BaseCallbackHandler",
+        "AsyncCallbackHandler",
+        "BaseCallbackManager"
+      ],
+      "functions": [
+        "on_retriever_error",
+        "on_retriever_end",
+        "on_llm_new_token",
+        "on_llm_end",
+        "on_llm_error",
+        "on_chain_end",
+        "on_chain_error",
+        "on_agent_action",
+        "on_agent_finish",
+        "on_tool_end",
+        "on_tool_error",
+        "on_llm_start",
+        "on_chat_model_start",
+        "on_retriever_start",
+        "on_chain_start",
+        "on_tool_start",
+        "on_text",
+        "on_retry",
+        "on_custom_event",
+        "ignore_llm",
+        "ignore_retry",
+        "ignore_chain",
+        "ignore_agent",
+        "ignore_retriever",
+        "ignore_chat_model",
+        "ignore_custom_event",
+        "on_llm_start",
+        "on_chat_model_start",
+        "on_llm_new_token",
+        "on_llm_end",
+        "on_llm_error",
+        "on_chain_start",
+        "on_chain_end",
+        "on_chain_error",
+        "on_tool_start",
+        "on_tool_end",
+        "on_tool_error",
+        "on_text",
+        "on_retry",
+        "on_agent_action",
+        "on_agent_finish",
+        "on_retriever_start",
+        "on_retriever_end",
+        "on_retriever_error",
+        "on_custom_event",
+        "__init__",
+        "copy",
+        "merge",
+        "is_async",
+        "add_handler",
+        "remove_handler",
+        "set_handlers",
+        "set_handler",
+        "add_tags",
+        "remove_tags",
+        "add_metadata",
+        "remove_metadata"
+      ],
+      "external_deps": [
+        "tenacity",
+        "typing_extensions"
+      ],
+      "reuse_score": 0.835
+    },
+    "libs/langchain/langchain_classic/chat_models/vertexai.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/prompts/dict.py": {
+      "in_degree": 2,
+      "out_degree": 4,
+      "classes": [
+        "DictPromptTemplate"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.33
+    },
+    "libs/langchain/langchain_classic/callbacks/trubrics_callback.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "libs/langchain/langchain_classic/embeddings/fake.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/embeddings/modelscope_hub.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/generic.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/language_models/_utils.py": {
+      "in_degree": 3,
+      "out_degree": 4,
+      "classes": [
+        "ParsedDataUri"
+      ],
+      "functions": [
+        "is_openai_data_block",
+        "_parse_data_uri",
+        "_normalize_messages",
+        "_ensure_message_copy",
+        "_update_content_block",
+        "_update_message_content_to_blocks"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.451
+    },
+    "libs/langchain/langchain_classic/formatting.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/srt.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chains/__init__.py": {
+      "in_degree": 3,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.777
+    },
+    "libs/core/langchain_core/document_loaders/blob_loaders.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [
+        "BlobLoader"
+      ],
+      "functions": [
+        "yield_blobs"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "libs/core/langchain_core/agents.py": {
+      "in_degree": 8,
+      "out_degree": 2,
+      "classes": [
+        "AgentAction",
+        "AgentActionMessageLog",
+        "AgentStep",
+        "AgentFinish"
+      ],
+      "functions": [
+        "_convert_agent_action_to_messages",
+        "_convert_agent_observation_to_messages",
+        "_create_function_message",
+        "__init__",
+        "is_lc_serializable",
+        "get_lc_namespace",
+        "messages",
+        "messages",
+        "__init__",
+        "is_lc_serializable",
+        "get_lc_namespace",
+        "messages"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.931
+    },
+    "libs/langchain/langchain_classic/agents/types.py": {
+      "in_degree": 2,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.487
+    },
+    "libs/langchain/langchain_classic/callbacks/streaming_aiter_final_only.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [
+        "AsyncFinalIteratorCallbackHandler"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_transformers/doctran_text_extract.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/output_parsers/list.py": {
+      "in_degree": 1,
+      "out_degree": 2,
+      "classes": [
+        "ListOutputParser",
+        "CommaSeparatedListOutputParser",
+        "NumberedListOutputParser",
+        "MarkdownListOutputParser"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.283
+    },
+    "libs/langchain/langchain_classic/document_loaders/trello.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/tracers/langchain.py": {
+      "in_degree": 6,
+      "out_degree": 9,
+      "classes": [
+        "LangChainTracer"
+      ],
+      "functions": [],
+      "external_deps": [
+        "tenacity",
+        "typing_extensions"
+      ],
+      "reuse_score": 0.451
+    },
+    ".github/scripts/check_prerelease_dependencies.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/notebook.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chat_models/litellm.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/embeddings/llm_rails.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/agents/initialize.py": {
+      "in_degree": 1,
+      "out_degree": 9,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.095
+    },
+    "libs/langchain/langchain_classic/sql_database.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "langchain_community"
+      ],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/docstore/base.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/globals.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "libs/langchain/langchain_classic/text_splitter.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "langchain_text_splitters"
+      ],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/markdown.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/embeddings/ernie.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/utils/mustache.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [
+        "ChevronError"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/callbacks/clearml_callback.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "libs/core/langchain_core/retrievers.py": {
+      "in_degree": 5,
+      "out_degree": 5,
+      "classes": [
+        "LangSmithRetrieverParams",
+        "BaseRetriever"
+      ],
+      "functions": [
+        "__init_subclass__",
+        "_get_ls_params",
+        "invoke",
+        "ainvoke",
+        "_get_relevant_documents",
+        "_aget_relevant_documents",
+        "_aget_relevant_documents"
+      ],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.565
+    },
+    "libs/langchain/langchain_classic/adapters/openai.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/runnables/retry.py": {
+      "in_degree": 1,
+      "out_degree": 4,
+      "classes": [
+        "ExponentialJitterParams",
+        "RunnableRetry"
+      ],
+      "functions": [],
+      "external_deps": [
+        "tenacity",
+        "typing_extensions"
+      ],
+      "reuse_score": 0.181
+    },
+    "libs/langchain/langchain_classic/adapters/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/callbacks/labelstudio_callback.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "libs/core/langchain_core/utils/uuid.py": {
+      "in_degree": 2,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [
+        "uuid_utils"
+      ],
+      "reuse_score": 0.865
+    },
+    "libs/langchain/langchain_classic/chat_loaders/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/word_document.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/documents/compressor.py": {
+      "in_degree": 1,
+      "out_degree": 4,
+      "classes": [
+        "BaseDocumentCompressor"
+      ],
+      "functions": [
+        "compress_documents",
+        "acompress_documents"
+      ],
+      "external_deps": [],
+      "reuse_score": 0.181
+    },
+    "libs/core/langchain_core/messages/block_translators/anthropic.py": {
+      "in_degree": 3,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.632
+    },
+    "libs/langchain/langchain_classic/embeddings/bedrock.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/callbacks/arize_callback.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "libs/core/langchain_core/utils/html.py": {
+      "in_degree": 0,
+      "out_degree": 0,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/runnables/base.py": {
+      "in_degree": 11,
+      "out_degree": 21,
+      "classes": [
+        "Runnable",
+        "RunnableSerializable",
+        "RunnableSequence",
+        "RunnableParallel",
+        "RunnableGenerator",
+        "RunnableLambda",
+        "RunnableEachBase",
+        "RunnableEach",
+        "RunnableBindingBase",
+        "RunnableBinding",
+        "_RunnableCallableSync",
+        "_RunnableCallableAsync",
+        "_RunnableCallableIterator",
+        "_RunnableCallableAsyncIterator"
+      ],
+      "functions": [],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.393
+    },
+    "libs/langchain/langchain_classic/document_loaders/airbyte.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/modern_treasury.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/etherscan.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/callbacks/manager.py": {
+      "in_degree": 0,
+      "out_degree": 5,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chat_models/volcengine_maas.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/chat_models/bedrock.py": {
+      "in_degree": 0,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/load/__init__.py": {
+      "in_degree": 10,
+      "out_degree": 4,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.865
+    },
+    "libs/core/langchain_core/callbacks/stdout.py": {
+      "in_degree": 3,
+      "out_degree": 3,
+      "classes": [
+        "StdOutCallbackHandler"
+      ],
+      "functions": [
+        "__init__",
+        "on_chain_start",
+        "on_chain_end",
+        "on_agent_action",
+        "on_tool_end",
+        "on_text",
+        "on_agent_finish"
+      ],
+      "external_deps": [
+        "typing_extensions"
+      ],
+      "reuse_score": 0.528
+    },
+    "libs/langchain/langchain_classic/document_loaders/datadog_logs.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/document_loaders/obsidian.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/tracers/root_listeners.py": {
+      "in_degree": 1,
+      "out_degree": 3,
+      "classes": [
+        "RootListenersTracer",
+        "AsyncRootListenersTracer"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.221
+    },
+    "libs/langchain/langchain_classic/document_loaders/pubmed.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/messages/system.py": {
+      "in_degree": 2,
+      "out_degree": 2,
+      "classes": [
+        "SystemMessage",
+        "SystemMessageChunk"
+      ],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.487
+    },
+    "libs/langchain/langchain_classic/embeddings/mlflow.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/langchain/langchain_classic/callbacks/aim_callback.py": {
+      "in_degree": 1,
+      "out_degree": 1,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.393
+    },
+    "libs/core/langchain_core/messages/block_translators/bedrock_converse.py": {
+      "in_degree": 2,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.487
+    },
+    "libs/langchain/langchain_classic/embeddings/cohere.py": {
+      "in_degree": 0,
+      "out_degree": 2,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.0
+    },
+    "libs/core/langchain_core/language_models/__init__.py": {
+      "in_degree": 13,
+      "out_degree": 8,
+      "classes": [],
+      "functions": [],
+      "external_deps": [],
+      "reuse_score": 0.764
+    }
+  },
+  "communities": {
+    "libs_core_langchain_core_output_parsers": [
+      "libs/core/langchain_core/exceptions.py",
+      "libs/core/langchain_core/output_parsers/__init__.py",
+      "libs/core/langchain_core/output_parsers/format_instructions.py",
+      "libs/core/langchain_core/output_parsers/json.py",
+      "libs/core/langchain_core/output_parsers/list.py",
+      "libs/core/langchain_core/output_parsers/openai_functions.py",
+      "libs/core/langchain_core/output_parsers/pydantic.py",
+      "libs/core/langchain_core/output_parsers/string.py",
+      "libs/core/langchain_core/output_parsers/transform.py",
+      "libs/core/langchain_core/output_parsers/xml.py",
+      "libs/core/langchain_core/stores.py",
+      "libs/core/langchain_core/utils/json.py",
+      "libs/langchain/langchain_classic/embeddings/cache.py"
+    ],
+    ".github_scripts": [
+      ".github/scripts/check_diff.py",
+      ".github/scripts/get_min_versions.py",
+      "libs/core/langchain_core/runnables/graph_mermaid.py",
+      "libs/langchain/langchain_classic/requests.py"
+    ],
+    "libs_langchain_langchain_classic_document_loaders": [
+      "libs/core/langchain_core/_api/__init__.py",
+      "libs/langchain/langchain_classic/adapters/openai.py",
+      "libs/langchain/langchain_classic/agents/load_tools.py",
+      "libs/langchain/langchain_classic/cache.py",
+      "libs/langchain/langchain_classic/callbacks/confident_callback.py",
+      "libs/langchain/langchain_classic/callbacks/utils.py",
+      "libs/langchain/langchain_classic/chat_loaders/gmail.py",
+      "libs/langchain/langchain_classic/chat_loaders/imessage.py",
+      "libs/langchain/langchain_classic/chat_loaders/langsmith.py",
+      "libs/langchain/langchain_classic/chat_loaders/slack.py",
+      "libs/langchain/langchain_classic/chat_loaders/telegram.py",
+      "libs/langchain/langchain_classic/chat_loaders/utils.py",
+      "libs/langchain/langchain_classic/chat_loaders/whatsapp.py",
+      "libs/langchain/langchain_classic/chat_models/anthropic.py",
+      "libs/langchain/langchain_classic/chat_models/anyscale.py",
+      "libs/langchain/langchain_classic/chat_models/azure_openai.py",
+      "libs/langchain/langchain_classic/chat_models/azureml_endpoint.py",
+      "libs/langchain/langchain_classic/chat_models/baichuan.py",
+      "libs/langchain/langchain_classic/chat_models/baidu_qianfan_endpoint.py",
+      "libs/langchain/langchain_classic/chat_models/bedrock.py",
+      "libs/langchain/langchain_classic/chat_models/cohere.py",
+      "libs/langchain/langchain_classic/chat_models/databricks.py",
+      "libs/langchain/langchain_classic/chat_models/ernie.py",
+      "libs/langchain/langchain_classic/chat_models/everlyai.py",
+      "libs/langchain/langchain_classic/chat_models/fake.py",
+      "libs/langchain/langchain_classic/chat_models/fireworks.py",
+      "libs/langchain/langchain_classic/chat_models/gigachat.py",
+      "libs/langchain/langchain_classic/chat_models/google_palm.py",
+      "libs/langchain/langchain_classic/chat_models/human.py",
+      "libs/langchain/langchain_classic/chat_models/hunyuan.py",
+      "libs/langchain/langchain_classic/chat_models/javelin_ai_gateway.py",
+      "libs/langchain/langchain_classic/chat_models/jinachat.py",
+      "libs/langchain/langchain_classic/chat_models/konko.py",
+      "libs/langchain/langchain_classic/chat_models/litellm.py",
+      "libs/langchain/langchain_classic/chat_models/meta.py",
+      "libs/langchain/langchain_classic/chat_models/minimax.py",
+      "libs/langchain/langchain_classic/chat_models/mlflow.py",
+      "libs/langchain/langchain_classic/chat_models/mlflow_ai_gateway.py",
+      "libs/langchain/langchain_classic/chat_models/ollama.py",
+      "libs/langchain/langchain_classic/chat_models/openai.py",
+      "libs/langchain/langchain_classic/chat_models/pai_eas_endpoint.py",
+      "libs/langchain/langchain_classic/chat_models/promptlayer_openai.py",
+      "libs/langchain/langchain_classic/chat_models/tongyi.py",
+      "libs/langchain/langchain_classic/chat_models/vertexai.py",
+      "libs/langchain/langchain_classic/chat_models/volcengine_maas.py",
+      "libs/langchain/langchain_classic/chat_models/yandex.py",
+      "libs/langchain/langchain_classic/docstore/__init__.py",
+      "libs/langchain/langchain_classic/docstore/arbitrary_fn.py",
+      "libs/langchain/langchain_classic/docstore/base.py",
+      "libs/langchain/langchain_classic/docstore/in_memory.py",
+      "libs/langchain/langchain_classic/docstore/wikipedia.py",
+      "libs/langchain/langchain_classic/document_loaders/__init__.py",
+      "libs/langchain/langchain_classic/document_loaders/acreom.py",
+      "libs/langchain/langchain_classic/document_loaders/airbyte.py",
+      "libs/langchain/langchain_classic/document_loaders/airbyte_json.py",
+      "libs/langchain/langchain_classic/document_loaders/airtable.py",
+      "libs/langchain/langchain_classic/document_loaders/apify_dataset.py",
+      "libs/langchain/langchain_classic/document_loaders/arcgis_loader.py",
+      "libs/langchain/langchain_classic/document_loaders/arxiv.py",
+      "libs/langchain/langchain_classic/document_loaders/assemblyai.py",
+      "libs/langchain/langchain_classic/document_loaders/async_html.py",
+      "libs/langchain/langchain_classic/document_loaders/azlyrics.py",
+      "libs/langchain/langchain_classic/document_loaders/azure_ai_data.py",
+      "libs/langchain/langchain_classic/document_loaders/azure_blob_storage_container.py",
+      "libs/langchain/langchain_classic/document_loaders/azure_blob_storage_file.py",
+      "libs/langchain/langchain_classic/document_loaders/baiducloud_bos_directory.py",
+      "libs/langchain/langchain_classic/document_loaders/baiducloud_bos_file.py",
+      "libs/langchain/langchain_classic/document_loaders/base.py",
+      "libs/langchain/langchain_classic/document_loaders/base_o365.py",
+      "libs/langchain/langchain_classic/document_loaders/bibtex.py",
+      "libs/langchain/langchain_classic/document_loaders/bigquery.py",
+      "libs/langchain/langchain_classic/document_loaders/bilibili.py",
+      "libs/langchain/langchain_classic/document_loaders/blackboard.py",
+      "libs/langchain/langchain_classic/document_loaders/blockchain.py",
+      "libs/langchain/langchain_classic/document_loaders/brave_search.py",
+      "libs/langchain/langchain_classic/document_loaders/browserless.py",
+      "libs/langchain/langchain_classic/document_loaders/chatgpt.py",
+      "libs/langchain/langchain_classic/document_loaders/chromium.py",
+      "libs/langchain/langchain_classic/document_loaders/college_confidential.py",
+      "libs/langchain/langchain_classic/document_loaders/concurrent.py",
+      "libs/langchain/langchain_classic/document_loaders/confluence.py",
+      "libs/langchain/langchain_classic/document_loaders/conllu.py",
+      "libs/langchain/langchain_classic/document_loaders/couchbase.py",
+      "libs/langchain/langchain_classic/document_loaders/csv_loader.py",
+      "libs/langchain/langchain_classic/document_loaders/cube_semantic.py",
+      "libs/langchain/langchain_classic/document_loaders/datadog_logs.py",
+      "libs/langchain/langchain_classic/document_loaders/dataframe.py",
+      "libs/langchain/langchain_classic/document_loaders/diffbot.py",
+      "libs/langchain/langchain_classic/document_loaders/directory.py",
+      "libs/langchain/langchain_classic/document_loaders/discord.py",
+      "libs/langchain/langchain_classic/document_loaders/docugami.py",
+      "libs/langchain/langchain_classic/document_loaders/docusaurus.py",
+      "libs/langchain/langchain_classic/document_loaders/dropbox.py",
+      "libs/langchain/langchain_classic/document_loaders/duckdb_loader.py",
+      "libs/langchain/langchain_classic/document_loaders/email.py",
+      "libs/langchain/langchain_classic/document_loaders/epub.py",
+      "libs/langchain/langchain_classic/document_loaders/etherscan.py",
+      "libs/langchain/langchain_classic/document_loaders/evernote.py",
+      "libs/langchain/langchain_classic/document_loaders/excel.py",
+      "libs/langchain/langchain_classic/document_loaders/facebook_chat.py",
+      "libs/langchain/langchain_classic/document_loaders/fauna.py",
+      "libs/langchain/langchain_classic/document_loaders/figma.py",
+      "libs/langchain/langchain_classic/document_loaders/gcs_directory.py",
+      "libs/langchain/langchain_classic/document_loaders/gcs_file.py",
+      "libs/langchain/langchain_classic/document_loaders/generic.py",
+      "libs/langchain/langchain_classic/document_loaders/geodataframe.py",
+      "libs/langchain/langchain_classic/document_loaders/git.py",
+      "libs/langchain/langchain_classic/document_loaders/gitbook.py",
+      "libs/langchain/langchain_classic/document_loaders/github.py",
+      "libs/langchain/langchain_classic/document_loaders/google_speech_to_text.py",
+      "libs/langchain/langchain_classic/document_loaders/googledrive.py",
+      "libs/langchain/langchain_classic/document_loaders/gutenberg.py",
+      "libs/langchain/langchain_classic/document_loaders/helpers.py",
+      "libs/langchain/langchain_classic/document_loaders/hn.py",
+      "libs/langchain/langchain_classic/document_loaders/html.py",
+      "libs/langchain/langchain_classic/document_loaders/html_bs.py",
+      "libs/langchain/langchain_classic/document_loaders/hugging_face_dataset.py",
+      "libs/langchain/langchain_classic/document_loaders/ifixit.py",
+      "libs/langchain/langchain_classic/document_loaders/image.py",
+      "libs/langchain/langchain_classic/document_loaders/image_captions.py",
+      "libs/langchain/langchain_classic/document_loaders/imsdb.py",
+      "libs/langchain/langchain_classic/document_loaders/iugu.py",
+      "libs/langchain/langchain_classic/document_loaders/joplin.py",
+      "libs/langchain/langchain_classic/document_loaders/json_loader.py",
+      "libs/langchain/langchain_classic/document_loaders/lakefs.py",
+      "libs/langchain/langchain_classic/document_loaders/larksuite.py",
+      "libs/langchain/langchain_classic/document_loaders/markdown.py",
+      "libs/langchain/langchain_classic/document_loaders/mastodon.py",
+      "libs/langchain/langchain_classic/document_loaders/max_compute.py",
+      "libs/langchain/langchain_classic/document_loaders/mediawikidump.py",
+      "libs/langchain/langchain_classic/document_loaders/merge.py",
+      "libs/langchain/langchain_classic/document_loaders/mhtml.py",
+      "libs/langchain/langchain_classic/document_loaders/modern_treasury.py",
+      "libs/langchain/langchain_classic/document_loaders/mongodb.py",
+      "libs/langchain/langchain_classic/document_loaders/news.py",
+      "libs/langchain/langchain_classic/document_loaders/notebook.py",
+      "libs/langchain/langchain_classic/document_loaders/notion.py",
+      "libs/langchain/langchain_classic/document_loaders/notiondb.py",
+      "libs/langchain/langchain_classic/document_loaders/nuclia.py",
+      "libs/langchain/langchain_classic/document_loaders/obs_directory.py",
+      "libs/langchain/langchain_classic/document_loaders/obs_file.py",
+      "libs/langchain/langchain_classic/document_loaders/obsidian.py",
+      "libs/langchain/langchain_classic/document_loaders/odt.py",
+      "libs/langchain/langchain_classic/document_loaders/onedrive.py",
+      "libs/langchain/langchain_classic/document_loaders/onedrive_file.py",
+      "libs/langchain/langchain_classic/document_loaders/onenote.py",
+      "libs/langchain/langchain_classic/document_loaders/open_city_data.py",
+      "libs/langchain/langchain_classic/document_loaders/org_mode.py",
+      "libs/langchain/langchain_classic/document_loaders/pdf.py",
+      "libs/langchain/langchain_classic/document_loaders/polars_dataframe.py",
+      "libs/langchain/langchain_classic/document_loaders/powerpoint.py",
+      "libs/langchain/langchain_classic/document_loaders/psychic.py",
+      "libs/langchain/langchain_classic/document_loaders/pubmed.py",
+      "libs/langchain/langchain_classic/document_loaders/pyspark_dataframe.py",
+      "libs/langchain/langchain_classic/document_loaders/python.py",
+      "libs/langchain/langchain_classic/document_loaders/quip.py",
+      "libs/langchain/langchain_classic/document_loaders/readthedocs.py",
+      "libs/langchain/langchain_classic/document_loaders/recursive_url_loader.py",
+      "libs/langchain/langchain_classic/document_loaders/reddit.py",
+      "libs/langchain/langchain_classic/document_loaders/roam.py",
+      "libs/langchain/langchain_classic/document_loaders/rocksetdb.py",
+      "libs/langchain/langchain_classic/document_loaders/rspace.py",
+      "libs/langchain/langchain_classic/document_loaders/rss.py",
+      "libs/langchain/langchain_classic/document_loaders/rst.py",
+      "libs/langchain/langchain_classic/document_loaders/rtf.py",
+      "libs/langchain/langchain_classic/document_loaders/s3_directory.py",
+      "libs/langchain/langchain_classic/document_loaders/s3_file.py",
+      "libs/langchain/langchain_classic/document_loaders/sharepoint.py",
+      "libs/langchain/langchain_classic/document_loaders/sitemap.py",
+      "libs/langchain/langchain_classic/document_loaders/slack_directory.py",
+      "libs/langchain/langchain_classic/document_loaders/snowflake_loader.py",
+      "libs/langchain/langchain_classic/document_loaders/spreedly.py",
+      "libs/langchain/langchain_classic/document_loaders/srt.py",
+      "libs/langchain/langchain_classic/document_loaders/stripe.py",
+      "libs/langchain/langchain_classic/document_loaders/telegram.py",
+      "libs/langchain/langchain_classic/document_loaders/tencent_cos_directory.py",
+      "libs/langchain/langchain_classic/document_loaders/tencent_cos_file.py",
+      "libs/langchain/langchain_classic/document_loaders/tensorflow_datasets.py",
+      "libs/langchain/langchain_classic/document_loaders/text.py",
+      "libs/langchain/langchain_classic/document_loaders/tomarkdown.py",
+      "libs/langchain/langchain_classic/document_loaders/toml.py",
+      "libs/langchain/langchain_classic/document_loaders/trello.py",
+      "libs/langchain/langchain_classic/document_loaders/tsv.py",
+      "libs/langchain/langchain_classic/document_loaders/twitter.py",
+      "libs/langchain/langchain_classic/document_loaders/unstructured.py",
+      "libs/langchain/langchain_classic/document_loaders/url.py",
+      "libs/langchain/langchain_classic/document_loaders/url_playwright.py",
+      "libs/langchain/langchain_classic/document_loaders/url_selenium.py",
+      "libs/langchain/langchain_classic/document_loaders/weather.py",
+      "libs/langchain/langchain_classic/document_loaders/web_base.py",
+      "libs/langchain/langchain_classic/document_loaders/whatsapp_chat.py",
+      "libs/langchain/langchain_classic/document_loaders/wikipedia.py",
+      "libs/langchain/langchain_classic/document_loaders/word_document.py",
+      "libs/langchain/langchain_classic/document_loaders/xml.py",
+      "libs/langchain/langchain_classic/document_loaders/xorbits.py",
+      "libs/langchain/langchain_classic/document_loaders/youtube.py",
+      "libs/langchain/langchain_classic/document_transformers/__init__.py",
+      "libs/langchain/langchain_classic/document_transformers/beautiful_soup_transformer.py",
+      "libs/langchain/langchain_classic/document_transformers/doctran_text_extract.py",
+      "libs/langchain/langchain_classic/document_transformers/doctran_text_qa.py",
+      "libs/langchain/langchain_classic/document_transformers/doctran_text_translate.py",
+      "libs/langchain/langchain_classic/document_transformers/embeddings_redundant_filter.py",
+      "libs/langchain/langchain_classic/document_transformers/google_translate.py",
+      "libs/langchain/langchain_classic/document_transformers/html2text.py",
+      "libs/langchain/langchain_classic/document_transformers/long_context_reorder.py",
+      "libs/langchain/langchain_classic/document_transformers/nuclia_text_transform.py",
+      "libs/langchain/langchain_classic/document_transformers/openai_functions.py",
+      "libs/langchain/langchain_classic/embeddings/cloudflare_workersai.py",
+      "libs/langchain/langchain_classic/python.py",
+      "libs/langchain/langchain_classic/serpapi.py",
+      "libs/langchain/langchain_classic/sql_database.py"
+    ],
+    "libs_langchain_langchain_classic_embeddings": [
+      "libs/core/langchain_core/embeddings/__init__.py",
+      "libs/core/langchain_core/embeddings/embeddings.py",
+      "libs/core/langchain_core/embeddings/fake.py",
+      "libs/langchain/langchain_classic/embeddings/aleph_alpha.py",
+      "libs/langchain/langchain_classic/embeddings/awa.py",
+      "libs/langchain/langchain_classic/embeddings/azure_openai.py",
+      "libs/langchain/langchain_classic/embeddings/baidu_qianfan_endpoint.py",
+      "libs/langchain/langchain_classic/embeddings/bedrock.py",
+      "libs/langchain/langchain_classic/embeddings/bookend.py",
+      "libs/langchain/langchain_classic/embeddings/clarifai.py",
+      "libs/langchain/langchain_classic/embeddings/cohere.py",
+      "libs/langchain/langchain_classic/embeddings/dashscope.py",
+      "libs/langchain/langchain_classic/embeddings/databricks.py",
+      "libs/langchain/langchain_classic/embeddings/deepinfra.py",
+      "libs/langchain/langchain_classic/embeddings/edenai.py",
+      "libs/langchain/langchain_classic/embeddings/elasticsearch.py",
+      "libs/langchain/langchain_classic/embeddings/embaas.py",
+      "libs/langchain/langchain_classic/embeddings/ernie.py",
+      "libs/langchain/langchain_classic/embeddings/fake.py",
+      "libs/langchain/langchain_classic/embeddings/fastembed.py",
+      "libs/langchain/langchain_classic/embeddings/google_palm.py",
+      "libs/langchain/langchain_classic/embeddings/gpt4all.py",
+      "libs/langchain/langchain_classic/embeddings/gradient_ai.py",
+      "libs/langchain/langchain_classic/embeddings/huggingface.py",
+      "libs/langchain/langchain_classic/embeddings/huggingface_hub.py",
+      "libs/langchain/langchain_classic/embeddings/infinity.py",
+      "libs/langchain/langchain_classic/embeddings/javelin_ai_gateway.py",
+      "libs/langchain/langchain_classic/embeddings/jina.py",
+      "libs/langchain/langchain_classic/embeddings/johnsnowlabs.py",
+      "libs/langchain/langchain_classic/embeddings/llamacpp.py",
+      "libs/langchain/langchain_classic/embeddings/llm_rails.py",
+      "libs/langchain/langchain_classic/embeddings/localai.py",
+      "libs/langchain/langchain_classic/embeddings/minimax.py",
+      "libs/langchain/langchain_classic/embeddings/mlflow.py",
+      "libs/langchain/langchain_classic/embeddings/mlflow_gateway.py",
+      "libs/langchain/langchain_classic/embeddings/modelscope_hub.py",
+      "libs/langchain/langchain_classic/embeddings/mosaicml.py",
+      "libs/langchain/langchain_classic/embeddings/nlpcloud.py",
+      "libs/langchain/langchain_classic/embeddings/octoai_embeddings.py",
+      "libs/langchain/langchain_classic/embeddings/ollama.py"
+    ],
+    "libs_core_langchain_core_prompts": [
+      "libs/core/langchain_core/_security/_ssrf_protection.py",
+      "libs/core/langchain_core/example_selectors/__init__.py",
+      "libs/core/langchain_core/example_selectors/base.py",
+      "libs/core/langchain_core/example_selectors/length_based.py",
+      "libs/core/langchain_core/example_selectors/semantic_similarity.py",
+      "libs/core/langchain_core/outputs/chat_result.py",
+      "libs/core/langchain_core/outputs/llm_result.py",
+      "libs/core/langchain_core/outputs/run_info.py",
+      "libs/core/langchain_core/prompts/__init__.py",
+      "libs/core/langchain_core/prompts/base.py",
+      "libs/core/langchain_core/prompts/chat.py",
+      "libs/core/langchain_core/prompts/dict.py",
+      "libs/core/langchain_core/prompts/few_shot.py",
+      "libs/core/langchain_core/prompts/few_shot_with_templates.py",
+      "libs/core/langchain_core/prompts/image.py",
+      "libs/core/langchain_core/prompts/loading.py",
+      "libs/core/langchain_core/prompts/message.py",
+      "libs/core/langchain_core/prompts/prompt.py",
+      "libs/core/langchain_core/prompts/string.py",
+      "libs/core/langchain_core/prompts/structured.py",
+      "libs/core/langchain_core/structured_query.py",
+      "libs/core/langchain_core/utils/formatting.py",
+      "libs/core/langchain_core/utils/input.py",
+      "libs/core/langchain_core/utils/interactive_env.py",
+      "libs/core/langchain_core/utils/pydantic.py",
+      "libs/langchain/langchain_classic/agents/schema.py",
+      "libs/langchain/langchain_classic/base_memory.py",
+      "libs/langchain/langchain_classic/chains/__init__.py",
+      "libs/langchain/langchain_classic/chains/base.py",
+      "libs/langchain/langchain_classic/chains/example_generator.py",
+      "libs/langchain/langchain_classic/chains/llm.py",
+      "libs/langchain/langchain_classic/chains/llm_requests.py",
+      "libs/langchain/langchain_classic/chains/loading.py",
+      "libs/langchain/langchain_classic/chains/mapreduce.py",
+      "libs/langchain/langchain_classic/chains/moderation.py",
+      "libs/langchain/langchain_classic/chains/sequential.py",
+      "libs/langchain/langchain_classic/chains/transform.py",
+      "libs/langchain/langchain_classic/example_generator.py",
+      "libs/langchain/langchain_classic/formatting.py",
+      "libs/langchain/langchain_classic/input.py",
+      "libs/langchain/langchain_classic/model_laboratory.py"
+    ],
+    "libs_core_langchain_core_tracers": [
+      "libs/core/langchain_core/_import_utils.py",
+      "libs/core/langchain_core/agents.py",
+      "libs/core/langchain_core/callbacks/__init__.py",
+      "libs/core/langchain_core/callbacks/base.py",
+      "libs/core/langchain_core/callbacks/file.py",
+      "libs/core/langchain_core/callbacks/manager.py",
+      "libs/core/langchain_core/callbacks/stdout.py",
+      "libs/core/langchain_core/callbacks/streaming_stdout.py",
+      "libs/core/langchain_core/callbacks/usage.py",
+      "libs/core/langchain_core/chat_history.py",
+      "libs/core/langchain_core/document_loaders/__init__.py",
+      "libs/core/langchain_core/document_loaders/base.py",
+      "libs/core/langchain_core/document_loaders/blob_loaders.py",
+      "libs/core/langchain_core/document_loaders/langsmith.py",
+      "libs/core/langchain_core/documents/__init__.py",
+      "libs/core/langchain_core/documents/base.py",
+      "libs/core/langchain_core/documents/compressor.py",
+      "libs/core/langchain_core/documents/transformers.py",
+      "libs/core/langchain_core/indexing/__init__.py",
+      "libs/core/langchain_core/indexing/api.py",
+      "libs/core/langchain_core/indexing/base.py",
+      "libs/core/langchain_core/indexing/in_memory.py",
+      "libs/core/langchain_core/load/__init__.py",
+      "libs/core/langchain_core/load/_validation.py",
+      "libs/core/langchain_core/load/dump.py",
+      "libs/core/langchain_core/load/load.py",
+      "libs/core/langchain_core/load/mapping.py",
+      "libs/core/langchain_core/load/serializable.py",
+      "libs/core/langchain_core/outputs/__init__.py",
+      "libs/core/langchain_core/retrievers.py",
+      "libs/core/langchain_core/runnables/__init__.py",
+      "libs/core/langchain_core/runnables/base.py",
+      "libs/core/langchain_core/runnables/branch.py",
+      "libs/core/langchain_core/runnables/config.py",
+      "libs/core/langchain_core/runnables/configurable.py",
+      "libs/core/langchain_core/runnables/fallbacks.py",
+      "libs/core/langchain_core/runnables/graph.py",
+      "libs/core/langchain_core/runnables/graph_ascii.py",
+      "libs/core/langchain_core/runnables/graph_png.py",
+      "libs/core/langchain_core/runnables/history.py",
+      "libs/core/langchain_core/runnables/passthrough.py",
+      "libs/core/langchain_core/runnables/retry.py",
+      "libs/core/langchain_core/runnables/router.py",
+      "libs/core/langchain_core/runnables/schema.py",
+      "libs/core/langchain_core/runnables/utils.py",
+      "libs/core/langchain_core/tracers/__init__.py",
+      "libs/core/langchain_core/tracers/_compat.py",
+      "libs/core/langchain_core/tracers/_streaming.py",
+      "libs/core/langchain_core/tracers/base.py",
+      "libs/core/langchain_core/tracers/context.py",
+      "libs/core/langchain_core/tracers/core.py",
+      "libs/core/langchain_core/tracers/evaluation.py",
+      "libs/core/langchain_core/tracers/event_stream.py",
+      "libs/core/langchain_core/tracers/langchain.py",
+      "libs/core/langchain_core/tracers/log_stream.py",
+      "libs/core/langchain_core/tracers/memory_stream.py",
+      "libs/core/langchain_core/tracers/root_listeners.py",
+      "libs/core/langchain_core/tracers/run_collector.py",
+      "libs/core/langchain_core/tracers/schemas.py",
+      "libs/core/langchain_core/tracers/stdout.py",
+      "libs/core/langchain_core/utils/__init__.py",
+      "libs/core/langchain_core/utils/aiter.py",
+      "libs/core/langchain_core/utils/env.py",
+      "libs/core/langchain_core/utils/iter.py",
+      "libs/core/langchain_core/utils/strings.py",
+      "libs/core/langchain_core/utils/uuid.py",
+      "libs/core/langchain_core/vectorstores/__init__.py",
+      "libs/core/langchain_core/vectorstores/base.py",
+      "libs/core/langchain_core/vectorstores/in_memory.py",
+      "libs/core/langchain_core/vectorstores/utils.py",
+      "libs/langchain/langchain_classic/callbacks/file.py",
+      "libs/langchain/langchain_classic/callbacks/manager.py",
+      "libs/langchain/langchain_classic/callbacks/stdout.py",
+      "libs/langchain/langchain_classic/callbacks/streaming_aiter.py",
+      "libs/langchain/langchain_classic/callbacks/streaming_aiter_final_only.py",
+      "libs/langchain/langchain_classic/chains/history_aware_retriever.py",
+      "libs/langchain/langchain_classic/chains/retrieval.py",
+      "libs/langchain/langchain_classic/docstore/document.py",
+      "libs/langchain/langchain_classic/embeddings/base.py",
+      "libs/langchain/langchain_classic/hub.py"
+    ],
+    "libs_core_langchain_core_messages": [
+      "libs/core/langchain_core/__init__.py",
+      "libs/core/langchain_core/caches.py",
+      "libs/core/langchain_core/chat_loaders.py",
+      "libs/core/langchain_core/chat_sessions.py",
+      "libs/core/langchain_core/env.py",
+      "libs/core/langchain_core/globals.py",
+      "libs/core/langchain_core/language_models/__init__.py",
+      "libs/core/langchain_core/language_models/_utils.py",
+      "libs/core/langchain_core/language_models/base.py",
+      "libs/core/langchain_core/language_models/chat_models.py",
+      "libs/core/langchain_core/language_models/fake.py",
+      "libs/core/langchain_core/language_models/fake_chat_models.py",
+      "libs/core/langchain_core/language_models/llms.py",
+      "libs/core/langchain_core/language_models/model_profile.py",
+      "libs/core/langchain_core/messages/__init__.py",
+      "libs/core/langchain_core/messages/ai.py",
+      "libs/core/langchain_core/messages/base.py",
+      "libs/core/langchain_core/messages/block_translators/__init__.py",
+      "libs/core/langchain_core/messages/block_translators/anthropic.py",
+      "libs/core/langchain_core/messages/block_translators/bedrock.py",
+      "libs/core/langchain_core/messages/block_translators/bedrock_converse.py",
+      "libs/core/langchain_core/messages/block_translators/google_genai.py",
+      "libs/core/langchain_core/messages/block_translators/google_vertexai.py",
+      "libs/core/langchain_core/messages/block_translators/groq.py",
+      "libs/core/langchain_core/messages/block_translators/langchain_v0.py",
+      "libs/core/langchain_core/messages/block_translators/openai.py",
+      "libs/core/langchain_core/messages/chat.py",
+      "libs/core/langchain_core/messages/content.py",
+      "libs/core/langchain_core/messages/function.py",
+      "libs/core/langchain_core/messages/human.py",
+      "libs/core/langchain_core/messages/modifier.py",
+      "libs/core/langchain_core/messages/system.py",
+      "libs/core/langchain_core/messages/tool.py",
+      "libs/core/langchain_core/messages/utils.py",
+      "libs/core/langchain_core/output_parsers/base.py",
+      "libs/core/langchain_core/output_parsers/openai_tools.py",
+      "libs/core/langchain_core/outputs/chat_generation.py",
+      "libs/core/langchain_core/outputs/generation.py",
+      "libs/core/langchain_core/prompt_values.py",
+      "libs/core/langchain_core/rate_limiters.py",
+      "libs/core/langchain_core/utils/_merge.py",
+      "libs/core/langchain_core/utils/function_calling.py",
+      "libs/core/langchain_core/utils/json_schema.py",
+      "libs/core/langchain_core/utils/usage.py",
+      "libs/core/langchain_core/utils/utils.py",
+      "libs/core/langchain_core/version.py",
+      "libs/langchain/langchain_classic/base_language.py",
+      "libs/langchain/langchain_classic/chains/prompt_selector.py",
+      "libs/langchain/langchain_classic/chat_loaders/base.py",
+      "libs/langchain/langchain_classic/chat_models/__init__.py",
+      "libs/langchain/langchain_classic/chat_models/base.py",
+      "libs/langchain/langchain_classic/globals.py"
+    ],
+    "libs_langchain_langchain_classic_callbacks": [
+      "libs/core/langchain_core/_api/beta_decorator.py",
+      "libs/core/langchain_core/_api/deprecation.py",
+      "libs/core/langchain_core/_api/internal.py",
+      "libs/core/langchain_core/_api/path.py",
+      "libs/core/langchain_core/tools/__init__.py",
+      "libs/core/langchain_core/tools/base.py",
+      "libs/core/langchain_core/tools/convert.py",
+      "libs/core/langchain_core/tools/render.py",
+      "libs/core/langchain_core/tools/retriever.py",
+      "libs/core/langchain_core/tools/simple.py",
+      "libs/core/langchain_core/tools/structured.py",
+      "libs/langchain/langchain_classic/__init__.py",
+      "libs/langchain/langchain_classic/agents/__init__.py",
+      "libs/langchain/langchain_classic/agents/agent.py",
+      "libs/langchain/langchain_classic/agents/agent_iterator.py",
+      "libs/langchain/langchain_classic/agents/agent_types.py",
+      "libs/langchain/langchain_classic/agents/initialize.py",
+      "libs/langchain/langchain_classic/agents/loading.py",
+      "libs/langchain/langchain_classic/agents/tools.py",
+      "libs/langchain/langchain_classic/agents/types.py",
+      "libs/langchain/langchain_classic/agents/utils.py",
+      "libs/langchain/langchain_classic/callbacks/__init__.py",
+      "libs/langchain/langchain_classic/callbacks/aim_callback.py",
+      "libs/langchain/langchain_classic/callbacks/argilla_callback.py",
+      "libs/langchain/langchain_classic/callbacks/arize_callback.py",
+      "libs/langchain/langchain_classic/callbacks/arthur_callback.py",
+      "libs/langchain/langchain_classic/callbacks/base.py",
+      "libs/langchain/langchain_classic/callbacks/clearml_callback.py",
+      "libs/langchain/langchain_classic/callbacks/comet_ml_callback.py",
+      "libs/langchain/langchain_classic/callbacks/context_callback.py",
+      "libs/langchain/langchain_classic/callbacks/flyte_callback.py",
+      "libs/langchain/langchain_classic/callbacks/human.py",
+      "libs/langchain/langchain_classic/callbacks/infino_callback.py",
+      "libs/langchain/langchain_classic/callbacks/labelstudio_callback.py",
+      "libs/langchain/langchain_classic/callbacks/llmonitor_callback.py",
+      "libs/langchain/langchain_classic/callbacks/mlflow_callback.py",
+      "libs/langchain/langchain_classic/callbacks/openai_info.py",
+      "libs/langchain/langchain_classic/callbacks/promptlayer_callback.py",
+      "libs/langchain/langchain_classic/callbacks/sagemaker_callback.py",
+      "libs/langchain/langchain_classic/callbacks/streaming_stdout.py",
+      "libs/langchain/langchain_classic/callbacks/streaming_stdout_final_only.py",
+      "libs/langchain/langchain_classic/callbacks/trubrics_callback.py",
+      "libs/langchain/langchain_classic/callbacks/wandb_callback.py",
+      "libs/langchain/langchain_classic/callbacks/whylabs_callback.py",
+      "libs/langchain/langchain_classic/env.py"
+    ],
+    "_isolated": [
+      ".github/scripts/check_prerelease_dependencies.py",
+      "libs/core/langchain_core/_security/__init__.py",
+      "libs/core/langchain_core/cross_encoders.py",
+      "libs/core/langchain_core/sys_info.py",
+      "libs/core/langchain_core/utils/html.py",
+      "libs/core/langchain_core/utils/image.py",
+      "libs/core/langchain_core/utils/mustache.py",
+      "libs/core/scripts/check_imports.py",
+      "libs/core/scripts/check_version.py",
+      "libs/langchain/langchain_classic/adapters/__init__.py",
+      "libs/langchain/langchain_classic/chat_loaders/__init__.py",
+      "libs/langchain/langchain_classic/chat_loaders/facebook_messenger.py",
+      "libs/langchain/langchain_classic/text_splitter.py",
+      "libs/langchain/scripts/check_imports.py"
+    ]
+  },
+  "key_nodes": {
+    "leaf_nodes": [
+      {
+        "file": "libs/core/langchain_core/utils/pydantic.py",
+        "reuse_score": 1.0
+      },
+      {
+        "file": "libs/core/langchain_core/utils/input.py",
+        "reuse_score": 1.0
+      },
+      {
+        "file": "libs/core/langchain_core/_import_utils.py",
+        "reuse_score": 1.0
+      },
+      {
+        "file": "libs/core/langchain_core/exceptions.py",
+        "reuse_score": 1.0
+      },
+      {
+        "file": "libs/core/langchain_core/utils/_merge.py",
+        "reuse_score": 0.999
+      },
+      {
+        "file": "libs/core/langchain_core/utils/interactive_env.py",
+        "reuse_score": 0.982
+      },
+      {
+        "file": "libs/core/langchain_core/runnables/schema.py",
+        "reuse_score": 0.982
+      },
+      {
+        "file": "libs/core/langchain_core/tracers/_streaming.py",
+        "reuse_score": 0.982
+      },
+      {
+        "file": "libs/core/langchain_core/utils/iter.py",
+        "reuse_score": 0.982
+      },
+      {
+        "file": "libs/core/langchain_core/utils/env.py",
+        "reuse_score": 0.95
+      },
+      {
+        "file": "libs/core/langchain_core/utils/formatting.py",
+        "reuse_score": 0.95
+      },
+      {
+        "file": "libs/core/langchain_core/tracers/memory_stream.py",
+        "reuse_score": 0.865
+      },
+      {
+        "file": "libs/core/langchain_core/_api/internal.py",
+        "reuse_score": 0.865
+      },
+      {
+        "file": "libs/core/langchain_core/_api/path.py",
+        "reuse_score": 0.865
+      },
+      {
+        "file": "libs/core/langchain_core/utils/uuid.py",
+        "reuse_score": 0.865
+      },
+      {
+        "file": "libs/core/langchain_core/output_parsers/format_instructions.py",
+        "reuse_score": 0.632
+      },
+      {
+        "file": "libs/core/langchain_core/version.py",
+        "reuse_score": 0.632
+      },
+      {
+        "file": "libs/core/langchain_core/utils/json_schema.py",
+        "reuse_score": 0.632
+      },
+      {
+        "file": "libs/core/langchain_core/load/mapping.py",
+        "reuse_score": 0.632
+      },
+      {
+        "file": "libs/core/langchain_core/utils/strings.py",
+        "reuse_score": 0.632
+      }
+    ],
+    "hub_nodes": [
+      {
+        "file": "libs/core/langchain_core/_api/__init__.py",
+        "dependents": 293
+      },
+      {
+        "file": "libs/langchain/langchain_classic/document_loaders/__init__.py",
+        "dependents": 133
+      },
+      {
+        "file": "libs/core/langchain_core/utils/pydantic.py",
+        "dependents": 63
+      },
+      {
+        "file": "libs/core/langchain_core/messages/__init__.py",
+        "dependents": 47
+      },
+      {
+        "file": "libs/core/langchain_core/embeddings/__init__.py",
+        "dependents": 43
+      },
+      {
+        "file": "libs/core/langchain_core/runnables/__init__.py",
+        "dependents": 31
+      },
+      {
+        "file": "libs/langchain/langchain_classic/callbacks/__init__.py",
+        "dependents": 29
+      },
+      {
+        "file": "libs/core/langchain_core/outputs/__init__.py",
+        "dependents": 26
+      },
+      {
+        "file": "libs/core/langchain_core/runnables/config.py",
+        "dependents": 24
+      },
+      {
+        "file": "libs/core/langchain_core/documents/__init__.py",
+        "dependents": 20
+      },
+      {
+        "file": "libs/core/langchain_core/_import_utils.py",
+        "dependents": 18
+      },
+      {
+        "file": "libs/core/langchain_core/runnables/utils.py",
+        "dependents": 16
+      },
+      {
+        "file": "libs/core/langchain_core/tracers/schemas.py",
+        "dependents": 13
+      },
+      {
+        "file": "libs/core/langchain_core/exceptions.py",
+        "dependents": 13
+      },
+      {
+        "file": "libs/core/langchain_core/language_models/__init__.py",
+        "dependents": 13
+      },
+      {
+        "file": "libs/core/langchain_core/tools/__init__.py",
+        "dependents": 12
+      },
+      {
+        "file": "libs/core/langchain_core/callbacks/manager.py",
+        "dependents": 11
+      },
+      {
+        "file": "libs/core/langchain_core/load/serializable.py",
+        "dependents": 11
+      },
+      {
+        "file": "libs/core/langchain_core/prompt_values.py",
+        "dependents": 11
+      },
+      {
+        "file": "libs/core/langchain_core/messages/base.py",
+        "dependents": 11
+      }
+    ]
+  },
+  "all_external_deps": [
+    "builtins",
+    "contextvars",
+    "defusedxml",
+    "filetype",
+    "grandalf",
+    "ipaddress",
+    "jinja2",
+    "jsonpatch",
+    "langchain_anthropic",
+    "langchain_aws",
+    "langchain_cohere",
+    "langchain_community",
+    "langchain_deepseek",
+    "langchain_fireworks",
+    "langchain_google_genai",
+    "langchain_google_vertexai",
+    "langchain_groq",
+    "langchain_huggingface",
+    "langchain_ibm",
+    "langchain_mistralai",
+    "langchain_nvidia_ai_endpoints",
+    "langchain_ollama",
+    "langchain_openai",
+    "langchain_perplexity",
+    "langchain_text_splitters",
+    "langchain_together",
+    "langchain_upstage",
+    "langchain_xai",
+    "langchainhub",
+    "langsmith",
+    "mimetypes",
+    "numpy",
+    "packaging",
+    "pkgutil",
+    "platform",
+    "pydantic",
+    "pydantic_core",
+    "pygraphviz",
+    "pyppeteer",
+    "simsimd",
+    "tenacity",
+    "tomli",
+    "typing_extensions",
+    "uuid_utils",
+    "yaml"
+  ]
+}

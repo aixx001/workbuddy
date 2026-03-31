@@ -1,0 +1,7 @@
+#!C:\Users\40270\.workbuddy\skills\repo-reuse-flow\.venv\Scripts\python.exe
+
+from bigcode_astgen import cli
+
+
+if __name__ == '__main__':
+    cli.run()

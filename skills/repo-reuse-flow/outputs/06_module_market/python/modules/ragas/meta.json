@@ -1,0 +1,18 @@
+{
+  "name": "ragas",
+  "repo": "https://github.com/explodinggradients/ragas",
+  "license": "Apache-2.0",
+  "install_cmd": "pip install ragas",
+  "version": "0.4.3",
+  "stars": "20k+",
+  "status": "活跃开发中",
+  "description": "RAG 评估工具包 — 为 RAG 系统提供标准化的质量评估指标、自动测试集生成和结构化 Prompt 框架",
+  "competitors": ["deepeval", "trulens", "phoenix"],
+  "advantages": ["RAG 专用指标最全", "社区活跃", "文档完善"],
+  "use_cases": [
+    "系统化评估 RAG 质量（忠实度/相关性/精确度）",
+    "自动生成测试集",
+    "结构化 Prompt 模板管理"
+  ],
+  "updated_at": "2026-03-29"
+}

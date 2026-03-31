@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "lastUpdated": 1774803428954,
+  "binaries": {},
+  "systemDetectionCache": {
+    "python": {
+      "path": "C:\\Users\\40270\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "version": "3.12.10",
+      "detectedAt": 1774735461357
+    },
+    "node": {
+      "path": "C:\\Program Files\\nodejs\\node.exe",
+      "version": "24.12.0",
+      "detectedAt": 1774735461840
+    }
+  }
+}

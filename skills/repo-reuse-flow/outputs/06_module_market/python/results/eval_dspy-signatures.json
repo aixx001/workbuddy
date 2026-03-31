@@ -1,0 +1,33 @@
+{
+  "module": "dspy-signatures",
+  "slug": "dspy-signatures",
+  "backend": "azure/gpt-4o-mini",
+  "evaluated_at": "2026-03-30T23:05:24-04:00",
+  "cases": [
+    {
+      "label": "✅ 简单事实题",
+      "case_type": "factual",
+      "scores": { "context_grounding": 1.0 },
+      "elapsed_seconds": 4.84,
+      "passed": true
+    },
+    {
+      "label": "🧠 推理题",
+      "case_type": "reasoning",
+      "scores": { "context_grounding": 1.0 },
+      "elapsed_seconds": 4.09,
+      "passed": true
+    },
+    {
+      "label": "🚫 无关上下文",
+      "case_type": "irrelevant_context",
+      "scores": { "context_grounding": 1.0 },
+      "elapsed_seconds": 1.67,
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "total_elapsed": 10.83,
+  "verdict": "可用",
+  "notes": "DSPy Signature 的声明式约束有效：事实题忠于上下文，推理题基于上下文推理（提到光反应停止/暗反应停止/细胞呼吸），无关上下文正确拒绝（明确表示'上下文中未包含相关信息'）。ChainOfThought 自动生成推理链，响应速度快（总计 10.8s / 3 cases）。"
+}
