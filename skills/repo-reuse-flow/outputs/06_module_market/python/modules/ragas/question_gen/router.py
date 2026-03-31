@@ -362,6 +362,8 @@ class VerifyCaseResult(BaseModel):
     passed: bool
     question_count: int
     sample_questions: list[str]
+    sample_answers: list[str] = []
+    input_text: str = ""
 
 
 class VerifyResponse(BaseModel):
@@ -437,6 +439,8 @@ async def run_verification(backend: str | None = None):
             passed=passed,
             question_count=len(questions),
             sample_questions=[q.question for q in questions[:3]],
+            sample_answers=[q.answer for q in questions[:3]],
+            input_text=case["text"][:200],
         ))
         logger.debug("  {} | count={} | passed={} | {:.2f}s",
                       case["label"], len(questions), passed, elapsed)

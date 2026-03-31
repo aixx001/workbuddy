@@ -32,10 +32,10 @@
     },
     {
       "slug": "ragas-testset",
-      "status": "pending",
-      "eval": null,
-      "verify": null,
-      "notes": null
+      "status": "done",
+      "eval": "eval_ragas-testset.json",
+      "verify": "verify_ragas-testset.json",
+      "notes": "3组对比验证全PASS，事实/技术/噪声文本，平均7.5s，生成质量高"
     },
     {
       "slug": "ragas-prompt",
@@ -73,10 +73,10 @@
       "notes": null
     }
   ],
-  "next": "ragas-testset",
+  "next": "ragas-prompt",
   "stats": {
     "total": 10,
-    "done": 4,
-    "pending": 6
+    "done": 5,
+    "pending": 5
   }
 }

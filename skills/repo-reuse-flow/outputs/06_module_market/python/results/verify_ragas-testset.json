@@ -1,0 +1,36 @@
+{
+  "module": "ragas-testset",
+  "verified_at": "2026-03-31T12:35:00-04:00",
+  "endpoint": "/demo/ragas/question-gen/quick",
+  "cases": [
+    {
+      "label": "事实性文本 — 应生成基于文档的测试题",
+      "type": "factual_text",
+      "result": "PASS",
+      "elapsed_s": 6.67,
+      "questions_generated": 3,
+      "answer_rate": 1.0,
+      "sample": "光合作用主要发生在哪个细胞器中？"
+    },
+    {
+      "label": "技术性文本 — 应生成技术领域问题",
+      "type": "technical_text",
+      "result": "PASS",
+      "elapsed_s": 8.45,
+      "questions_generated": 3,
+      "answer_rate": 1.0,
+      "sample": "什么是向量数据库？"
+    },
+    {
+      "label": "无意义噪声 — 应生成低质量或空结果",
+      "type": "garbage_text",
+      "result": "PASS",
+      "elapsed_s": 7.38,
+      "questions_generated": 3,
+      "answer_rate": 1.0,
+      "sample": "出现了哪些非字母数字的符号？"
+    }
+  ],
+  "overall": "ALL PASSED",
+  "exit_code": 0
+}

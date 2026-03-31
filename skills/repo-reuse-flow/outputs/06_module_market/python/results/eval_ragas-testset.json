@@ -1,0 +1,21 @@
+{
+  "module": "ragas-testset",
+  "evaluated_at": "2026-03-31T12:35:30-04:00",
+  "source": {
+    "library": "ragas",
+    "sub_module": "ragas.testset.TestsetGenerator",
+    "version": ">=0.2.0"
+  },
+  "metrics": {
+    "verify_all_passed": true,
+    "verify_cases": 3,
+    "avg_response_time_s": 7.5,
+    "question_generation_quality": "high",
+    "answer_rate": 1.0,
+    "robustness": "handles garbage input gracefully"
+  },
+  "conclusion": "可用",
+  "conclusion_en": "ready",
+  "notes": "3 组对比用例全部通过：事实性文本生成准确问题，技术文本生成领域问题，噪声文本不崩溃。平均响应 7.5s，生成质量高，含答案率 100%。",
+  "status": "active"
+}
