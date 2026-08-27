@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "aixx": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "aixx-mcp@latest"],
+      "env": {
+        "AIXX_API_KEY": "${AIXX_API_KEY}",
+        "AIXX_BASE_URL": "https://baodan.run/v1"
+      }
+    }
+  }
+}
