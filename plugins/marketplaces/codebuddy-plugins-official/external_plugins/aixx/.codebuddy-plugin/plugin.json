@@ -1,0 +1,25 @@
+{
+  "name": "aixx",
+  "description": "AIXX — 一个 Key,调用全世界的 AI。几十个大模型(Claude/GPT/Gemini/DeepSeek 等) + AI 出图 + AI 视频,完全 OpenAI 兼容。注册送 ¥5,在 https://baodan.run/console/ 登录后「令牌」页生成你的 Key。",
+  "version": "1.0.0",
+  "author": {
+    "name": "AIXX",
+    "url": "https://aixx.ai/"
+  },
+  "homepage": "https://aixx.ai/",
+  "repository": "https://gitee.com/kk0803/token-hub",
+  "keywords": [
+    "aixx",
+    "mcp",
+    "llm",
+    "ai",
+    "openai-compatible",
+    "claude",
+    "gpt",
+    "gemini",
+    "deepseek",
+    "image-generation",
+    "video-generation"
+  ],
+  "license": "MIT"
+}
